@@ -60,15 +60,15 @@ Learn on Demand Systems Integrated Digital Lab Authoring Guide
 #### Document Information
 
 **Version **|**Date**|**Edited By**|**Comments**
--|-|-|-
-1.0|Nov. 25, 2015|Martin Grasdal|Initial draft
-1.1|Dec. 4, 2015|Martin Grasdal|Response to initial feedback from LODS
-1.2|Dec. 7, 2015|Martin Grasdal|Added intro video content
-1.3|Dec. 11, 2015|Martin Grasdal|Revised content
-1.4|Jan. 5, 2016|Martin Grasdal|Added tip on using &lt;a href&gt; html tags
-2.0|Feb. 25, 2016|Martin Grasdal|Updated manual to align with numerous features developed in Jan. and Feb. 2016
-2.1|Mar. 9, 2016|Stephanie Clark|Replaced text boxes below figures with captions so the numbers automatically update when new figures with captions are added above them. Added information on the new Edit toolbar for Exercise and Task fields
-|3.0|Apr. 29, 2016|Stephanie Clark|Updated manual to match new LODS Word guidelines, revise content and spacing, update to show new features/terminology, added Word import section
+|-|-|-|-|
+|1.0|Nov. 25, 2015|Martin Grasdal|Initial draft|
+|1.1|Dec. 4, 2015|Martin Grasdal|Response to initial feedback from LODS|
+|1.2|Dec. 7, 2015|Martin Grasdal|Added intro video content|
+|1.3|Dec. 11, 2015|Martin Grasdal|Revised content|
+|1.4|Jan. 5, 2016|Martin Grasdal|Added tip on using &lt;a href&gt; html tags|
+|2.0|Feb. 25, 2016|Martin Grasdal|Updated manual to align with numerous features developed in Jan. and Feb. 2016|
+|2.1|Mar. 9, 2016|Stephanie Clark|Replaced text boxes below figures with captions so the numbers automatically update when new figures with captions are added above them. Added information on the new Edit toolbar for Exercise and Task fields|
+|3.0|Apr. 29, 2016|Stephanie Clark|Updated manual to match new LODS Word guidelines, revise content and spacing, update to show new features/terminology, added Word import section|
 
 Introduction
 ============
