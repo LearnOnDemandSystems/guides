@@ -59,8 +59,8 @@ Learn on Demand Systems Integrated Digital Lab Authoring Guide
 
 #### Document Information
 
-**Version **|**Date**|**Edited By**|**Comments**
-|-|-|-|-|
+|**Version**|**Date**|**Edited By**|**Comments**|
+|---|---|---|---|
 |1.0|Nov. 25, 2015|Martin Grasdal|Initial draft|
 |1.1|Dec. 4, 2015|Martin Grasdal|Response to initial feedback from LODS|
 |1.2|Dec. 7, 2015|Martin Grasdal|Added intro video content|
