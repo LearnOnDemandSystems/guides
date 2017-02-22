@@ -1,5 +1,5 @@
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![](media/image4.png){width="3.4in" height="1.2093646106736657in"}                                                                                                                                                                                                                                                                                                                                                    ![](media/image5.png){width="1.7083333333333333in" height="1.1095931758530184in"}
+  ![](media/image4.png)                                                                                                                                                                                                                                                                                                                                                 ![](media/image5.png)
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------- ----------------------------------------------------------------------------------- -- ---------------------
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
@@ -7,7 +7,7 @@
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
-                                                                                                                                                                                                                                                                                                                                                                                                                        ![](media/image6.png){width="0.6868055555555556in" height="0.5868055555555556in"}   
+                                                                                                                                                                                                                                                                                                                                                                                                                        ![](media/image6.png)
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
@@ -17,9 +17,9 @@
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 
-                                                                                                                                                                                                                                                                                                                                    ![](media/image6.png){width="0.6868055555555556in" height="0.5868055555555556in"}                                                                                       
+                                                                                                                                                                                                                                                                                                                                    ![](media/image6.png)                                                                                       
 
-  > Produced by Learn on Demand Systems                                                                                                                                                                                                                                                                                                                                                                                 ![](media/image7.png){width="1.9207042869641295in" height="0.6818186789151356in"}
+  > Produced by Learn on Demand Systems                                                                                                                                                                                                                                                                                                                                                                                 ![](media/image7.png)
   >                                                                                                                                                                                                                                                                                                                                                                                                                     
   > Version 3.0                                                                                                                                                                                                                                                                                                                                                                                                         
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -59,16 +59,16 @@ Learn on Demand Systems Integrated Digital Lab Authoring Guide
 
 #### Document Information
 
-  **Version **   **Date**        **Edited By**     **Comments**
-  -------------- --------------- ----------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1.0            Nov. 25, 2015   Martin Grasdal    Initial draft
-  1.1            Dec. 4, 2015    Martin Grasdal    Response to initial feedback from LODS
-  1.2            Dec. 7, 2015    Martin Grasdal    Added intro video content
-  1.3            Dec. 11, 2015   Martin Grasdal    Revised content
-  1.4            Jan. 5, 2016    Martin Grasdal    Added tip on using &lt;a href&gt; html tags
-  2.0            Feb. 25, 2016   Martin Grasdal    Updated manual to align with numerous features developed in Jan. and Feb. 2016
-  2.1            Mar. 9, 2016    Stephanie Clark   Replaced text boxes below figures with captions so the numbers automatically update when new figures with captions are added above them. Added information on the new Edit toolbar for Exercise and Task fields
-  3.0            Apr. 29, 2016   Stephanie Clark   Updated manual to match new LODS Word guidelines, revise content and spacing, update to show new features/terminology, added Word import section
+**Version **|**Date**|**Edited By**|**Comments**
+-|-|-|-
+1.0|Nov. 25, 2015|Martin Grasdal|Initial draft
+1.1|Dec. 4, 2015|Martin Grasdal|Response to initial feedback from LODS
+1.2|Dec. 7, 2015|Martin Grasdal|Added intro video content
+1.3|Dec. 11, 2015|Martin Grasdal|Revised content
+1.4|Jan. 5, 2016|Martin Grasdal|Added tip on using &lt;a href&gt; html tags
+2.0|Feb. 25, 2016|Martin Grasdal|Updated manual to align with numerous features developed in Jan. and Feb. 2016
+2.1|Mar. 9, 2016|Stephanie Clark|Replaced text boxes below figures with captions so the numbers automatically update when new figures with captions are added above them. Added information on the new Edit toolbar for Exercise and Task fields
+|3.0|Apr. 29, 2016|Stephanie Clark|Updated manual to match new LODS Word guidelines, revise content and spacing, update to show new features/terminology, added Word import section
 
 Introduction
 ============
@@ -105,7 +105,7 @@ users to view the lab instructions in line with the VMs. The following
 is an example of typical lab task that a user would see while they were
 performing lab steps.
 
-![](media/image8.png){width="6.5in" height="4.745138888888889in"}
+![](media/image8.png)
 
 Figure 1: IDL user interface
 
@@ -138,8 +138,7 @@ launching, it is possible to include useful information, web pages,
 interactive graphics, or videos. In the example below, an introductory
 video is playing while the lab is launching in the background.
 
-![](media/image9.png){width="5.641666666666667in"
-height="3.9353040244969377in"}
+![](media/image9.png)
 
 Figure 2: Introductory video playing during lab launch
 
@@ -180,7 +179,7 @@ provides contextual information to assist the user to gain a deeper
 understanding of the lab. The introductory page only appears if a lab
 author provides the objectives and a scenario.[^1]
 
-![](media/image10.png){width="6.5in" height="4.499305555555556in"}
+![](media/image10.png)
 
 Figure 3: Objective and scenario
 
@@ -196,7 +195,7 @@ exercise in the lab has an introductory element that can be used to
 provide context or a statement of goals that are specific to the
 exercise.
 
-![](media/image11.png){width="6.5in" height="5.022222222222222in"}
+![](media/image11.png)
 
 Figure 4: Exercise introduction
 
@@ -204,8 +203,7 @@ Each exercise introduction is automatically rolled up into an Exercise
 Summary that users can review at any time in the lab by clicking
 Exercise Summary in the top right navigation.
 
-![](media/image12.png){width="5.858333333333333in"
-height="3.5394094488188976in"}
+![](media/image12.png)
 
 Figure 5: Exercise summary
 
@@ -213,7 +211,7 @@ You can add rich media content delivered from external sources (URLs)
 that cause a video to play at the beginning of the exercise, after the
 exercise introduction.
 
-![](media/image13.png){width="6.5in" height="3.8777777777777778in"}
+![](media/image13.png)
 
 Figure 6: Video in exercise introduction
 
@@ -222,7 +220,7 @@ summarize the accomplished goals and to provide information on the next
 exercise. You can also include rich media content from an external
 source, such as a video that will play at the completion of an exercise.
 
-![](media/image14.png){width="3.875in" height="2.958576115485564in"}
+![](media/image14.png)
 
 Figure 7: Exercise conclusion
 
@@ -239,7 +237,7 @@ optionally, one or more enhancements. These enhancements include Alerts,
 Knowledge, Screenshots, or Videos. Additionally, a task may also contain
 a link to allow quick navigation to a different VM or drive.
 
-![](media/image15.png){width="6.5in" height="0.30416666666666664in"}
+![](media/image15.png)
 
 Figure 8: Task with enhancements and link to VM
 
@@ -254,8 +252,7 @@ text you want the user to read. From the user’s perspective, alerts are
 mandatory because they will appear by default when they advance to a
 task that contains an alert.
 
-![](media/image16.png){width="6.458893263342082in"
-height="2.6752318460192477in"}
+![](media/image16.png)
 
 Figure 9: Alert task enhancement
 
@@ -271,7 +268,7 @@ lights up and bounces to indicate its presence. The user can stay
 focused on the lab step, or choose to read the contents of the Knowledge
 text box by clicking on the icon.
 
-![](media/image17.png){width="6.5in" height="2.5506944444444444in"}
+![](media/image17.png)
 
 Figure 10: Knowledge task enhancement
 
@@ -290,7 +287,7 @@ particularly important or noteworthy, you can make it a mandatory
 element by causing it to appear automatically when the user arrives at
 the task.
 
-![](media/image18.png){width="6.5in" height="5.286111111111111in"}
+![](media/image18.png)
 
 Figure 11: Screenshot task enhancement
 
@@ -311,7 +308,7 @@ own separate window. Furthermore, you can configure the video to be a
 mandatory element that plays automatically when the user arrives at the
 task containing the video.
 
-![](media/image19.png){width="5.023199912510936in" height="4.025in"}
+![](media/image19.png)
 
 Figure 12: Video task enhancement
 
@@ -323,7 +320,7 @@ tasks on the wrong VM. The IDL platform mitigates this risk by providing
 the means to change to the correct VM within a task step, as shown
 below.
 
-![](media/image20.png){width="6.5in" height="0.5326388888888889in"}
+![](media/image20.png)
 
 Figure 13: Virtual machine select
 
@@ -332,7 +329,7 @@ Figure 13: Virtual machine select
 The IDL platform allows lab user to load either virtual floppy disks or
 ISO files directly from a task, as shown below.
 
-![](media/image21.png){width="6.5in" height="0.4444444444444444in"}
+![](media/image21.png)
 
 Figure 14: Load optical media
 
@@ -347,9 +344,7 @@ structure, open dialog boxes, start scripts, open documents and web
 pages, and many others. To initiate the action, the lab user clicks on
 the Action icon (lightning bolt), as shown below.
 
-![](media/image22.png){width="5.618344269466316in"
-height="0.45835739282589677in"}
-
+![](media/image22.png)
 Figure 15: Perform an action
 
 Exams
@@ -381,8 +376,7 @@ of scoring used; there are three to choose from:
 The screenshot below shows an exam that uses an assessment format to
 evaluate retention and to reinforce learning.
 
-![](media/image23.png){width="2.0335094050743656in"
-height="3.1502734033245843in"}
+![](media/image23.png)
 
 Figure 16: Exam example using the assessment scoring type
 
@@ -401,7 +395,7 @@ displayed in their sequential order. When each task is performed, the
 user clicks Done. The lab interface keeps track of tasks that have been
 performed and shows the current progress at the bottom of the pane.
 
-![](media/image24.png){width="6.0in" height="4.146153762029746in"}
+![](media/image24.png)
 
 Figure 17: Task navigation showing progress
 
@@ -410,11 +404,9 @@ backward from the current task they are performing. If a user navigates
 away from the current task, the lab interface provides a prompt to
 return.
 
-![](media/image25.png){width="4.408715004374454in"
-height="2.0001727909011375in"}
+![](media/image25.png)
 
-![](media/image26.png){width="2.1585203412073493in"
-height="1.5668022747156605in"}
+![](media/image26.png)
 
 Figure 18: Navigation pane showing current progress and prompts to
 return to current task
@@ -428,8 +420,7 @@ Ctrl + Alt + Delete and Windows Key commands to Windows VMs. Users can
 also use a virtual keyboard or turn off and restart VMs from the Power
 fly out menu.
 
-![](media/image27.png){width="2.0585115923009623in"
-height="1.6251410761154856in"}
+![](media/image27.png)
 
 Figure 19: Commands menu showing power fly out sub-menu
 
@@ -441,7 +432,7 @@ the users to open the Knowledge task enhancement, copy the commands
 there and then, using the Commands &gt; Paste &gt; Paste Clipboard Text
 menu, paste the commands into the VM.
 
-![](media/image28.png){width="2.05in" height="1.4666666666666666in"}
+![](media/image28.png)
 
 Figure 20: Commands menu showing paste fly out sub-menu
 
@@ -456,7 +447,7 @@ network adapter. It also provides an alternative for pasting the user
 name and password into the VM’s Sign In dialog box, as shown in the
 figure below.
 
-![](media/image29.png){width="6.5in" height="3.25in"}
+![](media/image29.png)
 
 Figure 21: Machines tab showing paste command for username and password
 
@@ -467,9 +458,7 @@ The Support tab gives users the ability to select the Machine Remote
 Controller and a Theme. In addition, users can open a printable HTML
 version of the lab manual and easily gain access to FAQs for assistance.
 
-![](media/image30.png){width="1.9418350831146107in"
-height="4.875422134733158in"}
-
+![](media/image30.png)
 Figure 22: Support tab
 
 Adding Lab Content Manually
@@ -489,8 +478,7 @@ These fields provide a simple WYSYWG editor experience. In the rich text
 fields in the lab profile, you can use the toolbar pictured below to
 perform simple text formatting.
 
-![](media/image31.png){width="2.308533464566929in"
-height="0.3083595800524934in"}
+![](media/image31.png)
 
 Figure 23: Edit toolbar for lab profile
 
@@ -520,8 +508,7 @@ format selected text as follows:
 the Edit toolbar is expanded to allow you an easy way to add additional
 formatting to your content.
 
-![](media/image33.png){width="5.317127077865267in"
-height="0.3000262467191601in"}
+![](media/image33.png)
 
 Figure 24: Edit toolbar for lab content fields
 
@@ -529,7 +516,7 @@ The additional controls provide drop-down lists to apply font, font size
 and paragraph formats to the selected text.
 
   ------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
-  ![](media/image34.png){width="1.5084645669291339in" height="3.7169892825896764in"}   ![](media/image35.png){width="1.3667847769028871in" height="2.083513779527559in"}   ![](media/image36.png){width="1.3584514435695538in" height="2.716901793525809in"}
+  ![](media/image34.png)   ![](media/image35.png)   ![](media/image36.png)
   ------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
 
 Figure 25: Formatting drop-downs
@@ -549,8 +536,7 @@ as shown in the following steps.
 
 1.  On the lab profile page, click **Edit**, as shown below.
 
-![](media/image37.png){width="5.391666666666667in"
-height="1.7620844269466316in"}
+![](media/image37.png)
 
 Figure 26: Lab profile page
 
@@ -564,7 +550,7 @@ Figure 26: Lab profile page
     lab abstract and could be used to describe a lab that is used for a
     particular event.
 
-![](media/image38.png){width="5.912684820647419in" height="4.625in"}
+![](media/image38.png)
 
 Figure 27: Adding lab objective and scenario content
 
@@ -603,8 +589,7 @@ following steps.
 1.  On the Basic Information tab of the lab profile Edit page, check
     **Has IDL Content**.
 
-![](media/image39.png){width="5.025435258092738in"
-height="1.6251410761154856in"}
+![](media/image39.png)
 
 Figure 28: Enabling IDL Content
 
@@ -628,7 +613,7 @@ that are relevant to lab manual creation and display.
 To gain access to the Advanced settings, on the lab profile page, click
 **Advanced**.
 
-![](media/image40.png){width="6.5in" height="4.456944444444445in"}
+![](media/image40.png)
 
 Figure 29: Advanced settings
 
@@ -700,7 +685,7 @@ make changes to the content.
 To check out the IDL manual, navigate to the lab profile page, and then
 click **Check Out**.
 
-![](media/image41.png){width="6.5in" height="2.0909722222222222in"}
+![](media/image41.png)
 
 Figure 30: Lab profile action menu showing check out option
 
@@ -715,7 +700,7 @@ ability to create screenshots of the lab environment and to verify lab
 steps. To use IDL Studio mode, click **Launch in IDL Studio**, as shown
 below.
 
-![](media/image42.png){width="6.5in" height="1.1458333333333333in"}
+![](media/image42.png)
 
 Figure 31: Edit content with running VMs
 
@@ -724,7 +709,7 @@ Figure 31: Edit content with running VMs
     editing or other tasks that do not require running VMs. To use this
     mode, click **Edit IDL Content**, as shown below.
 
-![](media/image43.png){width="6.5in" height="0.6409722222222223in"}
+![](media/image43.png)
 
 Figure 32: Edit content mode
 
@@ -736,7 +721,7 @@ two IDL edit modes, you must create an exercise. To do this, click **New
 Exercise**. This causes the New Exercise dialog to appear, as shown
 below.
 
-![](media/image44.png){width="6.5in" height="4.167361111111111in"}
+![](media/image44.png)
 
 Figure 33: New exercise dialog box
 
@@ -761,9 +746,7 @@ exercise, if present, or as the last exercise in the lab.
     of an exercise, hover over the exercise, and click the up or down
     arrow, as appropriate.
 
-![](media/image45.png){width="2.191666666666667in"
-height="2.5083333333333333in"}
-
+![](media/image45.png)
 Figure 34: Moving exercise position
 
 ### Name
@@ -782,8 +765,7 @@ described earlier. You can use it to add bold or italic formats, change
 font attributes, create lists, and increase or decrease indents as shown
 below.
 
-![](media/image46.png){width="4.405784120734908in"
-height="2.0833333333333335in"}
+![](media/image46.png)
 
 Figure 35: Edit toolbar for introduction message field
 
@@ -812,8 +794,7 @@ You cannot have an exercise without at least one task and you cannot
 have a task without an exercise. Therefore, when the exercise is saved,
 an empty Edit Task dialog box appears.
 
-![](media/image47.png){width="5.816512467191601in"
-height="5.679178696412948in"}
+![](media/image47.png)
 
 Figure 36: Edit task dialog box
 
@@ -909,8 +890,7 @@ Screenshots add clarity by providing a visual representation of what a
 completed task looks like. To create a screenshot, you can take a
 screenshot using the Developer menu on the UI, as shown below.
 
-![](media/image48.png){width="5.058771872265967in"
-height="0.958416447944007in"}
+![](media/image48.png)
 
 Figure 37: Taking screenshot form IDL UI
 
@@ -975,9 +955,7 @@ Although this functionality is also available from the Machines tab, the
 advantage of the using the VM Select control is that the lab user can
 switch the active VM from with the task itself.
 
-![](media/image49.png){width="3.069601924759405in"
-height="2.2987292213473314in"}
-
+![](media/image49.png)
 Figure 38: VM select control
 
 ### Floppy Drive
@@ -994,8 +972,7 @@ virtual DVD (ISO file) into (or eject from) the VM. The advantage of the
 using the control is the lab user can insert the virtual DVD from within
 the task itself.
 
-![](media/image50.png){width="2.8543132108486438in"
-height="1.541745406824147in"}
+![](media/image50.png)
 
 Figure 39: DVD drive control
 
@@ -1016,8 +993,7 @@ is most useful for a complex task that involves numerous steps, opening
 file locations deep down in directory structures, opening specific Web
 pages, and other similar activities.
 
-![](media/image51.png){width="5.001806649168854in"
-height="5.916666666666667in"}
+![](media/image51.png)
 
 Figure 40: Command control
 
@@ -1048,8 +1024,7 @@ There are 4 different kinds of commands that you can configure:
     Demand Integration Service also provides support for automatic
     screen resizing and automated performance-based scoring.
 
-![](media/image52.png){width="1.5625798337707786in"
-height="1.4792432195975502in"}
+![](media/image52.png)
 
 Figure 41: Developer menu
 
@@ -1060,13 +1035,13 @@ using the Command control.
 
 -   These commands:
 
-![](media/image53.png){width="5.3in" height="2.7849868766404198in"}
+![](media/image53.png)
 
 Figure 42: Sample commands
 
 -   Have these results:
 
-![](media/image54.png){width="5.425in" height="3.6491655730533683in"}
+![](media/image54.png)
 
 Figure 43: Sample commands result
 
@@ -1078,7 +1053,7 @@ will appear when the user has completed all the lab steps. It is created
 on the Exam tab of the lab profile. To create an assessment, click the
 **Exam** tab, and then check **Is Exam**.[^5]
 
-![](media/image55.png){width="6.2in" height="1.0551924759405074in"}
+![](media/image55.png)
 
 Figure 44: Add assessment
 
@@ -1090,8 +1065,7 @@ Enter a page name and click **Add Question**. Type the question, add the
 multiple choice selections, select the correct answer(s), and set the
 **Score Value** so that the exam can be scored.
 
-![](media/image56.png){width="6.033214129483815in"
-height="4.308333333333334in"}
+![](media/image56.png)
 
 Figure 45: Creating multiple choice tests
 
@@ -1103,7 +1077,7 @@ labs. In other cases, it may be desirable to create the exercise and
 task steps in an XML or Word document and import the content. The
 controls for importing and exporting lab content are shown below:
 
-![](media/image57.png){width="6.5in" height="0.6284722222222222in"}
+![](media/image57.png)
 
 Figure 46: Import and export lab content links
 
@@ -1113,7 +1087,7 @@ Export Content
 When you export lab content, you are given the choice to export the full
 lab profile, the IDL content only, or the VMs.
 
-![](media/image58.png){width="6.5in" height="0.98125in"}
+![](media/image58.png)
 
 Figure 47: Export dialog box
 
@@ -1121,15 +1095,13 @@ Exporting the IDL content causes a compressed (.zip) file containing an
 XML file and screen images to be downloaded to your local computer. The
 structure of the zip appears below.[^6]
 
-![](media/image59.png){width="6.100528215223097in"
-height="0.883409886264217in"}
+![](media/image59.png)
 
 Figure 48: Export zip archive internal structure
 
 The following shows a sample of XML-based exported lab content:
 
-![](media/image60.png){width="5.591666666666667in"
-height="1.1493985126859143in"}
+![](media/image60.png)
 
 Figure 49: XML format lab content
 
@@ -1147,7 +1119,7 @@ import it to the new lab profile.
 When you click **Import**, you are given the choice to import the **IDL
 content** or the **VMs**.
 
-![](media/image61.png){width="6.5in" height="1.2222222222222223in"}
+![](media/image61.png)
 
 Figure 50: Import options
 
@@ -1164,7 +1136,7 @@ XML and Word templates are described below.
 If you do not have existing content, you can download the XML template
 from the Import link (see below).
 
-![](media/image62.png){width="6.5in" height="1.4041666666666666in"}
+![](media/image62.png)
 
 Figure 51: Open XML template
 
@@ -1172,9 +1144,7 @@ You can then use the template to add content directly into an XML file
 or use another document format that you can convert to the accepted XML
 format. The following shows the current XML template:
 
-![](media/image63.png){width="6.358884514435696in"
-height="2.250194663167104in"}
-
+![](media/image63.png)
 Figure 52: XML template
 
 ### Use a Word Template
@@ -1182,7 +1152,7 @@ Figure 52: XML template
 You can download and save the Word template from the Import link and
 create your IDL manual directly in it (see below).
 
-![](media/image64.png){width="6.5in" height="1.4041666666666666in"}
+![](media/image64.png)
 
 Figure 53: Open Word template
 
@@ -1192,7 +1162,7 @@ style formats to determine what is imported and where. The following
 shows the part of the current Word template that is imported into the
 lab:
 
-![](media/image65.png){width="6.5in" height="3.579861111111111in"}
+![](media/image65.png)
 
 Figure 52: Word template
 
@@ -1236,7 +1206,7 @@ clear lab content.
     When a lab profile is enabled for lab content, the Clear Lab Content
     link appears in the quick links section.
 
-![](media/image66.png){width="6.5in" height="0.8125in"}
+![](media/image66.png)
 
 Figure 54: Clear lab content
 
@@ -1244,7 +1214,7 @@ Figure 54: Clear lab content
     given the choice to replace the existing content, overriding the
     default behavior to append content.
 
-![](media/image67.png){width="6.5in" height="1.2034722222222223in"}
+![](media/image67.png)
 
 Figure 55: Clear lab content during import
 
@@ -1262,15 +1232,14 @@ configured from the Learn on Demand Management page, as show below.
 
 -   You will require special permissions to see this tile.
 
-![](media/image68.png){width="2.650229658792651in"
-height="1.591804461942257in"}
+![](media/image68.png)
 
 Figure 56: Advertising campaign tile
 
 To create an advertising campaign, click **Create Advertising
 Campaign**. On the edit, enter a name for the campaign, as shown below.
 
-![](media/image69.png){width="3.95in" height="2.621363735783027in"}
+![](media/image69.png)
 
 Figure 57: Advertising campaign information
 
@@ -1281,31 +1250,27 @@ randomly. If wanted, check the box and set the minimum amount of time to
 show the content. With this configured, the users will not be able to
 close the presentation early.
 
-![](media/image70.png){width="3.097683727034121in"
-height="3.9166666666666665in"}
-
+![](media/image70.png)
 Figure 58: Configure advertising campaign URLs
 
 The advertising campaign can be associated with a lab series or a lab
 profile. The following screenshot shows the configuration page for an
 example lab series.
 
-![](media/image71.png){width="4.091137357830271in"
-height="3.191666666666667in"}
+![](media/image71.png)
 
 Figure 59: Advertising campaign lab series configuration
 
 To configure a lab profile with an advertising campaign, on the lab
 profile page, click **Edit**.
 
-![](media/image72.png){width="6.5in" height="0.7076388888888889in"}
-
+![](media/image72.png)
 Figure 60: Edit lab profile
 
 Beside Advertising Campaign, click **Choose**, then locate and select
 the advertising campaign.
 
-![](media/image73.png){width="5.476825240594926in" height="2.75in"}
+![](media/image73.png)
 
 Figure 61: Add advertising campaign to lab profile
 
@@ -1322,8 +1287,7 @@ Like the advertising campaign, you can also force the rich media to be
 display for a minimum amount of time by checking the box to Show for at
 least ***n*** seconds.
 
-![](media/image74.png){width="6.167201443569554in"
-height="2.4918821084864393in"}
+![](media/image74.png)
 
 Figure 62: Add introduction URL to lab profile
 
