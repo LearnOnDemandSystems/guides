@@ -1,8 +1,8 @@
 ---
-#title: Shared Labs
+#Shared Labs
 ---
 
-Summary:
+##Summary:
 ========
 
 Shared Labs is a tool used in LODS to create environments which share
@@ -11,7 +11,7 @@ a Shared Lab Environment and a Participant (or Participants). This can
 be done with any current or new Lab Profile with the correct
 permissions.
 
-Terminology in LOD:
+##Terminology in LOD:
 ===================
 
 -   **Shared Class Environment** – the section on a lab profile where
@@ -26,7 +26,7 @@ Terminology in LOD:
     its networks and the shared VMs. These lab profiles will have their
     own VMs to interact with the shared labs group.
 
-Process to create environment, course, and class:
+##Process to create environment, course, and class:
 =================================================
 
 For a lab to be part of shared labs it either needs to be designated as
@@ -39,8 +39,7 @@ profile page:
 
 > ![](./media/image1.png)
 >
-> ![](./media/image2.png){width="2.4138888888888888in"
-> height="1.2333333333333334in"}
+> ![](./media/image2.png)
 
 1.  When a lab is configured with the Shared Environment role, networks
     within that lab can be flagged as a "Shared Class Network." Click
@@ -48,8 +47,7 @@ profile page:
     networks that be will be shared between the Shared Environment and
     the Participant(s) labs. This is the key to Shared Labs.
 
-> ![](./media/image3.png){width="4.500694444444444in"
-> height="2.2736111111111112in"}
+> ![](./media/image3.png)
 
 Once you have set up the Shared Environment, you need to designate which
 lab profiles will be the participants that will access the Shared
@@ -61,14 +59,12 @@ Environment and its shared networks.
 2.  For **Shared Environment**, click **Choose**. Search and select the
     Shared Environment lab this participant lab will connect to
 
-> ![](./media/image4.png){width="4.186805555555556in"
-> height="1.1666666666666667in"}
+> ![](./media/image4.png)
 
 1.  Click the **Virtual Machines** tab and configure the VMs to use any
     of the shared networks defined in the Shared Environment.
 
-> ![](./media/image5.png){width="5.173611111111111in"
-> height="3.8333333333333335in"}
+> ![](./media/image5.png)
 
 Next, notify the LODS Course Requests Team
 (<courserequests@learnondemandsystems.com>) to set up the course.
@@ -84,7 +80,7 @@ Specify the following information:
 Once the course has been created, work with the LODS Course Requests
 Team to create your class.
 
-Process during class:
+##Process during class:
 =====================
 
 When an Instructor wishes to launch the Shared Environment, they will
@@ -92,22 +88,20 @@ start from the **Class** page:
 
 1.  Click **Monitor Labs**
 
-> ![](./media/image6.png){width="6.174319772528434in"
-> height="1.7604166666666667in"}
+> ![](./media/image6.png)
 
 1.  Under the basic information on the Monitor Class page, click
     **Shared Environment**.
 
-![](./media/image7.png){width="6.500694444444444in"
-height="2.279861111111111in"}
+![](./media/image7.png)
 
-Saving and Closing Labs
+###Saving and Closing Labs
 
 All Lab Environments (Shared and Participant) can been saved and closed
 as normal. The Shared Lab Networks are still available, even though a
 Share Environment or Participant has saved their Lab.
 
-Canceling Labs
+###Canceling Labs
 
 -   If a Participant wishes to reset their Participant machine(s), they
     can Exit Lab -&gt; End Lab -&gt; Cancel at any time without
