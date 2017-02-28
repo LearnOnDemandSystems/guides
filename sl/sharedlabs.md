@@ -1,5 +1,5 @@
 ---
-title: Shared Labs
+#title: Shared Labs
 ---
 
 Summary:
@@ -37,7 +37,7 @@ profile page:
 1.  Click the Advanced tab and click the dropdown under the Shared Class
     Environment section and select Shared Environment.
 
-> ![](./media/image1.png){width="2.81in" height="0.86in"}
+> ![](./media/image1.png)
 >
 > ![](./media/image2.png){width="2.4138888888888888in"
 > height="1.2333333333333334in"}
