@@ -152,10 +152,10 @@ manage that content as well. To get this set up you must do the following:
 
 1. In Lab on Demand, navigate to the lab profile whose content you want to
 manage in GitHub.
-1. Click **Export**.
+1. Click **Export**.<br/>
 ![Click the Export link](media/export/01-export.png "Click the Export link")
 1. In the **Export** window, select **Lab Metadata: IDL Content Only** and click
-**OK**.
+**OK**.<br/>
 ![Select IDL Content Only](media/export/02-content-only.png "Select Lab Metadata: IDL Content Only")
 1. In the **Save** dialog, navigate to the location where you want to save the
 archive file.
@@ -172,13 +172,13 @@ To integrate your Markdown document in GitHub with a lab profile, navigate to
 the lab profile you want to integrate with. Then follow these steps:
 
 1. If you have not enabled it already, check the **Has IDL Content** checkbox,
-and then save the lab profile.
+and then save the lab profile.<br/>
 ![Check the Has IDL Content check box](media/integration/01-has-idl-content.png "Check the Has IDL Content check box")
 1. Edit the Lab Profile and on the Cloud tab, click **Configure GitHub
-Repository**.
+Repository**.<br/>
 ![Configure GitHub Repository](media/integration/02-configure-github-repository.png "Configure GitHub Repository")
 1. The Configure GitHub Repository dialog with Login with GitHub link will
-open. Click **Login with GitHub**.
+open. Click **Login with GitHub**.<br/>
 ![Login with GitHub](media/integration/03-login-with-github.png "Login with GitHub")
 1. If you are not logged into GitHub, you be will prompted to login. Use the
 controls in the GitHub login page to log into your GitHub account. At this point
@@ -188,7 +188,7 @@ content you want to integrate into the lab profile.
 asked to authorize LabOnDemand to have access to your GitHub account. This
 access is only used to create a webhook so that LOD can be notified whenever the
 content in your GitHub repository changes. Click **Authorize application** to
-continue with the integration.
+continue with the integration.<br/>
 ![Authorize application](media/integration/04-authorize-application.png "Authorize application")
 1. At this point you will be presented with a list of repositories that are
 associated with your GitHub account. Click **Select** next to the repository
@@ -197,7 +197,7 @@ profile. Note that while you are viewing the list of your repositories, you can
 preview a repository before selcting it by clicking on the name of that
 repository. That will open the GitHub repository in a new web browser window.
 Also note that if no markdown content files are present in the repository, you
-will be prompted to select a different one.
+will be prompted to select a different one.<br/>
 ![Select GitHub repository](media/integration/05-select-github-repository.png "Select GitHub Repository")
 1. WARNING: When you complete the following step, any existing content in your
 lab profile will be overwritten, and anything lost will be unrecoverable. Under
@@ -210,18 +210,18 @@ you will lose that content.
 defines the lab content within that repository. Click **Select** next to the
 markdown file to use as the source of your lab content. Note that you can
 preview a markdown file before selecting it by clicking on the name of that
-file. If you do this, the markdown file will open in a new browser window.
+file. If you do this, the markdown file will open in a new browser window.<br/>
 ![Select Markdown content file](media/integration/06-select-markdown-content-file.png "Select Markdown content file")
 1. Once you select the Markdown file that defines the lab content, LOD will
 process synchronize all lab content referenced by that markdown file into the
 lab profile. At any point that the GitHub content changes, the lab profile will
 be updated automatically.
 1. Once the synchronization process is complete, you will have completed your
-integration. Click **Close** to finish the Integration wizard.
+integration. Click **Close** to finish the Integration wizard.<br/>
 ![Close integration wizard](media/integration/07-close-integration-wizard.png "Close integration wizard")
 1. Notice that your lab profile now shows that content is integrated from your
 GitHub repository. Click the **Save** button at the bottom of your lab profile
-window to exit the lab profile editor.
+window to exit the lab profile editor.<br/>
 ![Integration complete](media/integration/08-integration-complete.png "Integration complete")
 
 ### Editing Integrated Lab Content
@@ -258,24 +258,24 @@ content added to it.
 To import a .md file into a lab profile that Has Content checked and has been
 saved, follow these steps:
 
-1. Click **Edit** to edit your lab profile.
+1. Click **Edit** to edit your lab profile.<br/>
 ![Edit lab profile](media/import/01-edit-lab.png "Click on \"Edit\" to edit your lab profile")
 1. If you have not enabled it already, check the **Has IDL Content** checkbox,
-and then save the lab profile.
+and then save the lab profile.<br/>
 ![Enable IDL support](media/import/02-enable-idl.png "Check the \"Has IDL Content\" check box to turn on IDL support for your lab profile")
-1. On the Lab Profile, click **Import**.
+1. On the Lab Profile, click **Import**.<br/>
 ![Import Markdown - Step 1](media/import/03-import.png "Click on \"Import\" to import your content")
-1. Select **IDL Content** and click **OK**.
+1. Select **IDL Content** and click **OK**.<br/>
 ![Import Markdown - Step 2](media/import/04-select-idl-content.png "Click on the \"IDL Content\" radio button and then click \"OK\" to continue")
 1. On the **Import IDL Content** page, click **Choose File**, navigate to and
-select your .md file or an archive, and click **Open**.
+select your .md file or an archive, and click **Open**.<br/>
 ![Import Markdown - Step 3](media/import/06-browse-to-archive-file.png "Browse to a zip file that contains your lab contents in markdown format (markdown file and screenshots/videos) and click on \"Open\" to select that file for import")
 1. Click **Import** to append the content at the end of any existing IDL content in
 the lab. If you want to replace the current content that is in the lab, check
-the **Replace Existing Content** check box.
+the **Replace Existing Content** check box.<br/>
 ![Import Markdown - Step 4](media/import/07-click-import.png "Click on \"Import\" to import the lab contents into Lab on Demand")
 1. Once the content has been imported, click on **Lab Manual** to view the lab
-manual and verify that the content imported correctly.
+manual and verify that the content imported correctly.<br/>
 ![View the lab manual](media/import/08-view-lab-manual-to-verify.png "Click on \"Lab Manual\" to view the updated lab manual and verify the contents were imported correctly")
 
 You can edit this content in the IDL Studio in LOD or in Markdown; however, any
