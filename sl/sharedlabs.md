@@ -80,7 +80,7 @@ Specify the following information:
 Once the course has been created, work with the LODS Course Requests
 Team to create your class.
 
-##Process during class:
+## Process during class:
 =====================
 
 When an Instructor wishes to launch the Shared Environment, they will
