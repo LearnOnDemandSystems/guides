@@ -134,8 +134,8 @@ start by doing the following:
 into your content.md file.
 1. If you want to store screenshots for your lab in GitHub, create a *screens*
 folder at the root of your GitHub repository.
-1. If you want to store videos for your lab in GitHub, create a *videos* folder at
-the root of your GitHub repository.
+1. If you want to store videos for your lab in GitHub, create a *videos* folder
+at the root of your GitHub repository.
 
 The content.md file that you copied is full of step-by-step TODO comments to
 help you build out your content in the content.md file for your lab. Once you
@@ -168,8 +168,16 @@ with a LOD Lab Profile](#integrate-github-with-a-lod-lab-profile).
 
 ### Integrate GitHub with a LOD Lab Profile
 
-To integrate your Markdown document in GitHub with a lab profile, navigate to
-the lab profile you want to integrate with. Then follow these steps:
+At this point you should have a GitHub repository that contains a Markdown
+document defining your exercises and tasks, along with any screenshots and
+video files you decided to add to the repository in the screens and videos
+folders, respectively. Here is
+[a sample lab](https://github.com/LearnOnDemandSystems/idl-md-sample)
+that shows what the content for a completed lab might look like when properly
+set up inside of a GitHub repository.
+
+To integrate the Markdown document in your GitHub repository with a lab profile,
+navigate to the lab profile you want to integrate with. Then follow these steps:
 
 1. If you have not enabled it already, check the **Has IDL Content** checkbox,
 and then save the lab profile.<br/>
