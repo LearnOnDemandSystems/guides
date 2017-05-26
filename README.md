@@ -33,6 +33,8 @@ Feedback and contributions to these guides are welcome and appreciated!
 ## Cloud-hosted labs
 - Azure
 
+<!--
 TODO: Break up the following into smaller guides according to what is listed above.
 1. [IDL Authoring Guide](https://github.com/LearnOnDemandSystems/guides/blob/master/idl/idlv3.md)
 1. [GitHub Integration Guide](https://github.com/LearnOnDemandSystems/guides/blob/master/github-integration/github-integration.md)
+-->
