@@ -7,4 +7,4 @@ Contains dynamic documentation for lab developers using the IDL Studio suite.  T
 1. Performance Based Testing Guide
 1. [Shared Lab (a.k.a Cyber-Range) Guide](https://github.com/LearnOnDemandSystems/guides/blob/master/sl/sharedlabs.md)
 
-Contributions are welcome!
+Contributions are welcome and appreciated!
