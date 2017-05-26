@@ -30,8 +30,8 @@ Feedback and contributions to these guides are welcome and appreciated!
 - Moving lab content from IDL Studio into GitHub
 
 ## Special lab scenarios
-- [Integrating LOD into Open edX](https://github.com/LearnOnDemandSystems/guides/blob/master/lti/lod-lti.md)
-- [Shared Lab (a.k.a Cyber-Range)](https://github.com/LearnOnDemandSystems/guides/blob/master/sl/sharedlabs.md)
+- [Integrating LOD into Open edX](lti/lod-lti.md)
+- [Shared Lab (a.k.a Cyber-Range)](sl/sharedlabs.md)
   - Best practices for shared labs
 
 ## Cloud-hosted labs
@@ -39,6 +39,6 @@ Feedback and contributions to these guides are welcome and appreciated!
 
 <!--
 TODO: Break up the following into smaller guides according to what is listed above.
-1. [IDL Authoring Guide](https://github.com/LearnOnDemandSystems/guides/blob/master/idl/idlv3.md)
-1. [GitHub Integration Guide](https://github.com/LearnOnDemandSystems/guides/blob/master/github-integration/github-integration.md)
+1. [IDL Authoring Guide](idl/idlv3.md)
+1. [GitHub Integration Guide](github-integration/github-integration.md)
 -->
