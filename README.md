@@ -33,6 +33,7 @@ Feedback and contributions to these guides are welcome and appreciated!
 - [Integrating LOD into Open edX](lti/lod-lti.md)
 - [Shared Lab (a.k.a Cyber-Range)](sl/sharedlabs.md)
   - Best practices for shared labs
+  - Launch session link (for others as well)
 
 ## Cloud-hosted labs
 - Azure
