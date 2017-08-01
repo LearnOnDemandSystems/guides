@@ -74,8 +74,7 @@ delivery engine.
 For a lab to be an exam, it needs to be designated as an exam on the
 Exam tab in the Lab Profile.
 
-![](./media/image1.png){width="5.724000437445319in"
-height="1.7337117235345583in"}
+![](./media/image1.png)
 
 This can either be done in an already created lab or from the Admin
 page, click Create Exam on the Exams tile.
