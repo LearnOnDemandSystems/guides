@@ -43,8 +43,7 @@ All other trademarks are property of their respective owners.
 This guide provides information on building Performance-Based Testing
 (PBT) exam labs in Lab on Demand.
 
-[[]{#_Toc449695334 .anchor}]{#_Toc437612975 .anchor}**Intended
-Audience**
+**Intended Audience**
 
 This guide assumes that the reader:
 
@@ -75,7 +74,7 @@ delivery engine.
 For a lab to be an exam, it needs to be designated as an exam on the
 Exam tab in the Lab Profile.
 
-![](media/image1.png){width="5.724000437445319in"
+![](./media/image1.png){width="5.724000437445319in"
 height="1.7337117235345583in"}
 
 This can either be done in an already created lab or from the Admin
