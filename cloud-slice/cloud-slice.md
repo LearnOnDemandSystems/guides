@@ -51,3 +51,4 @@ The Client Secret field must be set to the key you created for your Registered A
 
 ## Lab Profile
 
+Have to include information here to ensure that Content Owner and Email field are filled in and include errata on who/how to contact if subscription resources run out.
