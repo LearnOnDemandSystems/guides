@@ -1,8 +1,8 @@
 ---
-#Shared Labs
+# Shared Labs
 ---
 
-##Summary:
+## Summary:
 ========
 
 Shared Labs is a tool used in LODS to create environments which share
@@ -11,7 +11,7 @@ a Shared Lab Environment and a Participant (or Participants). This can
 be done with any current or new Lab Profile with the correct
 permissions.
 
-##Terminology in LOD:
+## Terminology in LOD:
 ===================
 
 -   **Shared Class Environment** – the section on a lab profile where
@@ -26,7 +26,7 @@ permissions.
     its networks and the shared VMs. These lab profiles will have their
     own VMs to interact with the shared labs group.
 
-##Process to create environment, course, and class:
+## Process to create environment, course, and class:
 =================================================
 
 For a lab to be part of shared labs it either needs to be designated as
@@ -80,7 +80,7 @@ Specify the following information:
 Once the course has been created, work with the LODS Course Requests
 Team to create your class.
 
-##Process during class:
+## Process during class:
 =====================
 
 When an Instructor wishes to launch the Shared Environment, they will
@@ -95,13 +95,13 @@ start from the **Class** page:
 
 ![](./media/image7.png)
 
-###Saving and Closing Labs
+### Saving and Closing Labs
 
 All Lab Environments (Shared and Participant) can been saved and closed
 as normal. The Shared Lab Networks are still available, even though a
 Share Environment or Participant has saved their Lab.
 
-###Canceling Labs
+### Canceling Labs
 
 -   If a Participant wishes to reset their Participant machine(s), they
     can Exit Lab -&gt; End Lab -&gt; Cancel at any time without
