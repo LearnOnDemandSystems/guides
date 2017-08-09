@@ -1,4 +1,4 @@
-﻿**Learn on Demand Systems Performance Based Testing Guide**
+**Learn on Demand Systems Performance Based Testing Guide**
 
 **Revision History**
 
@@ -79,7 +79,8 @@ Exam tab in the Lab Profile.
 This can either be done in an already created lab or from the Admin
 page, click Create Exam on the Exams tile.
 
-![](media/image002.png)
+![](media/image002.png){width="2.134222440944882in"
+height="1.5679997812773403in"}
 
 Once you have marked the lab as an exam, you will be presented with new
 options regarding the type of scoring the lab will use. There are
