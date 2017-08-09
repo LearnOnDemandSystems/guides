@@ -1,10 +1,10 @@
-﻿**Learn on Demand Systems Performance Based Testing Guide**
+**Learn on Demand Systems Performance Based Testing Guide**
 
 **Revision History**
 
-  **Version**   **Date**      **Edited By**     **Comments**
-  ------------- ------------- ----------------- -------------------------
-  0.1           May 4, 2017   Stephanie Clark   Unreleased; first draft
+| Version | Date        | Edited By       | Comments                |
+| ------- | ----------- | --------------- | ----------------------- |
+| 0.1     | May 4, 2017 | Stephanie Clark | Unreleased; first draft |
 
 **Disclaimer**
 
