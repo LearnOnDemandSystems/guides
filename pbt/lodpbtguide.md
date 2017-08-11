@@ -4,7 +4,7 @@
 
 | Version | Date        | Edited By       | Comments                |
 | ------- | ----------- | --------------- | ----------------------- |
-| 0.1     | May 4, 2017 | Stephanie Clark | Unreleased; first draft |
+| 1     | August 11, 2017 | Stephanie Clark | Release 1 |
 
 **Disclaimer**
 
