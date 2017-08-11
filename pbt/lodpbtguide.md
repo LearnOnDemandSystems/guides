@@ -8,8 +8,8 @@
 
 **Disclaimer**
 
-This document supports a ~~preliminary~~ release of a software product
-that may be changed substantially in the future. ~~This document~~ It is
+This document supports a release of a software product
+that may be changed substantially in the future. It is
 provided for informational purposes only and Learn on Demand Systems,
 LLC, makes no warranties, either express or implied, in this document.
 Information in this document, including URL and other Internet Web site
