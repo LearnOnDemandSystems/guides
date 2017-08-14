@@ -4,12 +4,12 @@
 
 | Version | Date        | Edited By       | Comments                |
 | ------- | ----------- | --------------- | ----------------------- |
-| 0.1     | May 4, 2017 | Stephanie Clark | Unreleased; first draft |
+| 1     | August 11, 2017 | Stephanie Clark | Release 1 |
 
 **Disclaimer**
 
-This document supports a ~~preliminary~~ release of a software product
-that may be changed substantially in the future. ~~This document~~ It is
+This document supports a release of a software product
+that may be changed substantially in the future. It is
 provided for informational purposes only and Learn on Demand Systems,
 LLC, makes no warranties, either express or implied, in this document.
 Information in this document, including URL and other Internet Web site
