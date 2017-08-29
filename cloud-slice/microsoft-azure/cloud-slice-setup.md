@@ -16,9 +16,9 @@ To enable Cloud Slice support in your Microsoft Azure subscription (the "master"
 2. [Create an API key for your new application registration and copy subscription authentication details][create-api-key-and-copy-authentication-details].
 3. [Add your application registration as an owner to the Azure subscription from which you want to provision Cloud Slices for your labs][add-app-registration-as-owner].
 
-[create-app-registration]: #creating-new-application-registration-in-azure-ad "Creating a new application registration in Azure AD"
+[create-app-registration]: #create-new-application-registration-in-azure-ad "Creating a new application registration in Azure AD"
 [create-api-key]: #create-api-key-for-application-registration "Creating an API key for your application registration"
-[add-app-registration-as-owner]: #adding-application-registration-as-subscription-owner "Adding an application registration as owner to your Azure subscription"
+[add-app-registration-as-owner]: #add-application-registration-as-subscription-owner "Adding an application registration as owner to your Azure subscription"
 
 <a href="create-new-application-registration-in-azure-ad" />
 
