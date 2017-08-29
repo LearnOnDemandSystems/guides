@@ -4,8 +4,6 @@
 
 This document explains how to give the OneLearn Lab on Demand platform permissions to a Microsoft Azure subscription, so that labs can use that subscription to create a Cloud Slice. It is part of the Cloud Slice guide.
 
-<a href="enable-cloud-slice-support-in-microsoft-azure" />
-
 ## Enable Cloud Slice support in your Microsoft Azure subscription
 
 In Microsoft Azure, an application registration is used to create the subscription and resources contained in each Cloud Slice and to provide students with the user account that they will use to manage that subscription for the duration of their lab. In order to make this possible, this application registration must be configured as owner over a "master" Azure subscription, from which it will create each Cloud Slice subscription that is needed. As a best practice, you should create a separate Azure subscription (the "master" subscription) that will only be used for the provisioning of Cloud Slices.
@@ -16,11 +14,9 @@ To enable Cloud Slice support in your Microsoft Azure subscription (the "master"
 2. [Create an API key for your new application registration and copy subscription authentication details][create-api-key-and-copy-authentication-details].
 3. [Add your application registration as an owner to the Azure subscription from which you want to provision Cloud Slices for your labs][add-app-registration-as-owner].
 
-[create-app-registration]: #create-new-application-registration-in-azure-ad "Creating a new application registration in Azure AD"
-[create-api-key]: #create-api-key-for-application-registration "Creating an API key for your application registration"
-[add-app-registration-as-owner]: #add-application-registration-as-subscription-owner "Adding an application registration as owner to your Azure subscription"
-
-<a href="create-new-application-registration-in-azure-ad" />
+[create-app-registration]: #create-a-new-application-registration-in-azure-ad "Creating a new application registration in Azure AD"
+[create-api-key]: #create-an-api-key-for-your-application-registration-and-copy-authentication-details "Creating an API key for your application registration"
+[add-app-registration-as-owner]: #add-your-application-registration-as-owner-to-your-azure-subscription "Adding an application registration as owner to your Azure subscription"
 
 ### Create a new application registration in Azure AD
 
@@ -68,8 +64,6 @@ Click on **Yes** to grant the permissions for the application registration. You 
 
 [Back to top][back-to-top]
 
-<a href="create-api-key-and-copy-authentication-details" />
-
 ### Create an API key for your application registration and copy authentication details
 
 Now that you have your application registration created, and now that you have assigned appropriate directory permissions for that application registration, you need to create an API key for your application registration, and capture it for later. You will also need to capture your application registration's application id, your "master" subscription id, and your Azure Active Directory domain name (this is commonly referred to as your tenant name). These four pieces of information are required by the OneLearn Lab on Demand authentication process in order to allow it to provision Cloud Slices for your labs.
@@ -112,8 +106,6 @@ To copy Azure Active Directory domain name, do the following:
 
 [Back to top][back-to-top]
 
-<a href="add-application-registration-as-subscription-owner" />
-
 ### Add your application registration as owner to your Azure subscription
 
 Once you have create your application registration and assigned appropriate directory permissions for that application registration, you need to add it as an owner of your "master" Azure subscription (the subscription from which you want to provision Cloud Slices). This can be done from within the <a href="https://portal.azure.com/" target="_blank">Microsoft Azure Portal</a>, by following these steps:
@@ -152,6 +144,6 @@ These values are required for the OneLearn Lab on Demand platform to be able to 
 
 [Return to the Cloud Slice guide][back]
 
-[back-to-top]: #enable-cloud-slice-support-in-microsoft-azure "Return to the top of the document"
-[back]: ../cloud-slice.md#enable-cloud-platform-support "Return to the Cloud Slice guide"
+[back-to-top]: #enable-cloud-slice-support-in-your-microsoft-azure-subscription "Return to the top of the document"
+[back]: ../cloud-slice.md#enable-cloud-slice-support-in-your-cloud-platform "Return to the Cloud Slice guide"
 
