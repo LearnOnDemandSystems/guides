@@ -144,6 +144,6 @@ These values are required for the OneLearn Lab on Demand platform to be able to 
 
 [Return to the Cloud Slice guide][back]
 
-[back-to-top]: #enable-cloud-slice-support-in-your-microsoft-azure-subscription "Return to the top of the document"
+[back-to-top]: #cloud-slice-guide---microsoft-azure-setup "Return to the top of the document"
 [back]: ../cloud-slice.md#enable-cloud-slice-support-in-your-cloud-platform "Return to the Cloud Slice guide"
 
