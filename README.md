@@ -1,5 +1,5 @@
 # User Guides from Learn on Demand Systems
-Contains dynamic documentation for lab developers using the IDL Studio suite.  The following guides are available.
+Contains dynamic documentation for lab developers using the LOD platform.  The following guides are available.
 
 1. [IDL Authoring Guide](idl/idlv3.md)
 1. [GitHub Integration Guide](github-integration/github-integration.md)
