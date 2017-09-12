@@ -48,7 +48,7 @@ To prepare for the deployment of managed virtual machines in your Cloud Slice la
 
 3. Google Cloud Platform (coming soon)
 
-   [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md"How to upload template virtual hard disks into Microsoft Azure"
+   [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
 
 [Back to top][back-to-top]
 
