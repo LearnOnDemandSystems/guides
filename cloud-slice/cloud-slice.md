@@ -296,11 +296,18 @@ As a best practice you should share contact information for someone who should b
 
 ## Add a Cloud Exam to your lab profile(s)
 
-Documentation coming soon.
+If you want to add an exam to a Cloud Slice lab, the process is the same as adding an exam to a lab that does not include cloud resources. The only difference is in how you enable scoring of the Cloud Slice itself. If you set the scoring type of the exam as **Automated**, you can configure scoring items that include scripts that can be used to verify whether or not a student completed the required tasks to pass the lab.
 
-[Back to top][back-to-top]
+If you have not already done so, add an exam to the lab profile where you want to include an exam by opening the **Exam** tab, checking the single checkbox labelled **Has Exam**, and selecting **Automated** in the **Scoring Type** field.
 
-## Attributes sent to Cloud Slice PBT scoring scripts
+Once you have indicated you want an automated exam in your lab, you can add scoring items that can be used to score a Cloud Slice by doing the following:
+
+1. Click **Add Scoring Item** in the **Scoring Items** section.
+2. Optionally assign a different value to the **Score Value** field if you want that scoring item to be worth more than 1 point.
+3. In the **Type** field, select **Cloud Subscription Scoring** from the list of options.
+4. In the **Scoring Script** field, enter the PowerShell script you want to use to determine whether the student completed the work required to receive the value for that scoring item. This script will be run automatically against each student's Cloud Slice subscription. To include values relative to the specific Cloud Slice lab being scored, create a `param` block at the top of the script and include the parameters you want to reference from within your script. The parameters you can choose from are listed below.
+
+### Parameters optionally sent to Cloud Slice PBT scoring scripts
 
 | Parameter Name            | Sample Value                          |
 | ------------------------- | ------------------------------------- |
@@ -311,10 +318,10 @@ Documentation coming soon.
 | $LabInstanceId            | 294781                                |
 | $SubscriptionName         | My Subscription                       |
 | $SubscriptionId           | f162ec58-a25b-4996-9e47-277951ae52d1  |
-| $TemplateStorageContainer | template                              |
-| $InstanceStorageContainer | instance                              |
-| $SourceStorageAccountName | imagestorage                          |
-| $DestStorageAccountName   | imagestorage                          |
+| $TemplateStorageContainer | template-vhds                         |
+| $InstanceStorageContainer | deployed-vhds                         |
+| $SourceStorageAccountName | cloudslicestorage                     |
+| $DestStorageAccountName   | cloudslicestorage                     |
 | $PoolId                   | -1                                    |
 | $StartTime                | 2017-08-10T18:32:03.26Z               |
 | $ExpirationTime           | 2017-08-11T04:38:01.79Z               |
@@ -323,6 +330,10 @@ Documentation coming soon.
 | $UserId                   | 12873                                 |
 | $Username                 | jsmith                                |
 | $UserEmail                | jsmith@example.com                    |
+
+This screenshot shows you what you might see once you have added a scoring item to an exam for a Cloud Slice lab:
+
+TODO: Add screenshot here.
 
 [back-to-top]: #cloud-slice-guide "Return to the top of the document"
 
