@@ -38,22 +38,6 @@ Please choose one of the following cloud platforms to learn how you can grant th
 
 ## Upload template VHDs into your cloud platform
 
-If you want students of your lab to be able to interact with cloud virtual machines included in your Cloud Slice lab directly from within the OneLearn Lab on Demand user experience, then you need to include managed cloud virtual machines in your lab. Managed cloud virtual machines are provisioned as part of the Cloud Slice deployment process. They are dynamically created in the cloud platform you are using from a template virtual hard disk that is stored in the master cloud subscription in your subscription pool, and the virtual hard disk file that they will access when launched is stored inside of the Cloud Slice. The specific location of the template virtual hard disk and the deployed virtual hard disk are defined using the optional settings on the Storage tab in the master subscription (see the section earlier in this document about creating a Cloud Subscription).
-
-To prepare for the deployment of managed virtual machines in your Cloud Slice lab, you must upload the template virtual hard disk(s) that will be used by your managed virtual machines into your cloud platform. Please choose the cloud platform you are using with your lab from the list below to learn how to upload template virtual hard disk(s) into that cloud platform. If the platform listed is not a hyperlink, managed virtual machines are not yet supported on that platform.
-
-1. [Microsoft Azure][azure-upload-template-vhds]
-
-2. Amazon Web Services (coming soon)
-
-3. Google Cloud Platform (coming soon)
-
-   [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
-
-[Back to top][back-to-top]
-
-## Upload template VHDs into your cloud platform
-
 *This is optional and should only be done if you want to include managed virtual machines that are running in your cloud platform within your Cloud Slice lab(s).*
 
 If you want students of your lab to be able to interact with cloud virtual machines included in your Cloud Slice lab directly from within the OneLearn Lab on Demand user experience, then you need to include managed cloud virtual machines in your lab. Managed cloud virtual machines are provisioned as part of the Cloud Slice deployment process. They are dynamically created in the cloud platform you are using from a template virtual hard disk that is stored in the master cloud subscription in your subscription pool, and the virtual hard disk file that they will access when launched is stored inside of the Cloud Slice. The specific location of the template virtual hard disk and the deployed virtual hard disk are defined using the optional settings on the Storage tab in the master subscription (see the section earlier in this document about creating a Cloud Subscription).
@@ -66,7 +50,7 @@ To prepare for the deployment of managed virtual machines in your Cloud Slice la
 
 3. Google Cloud Platform (coming soon)
 
-   [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md"How to upload template virtual hard disks into Microsoft Azure"
+   [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
 
 [Back to top][back-to-top]
 
