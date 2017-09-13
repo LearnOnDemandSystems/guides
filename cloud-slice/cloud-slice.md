@@ -147,7 +147,7 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 6. Find a managed Cloud Subscription you want to add by doing the following:
 
    1. Set the **Name** filter options to **Does**, **Equal**, and the name of the managed Cloud Subscription you want to add to the pool.
-   2. Select **Is Not** from the drop down options next to the **Provisioned From Pass** filter.
+   2. Select **Is Not** from the dropdown options next to the **Provisioned From Pass** filter.
    3. Click **Search** to search for the managed Cloud Subscription you want to add.
    4. Check the check box next to the managed Cloud Subscription(s) in the search results.
    5. Click **OK** to add the checked Cloud Subscription(s) to the Cloud Subscription Pool.
@@ -231,9 +231,9 @@ Once you have identified one or more cloud platform template documents you want 
 
 ## Add Cloud Slice Support to your lab profile(s)
 
-With your cloud platform configured to allow OneLearn Lab on Demand (LOD) to create Cloud Slices, one or more Cloud Subscription Pools configured to use that cloud platform, and optionally template virtual hard disks loaded into your cloud platform and/or Cloud Resource Templates loaded into the LOD platform, your now ready to add Cloud Slice support to your lab profile. If you feel you are missing any of the items that were just mentioned that you want to use in your lab, please review previous tasks listed in this document to see if you missed any steps. Otherwise, let's move on to adding this support your lab profile.
+Once you have your cloud platform to allow OneLearn Lab on Demand (LOD) to create Cloud Slices, you have configured one or more Cloud Subscription Pools, and optionally loaded template virtual hard disks into your cloud platform and/or loaded Cloud Resource Templates into the LOD platform, you are ready to add Cloud Slice support to your lab profile. If you feel you are missing any of the items that were just mentioned that you want to use in your lab, please review previous sections in this document to see if you missed any steps. 
 
-If you have not created a lab profile yet, create a lab profile now by clicking **Create Lab Profile** in the Lab Profiles tile in the LOD Site Administration view (see screenshot below). Otherwise, if you already have a lab profile to which you want to add Cloud Slice support, open that lab profile.
+If you have not created a lab profile yet, create a lab profile now by clicking **Create Lab Profile** in the Lab Profiles tile. Otherwise, open the lab profile you want to add Cloud Slice support to.
 
 ![Create a new lab profile](images/lod-create-lab-profile.png)
 
@@ -241,19 +241,19 @@ In a lab profile, there are many configurable options; however, only a small set
 
 ### Virtualization Platform - Basic Information tab
 
-The **Virtualization Platform** setting defines the platform used to launch managed virtual machines. If you have template virtual hard disks loaded into your master Cloud Subscription that you want provisioned and launched when the lab is launched, select the cloud platform where those template files are located (e.g. Azure). If you instead want students of your lab to use virtual machines running in a Learn on Demand Systems datacenter while working with their Cloud Slice, select the virtualization platform that will be used to launch those VMs (e.g. Hyper-V or vSphere). Otherwise, if you don't have any managed virtual machines in your lab, select None.
+The **Virtualization Platform** setting defines the platform used to launch managed virtual machines. If you have template virtual hard disks loaded into your master Cloud Subscription that you want provisioned and launched when the lab is launched, select the cloud platform where those template files are located (e.g. Azure). If you instead want your students to use virtual machines running in a Learn on Demand Systems datacenter while working with their Cloud Slice, select the virtualization platform that will be used to launch those VMs (e.g. Hyper-V or vSphere). If you don't have any managed virtual machines in your lab, select None.
 
 ![Selecting the virtualization platform for managed virtual machines in a lab profile](images/lod-lab-profile-virtualization-platform.png)
 
-As a best practice, you should make sure that you have set the **Owner Name** and **Owner E-mail** fields correctly for this lab so that someone can be contacted if there are problems with this lab during a scheduled class.
+As a best practice, you should make sure that you have set the **Owner Name** and **Owner E-mail** fields correctly for this lab so that right person can be contacted if there are problems with this lab during a scheduled class.
 
 ### Virtual Machines tab
 
-If you have virtual machines that you are launching in your cloud platform when this lab is provisioned, visit the **Virtual Machines tab** and click on **Create Virtual Machine** to create a virtual machine profile for the template virtual hard disk in your cloud platform. This will open the Create Virtual Machine Profile view. When creating a virtual machine profile for a virtual machine provisioned in a cloud platform, there are only a few differences from the standard virtual machine profile creation process:
+If you have virtual machines that you are launching in your cloud platform when this lab is provisioned, open the **Virtual Machines tab** and click **Create Virtual Machine** to create a virtual machine profile for the template virtual hard disk in your cloud platform. This will open the Create Virtual Machine Profile view. When creating a virtual machine profile for a virtual machine provisioned in a cloud platform, there are only a few differences from the standard virtual machine profile creation process:
 
 1. On the **Basic Information** tab, ensure that the **Platform** field is set to the cloud platform where the virtual machine will be provisioned.
 2. In the **Machine Type** field on the same tab, select the size of the VM that you want provisioned when the VM is created. When choosing a VM size, pay close attention to the cost and the number of cores required for that VM. You must ensure that you have enough resources available in your subscription for all students taking your lab to provision VMs of the size you choose.
-3. On the **Hard Disks** tab, click on **Add Hard Disk** and type in the name of the template virtual hard disk file that you uploaded into your cloud subscription that you want to use as a template when provisioning this virtual hard disk.
+3. On the **Hard Disks** tab, click **Add Hard Disk** and type in the name of the template virtual hard disk file that you uploaded into your cloud subscription that you want to use as a template when provisioning this virtual hard disk.
 4. On the **Network Adapters** tab, if you want a network adapter provisioned for the virtual machine, click **Add Network Adapter**, give that network adapter a name in the **Name** field, and configure the other options you want for your network adapter.
 
 Those settings aside, the remaining settings for the virtual machine profile should be familiar to you if you have already created virtual machine profiles in LOD. Once you have finished creating the virtual machine, click **Save** to save it and then return to the **Create Lab Profile** view.
@@ -268,19 +268,19 @@ To enable Cloud Slice support in your lab profile, open the **Cloud** tab, and i
 
 If you want cloud resources other than managed virtual machines to be provisioned as part of your Cloud Slice lab, you need to define one or more Cloud Resource Groups where those resources will be provisioned, and you need to add the Cloud Resource Template(s) that you want provisioned as part of your lab to the appropriate Cloud Resource Group(s).
 
-The first step is to define a Cloud Resource Group. Click on **Add Cloud Resource Group** to add a resource group to your Cloud Slice. This will show you a form that allows you to define how the resource group should be created. The fields on that form are defined as follows:
+The first step is to define a Cloud Resource Group. Click **Add Cloud Resource Group** to add a resource group to your Cloud Slice. This will show you a form that allows you to define how the resource group should be created. The fields on that form are defined as follows:
 
 | Field Name             | Description                              |
 | ---------------------- | ---------------------------------------- |
 | **Name Prefix**        | This is the prefix that will be applied to the resource group when it is created. All resource groups are created using the name prefix, followed by the lab instance id, and then the lab profile id. |
-| **Restriction Policy** | Some cloud platforms support using a restriction policy to limit the operations that can be performed within a Cloud Slice subscription. These cloud platforms typically include a tool to define the restriction policy for a subscription. For example, in Microsoft Azure, you can browse into the Subscriptions service, select a subscription, click Policies, and then click Add to create a restriction policy that you can copy and paste into this field in your lab profile. You can learn more about Azure Resource Manager Policies by reviewing this <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-policy" target="_blank">external document</a>. As a best practice, you should apply a restriction policy that limits what students can create/manage to properly manage your subscription costs and keep students focused on the work required for them to complete their lab. |
+| **Restriction Policy** | Some cloud platforms support using a restriction policy to limit the operations that can be performed within a Cloud Slice subscription. These cloud platforms typically include a tool to define the restriction policy for a subscription. For example, in Microsoft Azure, you can browse into the Subscriptions service, select a subscription, click Policies, and then click Add to create a restriction policy that you can copy and paste into this field in your lab profile. You can learn more about Azure Resource Manager Policies by reviewing this <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-policy" target="_blank">external document</a>. As a best practice, you should apply a restriction policy that limits what students can create/manage to properly control your subscription costs and keep students focused on the work required for them to complete their lab. |
 | **Region**             | Indicates the region where the resource group will be created. |
-| **Visible To Student** | When checked, the resource group will be visible to the student on the Cloud Resources tab in the LOD UI. When this is checked, you can also select the access that the student will have to the resource group. Reader = read-only access; Contributor = read-write access; Owner = read-write access with the ability to manage permissions. |
+| **Visible To Student** | When checked, the resource group will be visible to the student on the Cloud Resources tab in the LOD UI. You can also select the access that the student will have to the resource group. Reader = read-only access; Contributor = read-write access; Owner = read-write access with the ability to manage permissions. |
 | **Show Login Link**    | This option only appears for resource groups that are visible to the student. When checked, a login link will appear on the same tile as this resource group when it is displayed in the LOD UI. |
 | **Login Link Label**   | This option only appears for resource groups that are visible to the student, and only when the Show Logon Link is checked. It defines a label that will be displayed next to the login link that is displayed on the resource group tile. |
 | **Login Url**          | This option only appears for resource groups that are visible to the student, and only when the Show Logon Link is checked. It defines the URL that the login link links to from the resource group tile. |
 
-Once you have configured a resource group that will be provisioned with your Cloud Slice lab, if you want additional resources deployed in that resource group you can add a Cloud Resource Template to that resource group. Simply click on **Add Template**, use the Choose Cloud Resource form to find the Cloud Resource Template you want to add, and click on **OK**. If the Cloud Resource Template you choose has parameters, an Edit Parameters window will appear allowing you to provide values for required parameters and for optional parameters as well if you want to.
+Once you have configured a resource group that will be provisioned with your Cloud Slice lab, if you want additional resources deployed in that resource group you can add a Cloud Resource Template to that resource group. To do this, click **Add Template**, use the Choose Cloud Resource form to find the Cloud Resource Template you want to add, and click **OK**. If the Cloud Resource Template you choose has parameters, an Edit Parameters window will appear allowing you to provide values for required parameters and for optional parameters as well if you want to.
 
 With a Cloud Resource Group added and an optional Cloud Resource Template added to that resource group, you should see something that looks like the following in your lab profile:
 
@@ -296,9 +296,7 @@ As a best practice you should share contact information for someone who should b
 
 ## Add a Cloud Exam to your lab profile(s)
 
-If you want to add an exam to a Cloud Slice lab, the process is the same as adding an exam to a lab that does not include cloud resources. The only difference is in how you enable scoring of the Cloud Slice itself. If you set the scoring type of the exam as **Automated**, you can configure scoring items that include scripts that can be used to verify whether or not a student completed the required tasks to pass the lab.
-
-If you have not already done so, add an exam to the lab profile where you want to include an exam by opening the **Exam** tab, checking the single checkbox labelled **Has Exam**, and selecting **Automated** in the **Scoring Type** field.
+If you want to add an exam to a Cloud Slice lab, the process is the same as adding an exam to a lab that does not include cloud resources. The only difference is in how you enable scoring of the Cloud Slice itself. To add an exam to the lab profile, open the **Exam** tab, check **Has Exam**, and select **Automated** in the **Scoring Type** field.
 
 Once you have indicated you want an automated exam in your lab, you can add scoring items that can be used to score a Cloud Slice by doing the following:
 
