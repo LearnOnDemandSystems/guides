@@ -125,7 +125,7 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 
    ![Open the Cloud Subscription Pools section in OneLearn Lab on Demand](images/lod-open-cloud-subscription-pools.png)
 
-3. Click on **Create Cloud Subscription Pool** to create a new cloud subscription pool in LOD.
+3. Click  **Create Cloud Subscription Pool** to create a new cloud subscription pool in LOD.
 
    ![Click on Create Cloud Subscription Pool link](images/lod-create-cloud-subscription-pool.png)
 
@@ -134,13 +134,13 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
    | Field Name          | Description                              |
    | ------------------- | ---------------------------------------- |
    | Name                | The name of the Cloud Subscription Pool being created. |
-   | First Name Prefix   | A prefix that will be applied as part of the first name of the accounts created as part of the Cloud Slice. The entire first name will be composed of this prefix followed by the lab instance id. |
-   | Last Name Prefix    | A prefix that will be applied as part of the last name of the accounts created as part of the Cloud Slice. The entire last name will be composed of this prefix followed by the lab instance id. |
-   | Account Name Prefix | A prefix that will be applied as part of the SAM account name of the accounts created as part of the Cloud Slice. The entire SAM account name will be composed of this prefix followed by the lab instance id. |
+   | First Name Prefix   | A prefix that will be applied as part of the first name of the accounts created for the Cloud Slice. The entire first name will be composed of this prefix followed by the lab instance id. |
+   | Last Name Prefix    | A prefix that will be applied as part of the last name of the accounts created for the Cloud Slice. The entire last name will be composed of this prefix followed by the lab instance id. |
+   | Account Name Prefix | A prefix that will be applied as part of the SAM account name of the accounts created for the Cloud Slice. The entire SAM account name will be composed of this prefix followed by the lab instance id. |
 
    ![Assign default values to the Cloud Subscription Pool](images/lod-cloud-subscription-pool-basic-information.png)
 
-5. Open the **Cloud Subscriptions** tab and click on **Add Subscription** to add a subscription to the pool.
+5. Open the **Cloud Subscriptions** tab and click  **Add Subscription** to add a subscription to the pool.
 
    ![Click the Add Subscription link on the Cloud Subscriptions tab](images/lod-cloud-subscription-pool-cloud-subscriptions-add.png)
 
@@ -149,12 +149,12 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
    1. Set the **Name** filter options to **Does**, **Equal**, and the name of the managed Cloud Subscription you want to add to the pool.
    2. Select **Is Not** from the drop down options next to the **Provisioned From Pass** filter.
    3. Click **Search** to search for the managed Cloud Subscription you want to add.
-   4. Check the check box next to the managed Cloud Subscription in the search results.
+   4. Check the check box next to the managed Cloud Subscription(s) in the search results.
    5. Click **OK** to add the checked Cloud Subscription(s) to the Cloud Subscription Pool.
 
    ![Find a managed Cloud Subscription to add to the pool](images/lod-cloud-subscription-pool-cloud-subscriptions-choose.png)
 
-7. Repeat steps 5 and 6 for each managed Cloud Subscription that you want to add to the pool.
+7. If necessary, repeat steps 5 and 6 for each managed Cloud Subscription that you want to add to the pool.
 
 8. Click on **Save** to save the Cloud Subscription Pool in LOD.
 
