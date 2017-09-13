@@ -8,7 +8,7 @@ Managed cloud resources are cloud resources that are more tightly integrated wit
 
 Unmanaged cloud resources are cloud resources that are created during the deployment of a Cloud Slice as part of a Cloud Resource Template. Unmanaged cloud resources may also include any cloud resources that are created directly by a student or an event within a Cloud Slice. These resources are not directly integrated with the LOD user experience. To view and interact with unmanaged cloud resources, students must use the appropriate portal for the cloud platform that they are using in the lab.
 
-The Cloud Slice feature allows you to create labs in the cloud that are pre-configured with compute, networking, and storage cloud resources, and/or that allow students to create their own compute, networking, and storage cloud resources as part of the steps they must complete within that lab. Before adding Cloud Slice support in your labs, there are several tasks you must perform. These tasks are listed below. Any optional tasks are appropriately marked with "(Optional)". As you work through these tasks, you can use the list below to navigate to the one you are currently working on and then return to the list to continue with another task.
+The Cloud Slice feature allows you to create labs in the cloud that are pre-configured with computer, networking, and storage cloud resources, and/or that allow students to create their own computer, networking, and storage cloud resources as part of the steps they must complete within that lab. Before adding Cloud Slice support in your labs, there are several tasks you must perform. These tasks are listed below and any optional ones are appropriately marked with "(Optional)". As you work through these tasks, you can use the list below to navigate to the one you are currently working on and then return to the list to continue with another task.
 
 1. [Enable Cloud Slice support on the cloud platform of your choice](#enable-cloud-slice-support-in-your-cloud-platform).
 2. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
@@ -64,7 +64,7 @@ Once you have enabled Cloud Slice support in the cloud platform of your choice (
 
    ![Open the Cloud Subscriptions section in OneLearn Lab on Demand](images/lod-open-cloud-subscriptions.png)
 
-3. Click on **Create Cloud Subscription** to add a new managed cloud subscription to LOD.
+3. Click **Create Cloud Subscription** to add a new managed cloud subscription to LOD.
 
    ![Click on Create Cloud Subscription link](images/lod-create-cloud-subscription.png)
 
@@ -93,11 +93,11 @@ Once you have enabled Cloud Slice support in the cloud platform of your choice (
    | **Storage** | **Template Storage Resource Group** | The name of a Cloud Resource Group in the managed Cloud Subscription that contains template VHDs that you would like to copy into a lab during its deployment. This should either be provided to you or, if you set it up yourself, this is the name of the resource group that you created in the previous task. |
    |             | **Template Storage Account**        | The name of a storage account inside of the Template Storage Resource Group where the template VHDs may be found. This should either be provided to you or, if you set it up yourself, this is the name of the storage account that you created in the previous task. |
    |             | **Template Storage**                | The name of a container in the Template Storage Account where the template VHDs may be found. This should either be provided to you or, if you set it up yourself, this is the name of the template VHD container that you created in the previous task. |
-   |             | **Instance Storage Resource Group** | The name of a Cloud Resource Group in the Cloud Slice where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed.This should either be provided to you or, if you set it up yourself, this is the name of the resource group that you created in the previous task. You may use the same resource group as the one used for the Template Storage Resource Group field. |
-   |             | **Instance Storage Account**        | The name of a storage account inside of the Instance Storage Resource Group where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed.This should either be provided to you or, if you set it up yourself, this is the name of the storage account that you created in the previous task.You may use the same storage account as the one used for the Template Storage Account field. |
-   |             | **Instance Storage**                | The name of a container in the Instance Storage Account where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed.This should either be provided to you or, if you set it up yourself, this is the name of the template VHD container that you created in the previous task. |
+   |             | **Instance Storage Resource Group** | The name of a Cloud Resource Group in the Cloud Slice where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the resource group that you created in the previous task. You may use the same resource group as the one used for the Template Storage Resource Group field. |
+   |             | **Instance Storage Account**        | The name of a storage account inside of the Instance Storage Resource Group where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the storage account that you created in the previous task. You may use the same storage account as the one used for the Template Storage Account field. |
+   |             | **Instance Storage**                | The name of a container in the Instance Storage Account where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the template VHD container that you created in the previous task. |
 
-   Below are some screenshots showing what that might look like when you have finished.
+   Below are some screenshots showing what this might look like when you have finished.
 
    ![Create Cloud Subscription - Basic Information Tab](images/lod-cloud-subscription-basic-information.png)
 
