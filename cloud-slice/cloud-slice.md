@@ -156,7 +156,7 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 
 7. If necessary, repeat steps 5 and 6 for each managed Cloud Subscription that you want to add to the pool.
 
-8. Click on **Save** to save the Cloud Subscription Pool in LOD.
+8. Click **Save** to save the Cloud Subscription Pool in LOD.
 
    ![Save the Cloud Subscription Pool in OneLearn Lab on Demand](images/lod-cloud-subscription-pool-cloud-subscriptions-save.png)
 
@@ -166,9 +166,9 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 
 When you create a Cloud Slice lab, you can provide students with an empty cloud subscription from which to work, or a cloud subscription that includes resources that were provisioned when the student launched their lab. In order to set up the latter, you must define Cloud Resource Templates within OneLearn Lab on Demand (LOD) that you will later include in one or more lab profiles.
 
-A Cloud Resource Template contains a template document that defines the resources that will be deployed in a Cloud Slice along with some parameter metadata that configures how parameters within that template document will be exposed to a lab profile. Each cloud platform uses a different template format. In Microsoft Azure, Azure Resource Manager (ARM) templates are used to deploy resources into an Azure subscription. In Amazon Web Services, CloudFormation templates are used. Cloud Deployment Manager templates do the same thing in the Google Cloud Platform. Regardless of which cloud platform you use, you need to create Cloud Resource Templates in LOD if you want to provision cloud resources as part of the lab deployment process.
+A Cloud Resource Template contains a template document that defines the resources that will be deployed in a Cloud Slice along with some parameter metadata. This metadat configures how parameters within that template document will be exposed to a lab profile. Each cloud platform uses a different template format. In Microsoft Azure, Azure Resource Manager (ARM) templates are used to deploy resources into an Azure subscription. In Amazon Web Services, CloudFormation templates are used. Cloud Deployment Manager templates do the same thing in the Google Cloud Platform. Regardless of which cloud platform you use, you need to create Cloud Resource Templates in LOD if you want to provision cloud resources as part of the lab deployment process.
 
-Before you get started creating Cloud Resource Templates, you need at least one cloud platform template that you want to use in a Cloud Slice lab. If you haven't already identified templates that you want to use in your lab, please choose the cloud platform you are using with your lab from the list below to learn how to find cloud platform templates for that cloud platform. If the platform listed is not a hyperlink, Cloud Resource Templates are not yet supported on that platform.
+Before you get started creating Cloud Resource Templates, you need at least one cloud platform template that you want to use in a Cloud Slice lab. If you haven't already identified templates that you want to use in your lab, select the cloud platform you are using with your lab from the list below to learn how to find cloud platform templates for it. If the platform listed is not a hyperlink, Cloud Resource Templates are not yet supported on that platform.
 
 1. [Microsoft Azure][azure-find-arm-templates]
 
@@ -178,9 +178,9 @@ Before you get started creating Cloud Resource Templates, you need at least one 
 
    [azure-find-arm-templates]: microsoft-azure/cloud-slice-find-resource-templates.md "How to find Azure Resource Manager templates for use with Microsoft Azure"
 
-Once you have identified one or more cloud platform template documents you want to use, you can create a Cloud Resource Template in LOD by logging on to the Lab on Demand portal and then do the following:
+Once you have identified one or more cloud platform template documents you want to use, you can create a Cloud Resource Template in LOD by logging on to the Lab on Demand portal and completing the following steps:
 
-1. Click on **Cloud Resource Templates** in the Cloud Services tile.
+1. Click **Cloud Resource Templates** in the Cloud Services tile.
 
    ![Click on Cloud Resource Templates](images/lod-open-cloud-resource-templates.png)
 
@@ -209,7 +209,7 @@ Once you have identified one or more cloud platform template documents you want 
 
    ![Create Cloud Resource Template - Basic Information Tab](images/lod-cloud-resource-template-basic-information.png)
 
-4. If your Cloud Resource Template has parameters whose values you want displayed to students, or whose values must be set when the Cloud Resource Template is added to a lab profile, click on the **Parameters** tab. From this tab you can either add individual template parameters clicking the **Add Template Parameter** button, or you can add a set of template parameters by clicking the **Import From Json** button to import a JSON document that defines the parameters. In either case, you will end up with one or more parameters defined for your Cloud Resource Template. Each parameter has the following properties:
+4. If your Cloud Resource Template has parameters whose values you want displayed to students, or whose values must be set when the Cloud Resource Template is added to a lab profile, click the **Parameters** tab. From this tab you can either add individual template parameters by clicking the **Add Template Parameter** button, or you can add a set of template parameters by clicking the **Import From Json** button to import a JSON document that defines the parameters. In either case, you will end up with one or more parameters defined for your Cloud Resource Template. Each parameter has the following properties:
 
    | **Property Name**      | **Description**                          |
    | ---------------------- | ---------------------------------------- |
@@ -223,7 +223,7 @@ Once you have identified one or more cloud platform template documents you want 
 
    ![Create Cloud Resource Template - Parameters Tab](images/lod-cloud-resource-template-parameters.png)
 
-   If you want to remove a parameter that you mistakenly added, you can click on the **Delete** button to the right of the parameter you want to remove.
+   If you want to remove a parameter that you mistakenly added, you can click the **Delete** button to the right of the parameter you want to remove.
 
 5. Once you have configured your Cloud Resource Template, click **Save** to save it in LOD.
 
