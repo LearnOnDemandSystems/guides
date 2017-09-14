@@ -332,9 +332,13 @@ Once you have indicated you want an automated exam in your lab, you can add scor
 | $Username                 | jsmith                                |
 | $UserEmail                | jsmith@example.com                    |
 
+The screenshot below shows what adding a scoring item looks like. Note how the lab instance ID can be used by the script by including it in the `param` statement.
+
+![Adding a cloud subscription scoring item](images/lod-lab-profile-add-cloud-scoring-item.png)
+
 This screenshot shows you what you might see once you have added a scoring item to an exam for a Cloud Slice lab:
 
-TODO: Add screenshot here.
+![Cloud Slice lab profile with cloud scoring item added](images/lod-lab-profile-with-cloud-scoring-item.png)
 
 [back-to-top]: #cloud-slice-guide "Return to the top of the document"
 
