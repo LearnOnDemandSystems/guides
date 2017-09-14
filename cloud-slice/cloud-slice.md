@@ -8,7 +8,7 @@ Managed cloud resources are cloud resources that are more tightly integrated wit
 
 Unmanaged cloud resources are cloud resources that are created during the deployment of a Cloud Slice as part of a Cloud Resource Template. Unmanaged cloud resources may also include any cloud resources that are created directly by a student or an event within a Cloud Slice. These resources are not directly integrated with the LOD user experience. To view and interact with unmanaged cloud resources, students must use the appropriate portal for the cloud platform that they are using in the lab.
 
-The Cloud Slice feature allows you to create labs in the cloud that are pre-configured with computer, networking, and storage cloud resources, and/or that allow students to create their own computer, networking, and storage cloud resources as part of the steps they must complete within that lab. Before adding Cloud Slice support in your labs, there are several tasks you must perform. These tasks are listed below and any optional ones are appropriately marked with "(Optional)". As you work through these tasks, you can use the list below to navigate to the one you are currently working on and then return to the list to continue with another task.
+The Cloud Slice feature allows you to create labs in the cloud that are pre-configured with compute, networking, and storage cloud resources, and/or that allow students to create their own compute, networking, and storage cloud resources as part of the steps they must complete within that lab. Before adding Cloud Slice support in your labs, there are several tasks you must perform. These tasks are listed below and any optional ones are appropriately marked with "(Optional)". As you work through these tasks, you can use the list below to navigate to the one you are currently working on and then return to the list to continue with another task.
 
 1. [Enable Cloud Slice support on the cloud platform of your choice](#enable-cloud-slice-support-in-your-cloud-platform).
 2. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
@@ -18,11 +18,11 @@ The Cloud Slice feature allows you to create labs in the cloud that are pre-conf
 6. [Add Cloud Slice support to your lab profile(s\)](#add-cloud-slice-support-to-your-lab-profiles).
 7. [(Optional) Add a Cloud Exam to your lab profile(s) if you want the labs scored](#add-a-cloud-exam-to-your-lab-profiles).
 
-## Enable Cloud Slice Support in Your Cloud Platform
+## Enable Cloud Slice support in your cloud platform
 
 To expose the Cloud Slice capability to your lab(s), you must first grant the OneLearn Lab on Demand (LOD) platform access to the cloud platform that your students will be using within your lab(s). The steps required to grant this access depend on the cloud platform that you are working with.
 
-> **An important note about lab scalability in a cloud platform:**
+> #### Lab scalability in a cloud platform
 >
 > LOD will automatically load balance Cloud Slices across the pool of subscriptions that Cloud Slice labs are configured to use. To take advantage of this load balancing functionality so that your cloud resources are managed properly, you may have to repeat several tasks on each cloud platform where you will be provisioning Cloud Slices. You also need to ensure that any limits on resources that are imposed by your cloud platform are configured appropriately to support your lab requirements. The combination of load balancing and appropriately configured resource limits are essential to allow your Cloud Slice labs to scale to support all students registered for your labs. See the documentation specific to the cloud platform you are using for more details on how to set that up.
 
@@ -36,7 +36,7 @@ Select one of the following cloud platforms to learn how you can grant the requi
 
 [Back to top][back-to-top]
 
-## Upload Template VHDs into Your Cloud Platform
+## Upload template VHDs into your cloud platform
 
 *This is optional and should only be done if you want to include managed virtual machines that are running in your cloud platform within your Cloud Slice lab(s).*
 
@@ -56,7 +56,7 @@ To prepare for the deployment of managed virtual machines in your Cloud Slice la
 
 ## Create a Cloud Subscription in OneLearn Lab on Demand
 
-Once you have enabled Cloud Slice support in the cloud platform of your choice (the previous section), you need to add a Cloud Subscription to OneLearn Lab on Demand (LOD) for each cloud platform subscription that you will be managing with this platform. These Cloud Subscriptions will be used by labs from which you want to provision Cloud Slices. To add a managed Cloud Subscription to LOD, perform the following steps:
+Once you have enabled Cloud Slice support in the cloud platform of your choice (see previous section), you need to add a Cloud Subscription to OneLearn Lab on Demand (LOD) for each cloud platform subscription that you will be managing with this platform. These Cloud Subscriptions will be used by labs from which you want to provision Cloud Slices. To add a managed Cloud Subscription to LOD, perform the following steps:
 
 1. Navigate to the <a href="https://labondemand.com" target="_blank">OneLearn Lab on Demand portal</a> and sign in.
 
@@ -125,7 +125,7 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 
    ![Open the Cloud Subscription Pools section in OneLearn Lab on Demand](images/lod-open-cloud-subscription-pools.png)
 
-3. Click  **Create Cloud Subscription Pool** to create a new cloud subscription pool in LOD.
+3. Click **Create Cloud Subscription Pool** to create a new cloud subscription pool in LOD.
 
    ![Click on Create Cloud Subscription Pool link](images/lod-create-cloud-subscription-pool.png)
 
@@ -140,7 +140,7 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 
    ![Assign default values to the Cloud Subscription Pool](images/lod-cloud-subscription-pool-basic-information.png)
 
-5. Open the **Cloud Subscriptions** tab and click  **Add Subscription** to add a subscription to the pool.
+5. Open the **Cloud Subscriptions** tab and click **Add Subscription** to add a subscription to the pool.
 
    ![Click the Add Subscription link on the Cloud Subscriptions tab](images/lod-cloud-subscription-pool-cloud-subscriptions-add.png)
 
@@ -166,9 +166,9 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 
 When you create a Cloud Slice lab, you can provide students with an empty cloud subscription from which to work, or a cloud subscription that includes resources that were provisioned when the student launched their lab. In order to set up the latter, you must define Cloud Resource Templates within OneLearn Lab on Demand (LOD) that you will later include in one or more lab profiles.
 
-A Cloud Resource Template contains a template document that defines the resources that will be deployed in a Cloud Slice along with some parameter metadata. This metadat configures how parameters within that template document will be exposed to a lab profile. Each cloud platform uses a different template format. In Microsoft Azure, Azure Resource Manager (ARM) templates are used to deploy resources into an Azure subscription. In Amazon Web Services, CloudFormation templates are used. Cloud Deployment Manager templates do the same thing in the Google Cloud Platform. Regardless of which cloud platform you use, you need to create Cloud Resource Templates in LOD if you want to provision cloud resources as part of the lab deployment process.
+A Cloud Resource Template contains a template document that defines the resources that will be deployed in a Cloud Slice along with some parameter metadata. This metadata configures how parameters within that template document will be exposed to a lab profile. Each cloud platform uses a different template format. In Microsoft Azure, Azure Resource Manager (ARM) templates are used to deploy resources into an Azure subscription. In Amazon Web Services, CloudFormation templates are used. Cloud Deployment Manager templates do the same thing in the Google Cloud Platform. Regardless of which cloud platform you use, you need to create Cloud Resource Templates in LOD if you want to provision cloud resources as part of the lab deployment process.
 
-Before you get started creating Cloud Resource Templates, you need at least one cloud platform template that you want to use in a Cloud Slice lab. If you haven't already identified templates that you want to use in your lab, select the cloud platform you are using with your lab from the list below to learn how to find cloud platform templates for it. If the platform listed is not a hyperlink, Cloud Resource Templates are not yet supported on that platform.
+Before you get started creating Cloud Resource Templates, you need at least one cloud platform template that you want to use in a Cloud Slice lab. If you haven't already identified templates that you want to use in your lab, select the cloud platform you are using with your lab from the list below to learn how to find templates for that cloud platform. If the platform listed is not a hyperlink, Cloud Resource Templates are not yet supported on that platform.
 
 1. [Microsoft Azure][azure-find-arm-templates]
 
@@ -231,9 +231,9 @@ Once you have identified one or more cloud platform template documents you want 
 
 ## Add Cloud Slice Support to your lab profile(s)
 
-Once you have your cloud platform to allow OneLearn Lab on Demand (LOD) to create Cloud Slices, you have configured one or more Cloud Subscription Pools, and optionally loaded template virtual hard disks into your cloud platform and/or loaded Cloud Resource Templates into the LOD platform, you are ready to add Cloud Slice support to your lab profile. If you feel you are missing any of the items that were just mentioned that you want to use in your lab, please review previous sections in this document to see if you missed any steps. 
+Once you have configured your cloud platform to allow OneLearn Lab on Demand (LOD) to create Cloud Slices, configured one or more Cloud Subscription Pools, and optionally loaded template virtual hard disks into your cloud platform and/or loaded Cloud Resource Templates into the LOD platform, you are ready to add Cloud Slice support to your lab profile. If you feel you are missing any of the items that were just mentioned that you want to use in your lab, please review previous sections in this document to see if you missed any steps.
 
-If you have not created a lab profile yet, create a lab profile now by clicking **Create Lab Profile** in the Lab Profiles tile. Otherwise, open the lab profile you want to add Cloud Slice support to.
+If you have not created a lab profile yet, create a lab profile now by clicking **Create Lab Profile** in the Lab Profiles tile. Otherwise, open the lab profile to which you want to add Cloud Slice support.
 
 ![Create a new lab profile](images/lod-create-lab-profile.png)
 
@@ -245,7 +245,9 @@ The **Virtualization Platform** setting defines the platform used to launch mana
 
 ![Selecting the virtualization platform for managed virtual machines in a lab profile](images/lod-lab-profile-virtualization-platform.png)
 
-As a best practice, you should make sure that you have set the **Owner Name** and **Owner E-mail** fields correctly for this lab so that right person can be contacted if there are problems with this lab during a scheduled class.
+> #### Best Practice: Setup support contacts for your Cloud Slice labs
+>
+> You should make sure that you have set the **Owner Name** and **Owner E-mail** fields correctly for this lab so that the right person can be contacted if there are problems with this lab during a scheduled class.
 
 ### Virtual Machines tab
 
@@ -288,9 +290,10 @@ With a Cloud Resource Group added and an optional Cloud Resource Template added 
 
 Use the steps above to add as many Cloud Resource Groups and Cloud Resource Templates as you need in your Cloud Slice lab.
 
-### Errata tab
-
-As a best practice you should share contact information for someone who should be contacted if subscription resources run out for a lab. This will give students and instructors an easier method of recovery if all resources in a cloud subscription are being consumed.
+> #### Best Practice: Provide support contact information in the Errata
+>
+> You should share contact information for the person who should be contacted if subscription resources run out for a lab in the Errata for the lab. This will give students and instructors an easier method of recovery if all resources in a cloud subscription are consumed before a student tries to launch the lab.
+>
 
 [Back to top][back-to-top]
 
