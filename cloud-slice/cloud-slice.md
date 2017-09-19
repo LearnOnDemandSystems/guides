@@ -32,7 +32,7 @@ Select one of the following cloud platforms to learn how you can grant the requi
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
 
-[azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
+[azure-setup]: microsoft-azure/cloud-slice-setup "How to enable Cloud Slice support in Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -50,7 +50,7 @@ To prepare for the deployment of managed virtual machines in your Cloud Slice la
 
 3. Google Cloud Platform (coming soon)
 
-   [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
+   [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds "How to upload template virtual hard disks into Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -176,7 +176,7 @@ Before you get started creating Cloud Resource Templates, you need at least one 
 
 3. Google Cloud Platform (coming soon)
 
-   [azure-find-arm-templates]: microsoft-azure/cloud-slice-find-resource-templates.md "How to find Azure Resource Manager templates for use with Microsoft Azure"
+   [azure-find-arm-templates]: microsoft-azure/cloud-slice-find-resource-templates "How to find Azure Resource Manager templates for use with Microsoft Azure"
 
 Once you have identified one or more cloud platform template documents you want to use, you can create a Cloud Resource Template in LOD by logging on to the Lab on Demand portal and completing the following steps:
 
