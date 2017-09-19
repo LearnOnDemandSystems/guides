@@ -45,9 +45,7 @@ If you want your students to be able to interact with the cloud virtual machines
 To prepare for the deployment of managed virtual machines in your Cloud Slice lab, you must upload the template virtual hard disk(s) that will be used by your managed virtual machines into your cloud platform. Select the cloud platform you are using with your lab from the list below to learn how to upload template virtual hard disk(s) into that cloud platform. If the platform listed is not a hyperlink, managed virtual machines are not yet supported on that platform.
 
 1. [Microsoft Azure][azure-upload-template-vhds]
-
 2. Amazon Web Services (coming soon)
-
 3. Google Cloud Platform (coming soon)
 
 [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
@@ -169,9 +167,7 @@ A Cloud Resource Template contains a template document that defines the resource
 Before you get started creating Cloud Resource Templates, you need at least one cloud platform template that you want to use in a Cloud Slice lab. If you haven't already identified templates that you want to use in your lab, select the cloud platform you are using with your lab from the list below to learn how to find templates for that cloud platform. If the platform listed is not a hyperlink, Cloud Resource Templates are not yet supported on that platform.
 
 1. [Microsoft Azure][azure-find-arm-templates]
-
 2. Amazon Web Services (coming soon)
-
 3. Google Cloud Platform (coming soon)
 
 [azure-find-arm-templates]: microsoft-azure/cloud-slice-find-resource-templates.md "How to find Azure Resource Manager templates for use with Microsoft Azure"
@@ -339,4 +335,3 @@ This screenshot shows you what you might see once you have added a scoring item 
 ![Cloud Slice lab profile with cloud scoring item added](images/lod-lab-profile-with-cloud-scoring-item.png)
 
 [back-to-top]: #cloud-slice-guide "Return to the top of the document"
-
