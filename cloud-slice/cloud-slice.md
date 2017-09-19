@@ -28,9 +28,11 @@ To expose the Cloud Slice capability to your lab(s), you must first grant the On
 
 Select one of the following cloud platforms to learn how you can grant the required access to that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
-1. [Microsoft Azure](microsoft-azure/cloud-slice-setup.md)
+1. [Microsoft Azure][azure-setup]
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
+
+[azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -48,7 +50,7 @@ To prepare for the deployment of managed virtual machines in your Cloud Slice la
 
 3. Google Cloud Platform (coming soon)
 
-   [azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
+[azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -102,8 +104,6 @@ Once you have enabled Cloud Slice support in the cloud platform of your choice (
    ![Create Cloud Subscription - Authentication tab](images/lod-cloud-subscription-authentication.png)
 
    ![Create Cloud Subscription - Storage tab](images/lod-cloud-subscription-storage.png)
-
-   ​
 
 5. Once you have provided the information you want to use with your managed Cloud Subscription, click **Save** to save it in LOD.
 
@@ -174,7 +174,7 @@ Before you get started creating Cloud Resource Templates, you need at least one 
 
 3. Google Cloud Platform (coming soon)
 
-   [azure-find-arm-templates]: microsoft-azure/cloud-slice-find-resource-templates.md "How to find Azure Resource Manager templates for use with Microsoft Azure"
+[azure-find-arm-templates]: microsoft-azure/cloud-slice-find-resource-templates.md "How to find Azure Resource Manager templates for use with Microsoft Azure"
 
 Once you have identified one or more cloud platform template documents you want to use, you can create a Cloud Resource Template in LOD by logging on to the Lab on Demand portal and completing the following steps:
 
