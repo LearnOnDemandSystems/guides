@@ -190,6 +190,7 @@ access is only used to create a webhook so that LOD can be notified whenever the
 content in your GitHub repository changes. Click **Authorize application** to
 continue with the integration.<br/>
 ![Authorize application](media/integration/04-authorize-application.png "Authorize application")
+    > #### Granting integration access to repositories in your organization
     > Once you have authorized Lab on Demand to have access to your GitHub account,
     > if you also want Lab on Demand to be able to integrate with a repository in a
     > GitHub organization that you are a member of, you will have to submit a request
