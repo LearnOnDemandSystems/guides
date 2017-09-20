@@ -1,13 +1,5 @@
 # Learn on Demand Systems GitHub Integration Guide 
 
-## Revision History
-
-|**Version**|**Date**|**Edited By**|**Comments**|
-|---|---|---|---|
-|0.3|Apr. 26, 2017|Kirk Munro|Released|
-|0.2|April. 2, 2017|Stephanie Clark|Unreleased; second draft|
-|0.1|Feb. 22, 2017|Kirk Munro|Unreleased; first draft|
-
 ## Disclaimer
 
 This document is provided for informational purposes only and Learn on Demand
@@ -193,11 +185,16 @@ controls in the GitHub login page to log into your GitHub account. At this point
 you should be logged into a GitHub account that has a repository containing lab
 content you want to integrate into the lab profile.
 1. Once you are logged into GitHub, if you have not done this before you will be
-asked to authorize LabOnDemand to have access to your GitHub account. This
+asked to authorize Lab on Demand to have access to your GitHub account. This
 access is only used to create a webhook so that LOD can be notified whenever the
 content in your GitHub repository changes. Click **Authorize application** to
 continue with the integration.<br/>
 ![Authorize application](media/integration/04-authorize-application.png "Authorize application")
+If you also want Lab on Demand to be able to integrate with a repository in a
+GitHub organization that you are a member of, you may also have to authorize
+Lab on Demand in your GitHub organization. To do this, visit the **Third-party access**
+page in your organization settings and authorize the LabOnDemand application for
+your organization.
 1. At this point you will be presented with a list of repositories that are
 associated with your GitHub account. Click **Select** next to the repository
 containing the lab content that you want automatically synchronized into the lab
