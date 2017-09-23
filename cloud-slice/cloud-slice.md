@@ -306,7 +306,6 @@ Once you have indicated you want an automated exam in your lab, you can add scor
 
 | Parameter Name            | Sample Value                          |
 | ------------------------- | ------------------------------------- |
-| $CloudSliceId             | 1-294781                              |
 | $TemplateName             | Complex network with multiple subnets |
 | $TemplateId               | 15                                    |
 | $LabProfileId             | 18122                                 |
