@@ -31,11 +31,6 @@ Select one of the following cloud platforms to learn how you can grant the requi
 1. [Microsoft Azure](microsoft-azure/cloud-slice-setup.md)
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
-4. [Microsoft Azure Test][azure-setup]
-5. [Microsoft Azure Test 2][azure-setup-2]
-
-[Microsoft Azure Test][azure-setup]
-[Microsoft Azure Test 2][azure-setup-2]
 
 [Back to top][back-to-top]
 
@@ -50,8 +45,6 @@ To prepare for the deployment of managed virtual machines in your Cloud Slice la
 1. [Microsoft Azure](microsoft-azure/cloud-slice-upload-template-vhds.md)
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
-
-[azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -172,8 +165,6 @@ Before you get started creating Cloud Resource Templates, you need at least one 
 1. [Microsoft Azure](microsoft-azure/cloud-slice-find-resource-templates.md)
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
-
-[azure-find-arm-templates]: microsoft-azure/cloud-slice-find-resource-templates.md "How to find Azure Resource Manager templates for use with Microsoft Azure"
 
 Once you have identified one or more cloud platform template documents you want to use, you can create a Cloud Resource Template in LOD by logging on to the Lab on Demand portal and completing the following steps:
 
@@ -337,5 +328,3 @@ This screenshot shows you what you might see once you have added a scoring item 
 ![Cloud Slice lab profile with cloud scoring item added](images/lod-lab-profile-with-cloud-scoring-item.png)
 
 [back-to-top]: #cloud-slice-guide "Return to the top of the document"
-[azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
-[azure-setup-2]: ./microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
