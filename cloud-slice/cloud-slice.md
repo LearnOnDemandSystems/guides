@@ -37,9 +37,6 @@ Select one of the following cloud platforms to learn how you can grant the requi
 [Microsoft Azure Test][azure-setup]
 [Microsoft Azure Test 2][azure-setup-2]
 
-[azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
-[azure-setup-2]: ./microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
-
 [Back to top][back-to-top]
 
 ## Upload template VHDs into your cloud platform
@@ -340,3 +337,5 @@ This screenshot shows you what you might see once you have added a scoring item 
 ![Cloud Slice lab profile with cloud scoring item added](images/lod-lab-profile-with-cloud-scoring-item.png)
 
 [back-to-top]: #cloud-slice-guide "Return to the top of the document"
+[azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
+[azure-setup-2]: ./microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
