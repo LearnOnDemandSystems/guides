@@ -31,8 +31,14 @@ Select one of the following cloud platforms to learn how you can grant the requi
 1. [Microsoft Azure](microsoft-azure/cloud-slice-setup.md)
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
+4. [Microsoft Azure Test][azure-setup]
+5. [Microsoft Azure Test 2][azure-setup-2]
+
+[Microsoft Azure Test][azure-setup]
+[Microsoft Azure Test 2][azure-setup-2]
 
 [azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
+[azure-setup-2]: ./microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
 
 [Back to top][back-to-top]
 
