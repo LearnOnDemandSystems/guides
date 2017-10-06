@@ -4,12 +4,6 @@ typora-copy-images-to: images
 
 # Learn on Demand Systems Life Cycle Actions Guide
 
-## Revision History
-
-| Version | Date            | Edited By       | Comments                |
-| ------- | --------------- | --------------- | ----------------------- |
-| 1       | August 14, 2017 | Stephanie Clark | Unreleased; first draft |
-
 ## Disclaimer
 
 This document supports a release of a software product that may be changed substantially in the future. It is provided for informational purposes only and Learn on Demand Systems, LLC, makes no warranties, either express or implied, in this document. Information in this document, including URL and other Internet Web site references, is subject to change without notice. The entire risk of the use or the results from the use of this document remains with the user. Unless otherwise noted, the companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted in examples herein are fictitious. No association with any real company, organization, product, domain name, e-mail address, logo, person, place, or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -34,37 +28,27 @@ This guide assumes that the reader:
 
 The guide further assumes that the reader has knowledge of how to build labs in LOD and knowledge of life cycle events of LOD labs..
 
-In the past, you could send a request to an outside URL whena lab was first built or torn down using the Build Service URL and Tear DownService URL fields on the Advanced tab of the Lab Profile. This functionalityhas been expanded to include more actions and a wider range of life cycleevents of the lab. These are called Life Cycle Actions. The types of actionsthat can be performed are:
+# Life Cycle Actions
 
-·        **Send WebRequest** – Like the Service URLs in the past, calls an external service URL.The information that is sent is based on that URL, the verb used to send theinformation, and the receiving API.
+This guide will walk you through how to create Life Cycle Actions in a lab. In the past, you could send a request to an outside URL when a lab was first built or torn down using the Build Service URL and Tear Down Service URL fields on the Advanced tab of the Lab Profile. This functionality has been expanded to include more actions and a wider range of life cycle events of the lab. These are called Life Cycle Actions. The types of actions that can be performed are:
 
-·         **Send Notification to User **– Uses theSend Notification functionality to send information to the lab user in the formof a toast in the lab interface.
+- **Send Web Request** – Like the Service URLs in the past, calls an external service URL.The information that is sent is based on that URL, the verb used to send the information, and the receiving API.
+- **Send Notification to User **– Uses the Send Notification functionality to send information to the lab user in the form of a toast in the lab interface.
+- **Send E-mail to User** – Sends an e-mail to the lab user. The subject and content of the e-mail will be the same for each lab user.
+- **Execute Machine Command** – Like the Command field on lab steps. It requires the lab user to be logged into a virtual machine that has the Lab on Demand integration service installed. It runs a machine command on the active machine.
 
-·        **SendE-mail to User** – Sends an e-mail to the lab user. The subject and contentof the e-mail will be the same for each lab user.
+Each of these actions have different events and fields related to them. Currently there are 10 overall events:
 
-·        **ExecuteMachine Command** – Like the Command field on lab steps. It requires the labuser to be logged into a virtual machine that has the Lab on Demand integrationservice installed. It runs a machine command on the active machine.
-
-Each of these actions have different events and fieldsrelated to them. Currently there are 10 overall events:
-
-1.   **Building**– when the lab user launches the labs and the environment is in the process ofbeing built, including the virtual machines (VMs) if present.
-
-2.   **Built**– after the lab environment has been built but the virtual machines are stillpowering up.
-
-3.   **Running**– Once the lab user can interact with the lab interface and the VMs, ifpresent.
-
-4.   **IP AddressAssigned** – When the public IP address has been assigned, when applicable.
-
-5.   **Saving**– When the lab user clicks Save and confirms they want to save the lab.
-
-6.   **Saved**– After the lab has finished the Save process.
-
-7.   **Resuming**– When the lab user clicks Resume and the lab interface is in the process ofrebuilding itself
-
-8.   **Resumed**– When the lab user is again able to interact with the lab interface and theVMs, if present.
-
-9.   **TearingDown** – When the lab user cancels or completes the lab and the labenvironment is being torn down.
-
-10.   **Torn Down** – Once the tearing downprocess has been completed.
+1. **Building**– when the lab user launches the labs and the environment is in the process of being built, including the virtual machines (VMs) if present.
+2. **Built**– after the lab environment has been built but the virtual machines are still powering up.
+3. **Running**– Once the lab user can interact with the lab interface and the VMs, if present.
+4. **IP Address Assigned** – When the public IP address has been assigned, when applicable.
+5. **Saving**– When the lab user clicks Save and confirms they want to save the lab.
+6. **Saved**– After the lab has finished the Save process.
+7. **Resuming**– When the lab user clicks Resume and the lab interface is in the process of rebuilding itself
+8. **Resumed**– When the lab user is again able to interact with the lab interface and the VMs, if present.
+9. **Tearing Down** – When the lab user cancels or completes the lab and the lab environment is being torn down.
+10. **Torn Down** – Once the tearing down process has been completed.
 
 # Add Life Cycle Actions
 
@@ -81,7 +65,14 @@ To add Life Cycle Action to your lab profile, follow these steps for every Actio
 
 ![image001](images/image001.png)                                  
 
-Below are the steps specific to each Action type.
+Each Action type has steps specific for it. The Action Types are listed below. You can use this list to navigate to the steps for the Life Cycle Action you would like to implement and then return to the list to navigate to another action.
+
+- [Send Web Request](#send-web-request)
+- [Send Notification to User](#send-notification-to-user)
+- [Send E-mail to User](#send-email-to-user)
+- [Execute Machine Command](#execute-machine-command)
+
+Once you have added Life Cycle Actions to your lab, navigate to [Manage Life Cycle Actions](#manage-life-cycle-actions) for information and steps to rearrange and delete the actions.
 
 ## Send Web Request
 
@@ -117,7 +108,7 @@ Below are the steps specific to each Action type.
 
 ![image004](images/image004-2740826319.png)     
 
-## Send E-mail to User
+## Send Email to User
 
 1.    In the **Subject** field, type the subject for the email. 
 
@@ -136,7 +127,7 @@ The Execute Machine Command action can only be triggered by the Running, IP Addr
      3.   Shell
      4.   Shell with UI
 
-3.           In the **Command** field under **Enabled**, type the command to run.
+3.   In the **Command** field under **Enabled**, type the command to run.
 
 ![image006](images/image006.png)     
 
