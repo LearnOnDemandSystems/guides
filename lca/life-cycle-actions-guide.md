@@ -1,7 +1,3 @@
----
-typora-copy-images-to: images
----
-
 # Life Cycle Actions Guide
 
 ## Disclaimer
