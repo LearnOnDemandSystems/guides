@@ -61,6 +61,7 @@ To add Life Cycle Action to your lab profile, follow these steps for every Actio
 
 ![image001](images/image001.png)                                  
 
+# Action Types
 Each Action type has steps specific for it. The Action Types are listed below. You can use this list to navigate to the steps for the Life Cycle Action you would like to implement and then return to the list to navigate to another action.
 
 - [Send Web Request](#send-web-request)
@@ -96,6 +97,8 @@ Once you have added Life Cycle Actions to your lab, navigate to [Manage Life Cyc
 
 6.   In the **Timeout **field, set the number of seconds the lab should wait for the external service to reply before giving up.
 
+[Back to Action Types](#action-types)
+
 ## Send Notification to User
 
 1.    In the **Name** field, optionally type the name for the notification. If a name is provided, only one copy of the notification with that name will be displayed in the lab client. This allows you to replace a notification with updated text.
@@ -110,7 +113,9 @@ Once you have added Life Cycle Actions to your lab, navigate to [Manage Life Cyc
 
 2.    In the empty field under **Enabled**, type the body of the email.
 
-![image005](images/image005.png)     
+![image005](images/image005.png)
+
+[Back to Action Types](#action-types)
 
 ## Execute Machine Command
 
@@ -125,7 +130,9 @@ The Execute Machine Command action can only be triggered by the Running, IP Addr
 
 3.   In the **Command** field under **Enabled**, type the command to run.
 
-![image006](images/image006.png)     
+![image006](images/image006.png) 
+
+[Back to Action Types](#action-types)
 
 # Manage Life Cycle Actions
 
