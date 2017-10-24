@@ -13,10 +13,13 @@ To enable Cloud Slice support, you must perform the following tasks once in each
 1. [Create a new application registration in Azure Active Directory with a specific set of permissions][create-app-registration].
 2. [Create an API key for the application registration and record subscription authentication details][create-api-key-and-record-authentication-details].
 3. [Add the application registration as an owner to the Azure subscription][add-app-registration-as-owner].
+4. [Assign Company Administrator role to the application registration for cloud slice user management][assign-company-administrator-role].
 
 [create-app-registration]: #create-a-new-application-registration-in-azure-ad "Create a new application registration in Azure AD"
 [create-api-key-and-record-authentication-details]: #create-an-api-key-for-the-application-registration-and-record-authentication-details "Create an API key for the application registration"
 [add-app-registration-as-owner]: #add-the-application-registration-as-owner-to-the-azure-subscription "Add the application registration as owner to the Azure subscription"
+[assign-company-administrator-role]:#assign-company-administrator-role-to-the-application-registration "Assign Company Administrator role to the application registration"
+
 
 ### Create a new application registration in Azure AD
 
@@ -40,25 +43,25 @@ In the Settings blade, click on **Required permissions** to show the Required pe
 
 ![Add required permissions to app registration](images/azure-ad-app-registration-required-permissions.png)
 
-In the Required permissions blade, select **Windows Azure Active Directory** (note: this may be renamed as Microsoft Azure Active Directory in the future). This will display the Enable Access blade. Ensure that the following permissions are checked in the Enable Access blade:
+In the Required permissions blade, select **Windows Azure Active Directory** (note: this may be renamed as Microsoft Azure Active Directory in the future). This will display the Enable Access blade. Ensure that all application and delegated permissions are checked in the Enable Access blade.
 
-| Permission Type             | Permission Name                |
-| --------------------------- | ------------------------------ |
-| **Application Permissions** | Read directory data            |
-|                             | Read and write directory data  |
-| **Delegated Permissions**   | Read all users' full profiles  |
-|                             | Read all users' basic profiles |
-|                             | Sign in and read user profile  |
-
-Once those permissions have been checked, click the **Save** button at the top of the Enable Access blade.
+Once those permissions have been checked, click **Save** at the top of the Enable Access blade.
 
 ![Enable access to Azure Active Directory](images/azure-ad-app-registration-enable-access.png)
 
-Click on the **Grant Permissions** button to grant the new permissions to the application registration. This will result in a confirmation message being displayed in the portal.
+Now click **Add** at the top of the Required permissions blade to add additional permissions. Click **Select an API** and choose the **Microsoft Graph** API.
+
+![Add API access permissions](images/azure-ad-add-api-access-permissions.png)
+
+Then click **Select permissions**, check all application and delegated permissions in the Enable Access blade, and click **Select** to select those permissions.
+
+![Select all Microsoft Graph permissions](images/azure-ad-add-all-microsoft-graph-permissions.png)
+
+Click **Done** to finish adding the Microsoft Graph permissions. Click **Add** and repeat this process to add the single permission included in the Windows Azure Service Management API. Once you have finished adding these permissions your Required permissions blade should look something like this:
 
 ![Grant permissions for app registration](images/azure-ad-app-registration-grant-permissions.png)
 
-Click on **Yes** to grant the permissions to the application registration. You may now close the Required permissions blade.
+Click on the **Grant Permissions** button to grant the new permissions to the application registration. This will result in a confirmation message being displayed in the portal. Click on **Yes** to grant the permissions to the application registration. You may now close the Required permissions blade.
 
 ![Confirm permission grant for app registration](images/azure-ad-app-registration-grant-permissions-yes.png)
 
@@ -85,7 +88,7 @@ Once you have the application registration key created, you need to copy both th
 1. Hover your mouse over the copy glyph that appears at the end of the Application ID and click to copy that value. Paste it in a document or credential management application where you track credentials so that you can access it later. Record this value as the Cloud Subscription Client ID.
 2. Select the text in the value field of the API key and copy it. Paste it into the same document or credential management application where you track credentials so that you can access it later. Record this value as the Cloud Subscription Client Secret.
 
-![Copy your application registration application ID and API key](images/azure-copy-app-registration-id-and-key.png)
+![Copy your application registration application ID, application registration object ID, and API key](images/azure-copy-app-registration-id-and-key.png)
 
 #### Copy the Azure subscription ID
 
@@ -123,6 +126,89 @@ Once you have created the application registration and assigned appropriate dire
 
 [Back to top][back-to-top]
 
+### Assign Company Administrator role to the application registration
+
+ The last step you need to take is to grant the Company Administrator role role to the application registration that you created earlier. This role can only be granted by a global administrator, and it must be granted using Windows PowerShell.
+
+#### Create a global administrator
+
+If you do not yet have a global administrator set up in your subscription, create a new global administrator account by doing the following:
+
+1. Browse into the Azure Active Directory service, and click **Users and Groups**.
+
+2. Click **All users** to show all users in the directory.
+
+3. Click **New user** to create a new user. This will open the New user blade.
+
+   ![Create new user in Azure Active Directory](images/azure-ad-create-new-user.png)
+
+4. In the New User blade, configure the new user account using the information provided below. Then click **Create** to create the user.
+
+   | Field              | Value                                    |
+   | ------------------ | ---------------------------------------- |
+   | **Name**           | Enter "Cloud Slice Admin"                |
+   | **User name**      | Enter "cloudsliceadmin@*domainName*.onmicrosoft.com", replacing *domainName*.onmicrosoft.com with the Cloud Subscription Tenant Name that you recorded earlier. |
+   | **Directory role** | Select **Global administrator**, then click **Ok**. |
+   | **Show Password**  | Check this field, then click the copy button to the right of the field to copy the default password that has been assigned to the new user. Paste this into the document where you have been recording other details, and note that it is the default password for the new Cloud Slice Admin user account. |
+
+   ![Enter new user details into Azure Active Directory](images/azure-ad-create-new-user-properties.png)
+
+#### Grant Company Administrator access to the application registration
+
+Now that you have a global administrator account you can use, you need to use Windows PowerShell to add the Company Administrator role. To accomplish this task, do the following using Windows PowerShell 5.0 or later (Windows PowerShell 5.0 or later are installed by default on Windows 10 and Windows Server 2016 or later):
+
+1. Open Windows PowerShell on your local computer as administrator.
+
+2. Invoke the following command in Windows PowerShell:
+
+   ```powershell
+   Get-InstalledModule -Name AzureAD -ErrorAction Ignore
+   ```
+
+   If that command did not return anything, then you need to install the AzureAD module by invoking this command:
+
+   ```powershell
+   Install-Module -Name AzureAD -AllowClobber
+   ```
+
+   Otherwise, if `Get-InstalledModule` returned the AzureAD module, make sure you have the latest version by invoking this command:
+
+   ```powershell
+   Update-Module -Name AzureAD
+   ```
+
+3. Once the AzureAD module has been installed/updated, invoke the following command to log on to AzureAD using your global administrator:
+
+   ```powershell
+   Connect-AzureAD -TenantDomain tenantDomain.onmicrosoft.com
+   ```
+
+   Note that for this command, you must replace "tenantDomain.onmicrosoft.com" with the Cloud Subscription Tenant Name that you recorded earlier. When you invoke this command, you will be presented with an Azure Active Directory PowerShell login dialog. Enter the username and password for the global administrator account you will use to assign the Company Administrator role to the application registration, and then click **Sign in**.
+
+   ![Azure Active Directory PowerShell Sign-in](images/azure-ad-powershell-signin.png)
+
+   If you created a new global administrator account and you are signing in with that account for the first time, you will be presented with second dialog to update your password. Enter the current password (the one you copied earlier) for your new global administrator account, and then enter a new password twice to change that password. Click **Update password and sign in** once you have finished. This will return you back to your Windows PowerShell prompt.
+
+   ![Update Azure Active Directory user password](images/azure-ad-powershell-change-password.png)
+
+4. Invoke the following command, replacing the string value with the value you recorded earlier as the Cloud Subscription Client Id to store your application registration id in your Windows PowerShell session:
+
+   ```powershell
+   $appRegistrationId = 'b1c1d1e1-ab12-34cd-5e6f-0123456789ab'
+   ```
+
+5. Invoke the following commands to retrieve your application registration object, retrieve the Company Administrator role, and add the Company Administrator role to your application registration.
+
+   ```powershell
+   $appRegistration = Get-AzureADServicePrincipal -All:$true | Where-Object AppId -eq $appRegistrationId
+   $companyAdminRole = Get-AzureADDirectoryRole | Where-Object DisplayName -eq 'Company Administrator'
+   Add-AzureADDirectoryRoleMember -ObjectId $companyAdminRole.ObjectId -RefObjectId $appRegistration.ObjectId
+   ```
+
+If you made it this far, you have successfully added the Company Administrator role to your application registration. Congratulations!
+
+[Back to top][back-to-top]
+
 ## Review Checklist
 
 By now you should have completed the following using one or more Azure subscriptions:
@@ -130,6 +216,7 @@ By now you should have completed the following using one or more Azure subscript
 - Created an application registration in Azure Active Directory.
 - Assigned the required permissions to that application registration.
 - Added the application registration as owner to an Azure subscription.
+- Added the Company Administrator role to the application registration.
 
 You should also have captured the following pieces of information for each Azure subscription you are using for Cloud Slice deployment:
 
