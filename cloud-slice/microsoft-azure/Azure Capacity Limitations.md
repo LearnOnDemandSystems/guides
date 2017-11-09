@@ -15,4 +15,3 @@ A support request must be made to Microsoft to adjust the amount of resources th
 - Select support plan
 - Click next
 
-Severity
