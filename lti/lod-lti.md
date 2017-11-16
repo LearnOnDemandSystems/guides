@@ -82,48 +82,41 @@ Lastly, here is the same lab from the perspective of a student with the integrat
 
 ![alt text](media/lab-content-in-new-window.png "Student's view of lab content in a new window")
 
-As you can see, regardless of which display method you choose, LTI support in these two great learning solutions makes it very easy to offer more value to students of the courses that you offer through edX. If you would like more information, please contact [sales@learnondemandsystems.com](mailto:sales@learnondemandsystems.com).
-
-
+As you can see, regardless of which display method you choose, LTI support in these two great learning solutions makes it very easy to offer more value to students of the courses that you offer through edX.
 
 ## LTI Scoring
-LTI Scoring allows the lab to be scored based on the LTI scoring policy in the lab profile. The LTI scoring policy is on the Launch URLs tab of the lab profile. 
 
-There are either one or two choices on the **Scoring Policy** drop-down menu, depending on whether the lab has IDL content:
+LTI Scoring allows the lab to be scored based on the LTI scoring policy in the lab profile. The LTI scoring policy is configured on the Launch URLs tab of the lab profile. 
 
-**Time Spent** (available with and without IDL content)
-**Tasks Complete** (available only with IDL content)
+There are multiple options available for LTI Scoring. These can be changed at anytime from the lab profile, if necessary.
+
+You will see either one or two options in the **Scoring Policy** drop-down menu, depending on whether or not the lab has IDL content:
+
+- **Time Spent** (always present)
+- **Tasks Complete** (only present for labs that have IDL content)
+
+You can see these options in the screenshot below.
 
 ![alt text](media/launch-urls-scoring-policy.png "Scoring Policy is in Launch URLs tab")
 
+If you select **Time Spent**, the scoring will be based on how much time the student spends in the lab. The **Scoring Format** can be:
 
+- **% Complete**, with the **Time** a student needs to spend in the lab to receive a score of 100%.
 
-If you select **Time Spent** the scoring will be based on how much time the student spends in the lab. The **Scoring Format** can be:
+  ![alt text](media/scoring-format-percent-complete.png "Percentage Complete")
 
-- **%Complete** with the **Time** it should take the student to complete the lab
+- **Pass/Fail**, with the **Minimum Time** a student needs to spend in the lab to pass the lab.
 
-![alt text](media/scoring-format-percent-complete.png "Percentage Complete")
+  ![alt text](media/scoring-format-pass-fail.png "Pass/Fail Scoring Format")
 
+If you have IDL Content in the lab and select **Tasks Complete**, the scoring will be based on the number of tasks the student marks as complete by clicking **Done** on the task. The **Scoring Format** can be:
 
-
-* **Pass/Fail** with the **Minimum Time** they need to spend to pass the lab
-
-![alt text](media/scoring-format-pass-fail.png "Pass/Fail Scoring Format")
-
-
-
-If you have IDL Content in the lab and select **Tasks Complete**, the scoring will be based on how many tasks the student clicks done on to mark them complete. The **Scoring Format** can be:
-
-- **%Complete** where the score is the exact percentage of the tasks the student marks complete
+- **% Complete**, where the score is the exact percentage of the tasks the student marks complete.
 
   ![alt text](media/scoring-format-tasks-complete-percent-complete.png)
 
+- **Pass/Fail** with **Minimum Tasks Complete**, which represents the percentage of tasks the student needs to mark complete (click **Done**) to pass the lab.
 
+  ![alt text](media/scoring-format-tasks-complete-minimum-tasks-complete.png )
 
-- **Pass/Fail** with the **Minimum Tasks Complete**, in percentage that the student needs to mark complete to pass the lab
-
-![alt text](media/scoring-format-tasks-complete-minimum-tasks-complete.png )
-
-
-
-There are multiple options available for LTI Scoring. These can be changed at anytime from the lab profile, if necessary. If you would like more information, please contact [sales@learnondemandsystems.com](mailto:sales@learnondemandsystems.com).
+If you would like more information, please contact [sales@learnondemandsystems.com](mailto:sales@learnondemandsystems.com).
