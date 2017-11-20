@@ -21,6 +21,6 @@ IDL 2 Quick Reference Guide
 | Copyable Text     | `++Copyable Text++`                      |
 | Knowledge         | `[!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Alert             | `[!ALERT] Alert blocks draw attention to important issues!` |
-| Replacement Token | `Click the `@lab` toolbar button or type "@lab." in your idl-md editor window.` |
+| Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
 | Task Checkbox     | `[ ]`                                    |
 
