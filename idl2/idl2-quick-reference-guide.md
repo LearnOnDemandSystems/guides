@@ -9,7 +9,7 @@ IDL 2 Quick Reference Guide
 | Heading 5         | `##### Heading 5`                        |
 | Heading 6         | `###### Heading 6`                       |
 | **bold**          | `**bold**`                               |
-| *Italic*          | `*word*`                                 |
+| *Italic*          | `*italic*` or `_italic_`                                |
 | ~~Strikethrough~~ | `~~Strikethrough~~`                      |
 | Bullet            | `-`                                      |
 | Page break        | `===`                                    |
