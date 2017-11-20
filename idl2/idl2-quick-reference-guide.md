@@ -16,11 +16,11 @@ IDL 2 Quick Reference Guide
 | Internal Link     | `[text to display](#link-location)`      |
 | External link     | `[text to display](URL)`                 |
 | Image             | `![text to display](url)`                |
-| Video             | `! VIDEO[text to display](url)`          |
+| Video             | `!VIDEO[text to display](url)`          |
 | Code Block        | `code here`                              |
 | Copyable Text     | `++Copyable Text++`                      |
-| Knowledge         | `[!KNOWLEDGE] ## Knowledge blocks help students learn more` |
-| Alert             | `[!ALERT] Alert blocks draw attention to important issues!` |
+| Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
+| Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
 | Task Checkbox     | `[ ]`                                    |
 
