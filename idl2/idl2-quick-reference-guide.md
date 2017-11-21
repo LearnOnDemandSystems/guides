@@ -28,7 +28,7 @@
 | Internal link     | `[text to display](#link-location "optional link title")` |
 | External link     | `[text to display](url "optional link title)` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
----
+
 Reference links
 ```Text_lookup
 [Reference link]
