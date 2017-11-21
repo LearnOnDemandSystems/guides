@@ -9,18 +9,19 @@ IDL 2 Quick Reference Guide
 | Heading 5         | `##### Heading 5`                        |
 | Heading 6         | `###### Heading 6`                       |
 | **bold**          | `**bold**`                               |
-| *Italic*          | `*italic*` or `_italic_`                                |
+| *Italic*          | `*italic*` or `_italic_`                 |
 | ~~Strikethrough~~ | `~~strikethrough~~`                      |
 | Bullet            | `-`                                      |
+| Task Checkbox     | `[ ]`                                    |
 | Page break        | `===`                                    |
+| Horizonal Line    | `---`                                    |
+| Code Block        | `code here`                              |
+| Copyable Text     | `++copyable text++`                      |
 | Internal Link     | `[text to display](#link-location)`      |
 | External link     | `[text to display](url)`                 |
 | Image             | `![text to display](url)`                |
 | Video             | `!VIDEO[text to display](url)`           |
-| Code Block        | `code here`                              |
-| Copyable Text     | `++copyable text++`                      |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
-| Task Checkbox     | `[ ]`                                    |
 
