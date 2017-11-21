@@ -1,4 +1,4 @@
-IDL 2 Quick Reference Guide
+# IDL 2 Quick Reference Guide
 
 |                   |                                          |
 | ----------------- | ---------------------------------------- |
@@ -15,13 +15,78 @@ IDL 2 Quick Reference Guide
 | Task Checkbox     | `[ ]`                                    |
 | Page break        | `===`                                    |
 | Horizonal Line    | `---`                                    |
-| Code Block        | `code here`                              |
+| Block quote       | `> text to display in block quote`       |
+| Escape character  | `\` on each side of text to escape       |
+| Indent size       | `equal to 4 spaces`                      |
 | Copyable Text     | `++copyable text++`                      |
-| Internal Link     | `[text to display](#link-location)`      |
-| External link     | `[text to display](url)`                 |
 | Image             | `![text to display](url)`                |
 | Video             | `!VIDEO[text to display](url)`           |
+| Image with link   | `[![text to display]url or filepath "Optional image title")]url "Optional link title")` |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
+| Internal link     | `[text to display](#link-location "optional link title")` |
+| External link     | `[text to display](url "optional link title)` |
+| Relative link     | `[text to display](../folder/file.htm "optional link title")` |
 
+Reference links
+```Text_lookup
+[Reference link]
+[Reference link]: URL "Optional link title"
+```
+```Label_lookup
+[Reference link][Name of URL]
+[Name of URL]: URL "Optional link title"
+```
+```Footnote_style
+[Reference link][1]
+[1]: URL "Optional link title"
+```
+---
+Lists **without** checkboxes:       
+```Unordered_List
+- Item 1
+    - Item 1.1
+        - Item 1.1.1
+        - Item 1.1.2
+    - Item 1.2
+- Item 2
+```
+```Ordered_List
+1. Item 1
+    1. Item 1.1
+        1. Item 1.1.1
+        1. Item 1.1.2
+    1. Item 1.2
+1. Item 2
+```
+---
+
+Lists **with** checkboxes
+
+```Unordered_List
+- [] Item 1
+    - [] Item 1.1
+        - [] Item 1.1.1
+        - [] Item 1.1.2
+    - [] Item 1.2
+- [] Item 2
+```
+
+```Ordered_List
+1. [] Item 1
+    1. [] Item 1.1
+        1. [] Item 1.1.1
+        1. [] Item 1.1.2
+    1. [] Item 1.2
+1. [] Item 2
+```
+
+---
+Sample table:
+```
+| column 1 | column 2 |
+| -------- | -------- |
+| data 1   | data 2   |
+| data 3   | data 4   |
+```
