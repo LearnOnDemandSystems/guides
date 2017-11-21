@@ -16,7 +16,7 @@
 | Page break        | `===`                                    |
 | Horizonal Line    | `---`                                    |
 | Block quote       | `> text to display in block quote`       |
-| Escape character  | `\` on each side of text to escape       |
+| Escape character  | `\escaped text\`      |
 | Indent size       | `equal to 4 spaces`                      |
 | Copyable Text     | `++copyable text++`                      |
 | Image             | `![text to display](url)`                |
