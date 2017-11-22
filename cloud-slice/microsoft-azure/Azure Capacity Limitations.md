@@ -28,7 +28,7 @@ A support request must be made to Microsoft to adjust the amount of resources th
 
 6. Select **Quota type**. <a href="https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-quota-types">See Azure Quota Types for more information</a> 
 
-![select quota type](images/azure-select-quota-type.png)
+![select quota type](images/azure-select-quota-types.png)
 
 7. Select **Support plan**
 
