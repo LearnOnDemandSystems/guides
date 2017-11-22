@@ -75,4 +75,6 @@ Click **Next** to proceed
 
 14. Click **Create** to submit the request
 
+---
+
 Requests are typically fulfilled by Microsoft within a few hours, depending on the amount of resources requested and the region requested. In some cases, it can take Microsoft several days or weeks to fulfill some requests, based on demand for the resources requested. 
