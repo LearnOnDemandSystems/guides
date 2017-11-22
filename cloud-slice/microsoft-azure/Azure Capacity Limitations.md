@@ -51,7 +51,7 @@ Click **Next** to proceed
 9. Select **Deployment** model
 > - Typically **Resource Manager** should be selected for Cloud Slice labs.
 
-![select deployment model](images/azure-severity.png)
+![select deployment model](images/azure-deployment-model.png)
 
 10. Select **Location**
 > - select the location geographically closest to the location where Azure resources will be used.
