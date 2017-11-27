@@ -27,13 +27,13 @@
 | External link     | `[text to display](url "optional link title)` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
 | Inline code block | <code>`code block`</code>                |
-
+Fenced code block
 ~~~Fenced_code_block
 ​```PowerShell
 get-service | stop-service -whatif
 ​```
 ~~~
-
+---
 Reference links
 ```Text_lookup
 [Reference link]
