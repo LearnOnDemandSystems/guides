@@ -1,5 +1,3 @@
-# IDL 2 Quick Reference Guide
-
 |                   |                                          |
 | ----------------- | ---------------------------------------- |
 | Heading 1         | `# Heading 1`                            |
@@ -8,15 +6,15 @@
 | Heading 4         | `#### Heading 4`                         |
 | Heading 5         | `##### Heading 5`                        |
 | Heading 6         | `###### Heading 6`                       |
-| **bold**          | `**bold**`                               |
+| **bold**          | `**bold**` or `__bold__`                 |
 | *Italic*          | `*italic*` or `_italic_`                 |
 | ~~Strikethrough~~ | `~~strikethrough~~`                      |
 | Bullet            | `-`                                      |
 | Task Checkbox     | `[ ]`                                    |
 | Page break        | `===`                                    |
-| Horizonal Line    | `---`                                    |
+| Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
-| Escape character  | `\escaped text\`      |
+| Escape character  | `\escaped text\`                         |
 | Indent size       | `equal to 4 spaces`                      |
 | Copyable Text     | `++copyable text++`                      |
 | Image             | `![text to display](url)`                |
@@ -28,6 +26,13 @@
 | Internal link     | `[text to display](#link-location "optional link title")` |
 | External link     | `[text to display](url "optional link title)` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
+| Inline code block | <code>`code block`</code>                |
+
+~~~Fenced_code_block
+​```PowerShell
+get-service | stop-service -whatif
+​```
+~~~
 
 Reference links
 ```Text_lookup
