@@ -1,4 +1,4 @@
-## **Azure Capacity Limitations**
+## **Azure Resource Capacity Limitations**
 
 Microsoft Azure has resource capacity limitations that should be considered in advance of training events or classes, to avoid running into limitations during the use of the Cloud Slice lab. After the class or event is scheduled, it is a good idea to estimate the amount of resources that will be needed during the event based on the number of lab users and the amount of resources that each lab user will need.
 
