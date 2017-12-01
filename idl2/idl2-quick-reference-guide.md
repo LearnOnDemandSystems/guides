@@ -1,5 +1,5 @@
 |                   |                                          |
-| :-----------------:| :----------------------------------------: |
+| -----------------| ---------------------------------------- |
 | Heading 1         | `# Heading 1`                            |
 | Heading 2         | `## Heading 2`                           |
 | Heading 3         | `### Heading 3`                          |
@@ -92,9 +92,27 @@ Lists **with** checkboxes
 
 ---
 Sample table:
+
+Left aligned text
 ```
 | column 1 | column 2 |
-| -------- | -------- |
+|:---------|:---------|
+| data 1   | data 2   |
+| data 3   | data 4   |
+```
+
+Right aligned text
+```
+| column 1 | column 2 |
+|---------:|---------:|
+| data 1   | data 2   |
+| data 3   | data 4   |
+```
+
+Center aligned text
+```
+| column 1 | column 2 |
+|:--------:|:--------:|
 | data 1   | data 2   |
 | data 3   | data 4   |
 ```
