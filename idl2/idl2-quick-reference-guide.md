@@ -16,7 +16,7 @@
 | Escape character  | `\escaped text\`                         |
 | Indent size       | `equal to 4 spaces`                      |
 | Copyable Text     | `++copyable text++`                      |
-| Image             | `![](url)`                |
+| Image             | `![](url)`                               |
 | Video             | `!VIDEO[text to display](url)`           |
 | Image with link   | `[![text to display](url or filepath "Optional image title")](url "Optional link title")` |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
