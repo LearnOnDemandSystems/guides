@@ -18,14 +18,14 @@
 | Copyable Text     | `++copyable text++`                      |
 | Image             | `![](url)`                |
 | Video             | `!VIDEO[text to display](url)`           |
-| Image with link   | `[![text to display]url or filepath "Optional image title")]url "Optional link title")` |
+| Image with link   | `[![text to display]url or filepath ("Optional image title")]url "Optional link title")` |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Include           | `[!INCLUDE`                              |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Note              | `> [!NOTE]`                              |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
 | Internal link     | `[text to display](#link-location "optional link title")` |
-| External link     | `[text to display](url "optional link title)` |
+| External link     | `[text to display](url "optional link title")` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
 | Inline code block | <code>`code block`</code>                |
 
