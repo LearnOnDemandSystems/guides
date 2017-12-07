@@ -10,7 +10,6 @@
 | *Italic*          | `*italic*` or `_italic_`                 |
 | ~~Strikethrough~~ | `~~strikethrough~~`                      |
 | Bullet            | `-`                                      |
-| Task Checkbox     | `[ ]`                                    |
 | Page break        | `===`                                    |
 | Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
