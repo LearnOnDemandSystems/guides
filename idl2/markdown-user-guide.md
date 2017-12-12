@@ -59,8 +59,6 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 > ​```
 > ~~~
 
-
-
 ## 3. Link formatting
 
 - **Internal link**: Used to link to a specific section within a document. 
