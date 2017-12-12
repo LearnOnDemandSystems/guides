@@ -1,4 +1,4 @@
-<a href="https://github.com/dillonreese/guides/blob/idl2/idl2/markdown-user-guide.md" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">User Guide</a>  
+<a href="https://github.com/dillonreese/guides/blob/idl2/idl2/markdown-user-guide.md" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>  
 
 |                   |                                          |
 | ----------------- | ---------------------------------------- |
