@@ -1,4 +1,4 @@
- <p align="right">For more information, please see our&nbsp;<a href="https://github.com/dillonreese/guides/blob/idl2/idl2/markdown-user-guide.md" style="float:right;">Markdown User Guide</a></p>
+<a href="https://github.com/dillonreese/guides/blob/idl2/idl2/markdown-user-guide.md" style="float:right;">User Guide</a> 
 
 |                   |                                          |
 | ----------------- | ---------------------------------------- |
