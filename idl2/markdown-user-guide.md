@@ -74,7 +74,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
   > \[text to display](../folder/file.htm "optional link title")
 
-- **Reference link**: used to provide a link that will be referenced multiple times. The link can be referenced by typing the text value between the [ ] (square brackets). It is not necessary to include the full URL, as long as the text value in both sets of brackets is the same. 
+- **Reference link**: used to provide a link that will be referenced multiple times. The link can be referenced by typing the text value between the [ ] (square brackets). It is not necessary to include the full URL, as long as the text value in both sets of brackets is the same.   
 
   - **_Text lookup_**: 
     > \[Reference link text value]
@@ -232,5 +232,4 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
   > | @lab.CloudPortalSignOutLink | A cloud portal sign-out link.            |
   > | @lab.CloudPortalSignOutUrl  | The cloud portal sign-out URL (rendered as text, not a link). |
 
-  ​
 ---
