@@ -4,6 +4,8 @@ Microsoft Azure has resource capacity limitations that should be considered in a
 
 A support request must be made to Microsoft to adjust the amount of resources that are available to use in the Azure subscription. Depending on the resources requested, the region requested and severity of the request, it may take an extended amount of time for the support request to be fulfilled by Microsoft. To learn more about Azure quotas, click here [Azure Quotas](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits).
 
+Requests are typically fulfilled by Microsoft within a few hours, depending on the amount of resources requested and the region requested. In some cases, it can take Microsoft several days or weeks to fulfill some requests, based on demand for the resources requested.
+
 ### **Submitting a Support Request to Microsoft** 
 
 1. Click the **'?'** in the upper-right corner of the Azure portal
@@ -76,5 +78,3 @@ Click **Next** to proceed
 14. Click **Create** to submit the request
 
 ---
-
-Requests are typically fulfilled by Microsoft within a few hours, depending on the amount of resources requested and the region requested. In some cases, it can take Microsoft several days or weeks to fulfill some requests, based on demand for the resources requested. 
