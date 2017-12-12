@@ -106,11 +106,11 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Image**: Used to embed an image inline with other content. 
 
-  > \![text to display](url)
+  > \![text to display]\(url)
 
 - **Video:** Used to embed an image inline with other content. The syntax format should look the same as an image, except the video should begin with a ! (explanation mark), followed by the word VIDEO (all caps).
 
-  > \!VIDEO[text to display](url)
+  > \!VIDEO[text to display]\(url)
 
 - **Image with link:** Used to embed an image that can be clicked to navigate to a specific URL (internal or external). 
 
