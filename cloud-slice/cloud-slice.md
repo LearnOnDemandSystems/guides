@@ -41,7 +41,7 @@ Cloud providers have resource capacity limitations that should be considered in 
 
 Select one of the following cloud platforms to learn how you can request for resource quotas to be increased. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
-1. [Microsoft Azure][microsoft-azure/cloud-capacity-limitations.md]
+1. [Microsoft Azure][microsoft-azure/azure-capacity-limitations.md]
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
 
