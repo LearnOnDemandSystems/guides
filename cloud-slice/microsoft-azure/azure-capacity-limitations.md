@@ -84,5 +84,5 @@ Click **Next** to proceed
 
 [Return to the Cloud Slice guide][back]
 
-[back]: ../cloud-slice.md#enable-cloud-slice-support-in-your-cloud-platform	"Return to the Cloud Slice guide"
+[back]: ../cloud-slice.md#configure-resource-capacity-limitations	"Return to the Cloud Slice guide"
 [back-to-top]: #cloud-slice-guide---microsoft-azure-setup "Return to the top of the document"
