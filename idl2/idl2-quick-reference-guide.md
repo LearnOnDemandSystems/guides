@@ -1,4 +1,4 @@
-<a href="https://github.com/LearnOnDemandSystems/guides/blob/master/idl2/markdown-user-guide.md" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>  
+<a href="URL" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>  
 
 |                   |                                          |
 | ----------------- | ---------------------------------------- |
