@@ -1,5 +1,3 @@
-<a href="URL" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>  
-
 |                   |                                          |
 | ----------------- | ---------------------------------------- |
 | Heading 1         | `# Heading 1`                            |
