@@ -345,5 +345,3 @@ This screenshot shows you what you might see once you have added a scoring item 
 ![Cloud Slice lab profile with cloud scoring item added](images/lod-lab-profile-with-cloud-scoring-item.png)
 
 [back-to-top]: #cloud-slice-guide "Return to the top of the document"
-
-[microsoft-azure/cloud-capacity-limitations.md]: microsoft-azure/cloud-capacity-limitations.md	"cloud capacity limitations"
