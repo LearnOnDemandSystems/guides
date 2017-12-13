@@ -11,7 +11,7 @@ Unmanaged cloud resources are cloud resources that are created during the deploy
 The Cloud Slice feature allows you to create labs in the cloud that are pre-configured with compute, networking, and storage cloud resources, and/or that allow students to create their own compute, networking, and storage cloud resources as part of the steps they must complete within that lab. Before adding Cloud Slice support in your labs, there are several tasks you must perform. These tasks are listed below and any optional ones are appropriately marked with "(Optional)". As you work through these tasks, you can use the list below to navigate to the one you are currently working on and then return to the list to continue with another task.
 
 1. [Enable Cloud Slice support on the cloud platform of your choice](#enable-cloud-slice-support-in-your-cloud-platform).
-2. [Resource Capacity Limitations](#resource-capacity-limitations)
+2. [Configure resource capacity limitations to allow your labs to scale](#configure-resource-capacity-limitations)
 3. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
 4. [Create a Cloud Subscription in OneLearn Lab on Demand](#create-a-cloud-subscription-in-onelearn-lab-on-demand).
 5. [Create a Cloud Subscription Pool in OneLearn Lab on Demand](#create-a-cloud-subscription-pool-in-onelearn-lab-on-demand).
@@ -35,11 +35,11 @@ Select one of the following cloud platforms to learn how you can grant the requi
 
 [Back to top][back-to-top]
 
-## Resource Capacity Limitations
+## Configure resource capacity limitations
 
-Cloud providers have resource capacity limitations that should be considered in advance of training events or classes to avoid limitations with resources during the use of a Cloud Slice lab. Resource quota increase requests can take extended periods of time for the cloud provider to fulfill. These times can vary from hours to days, depending on the resources requested and the region the resources will be consumed in. 
+By default, cloud subscriptions come pre-configured with relatively low resource capacity limitations. These limitations are necessary for cloud platform providers to ensure that they are able to meet the demand of all customers, and they also help customers manage cost by preventing something or someone from creating too many of a certain type of resources. Resource quota increase requests may take extended periods of time for the cloud provider to fulfill, with times varying from hours to days, depending on the resources requested and the region the resources will be consumed in. To properly deal with these limits when creating one or more Cloud Slice labs that may need to scale to a large number of learners, it is imperative that lab authors determine the maximum number of resources that are simultaneously required within a single Cloud Subscription Pool and then scale the Cloud Subscriptions within that Cloud Subscription Pool accordingly well in advance of training events or classes to avoid running into resource limitations during the use of a Cloud Slice lab.
 
-Select one of the following cloud platforms to learn how you can request for resource quotas to be increased. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
+Select one of the following cloud platforms to learn how you can request for resource quotas to be increased on that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
 1. [Microsoft Azure](microsoft-azure/azure-capacity-limitations.md)
 2. Amazon Web Services (coming soon)
