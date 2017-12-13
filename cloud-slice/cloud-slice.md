@@ -29,9 +29,11 @@ To expose the Cloud Slice capability to your lab(s), you must first grant the On
 
 Select one of the following cloud platforms to learn how you can grant the required access to that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
-1. [Microsoft Azure](microsoft-azure/cloud-slice-setup.md)
+1. [Microsoft Azure](azure-setup)
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
+
+[azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -41,9 +43,11 @@ By default, cloud subscriptions come pre-configured with relatively low resource
 
 Select one of the following cloud platforms to learn how you can request for resource quotas to be increased on that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
-1. [Microsoft Azure](microsoft-azure/azure-capacity-limitations.md)
+1. [Microsoft Azure](azure-capacity-limitations)
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
+
+[azure-capacity-limitations]: microsoft-azure/azure-capacity-limitations.md "Configure subscription quotas in Microsoft Azure"
 
 [Back to top][back-to-top]
 
