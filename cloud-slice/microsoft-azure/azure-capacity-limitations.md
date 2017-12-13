@@ -82,5 +82,7 @@ Click **Next** to proceed
 ---
 [Back to top][back-to-top]
 
+[Return to the Cloud Slice guide][back]
+
 [back]: ../cloud-slice.md#enable-cloud-slice-support-in-your-cloud-platform	"Return to the Cloud Slice guide"
 [back-to-top]: #cloud-slice-guide---microsoft-azure-setup "Return to the top of the document"
