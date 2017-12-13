@@ -11,12 +11,13 @@ Unmanaged cloud resources are cloud resources that are created during the deploy
 The Cloud Slice feature allows you to create labs in the cloud that are pre-configured with compute, networking, and storage cloud resources, and/or that allow students to create their own compute, networking, and storage cloud resources as part of the steps they must complete within that lab. Before adding Cloud Slice support in your labs, there are several tasks you must perform. These tasks are listed below and any optional ones are appropriately marked with "(Optional)". As you work through these tasks, you can use the list below to navigate to the one you are currently working on and then return to the list to continue with another task.
 
 1. [Enable Cloud Slice support on the cloud platform of your choice](#enable-cloud-slice-support-in-your-cloud-platform).
-2. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
-3. [Create a Cloud Subscription in OneLearn Lab on Demand](#create-a-cloud-subscription-in-onelearn-lab-on-demand).
-4. [Create a Cloud Subscription Pool in OneLearn Lab on Demand](#create-a-cloud-subscription-pool-in-onelearn-lab-on-demand).
-5. [(Optional) Create a Cloud Resource Template for each template that you want to use during the deployment of your lab(s)](#create-cloud-resource-templates-in-onelearn-lab-on-demand).
-6. [Add Cloud Slice support to your lab profile(s\)](#add-cloud-slice-support-to-your-lab-profiles).
-7. [(Optional) Add a Cloud Exam to your lab profile(s) if you want the labs scored](#add-a-cloud-exam-to-your-lab-profiles).
+2. [Resource Capacity Limitations](#resource-capacity-limitations)
+3. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
+4. [Create a Cloud Subscription in OneLearn Lab on Demand](#create-a-cloud-subscription-in-onelearn-lab-on-demand).
+5. [Create a Cloud Subscription Pool in OneLearn Lab on Demand](#create-a-cloud-subscription-pool-in-onelearn-lab-on-demand).
+6. [(Optional) Create a Cloud Resource Template for each template that you want to use during the deployment of your lab(s)](#create-cloud-resource-templates-in-onelearn-lab-on-demand).
+7. [Add Cloud Slice support to your lab profile(s\)](#add-cloud-slice-support-to-your-lab-profiles).
+8. [(Optional) Add a Cloud Exam to your lab profile(s) if you want the labs scored](#add-a-cloud-exam-to-your-lab-profiles).
 
 ## Enable Cloud Slice support in your cloud platform
 
@@ -28,11 +29,21 @@ To expose the Cloud Slice capability to your lab(s), you must first grant the On
 
 Select one of the following cloud platforms to learn how you can grant the required access to that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
-1. [Microsoft Azure][azure-setup]
+1. [Microsoft Azure](microsoft-azure/cloud-slice-setup.md)
 2. Amazon Web Services (coming soon)
 3. Google Cloud Platform (coming soon)
 
-[azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
+[Back to top][back-to-top]
+
+## Resource Capacity Limitations
+
+Cloud providers have resource capacity limitations that should be considered in advance of training events or classes to avoid limitations with resources during the use of a Cloud Slice lab. Resource quota increase requests can take extended periods of time for the cloud provider to fulfill. These times can vary from hours to days, depending on the resources requested and the region the resources will be consumed in. 
+
+Select one of the following cloud platforms to learn how you can request for resource quotas to be increased. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
+
+1. [Microsoft Azure][microsoft-azure/cloud-capacity-limitations.md]
+2. Amazon Web Services (coming soon)
+3. Google Cloud Platform (coming soon)
 
 [Back to top][back-to-top]
 
@@ -334,3 +345,5 @@ This screenshot shows you what you might see once you have added a scoring item 
 ![Cloud Slice lab profile with cloud scoring item added](images/lod-lab-profile-with-cloud-scoring-item.png)
 
 [back-to-top]: #cloud-slice-guide "Return to the top of the document"
+
+[microsoft-azure/cloud-capacity-limitations.md]: microsoft-azure/cloud-capacity-limitations.md	"cloud capacity limitations"

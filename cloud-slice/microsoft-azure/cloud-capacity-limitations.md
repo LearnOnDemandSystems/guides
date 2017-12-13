@@ -1,5 +1,7 @@
 ## **Azure Resource Capacity Limitations**
 
+[Return to the Cloud Slice guide][back]
+
 Microsoft Azure has resource capacity limitations that should be considered in advance of training events or classes, to avoid running into limitations during the use of the Cloud Slice lab. After the class or event is scheduled, it is a good idea to estimate the amount of resources that will be needed during the event based on the number of lab users and the amount of resources that each lab user will need.
 
 A support request must be made to Microsoft to adjust the amount of resources that are available to use in the Azure subscription. Depending on the resources requested, the region requested and severity of the request, it may take an extended amount of time for the support request to be fulfilled by Microsoft. To learn more about Azure quotas, click here [Azure Quotas](https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits).
@@ -78,3 +80,7 @@ Click **Next** to proceed
 14. Click **Create** to submit the request
 
 ---
+[Back to top][back-to-top]
+
+[back]: ../cloud-slice.md#enable-cloud-slice-support-in-your-cloud-platform	"Return to the Cloud Slice guide"
+[back-to-top]: #cloud-slice-guide---microsoft-azure-setup "Return to the top of the document"
