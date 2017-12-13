@@ -24,10 +24,15 @@
 | Note              | `> [!NOTE]`                              |
 | Include           | `[!INCLUDE [label](url)]`                |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
+| Portal Link       |  `!PORTALLINK[text to display](URL)`     | 
+| Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
+| Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
 | Internal link     | `[text to display](#link-location "optional link title")` |
 | External link     | `[External link](URL "Optional link title")` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
 | Inline code block | <code>`code block`</code>                |
+| Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
+
 
 ---
 Fenced code block
