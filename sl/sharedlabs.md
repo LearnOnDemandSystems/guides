@@ -12,8 +12,6 @@ be done with any current or new Lab Profile with the correct
 permissions.
 
 ## Terminology in LOD:
-===================
-
 -   **Shared Class Environment** – the section on a lab profile where
     you can designate the role the lab will have in the group of shared
     labs.
@@ -27,8 +25,6 @@ permissions.
     own VMs to interact with the shared labs group.
 
 ## Process to create environment, course, and class:
-=================================================
-
 For a lab to be part of shared labs it either needs to be designated as
 a Shared Environment or a Participant. Always start with the lab that
 will be designated as the Shared Environment. To do this, on its lab
@@ -88,12 +84,12 @@ start from the **Class** page:
 
 1.  Click **Monitor Labs**
 
-> ![](./media/image6.png)
+> ![](./media/monitor-labs-button.png)
 
 1.  Under the basic information on the Monitor Class page, click
     **Shared Environment**.
 
-![](./media/image7.png)
+![](./media/shared-environment-button.png)
 
 ### Saving and Closing Labs
 
