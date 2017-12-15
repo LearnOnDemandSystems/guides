@@ -1,3 +1,5 @@
+<a href="https://learnondemandsystems.github.io/guides/idl2/markdown-user-guide.html" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>
+
 |                   |                                          |
 | ----------------- | ---------------------------------------- |
 | Heading 1         | `# Heading 1`                            |
