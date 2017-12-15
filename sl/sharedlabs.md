@@ -3,8 +3,6 @@
 ---
 
 ## Summary:
-========
-
 Shared Labs is a tool used in LODS to create environments which share
 their networks with each other to allow machines to communicate between
 a Shared Lab Environment and a Participant (or Participants). This can
@@ -77,8 +75,6 @@ Once the course has been created, work with the LODS Course Requests
 Team to create your class.
 
 ## Process during class:
-=====================
-
 When an Instructor wishes to launch the Shared Environment, they will
 start from the **Class** page:
 
