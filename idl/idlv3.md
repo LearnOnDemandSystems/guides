@@ -1,5 +1,5 @@
-  Learn on Demand Systems Integrated Digital Lab Authoring Guide 
-===============================================================
+Learn on Demand Systems Integrated Digital Lab Authoring Guide 
+==============================================================
 
 Introduction
 ============
