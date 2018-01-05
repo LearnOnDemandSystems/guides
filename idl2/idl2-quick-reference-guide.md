@@ -9,6 +9,8 @@
 | Heading 5         | `##### Heading 5`                        |
 | Heading 6         | `###### Heading 6`                       |
 
+===
+
 |**Text Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
 | Indent size       | `equal to 4 spaces`                      |
