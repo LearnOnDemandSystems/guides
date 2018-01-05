@@ -8,7 +8,9 @@
 | Heading 4         | `#### Heading 4`                         |
 | Heading 5         | `##### Heading 5`                        |
 | Heading 6         | `###### Heading 6`                       |
+
 ---
+
 |**Text Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
 | Indent size       | `equal to 4 spaces`                      |
@@ -17,12 +19,15 @@
 | ~~Strikethrough~~ | `~~strikethrough~~`                      |
 | Escape character  | `\escaped text\`                         |
 | Bullet            | `-`                                      |
+
 ---
+
 |**Link Formatting**|                                          |
 | ------------------| ---------------------------------------- |
 | Internal link     | `[text to display](#link-location "optional link title")` |
 | External link     | `[External link](URL "Optional link title")` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
+
 ---
 
 |**Page Formatting**|                                          |
@@ -30,7 +35,9 @@
 | Page break        | `===`                                    |
 | Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
+
 ---
+
 |**Embedded Content**|                                          |
 | ----------------- | ---------------------------------------- |
 | Image             | `![](url)`                               |
@@ -39,7 +46,9 @@
 | Portal Link       |  `!PORTALLINK[text to display](URL)`     | 
 | Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
 | Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
+
 ---
+
 |**Special Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
@@ -51,6 +60,7 @@
 | Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
 
 ---
+
 **Code Blocks**
 
 Inline code block  
