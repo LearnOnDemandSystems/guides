@@ -20,6 +20,7 @@
 | Copyable Text     | `++copyable text++`                      |
 | Image             | `![](url)`                               |
 | Video             | `!VIDEO[text to display](url)`           |
+| Image with link   | `[![image description](URL of image "image description")](URL to open when image is clicked)`    |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Note              | `> [!NOTE]`                              |
