@@ -9,8 +9,6 @@
 | Heading 5         | `##### Heading 5`                        |
 | Heading 6         | `###### Heading 6`                       |
 
-<br>
-
 |**Text Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
 | Indent size       | `equal to 4 spaces`                      |
@@ -20,15 +18,11 @@
 | Escape character  | `\escaped text\`                         |
 | Bullet            | `-`                                      |
 
-<br>
-
 |**Link Formatting**|                                          |
 | ------------------| ---------------------------------------- |
 | Internal link     | `[text to display](#link-location "optional link title")` |
 | External link     | `[External link](URL "Optional link title")` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
-
-<br>
 
 |**Page Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
@@ -36,7 +30,6 @@
 | Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
 
-<br>
 
 |**Embedded Content**|                                          |
 | ----------------- | ---------------------------------------- |
@@ -47,7 +40,6 @@
 | Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
 | Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
 
-<br>
 
 |**Special Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
@@ -58,8 +50,6 @@
 | Copyable Text     | `++copyable text++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
 | Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
-
-<br>
 
 **Code Blocks**
 
