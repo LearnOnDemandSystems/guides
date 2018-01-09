@@ -153,7 +153,7 @@ Center aligned text
 
 | | |
 | ------------------| ---------------------------------------- |
-|<font size="5">**Headings:**</font> | |
+|<font size="4">**Headings:**</font> | |
 | Heading 1 | `# Heading 1` |
 | Heading 2 | `## Heading 2` |
 | Heading 3 | `### Heading 3` |
@@ -161,7 +161,7 @@ Center aligned text
 | Heading 5 | `##### Heading 5` |
 | Heading 6 | `###### Heading 6` | 
 |<br> | |
-|<font size="4">**Text Formatting**:| |
+|<font size="4">**Text Formatting**</font>:| |
 | Indent size | `equal to 4 spaces` |
 | **bold** | `**bold**` or `__bold__` |
 | *Italic* | `*italic*` or `_italic_` |
@@ -169,7 +169,7 @@ Center aligned text
 | Escape character | `\escaped text\` |
 | Bullet | `-` |
 |<BR> | |
-|<font size="3">**Link Formatting:**| |
+|<font size="4">**Link Formatting:**</font>| |
 | Internal link | `[text to display](#link-location "optional link title")` |
 | External link | `[External link](URL "Optional link title")` |
 | Relative link | `[text to display](../folder/file.htm "optional link title")` | 
