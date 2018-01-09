@@ -1,8 +1,7 @@
 <a href="https://learnondemandsystems.github.io/guides/idl2/markdown-user-guide.html" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>
 
 # **Headings**
-
-|      |                                          |
+|                   |                                          |
 | ------------------| ---------------------------------------- |
 | Heading 1         | `# Heading 1`                            |
 | Heading 2         | `## Heading 2`                           |
@@ -12,8 +11,7 @@
 | Heading 6         | `###### Heading 6`                       |
 
 ## **Text Formatting**
-
-||                                          |
+|                   |                                          |
 | ----------------- | ---------------------------------------- |
 | Indent size       | `equal to 4 spaces`                      |
 | **bold**          | `**bold**` or `__bold__`                 |
@@ -23,20 +21,17 @@
 | Bullet            | `-`                                      |
 
 ### **Link Formatting**
-
-||                                          |
+|                   |                                          |
 | ------------------| ---------------------------------------- |
 | Internal link     | `[text to display](#link-location "optional link title")` |
 | External link     | `[External link](URL "Optional link title")` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
 
-
-|**Page Formatting**|                                          |
+|Page Formatting    |                                          |
 | ----------------- | ---------------------------------------- |
 | Page break        | `===`                                    |
 | Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
-
 
 |**Embedded Content**|                                          |
 | ----------------- | ---------------------------------------- |
@@ -46,7 +41,6 @@
 | Portal Link       |  `!PORTALLINK[text to display](URL)`     | 
 | Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
 | Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
-
 
 |**Special Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
