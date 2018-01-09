@@ -1,5 +1,7 @@
 <a href="https://learnondemandsystems.github.io/guides/idl2/markdown-user-guide.html" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>
 
+<br>
+
 | **Headings**      |                                          |
 | ------------------| ---------------------------------------- |
 | Heading 1         | `# Heading 1`                            |
@@ -8,6 +10,8 @@
 | Heading 4         | `#### Heading 4`                         |
 | Heading 5         | `##### Heading 5`                        |
 | Heading 6         | `###### Heading 6`                       |
+
+<br>
 
 |**Text Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
@@ -18,11 +22,15 @@
 | Escape character  | `\escaped text\`                         |
 | Bullet            | `-`                                      |
 
+<br>
+
 |**Link Formatting**|                                          |
 | ------------------| ---------------------------------------- |
 | Internal link     | `[text to display](#link-location "optional link title")` |
 | External link     | `[External link](URL "Optional link title")` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
+
+<br>
 
 |**Page Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
@@ -30,6 +38,7 @@
 | Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
 
+<br>
 
 |**Embedded Content**|                                          |
 | ----------------- | ---------------------------------------- |
@@ -40,6 +49,7 @@
 | Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
 | Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
 
+<br>
 
 |**Special Formatting**|                                          |
 | ----------------- | ---------------------------------------- |
