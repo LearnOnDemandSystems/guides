@@ -50,7 +50,6 @@
 
 Inline code block  <code>`code block`</code>   
 
-Fenced code block
 ~~~Fenced_code_block
 ​```PowerShell
 get-service | stop-service -whatif
