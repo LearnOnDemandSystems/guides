@@ -1,52 +1,42 @@
 <a href="https://learnondemandsystems.github.io/guides/idl2/markdown-user-guide.html" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>
 
-|   **Headings**    |                                          |
+| | |
 | ------------------| ---------------------------------------- |
-| Heading 1         | `# Heading 1`                            |
-| Heading 2         | `## Heading 2`                           |
-| Heading 3         | `### Heading 3`                          |
-| Heading 4         | `#### Heading 4`                         |
-| Heading 5         | `##### Heading 5`                        |
-| Heading 6         | `###### Heading 6`                       |
-
-<br>
-
-| **Text Formatting**            |                                          |
-| ----------------- | ---------------------------------------- |
-| Indent size       | `equal to 4 spaces`                      |
-| **bold**          | `**bold**` or `__bold__`                 |
-| *Italic*          | `*italic*` or `_italic_`                 |
-| ~~Strikethrough~~ | `~~strikethrough~~`                      |
-| Escape character  | `\escaped text\`                         |
-| Bullet            | `-`                                      |
-
-<br>
- 
-|   **Link Formatting**                |                                          |
-| ------------------| ---------------------------------------- |
-| Internal link     | `[text to display](#link-location "optional link title")` |
-| External link     | `[External link](URL "Optional link title")` |
-| Relative link     | `[text to display](../folder/file.htm "optional link title")` |
-
-<br>
-
-|Page Formatting    |                                          |
-| ----------------- | ---------------------------------------- |
+|<font size="4">**Headings:**</font> | |
+| Heading 1 | `# Heading 1` |
+| Heading 2 | `## Heading 2` |
+| Heading 3 | `### Heading 3` |
+| Heading 4 | `#### Heading 4` |
+| Heading 5 | `##### Heading 5` |
+| Heading 6 | `###### Heading 6` | 
+|<br> | |
+|<font size="4">**Text Formatting:**</font>| |
+| Indent size | `equal to 4 spaces` |
+| **bold** | `**bold**` or `__bold__` |
+| *Italic* | `*italic*` or `_italic_` |
+| ~~Strikethrough~~ | `~~strikethrough~~` |
+| Escape character | `\escaped text\` |
+| Bullet | `-` |
+|<BR> | |
+|<font size="4">**Link Formatting:**</font>| |
+| Internal link | `[text to display](#link-location "optional link title")` |
+| External link | `[External link](URL "Optional link title")` |
+| Relative link | `[text to display](../folder/file.htm "optional link title")` | 
+|<BR> | |
+ |<font size="4">**Page Formatting**</font>    |                                          |
 | Page break        | `===`                                    |
 | Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
-
-|**Embedded Content**|                                          |
-| ----------------- | ---------------------------------------- |
+|<BR> | |
+ |<font size="4">**Embedded Content:**</font>|                                          |
 | Image             | `![](url)`                               |
 | Video             | `!VIDEO[text to display](url)`           |
 | Image with link   | `[![image description](URL of image "image description")](URL to open when image is clicked)`    |
 | Portal Link       |  `!PORTALLINK[text to display](URL)`     | 
 | Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
 | Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
-
-|**Special Formatting**|                                          |
-| ----------------- | ---------------------------------------- |
+|<BR> | |
+ |<font size="4">**Special Formatting:**</font>|                                          |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Note              | `> [!NOTE]`                              |
@@ -54,7 +44,8 @@
 | Copyable Text     | `++copyable text++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
 | Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
-
+|<BR> | |
+ 
 **Code Blocks**
 
 Inline code block  <code>`code block`</code>   
@@ -151,25 +142,4 @@ Center aligned text
 **Test below**
 
 
-| | |
-| ------------------| ---------------------------------------- |
-|<font size="4">**Headings:**</font> | |
-| Heading 1 | `# Heading 1` |
-| Heading 2 | `## Heading 2` |
-| Heading 3 | `### Heading 3` |
-| Heading 4 | `#### Heading 4` |
-| Heading 5 | `##### Heading 5` |
-| Heading 6 | `###### Heading 6` | 
-|<br> | |
-|<font size="4">**Text Formatting**</font>:| |
-| Indent size | `equal to 4 spaces` |
-| **bold** | `**bold**` or `__bold__` |
-| *Italic* | `*italic*` or `_italic_` |
-| ~~Strikethrough~~ | `~~strikethrough~~` |
-| Escape character | `\escaped text\` |
-| Bullet | `-` |
-|<BR> | |
-|<font size="4">**Link Formatting:**</font>| |
-| Internal link | `[text to display](#link-location "optional link title")` |
-| External link | `[External link](URL "Optional link title")` |
-| Relative link | `[text to display](../folder/file.htm "optional link title")` | 
+
