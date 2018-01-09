@@ -30,7 +30,7 @@
 |<BR> | |
 |<font size="3">**Embedded Content**</font>|                                          |
 | Image             | `![](url)`                               |
-| Video             | `!VIDEO[text to display](url)`           |
+| Video             | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)          |
 | Image with link   | `[![image description](URL of image "image description")](URL to open when image is clicked)`    |
 | Portal Link       |  `!PORTALLINK[text to display](URL)`     | 
 | Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
@@ -43,7 +43,6 @@
 | Include           | `[!INCLUDE [label](url)]`                |
 | Copyable Text     | `++copyable text++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
-| Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
 |<BR> | |
  
 <font size="3">**Code Blocks**</font>
