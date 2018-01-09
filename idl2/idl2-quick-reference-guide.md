@@ -2,7 +2,7 @@
 
 |                   |                                          |
 | ------------------| ---------------------------------------- |
-|<font size="4">**Headings:**</font> | |
+|<font size="3">**Headings**</font> | |
 | Heading 1 | `# Heading 1` |
 | Heading 2 | `## Heading 2` |
 | Heading 3 | `### Heading 3` |
@@ -10,7 +10,7 @@
 | Heading 5 | `##### Heading 5` |
 | Heading 6 | `###### Heading 6` | 
 |<BR>                                      | |
-|<font size="4">**Text Formatting:**</font>| |
+|<font size="3">**Text**</font>| |
 | Indent size | `equal to 4 spaces` |
 | **bold** | `**bold**` or `__bold__` |
 | *Italic* | `*italic*` or `_italic_` |
@@ -18,17 +18,17 @@
 | Escape character | `\escaped text\` |
 | Bullet | `-` |
 |<BR>                                      | |
-|<font size="4">**Link Formatting:**</font>| |
+|<font size="3">**Links**</font>| |
 | Internal link | `[text to display](#link-location "optional link title")` |
 | External link | `[External link](URL "Optional link title")` |
 | Relative link | `[text to display](../folder/file.htm "optional link title")` | 
 |<BR> | |
- |<font size="4">**Page Formatting:**</font>    |                                          |
+|<font size="3">**Page**</font>    |                                          |
 | Page break        | `===`                                    |
 | Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
 |<BR> | |
- |<font size="4">**Embedded Content:**</font>|                                          |
+|<font size="3">**Embedded Content**</font>|                                          |
 | Image             | `![](url)`                               |
 | Video             | `!VIDEO[text to display](url)`           |
 | Image with link   | `[![image description](URL of image "image description")](URL to open when image is clicked)`    |
@@ -36,7 +36,7 @@
 | Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
 | Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
 |<BR> | |
- |<font size="4">**Special Formatting:**</font>|                                          |
+ |<font size="3">**Special**</font>|                                          |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Note              | `> [!NOTE]`                              |
@@ -46,7 +46,7 @@
 | Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
 |<BR> | |
  
-<font size="4">**Code Blocks:**</font>
+<font size="3">**Code Blocks**</font>
 
 Inline code block  <code>`code block`</code>   
 
@@ -56,7 +56,7 @@ get-service | stop-service -whatif
 ​```
 ~~~
 ---
-<font size="4">**Reference links:**</font>
+<font size="3">**Reference links**</font>
 
 ```Text_lookup
 [Reference link]
@@ -71,7 +71,7 @@ get-service | stop-service -whatif
 [1]: URL "Optional link title"
 ```
 ---
-<font size="4">**List Formatting:**</font>
+<font size="3">**List Formatting**</font>
 
 Lists **without** checkboxes:       
 ```Unordered_List
@@ -112,7 +112,7 @@ Lists **with** checkboxes
 ```
 
 ---
-<font size="4">**Sample table:**</font>
+<font size="3">**Sample table**</font>
 
 Left aligned text
 ```
