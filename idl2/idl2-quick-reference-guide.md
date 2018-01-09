@@ -9,7 +9,6 @@
 | Heading 4 | `#### Heading 4` |
 | Heading 5 | `##### Heading 5` |
 | Heading 6 | `###### Heading 6` | 
-|<br> | |
 |<font size="4">**Text Formatting:**</font>| |
 | Indent size | `equal to 4 spaces` |
 | **bold** | `**bold**` or `__bold__` |
