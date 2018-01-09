@@ -1,7 +1,6 @@
 <a href="https://learnondemandsystems.github.io/guides/idl2/markdown-user-guide.html" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>
 
-# **Headings**
-|                   |                                          |
+|   **Headings**    |                                          |
 | ------------------| ---------------------------------------- |
 | Heading 1         | `# Heading 1`                            |
 | Heading 2         | `## Heading 2`                           |
@@ -10,8 +9,9 @@
 | Heading 5         | `##### Heading 5`                        |
 | Heading 6         | `###### Heading 6`                       |
 
-## **Text Formatting**
-|                   |                                          |
+<br>
+
+| **Text Formatting**            |                                          |
 | ----------------- | ---------------------------------------- |
 | Indent size       | `equal to 4 spaces`                      |
 | **bold**          | `**bold**` or `__bold__`                 |
@@ -20,12 +20,15 @@
 | Escape character  | `\escaped text\`                         |
 | Bullet            | `-`                                      |
 
-### **Link Formatting**
-|                   |                                          |
+<br>
+ 
+|   **Link Formatting**                |                                          |
 | ------------------| ---------------------------------------- |
 | Internal link     | `[text to display](#link-location "optional link title")` |
 | External link     | `[External link](URL "Optional link title")` |
 | Relative link     | `[text to display](../folder/file.htm "optional link title")` |
+
+<br>
 
 |Page Formatting    |                                          |
 | ----------------- | ---------------------------------------- |
@@ -148,8 +151,9 @@ Center aligned text
 **Test below**
 
 
-|**Headings:** | |
+| | |
 | ------------------| ---------------------------------------- |
+|**Headings:** | |
 | Heading 1 | `# Heading 1` |
 | Heading 2 | `## Heading 2` |
 | Heading 3 | `### Heading 3` |
