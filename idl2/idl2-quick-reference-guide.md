@@ -46,7 +46,7 @@
 | Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
 |<BR> | |
  
-**Code Blocks:**
+<font size="4">**Code Blocks:**</font>
 
 Inline code block  <code>`code block`</code>   
 
@@ -56,7 +56,7 @@ get-service | stop-service -whatif
 ​```
 ~~~
 ---
-**Reference links:**
+<font size="4">**Reference links:**</font>
 
 ```Text_lookup
 [Reference link]
@@ -71,7 +71,7 @@ get-service | stop-service -whatif
 [1]: URL "Optional link title"
 ```
 ---
-**List Formatting:**
+<font size="4">**List Formatting:**</font>
 
 Lists **without** checkboxes:       
 ```Unordered_List
@@ -112,7 +112,7 @@ Lists **with** checkboxes
 ```
 
 ---
-**Sample table:**
+<font size="4">**Sample table:**</font>
 
 Left aligned text
 ```
