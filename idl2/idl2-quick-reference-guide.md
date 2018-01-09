@@ -1,6 +1,6 @@
 <a href="https://learnondemandsystems.github.io/guides/idl2/markdown-user-guide.html" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>
 
-| | |
+|                   |                                          |
 | ------------------| ---------------------------------------- |
 |<font size="4">**Headings:**</font> | |
 | Heading 1 | `# Heading 1` |
@@ -9,6 +9,7 @@
 | Heading 4 | `#### Heading 4` |
 | Heading 5 | `##### Heading 5` |
 | Heading 6 | `###### Heading 6` | 
+|<BR>                                      | |
 |<font size="4">**Text Formatting:**</font>| |
 | Indent size | `equal to 4 spaces` |
 | **bold** | `**bold**` or `__bold__` |
@@ -16,13 +17,13 @@
 | ~~Strikethrough~~ | `~~strikethrough~~` |
 | Escape character | `\escaped text\` |
 | Bullet | `-` |
-|<BR> | |
+|<BR>                                      | |
 |<font size="4">**Link Formatting:**</font>| |
 | Internal link | `[text to display](#link-location "optional link title")` |
 | External link | `[External link](URL "Optional link title")` |
 | Relative link | `[text to display](../folder/file.htm "optional link title")` | 
 |<BR> | |
- |<font size="4">**Page Formatting**</font>    |                                          |
+ |<font size="4">**Page Formatting:**</font>    |                                          |
 | Page break        | `===`                                    |
 | Horizonal Line    | `---` or `***` or `___`                  |
 | Block quote       | `> text to display in block quote`       |
