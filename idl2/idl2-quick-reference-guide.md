@@ -43,6 +43,7 @@
 | Include           | `[!INCLUDE [label](url)]`                |
 | Copyable Text     | `++copyable text++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
+| Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
 |<BR> | |
  
 <font size="3">**Code Blocks**</font>
