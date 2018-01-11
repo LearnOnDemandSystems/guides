@@ -125,7 +125,8 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
  ### Unordered list **without** checkboxes: 
  
-```- Item 1
+```
+- Item 1
     - Item 1.1
         - Item 1.1.1
         - Item 1.1.2
@@ -135,7 +136,8 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 ### Ordered list **without** checkboxes:
 
-```1. Item 1
+```
+1. Item 1
     1. Item 1.1
         1. Item 1.1.1
         1. Item 1.1.2
@@ -145,7 +147,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 ### Unordered list **with** checkboxes:
 
-```Unordered_List
+```
 - [] Item 1
     - [] Item 1.1
         - [] Item 1.1.1
@@ -156,7 +158,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 ### Ordered list **with** checkboxes:
 
-```Ordered_List
+```
 1. [] Item 1
     1. [] Item 1.1
         1. [] Item 1.1.1
