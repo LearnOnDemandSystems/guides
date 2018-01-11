@@ -88,7 +88,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
     > \[Reference link][1]
     > \[1]: URL "Optional link title"
 
- ## 4. Page formatting
+## 4. Page formatting
 
 - **Page break**: Used to separate content into pages. Separating into pages creates a next button that the student must click to navigate to the next page. This is useful for displaying small sections of instruction to the student at a time, rather than all instructions on the same page within the lab. Type three = (equals) symbols on the line where the current page should end. The new page will begin on the line following the three = symbols.
 
@@ -103,7 +103,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
     > \> text here
     >
     > \> additional text 
-    >
+    
 ## 5. Embedded content
 
 - **Image**: Used to embed an image inline with other content. 
