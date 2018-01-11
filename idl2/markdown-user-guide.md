@@ -100,10 +100,10 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Block quote:** Used to quote information from other sources. Block quote text appears indented from other content in the document. Type a > (greater-than sign) before text that should appear in the block quote. Most Markdown syntax will render inside of block quotes.
 
- > \> text here
- >
- > \> additional text 
- >
+    > \> text here
+    >
+    > \> additional text 
+    >
 ## 5. Embedded content
 
 - **Image**: Used to embed an image inline with other content. 
