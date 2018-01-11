@@ -139,6 +139,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - Both Unordered and Ordered lists can contain checkboxes for the learner to check off steps as completed. Both list types can be combined in the same list. 
 
  ### Unordered list **without** checkboxes: 
+ 
 ```- Item 1
     - Item 1.1
         - Item 1.1.1
@@ -146,7 +147,9 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
     - Item 1.2
 - Item 2
 ```
+
 ### Ordered list **without** checkboxes:
+
 ```1. Item 1
     1. Item 1.1
         1. Item 1.1.1
@@ -154,7 +157,9 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
     1. Item 1.2
 1. Item 2
 ```
+
 ### Unordered list **with** checkboxes:
+
 ```Unordered_List
 - [] Item 1
     - [] Item 1.1
@@ -165,6 +170,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 ```
 
 ### Ordered list **with** checkboxes:
+
 ```Ordered_List
 1. [] Item 1
     1. [] Item 1.1
