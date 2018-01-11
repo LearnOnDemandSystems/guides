@@ -123,7 +123,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - Both Unordered and Ordered lists can contain checkboxes for the learner to check off steps as completed. Both list types can be combined in the same list. 
 
- ### Unordered list **without** checkboxes: 
+### Unordered list **without** checkboxes: 
  
 ```
 - Item 1
