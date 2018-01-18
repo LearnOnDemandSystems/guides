@@ -45,7 +45,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Escape character**: used to prevent text from being formatted into Markdown. Type a \ (backslash) at the beginning of the text that is to be escaped. 
 
-  > \escaped text
+    > \escaped text
 
 - **Bullet**: used to separate and order  items in a list without using numbers
 
@@ -53,15 +53,15 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Inline code block**: used to provide a snippet of code that can be copied and pasted. Type a ` (backtick) on each side of the text that is to be displayed in the code block. The backtick is located above the tab key, to the left of the 1 key on the keyboard.
 
- > <code>`code block`</code> 
+  > <code>`code block`</code> 
 
 - **Fenced code block**: used to provide a programming language-specific code snippet. Type three ` (backticks) on each side of the text that should be displayed in the fenced code block. This should consume at least 3 lines in the text editor; the first line should display three backticks followed by the programming language name, the second line should display the code snippet, and the last line should only display three backticks. Markdown allows for more than one line to be used to display the code snippet. 
 
-> ~~~Fenced_code_block
-> ​```PowerShell
-> get-service | stop-service -whatif
-> ​```
-> ~~~
+  > ~~~Fenced_code_block
+  > ​```PowerShell
+  > get-service | stop-service -whatif
+  > ​```
+  > ~~~
 
 ## 3. Link formatting
 
@@ -87,12 +87,12 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
   - **_Footnote style_**:
     > \[Reference link][1]
     > \[1]: URL "Optional link title"
-    
+
 ## 4. Page formatting
- 
+
 - **Page break**: Used to separate content into pages. Separating into pages creates a next button that the student must click to navigate to the next page. This is useful for displaying small sections of instruction to the student at a time, rather than all instructions on the same page within the lab. Type three = (equals) symbols on the line where the current page should end. The new page will begin on the line following the three = symbols.
 
-  > ===
+  > \===
 
 - **Horizontal Line**: Used to separate content on the same page. Type three --- (dash or hyphen) on the line where the horizontal line should appear. 
 
@@ -100,10 +100,10 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Block quote:** Used to quote information from other sources. Block quote text appears indented from other content in the document. Type a > (greater-than sign) before text that should appear in the block quote. Most Markdown syntax will render inside of block quotes.
 
-    > \> text here
-    >
-    > \> additional text 
-    
+  > \> text here
+  >
+  > \> additional text 
+ 
 ## 5. Embedded content
 
 - **Image**: Used to embed an image inline with other content. 
@@ -138,9 +138,10 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - Both Unordered and Ordered lists can contain checkboxes for the learner to check off steps as completed. Both list types can be combined in the same list. 
 
- ### Unordered list **without** checkboxes: 
+### Unordered list **without** checkboxes: 
  
-```- Item 1
+```
+- Item 1
     - Item 1.1
         - Item 1.1.1
         - Item 1.1.2
@@ -150,7 +151,8 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 ### Ordered list **without** checkboxes:
 
-```1. Item 1
+```
+1. Item 1
     1. Item 1.1
         1. Item 1.1.1
         1. Item 1.1.2
@@ -160,7 +162,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 ### Unordered list **with** checkboxes:
 
-```Unordered_List
+```
 - [] Item 1
     - [] Item 1.1
         - [] Item 1.1.1
@@ -171,7 +173,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 ### Ordered list **with** checkboxes:
 
-```Ordered_List
+```
 1. [] Item 1
     1. [] Item 1.1
         1. [] Item 1.1.1
