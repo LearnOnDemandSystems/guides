@@ -47,6 +47,10 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
     > \escaped text
 
+- **Bullet**: used to separate and order  items in a list without using numbers
+
+  > `-`
+
 - **Inline code block**: used to provide a snippet of code that can be copied and pasted. Type a ` (backtick) on each side of the text that is to be displayed in the code block. The backtick is located above the tab key, to the left of the 1 key on the keyboard.
 
   > <code>`code block`</code> 
@@ -114,6 +118,17 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
   > \[![text to display]url or filepath "Optional image title")]url "Optional link title")
 
+- **Portal Link:** used to launch a hyperlink. In the Cloud Client, this will open the hyperlink in the left window. In the traditional virtualization client (vm-based labs), this will open the hyperlink in a new local browser window.
+
+  > `!PORTALLINK[text to display](URL)`
+
+- **Image Link:** used to display a link with a camera icon, to suggest that the hyperlink opens an image
+
+  > `!IMAGELINK[text to display](URL to image)`
+
+- **Video Link:** used to display a link with a videocamera icon, to suggest that the hyperlink opens a video
+
+  > `!VIDEOLINK[text to display](URL to video)`
 
 ## 6. List formatting
 
@@ -218,6 +233,12 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - **Copyable Text:** used to make text copy to the local clipboard when the student clicks the text. Type two + (plus) symbols on each side of the text that should be made copyable. 
 
   > \++copyable text++
+
+- **Embed YouTube video:** used to embed a YouTube video inline with the lab instructions. URLs from YouTube.com automatically embed. Videos from any other URL will not embed.
+
+  > `!VIDEO[text to display](url)` 
+
+
 
 - **Replacement Token:** used to replace text in lab instructions with a variable that is unknown at the time of authoring the lab instructions. These variables may not be generated or created until the lab is launched by the student. These can include usernames, user first name, user last name, running lab instance ID number, etc. 
   > | Replacement token           |                                          |
