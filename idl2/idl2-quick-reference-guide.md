@@ -29,12 +29,12 @@
 | Block quote       | `> text to display in block quote`       |
 |<BR> | |
 |<font size="3">**Embedded Content**</font>|                                          |
-| Image             | `![](url)`                               |
-| Video             | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)          |
+| Image             | `!IMAGE[Text to display](URL)`                               |
+| Video             | `!VIDEO[Text to display](URL)` (URLs from YouTube.com auto embed)          |
 | Image with link   | `[![image description](URL of image "image description")](URL to open when image is clicked)`    |
-| Portal Link       |  `<[text to display](URL)`     | 
-| Image Link        |  `IMAGE[text to display](URL to image)`| 
-| Video Link        |  `VIDEO[text to display](URL to video)`| 
+| Portal Link       |  `<[Text to display](URL)`     | 
+| Image Link        |  `IMAGE[Text to display](URL)`| 
+| Video Link        |  `VIDEO[Text to display](URL)`| 
 |<BR> | |
  |<font size="3">**Special**</font>|                                          |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
@@ -42,6 +42,7 @@
 | Note              | `> [!NOTE]`                              |
 | Include           | `[!INCLUDE [label](url)]`                |
 | Copyable Text     | `++copyable text++`                      |
+| Type Text         | `+++Type text+++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
 | Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
 |<BR> | |
@@ -55,6 +56,33 @@ Inline code block  <code>`code block`</code>
 get-service | stop-service -whatif
 ​```
 ~~~
+---
+<font size="3">**Dialog**</font>
+
+\^[Text to display][Reference Link]
+
+\> [Reference Link]:
+
+\> This appears in the Dialog
+
+---
+<font size="3">**Commands**</font>
+
+**Single Line:**
+
+```@[Text to display](`command`)```
+
+**Multi Line**
+
+~~~
+@[Text to display][multi-line-command]
+
+[multi-line-command]:
+​```
+Command-goes-here
+```
+~~~
+
 ---
 <font size="3">**Reference links**</font>
 
