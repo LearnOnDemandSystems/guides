@@ -70,7 +70,9 @@ get-service | stop-service -whatif
 
 **Single Line:**
 
-```@[Text to display](`command`)```
+~~~
+@[Text to display](`command`)
+~~~
 
 **Multi Line**
 
