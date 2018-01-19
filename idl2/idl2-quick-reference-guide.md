@@ -32,9 +32,9 @@
 | Image             | `![](url)`                               |
 | Video             | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)          |
 | Image with link   | `[![image description](URL of image "image description")](URL to open when image is clicked)`    |
-| Portal Link       |  `!PORTALLINK[text to display](URL)`     | 
-| Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
-| Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
+| Portal Link       |  `<[text to display](URL)`     | 
+| Image Link        |  `IMAGE[text to display](URL to image)`| 
+| Video Link        |  `VIDEO[text to display](URL to video)`| 
 |<BR> | |
  |<font size="3">**Special**</font>|                                          |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
