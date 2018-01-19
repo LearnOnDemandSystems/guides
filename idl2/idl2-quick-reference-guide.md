@@ -59,12 +59,12 @@ get-service | stop-service -whatif
 ---
 <font size="3">**Dialog**</font>
 
-~~~
+```
 ^[Text to display in lab  instructions][Reference Link]
 
 > [Reference Link]:
-> This text will appear in the Dialog
-~~~
+> This text will appear in the Dialog popup
+```
 
 
 ---
