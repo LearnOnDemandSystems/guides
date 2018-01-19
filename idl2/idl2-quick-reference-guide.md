@@ -76,7 +76,7 @@ get-service | stop-service -whatif
 @[Text to display](`command`)
 ~~~
 
-**Multi Line**
+**Multi-Line:**
 
 ~~~
 @[Text to display][multi-line-command]
