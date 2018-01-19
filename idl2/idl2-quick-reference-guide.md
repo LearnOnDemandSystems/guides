@@ -59,7 +59,9 @@ get-service | stop-service -whatif
 ---
 <font size="3">**Dialog**</font>
 
-\^[Text to display][Reference Link]
+~~~
+^[Text to display][Reference Link]
+~~~
 
 \> [Reference Link]:
 
