@@ -106,7 +106,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
  
 ## 5. Embedded content
 
-- **Image**: Used to embed an image inline with other content. 
+- **Image**: Used to embed an image inline with other content. When images are clicked, they will open in a new window and display at the images full resolution.
 
   > \!IMAGE[text to display]\(url)
 
