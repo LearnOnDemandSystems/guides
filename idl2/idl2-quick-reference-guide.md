@@ -70,13 +70,13 @@ get-service | stop-service -whatif
 ---
 <font size="3">**Commands**</font>
 
-**Single Line:**
+**Single Line**
 
 ~~~
 @[Text to display](`command`)
 ~~~
 
-**Multi-Line:**
+**Multi-Line**
 
 ~~~
 @[Text to display][multi-line-command]
