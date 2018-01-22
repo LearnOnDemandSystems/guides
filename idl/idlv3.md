@@ -1417,13 +1417,6 @@ The Integrated Digital Learning platform is constantly improving as a
 result of customer feedback. Here are some upcoming features that are
 currently in development.
 
--   ~~**XML Document Conversion**\
-    A project is currently underway to allows the conversion of Word
-    documents to XML-format documents that can be imported to the IDL
-    platform.~~
-
-    \[Get features from Chris\]
-
 [^1]: In future releases of the IDL platform, it will be possible to
     substitute a video for the text-based objective and scenario
     sections.
