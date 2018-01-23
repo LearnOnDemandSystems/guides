@@ -11,13 +11,13 @@ Unmanaged cloud resources are cloud resources that are created during the deploy
 The Cloud Slice feature allows you to create labs in the cloud that are pre-configured with compute, networking, and storage cloud resources, and/or that allow students to create their own compute, networking, and storage cloud resources as part of the steps they must complete within that lab. Before adding Cloud Slice support in your labs, there are several tasks you must perform. These tasks are listed below and any optional ones are appropriately marked with "(Optional)". As you work through these tasks, you can use the list below to navigate to the one you are currently working on and then return to the list to continue with another task.
 
 1. [Enable Cloud Slice support on the cloud platform of your choice](#enable-cloud-slice-support-in-your-cloud-platform).
-2. [Configure resource capacity limitations to allow your labs to scale](#configure-resource-capacity-limitations)
-3. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
-4. [Create a Cloud Subscription in OneLearn Lab on Demand](#create-a-cloud-subscription-in-onelearn-lab-on-demand).
-5. [Create a Cloud Subscription Pool in OneLearn Lab on Demand](#create-a-cloud-subscription-pool-in-onelearn-lab-on-demand).
-6. [(Optional) Create a Cloud Resource Template for each template that you want to use during the deployment of your lab(s)](#create-cloud-resource-templates-in-onelearn-lab-on-demand).
-7. [Add Cloud Slice support to your lab profile(s\)](#add-cloud-slice-support-to-your-lab-profiles).
-8. [(Optional) Add a Cloud Exam to your lab profile(s) if you want the labs scored](#add-a-cloud-exam-to-your-lab-profiles).
+1. [Configure resource capacity limitations to allow your labs to scale](#configure-resource-capacity-limitations)
+1. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
+1. [Create a Cloud Subscription Pool in OneLearn Lab on Demand](#create-a-cloud-subscription-pool-in-onelearn-lab-on-demand).
+1. [Create a Cloud Subscription in OneLearn Lab on Demand](#create-a-cloud-subscription-in-onelearn-lab-on-demand).
+1. [(Optional) Create a Cloud Resource Template for each template that you want to use during the deployment of your lab(s)](#create-cloud-resource-templates-in-onelearn-lab-on-demand).
+1. [Add Cloud Slice support to your lab profile(s\)](#add-cloud-slice-support-to-your-lab-profiles).
+1. [(Optional) Add a Cloud Exam to your lab profile(s) if you want the labs scored](#add-a-cloud-exam-to-your-lab-profiles).
 
 ## Enable Cloud Slice support in your cloud platform
 
@@ -30,8 +30,8 @@ To expose the Cloud Slice capability to your lab(s), you must first grant the On
 Select one of the following cloud platforms to learn how you can grant the required access to that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
 1. [Microsoft Azure](microsoft-azure/cloud-slice-setup.md)
-2. Amazon Web Services (coming soon)
-3. Google Cloud Platform (coming soon)
+1. Amazon Web Services (coming soon)
+1. Google Cloud Platform (coming soon)
 
 [Back to top][back-to-top]
 
@@ -42,8 +42,8 @@ By default, cloud subscriptions come pre-configured with relatively low resource
 Select one of the following cloud platforms to learn how you can request for resource quotas to be increased on that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
 1. [Microsoft Azure](microsoft-azure/azure-capacity-limitations.md)
-2. Amazon Web Services (coming soon)
-3. Google Cloud Platform (coming soon)
+1. Amazon Web Services (coming soon)
+1. Google Cloud Platform (coming soon)
 
 [Back to top][back-to-top]
 
@@ -56,8 +56,59 @@ If you want your students to be able to interact with the cloud virtual machines
 To prepare for the deployment of managed virtual machines in your Cloud Slice lab, you must upload the template virtual hard disk(s) that will be used by your managed virtual machines into your cloud platform. Select the cloud platform you are using with your lab from the list below to learn how to upload template virtual hard disk(s) into that cloud platform. If the platform listed is not a hyperlink, managed virtual machines are not yet supported on that platform.
 
 1. [Microsoft Azure](microsoft-azure/cloud-slice-upload-template-vhds.md)
-2. Amazon Web Services (coming soon)
-3. Google Cloud Platform (coming soon)
+1. Amazon Web Services (coming soon)
+1. Google Cloud Platform (coming soon)
+
+[Back to top][back-to-top]
+
+## Create a Cloud Subscription Pool in OneLearn Lab on Demand
+
+Once you have created one or more managed Cloud Subscriptions, you need to add them to a Cloud Subscription Pool that will be used by labs to provision Cloud Slices in a load balanced fashion. Even if you are only using one managed Cloud Subscription, you still must create a Cloud Subscription Pool.
+
+The first Cloud Subscription you add to a Cloud Subscription Pool is the master Cloud Subscription for that pool. The master subscription is the subscription that is used when creating managed virtual machines in Cloud Slices from template virtual hard disk files that are in the master subscription. We'll discuss how to set up your template virtual hard disks in more detail in the next section.
+
+To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the following steps:
+
+1. Navigate to the <a href="https://labondemand.com" target="_blank">OneLearn Lab on Demand portal</a> and sign in.
+
+1. Open the **Cloud Subscription Pools** section on the Cloud Services tile.
+
+   ![Open the Cloud Subscription Pools section in OneLearn Lab on Demand](images/lod-open-cloud-subscription-pools.png)
+
+1. Click **Create Cloud Subscription Pool** to create a new cloud subscription pool in LOD.
+
+   ![Click on Create Cloud Subscription Pool link](images/lod-create-cloud-subscription-pool.png)
+
+1. Assign values to the **Name**, **First Name Prefix**, **Last Name Prefix**, and **Account Name Prefix** fields on the **Basic Information** tab.
+
+   | Field Name          | Description                              |
+   | ------------------- | ---------------------------------------- |
+   | Name                | The name of the Cloud Subscription Pool being created. |
+   | First Name Prefix   | A prefix that will be applied as part of the first name of the accounts created for the Cloud Slice. The entire first name will be composed of this prefix followed by the lab instance id. |
+   | Last Name Prefix    | A prefix that will be applied as part of the last name of the accounts created for the Cloud Slice. The entire last name will be composed of this prefix followed by the lab instance id. |
+   | Account Name Prefix | A prefix that will be applied as part of the SAM account name of the accounts created for the Cloud Slice. The entire SAM account name will be composed of this prefix followed by the lab instance id. |
+
+   ![Assign default values to the Cloud Subscription Pool](images/lod-cloud-subscription-pool-basic-information.png)
+
+1. Open the **Cloud Subscriptions** tab and click **Add Subscription** to add a subscription to the pool.
+
+   ![Click the Add Subscription link on the Cloud Subscriptions tab](images/lod-cloud-subscription-pool-cloud-subscriptions-add.png)
+
+1. Find a managed Cloud Subscription you want to add by doing the following:
+
+   1. Set the **Name** filter options to **Does**, **Equal**, and the name of the managed Cloud Subscription you want to add to the pool.
+   1. Select **Is Not** from the dropdown options next to the **Provisioned From Pass** filter.
+   1. Click **Search** to search for the managed Cloud Subscription you want to add.
+   1. Check the check box next to the managed Cloud Subscription(s) in the search results.
+   1. Click **OK** to add the checked Cloud Subscription(s) to the Cloud Subscription Pool.
+
+   ![Find a managed Cloud Subscription to add to the pool](images/lod-cloud-subscription-pool-cloud-subscriptions-choose.png)
+
+1. If necessary, repeat steps 5 and 6 for each managed Cloud Subscription that you want to add to the pool.
+
+1. Click **Save** to save the Cloud Subscription Pool in LOD.
+
+   ![Save the Cloud Subscription Pool in OneLearn Lab on Demand](images/lod-cloud-subscription-pool-cloud-subscriptions-save.png)
 
 [Back to top][back-to-top]
 
@@ -67,15 +118,15 @@ Once you have enabled Cloud Slice support in the cloud platform of your choice (
 
 1. Navigate to the <a href="https://labondemand.com" target="_blank">OneLearn Lab on Demand portal</a> and sign in.
 
-2. Open the **Cloud Subscriptions** section on the Cloud Services tile.
+1. Open the **Cloud Subscriptions** section on the Cloud Services tile.
 
    ![Open the Cloud Subscriptions section in OneLearn Lab on Demand](images/lod-open-cloud-subscriptions.png)
 
-3. Click **Create Cloud Subscription** to add a new managed cloud subscription to LOD.
+1. Click **Create Cloud Subscription** to add a new managed cloud subscription to LOD.
 
    ![Click on Create Cloud Subscription link](images/lod-create-cloud-subscription.png)
 
-4. Populate the following required fields in the **Create Cloud Subscription** form:
+1. Populate the following required fields in the **Create Cloud Subscription** form:
 
    | Tab                   | Field Name          | Description                              |
    | --------------------- | ------------------- | ---------------------------------------- |
@@ -112,58 +163,7 @@ Once you have enabled Cloud Slice support in the cloud platform of your choice (
 
    ![Create Cloud Subscription - Storage tab](images/lod-cloud-subscription-storage.png)
 
-5. Once you have provided the information you want to use with your managed Cloud Subscription, click **Save** to save it in LOD.
-
-[Back to top][back-to-top]
-
-## Create a Cloud Subscription Pool in OneLearn Lab on Demand
-
-Once you have created one or more managed Cloud Subscriptions, you need to add them to a Cloud Subscription Pool that will be used by labs to provision Cloud Slices in a load balanced fashion. Even if you are only using one managed Cloud Subscription, you still must create a Cloud Subscription Pool.
-
-The first Cloud Subscription you add to a Cloud Subscription Pool is the master Cloud Subscription for that pool. The master subscription is the subscription that is used when creating managed virtual machines in Cloud Slices from template virtual hard disk files that are in the master subscription. We'll discuss how to set up your template virtual hard disks in more detail in the next section.
-
-To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the following steps:
-
-1. Navigate to the <a href="https://labondemand.com" target="_blank">OneLearn Lab on Demand portal</a> and sign in.
-
-2. Open the **Cloud Subscription Pools** section on the Cloud Services tile.
-
-   ![Open the Cloud Subscription Pools section in OneLearn Lab on Demand](images/lod-open-cloud-subscription-pools.png)
-
-3. Click **Create Cloud Subscription Pool** to create a new cloud subscription pool in LOD.
-
-   ![Click on Create Cloud Subscription Pool link](images/lod-create-cloud-subscription-pool.png)
-
-4. Assign values to the **Name**, **First Name Prefix**, **Last Name Prefix**, and **Account Name Prefix** fields on the **Basic Information** tab.
-
-   | Field Name          | Description                              |
-   | ------------------- | ---------------------------------------- |
-   | Name                | The name of the Cloud Subscription Pool being created. |
-   | First Name Prefix   | A prefix that will be applied as part of the first name of the accounts created for the Cloud Slice. The entire first name will be composed of this prefix followed by the lab instance id. |
-   | Last Name Prefix    | A prefix that will be applied as part of the last name of the accounts created for the Cloud Slice. The entire last name will be composed of this prefix followed by the lab instance id. |
-   | Account Name Prefix | A prefix that will be applied as part of the SAM account name of the accounts created for the Cloud Slice. The entire SAM account name will be composed of this prefix followed by the lab instance id. |
-
-   ![Assign default values to the Cloud Subscription Pool](images/lod-cloud-subscription-pool-basic-information.png)
-
-5. Open the **Cloud Subscriptions** tab and click **Add Subscription** to add a subscription to the pool.
-
-   ![Click the Add Subscription link on the Cloud Subscriptions tab](images/lod-cloud-subscription-pool-cloud-subscriptions-add.png)
-
-6. Find a managed Cloud Subscription you want to add by doing the following:
-
-   1. Set the **Name** filter options to **Does**, **Equal**, and the name of the managed Cloud Subscription you want to add to the pool.
-   2. Select **Is Not** from the dropdown options next to the **Provisioned From Pass** filter.
-   3. Click **Search** to search for the managed Cloud Subscription you want to add.
-   4. Check the check box next to the managed Cloud Subscription(s) in the search results.
-   5. Click **OK** to add the checked Cloud Subscription(s) to the Cloud Subscription Pool.
-
-   ![Find a managed Cloud Subscription to add to the pool](images/lod-cloud-subscription-pool-cloud-subscriptions-choose.png)
-
-7. If necessary, repeat steps 5 and 6 for each managed Cloud Subscription that you want to add to the pool.
-
-8. Click **Save** to save the Cloud Subscription Pool in LOD.
-
-   ![Save the Cloud Subscription Pool in OneLearn Lab on Demand](images/lod-cloud-subscription-pool-cloud-subscriptions-save.png)
+1. Once you have provided the information you want to use with your managed Cloud Subscription, click **Save** to save it in LOD.
 
 [Back to top][back-to-top]
 
@@ -176,8 +176,8 @@ A Cloud Resource Template contains a template document that defines the resource
 Before you get started creating Cloud Resource Templates, you need at least one cloud platform template that you want to use in a Cloud Slice lab. If you haven't already identified templates that you want to use in your lab, select the cloud platform you are using with your lab from the list below to learn how to find templates for that cloud platform. If the platform listed is not a hyperlink, Cloud Resource Templates are not yet supported on that platform.
 
 1. [Microsoft Azure](microsoft-azure/cloud-slice-find-resource-templates.md)
-2. Amazon Web Services (coming soon)
-3. Google Cloud Platform (coming soon)
+1. Amazon Web Services (coming soon)
+1. Google Cloud Platform (coming soon)
 
 Once you have identified one or more cloud platform template documents you want to use, you can create a Cloud Resource Template in LOD by logging on to the Lab on Demand portal and completing the following steps:
 
@@ -185,11 +185,11 @@ Once you have identified one or more cloud platform template documents you want 
 
    ![Click on Cloud Resource Templates](images/lod-open-cloud-resource-templates.png)
 
-2. In the Cloud Resource Templates view, click **Create Resource Template** to create a new Cloud Resource Template.
+1. In the Cloud Resource Templates view, click **Create Resource Template** to create a new Cloud Resource Template.
 
    ![Click Create Resource Template to create a new Cloud Resource Template](images/lod-create-cloud-resource-template.png)
 
-3. In the Create Resource Template view, populate the following required fields in the **Create Resource Template** form:
+1. In the Create Resource Template view, populate the following required fields in the **Create Resource Template** form:
 
    | Tab                   | Field Name                               | Description                              |
    | --------------------- | ---------------------------------------- | ---------------------------------------- |
@@ -210,7 +210,7 @@ Once you have identified one or more cloud platform template documents you want 
 
    ![Create Cloud Resource Template - Basic Information Tab](images/lod-cloud-resource-template-basic-information.png)
 
-4. If your Cloud Resource Template has parameters whose values you want displayed to students, or whose values must be set when the Cloud Resource Template is added to a lab profile, click the **Parameters** tab. From this tab you can either add individual template parameters by clicking the **Add Template Parameter** button, or you can add a set of template parameters by clicking the **Import From Json** button to import a JSON document that defines the parameters. In either case, you will end up with one or more parameters defined for your Cloud Resource Template. Each parameter has the following properties:
+1. If your Cloud Resource Template has parameters whose values you want displayed to students, or whose values must be set when the Cloud Resource Template is added to a lab profile, click the **Parameters** tab. From this tab you can either add individual template parameters by clicking the **Add Template Parameter** button, or you can add a set of template parameters by clicking the **Import From Json** button to import a JSON document that defines the parameters. In either case, you will end up with one or more parameters defined for your Cloud Resource Template. Each parameter has the following properties:
 
    | **Property Name**      | **Description**                          |
    | ---------------------- | ---------------------------------------- |
@@ -226,7 +226,7 @@ Once you have identified one or more cloud platform template documents you want 
 
    If you want to remove a parameter that you mistakenly added, you can click the **Delete** button to the right of the parameter you want to remove.
 
-5. Once you have configured your Cloud Resource Template, click **Save** to save it in LOD.
+1. Once you have configured your Cloud Resource Template, click **Save** to save it in LOD.
 
 [Back to top][back-to-top]
 
@@ -255,9 +255,9 @@ The **Virtualization Platform** setting defines the platform used to launch mana
 If you have virtual machines that you are launching in your cloud platform when this lab is provisioned, open the **Virtual Machines tab** and click **Create Virtual Machine** to create a virtual machine profile for the template virtual hard disk in your cloud platform. This will open the Create Virtual Machine Profile view. When creating a virtual machine profile for a virtual machine provisioned in a cloud platform, there are only a few differences from the standard virtual machine profile creation process:
 
 1. On the **Basic Information** tab, ensure that the **Platform** field is set to the cloud platform where the virtual machine will be provisioned.
-2. In the **Machine Type** field on the same tab, select the size of the VM that you want provisioned when the VM is created. When choosing a VM size, pay close attention to the cost and the number of cores required for that VM. You must ensure that you have enough resources available in your subscription for all students taking your lab to provision VMs of the size you choose.
-3. On the **Hard Disks** tab, click **Add Hard Disk** and type in the name of the template virtual hard disk file that you uploaded into your cloud subscription that you want to use as a template when provisioning this virtual hard disk.
-4. On the **Network Adapters** tab, if you want a network adapter provisioned for the virtual machine, click **Add Network Adapter**, give that network adapter a name in the **Name** field, and configure the other options you want for your network adapter.
+1. In the **Machine Type** field on the same tab, select the size of the VM that you want provisioned when the VM is created. When choosing a VM size, pay close attention to the cost and the number of cores required for that VM. You must ensure that you have enough resources available in your subscription for all students taking your lab to provision VMs of the size you choose.
+1. On the **Hard Disks** tab, click **Add Hard Disk** and type in the name of the template virtual hard disk file that you uploaded into your cloud subscription that you want to use as a template when provisioning this virtual hard disk.
+1. On the **Network Adapters** tab, if you want a network adapter provisioned for the virtual machine, click **Add Network Adapter**, give that network adapter a name in the **Name** field, and configure the other options you want for your network adapter.
 
 Those settings aside, the remaining settings for the virtual machine profile should be familiar to you if you have already created virtual machine profiles in LOD. Once you have finished creating the virtual machine, click **Save** to save it and then return to the **Create Lab Profile** view.
 
@@ -305,9 +305,9 @@ If you want to add an exam to a Cloud Slice lab, the process is the same as addi
 Once you have indicated you want an automated exam in your lab, you can add scoring items that can be used to score a Cloud Slice by doing the following:
 
 1. Click **Add Scoring Item** in the **Scoring Items** section.
-2. Optionally assign a different value to the **Score Value** field if you want that scoring item to be worth more than 1 point.
-3. In the **Type** field, select **Cloud Subscription Scoring** from the list of options.
-4. In the **Scoring Script** field, enter the PowerShell script you want to use to determine whether the student completed the work required to receive the value for that scoring item. This script will be run automatically against each student's Cloud Slice subscription. To include values relative to the specific Cloud Slice lab being scored, create a `param` block at the top of the script and include the parameters you want to reference from within your script. The parameters you can choose from are listed below.
+1. Optionally assign a different value to the **Score Value** field if you want that scoring item to be worth more than 1 point.
+1. In the **Type** field, select **Cloud Subscription Scoring** from the list of options.
+1. In the **Scoring Script** field, enter the PowerShell script you want to use to determine whether the student completed the work required to receive the value for that scoring item. This script will be run automatically against each student's Cloud Slice subscription. To include values relative to the specific Cloud Slice lab being scored, create a `param` block at the top of the script and include the parameters you want to reference from within your script. The parameters you can choose from are listed below.
 
 ### Parameters optionally sent to Cloud Slice PBT scoring scripts
 
