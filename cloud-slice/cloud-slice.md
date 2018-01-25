@@ -97,7 +97,7 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
    | Block Lab Launches...                   | This checkbox determines if lab launches should be blocked if no subscriptions are available. |
    | Custom subscription unavailable message | This message will be presented to users if they try to launch a lab and a subscription is unavailable. If this field is blank, the default message will be used. |
 
-   ![Assign default values to the Cloud Subscription Pool](images/create-cloude-subscription-pool.png)
+   ![Assign default values to the Cloud Subscription Pool](images/create-cloud-subscription-pool.png)
 
 5. Click **Save** to create the Cloud Subscription Pool.
 
