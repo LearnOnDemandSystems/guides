@@ -2,14 +2,14 @@
 
 **Revision History**
 
-  **Version**   **Date**      **Edited By**     **Comments**
-  ------------- ------------- ----------------- -------------------------
-  0.1           May 4, 2017   Stephanie Clark   Unreleased; first draft
+| Version | Date        | Edited By       | Comments                |
+| ------- | ----------- | --------------- | ----------------------- |
+| 1     | August 11, 2017 | Stephanie Clark | Release 1 |
 
 **Disclaimer**
 
-This document supports a ~~preliminary~~ release of a software product
-that may be changed substantially in the future. ~~This document~~ It is
+This document supports a release of a software product
+that may be changed substantially in the future. It is
 provided for informational purposes only and Learn on Demand Systems,
 LLC, makes no warranties, either express or implied, in this document.
 Information in this document, including URL and other Internet Web site
@@ -140,8 +140,7 @@ To create an Assessment exam, follow these steps:
 1.  On the **Exam** tab, set **Scoring Type** to **Assessment** and
     under **Questions** click **Add Page**.
 
-> ![](media/image003.png){width="1.1992027559055118in"
-> height="1.3247003499562555in"}
+> ![](media/image003.png) 
 
 1.  In the **Page 1** field, type the name you would like to give the
     page. This is optional and will be used as the Tab title in the lab
@@ -163,8 +162,7 @@ To create an Assessment exam, follow these steps:
 
     d.  **Text Response, Regex Match**
 
-> ![](media/image005.png){width="3.2556528871391075in"
-> height="1.9913046806649168in"}
+> ![](media/image005.png) 
 
 1.  Click **Add Answer**.
 
@@ -188,8 +186,7 @@ To create an Assessment exam, follow these steps:
 
     a.  Exact answer wanted
 
-> ![](media/image008.png){width="3.7024453193350833in"
-> height="2.0608694225721784in"}
+> ![](media/image008.png) 
 >
 > - OR -
 
@@ -202,8 +199,7 @@ a.  Regular expression the answer must match
     
     iii. End the expression with the \$ character
 
-> ![](media/image009.png){width="4.429861111111111in"
-> height="2.2400142169728783in"}
+> ![](media/image009.png) 
 >
 > Note: The answers are not case sensitive.
 
@@ -218,8 +214,7 @@ a.  Regular expression the answer must match
 
 3.  Click **OK**.
 
-> ![](media/image010.png){width="5.436000656167979in"
-> height="1.6633234908136483in"}
+> ![](media/image010.png) 
 
 **Completing the Exam Structure**
 
@@ -233,8 +228,7 @@ a.  Regular expression the answer must match
 3.  Uncheck **Show Results** if you do not want the results to be shown
     to the student when the exam is graded.
 
-> ![](media/image011.png){width="1.6427755905511812in"
-> height="1.072707786526684in"}
+> ![](media/image011.png) 
 
 1.  Save the lab profile to save the exam structure.
 
@@ -254,8 +248,7 @@ To create a Manual – Screenshots exam, follow these steps:
 
 2.  Under **Scoring Items**, click **Add Scoring Item**.
 
-> ![](media/image012.png){width="2.130184820647419in"
-> height="1.8152384076990375in"}
+> ![](media/image012.png) 
 
 1.  In the **Add Scoring Item** dialog, enter an optional name for the
     item.
@@ -277,8 +270,7 @@ To create a Manual – Screenshots exam, follow these steps:
 
 6.  Click **OK**.
 
-> ![](media/image013.png){width="5.2927515310586175in"
-> height="4.572916666666667in"}
+> ![](media/image013.png) 
 
 1.  Repeat this process for the number scoring items you need.
 
@@ -287,8 +279,7 @@ To create a Manual – Screenshots exam, follow these steps:
     **Passing Score** field. It will show the total number of points
     available automatically.
 
-> ![](media/image014.png){width="1.9445155293088363in"
-> height="1.0959995625546806in"}
+> ![](media/image014.png) 
 
 1.  Save the lab profile to save the exam structure.
 
@@ -301,8 +292,7 @@ To create a Manual – Saved Environment exam, follow these steps:
 
 2.  Under **Scoring Items**, click **Add Scoring Item**.
 
-> ![](media/image015.png){width="2.037564523184602in"
-> height="1.8391699475065617in"}
+> ![](media/image015.png) 
 
 1.  In the **Add Scoring Item** dialog, enter an optional name for the
     item.
@@ -323,8 +313,7 @@ To create a Manual – Saved Environment exam, follow these steps:
 
 6.  Click **OK**.
 
-> ![](media/image016.png){width="5.6913604549431325in"
-> height="3.628850612423447in"}
+> ![](media/image016.png) 
 
 1.  Repeat this process for the number scoring items you need.
 
@@ -336,8 +325,7 @@ To create a Manual – Saved Environment exam, follow these steps:
 3.  Check **Allow User Notes**, if appropriate. This allows the user to
     include a note when submitting the exam for grading.
 
-> ![](media/image017.png){width="2.1563549868766403in"
-> height="1.456000656167979in"}
+> ![](media/image017.png) 
 
 1.  Save the lab profile to save the exam structure.
 
@@ -358,8 +346,7 @@ added the VMs and networks, and save it:
 
 1.  Click **Launch** on the **Lab Profile** page.
 
-> ![](media/image018.png){width="2.143455818022747in"
-> height="1.3645833333333333in"}
+> ![](media/image018.png) 
 
 1.  When the lab is running, sign into the first VM that will have a
     scoring script ran against it.
@@ -373,8 +360,7 @@ added the VMs and networks, and save it:
     explanation of the service and its requirements. Click **Yes** to
     continue with the installation.
 
-> ![](media/image020.png){width="5.344890638670166in"
-> height="3.1458333333333335in"}
+> ![](media/image020.png) 
 
 The service will briefly show it is loading and then the dialog box will
 close.
@@ -399,8 +385,7 @@ You will now need to save differencing disks of the VMs.
     for the disk, and add a note of the changes made in the differencing
     disk and click **Next**.
 
-> ![](media/image023.png){width="4.619496937882765in"
-> height="3.609722222222222in"}
+> ![](media/image023.png) 
 
 1.  Wait for the Saving Differencing Disks banner to close. In the
     **Save Successful** dialog, click **OK**.
@@ -409,14 +394,12 @@ You will now need to save differencing disks of the VMs.
 
 1.  Click the **Exit** icon and click **Cancel** **Lab**.
 
-> ![](media/image025.png){width="2.22788167104112in"
-> height="1.2052482502187227in"}
+> ![](media/image025.png) 
 
 1.  In the **Cancel Lab** dialog, click **Yes, cancel my lab** and close
     the lab window.
 
-> ![](media/image026.png){width="4.913888888888889in"
-> height="1.9356310148731408in"}
+> ![](media/image026.png) 
 
 **Creation of Automated Exam**
 
@@ -425,8 +408,7 @@ To create an Automated exam, follow these steps:
 1.  On the **Exam** tab, under **Scoring Items** click **Add Scoring
     Item**.
 
-> ![](media/image027.png){width="1.5861898512685915in"
-> height="1.7280008748906386in"}
+> ![](media/image027.png) 
 
 1.  In the **Add Scoring Item** dialog, enter an optional name for the
     item.
@@ -448,8 +430,7 @@ To create an Automated exam, follow these steps:
 
 7.  Click **OK**.
 
-> ![](media/image028.png){width="6.190183727034121in"
-> height="3.3364829396325457in"}
+> ![](media/image028.png) 
 
 1.  Repeat this process for the number scoring items you need.
 
@@ -464,8 +445,7 @@ To create an Automated exam, follow these steps:
 4.  Uncheck **Show Results** if you do not want the results to be shown
     to the student when the exam is graded.
 
-> ![](media/image029.png){width="2.0250863954505687in"
-> height="1.3018416447944008in"}
+> ![](media/image029.png) 
 
 1.  Save the lab profile to save the exam structure.
 
@@ -484,38 +464,32 @@ scripts. To do this,
 
     a.  Click **Test This** to test the scoring script
 
-> ![](media/image031.png){width="1.670932852143482in"
-> height="2.547826990376203in"}
+> ![](media/image031.png) 
 
 a.  The Test Scoring Item dialog will appear and will show a progress
     bar during testing.
 
-> ![](media/image032.png){width="3.6060608048993874in"
-> height="3.0320352143482063in"}
+> ![](media/image032.png) 
 
 a.  When the testing is complete, a dialog will show the scoring script
     output. After reviewing the script to ensure it worked as planned,
     click **Close**.
 
-> ![](media/image033.png){width="3.963548775153106in"
-> height="3.2424245406824146in"}
+> ![](media/image033.png) 
 
 a.  If necessary, click **Edit Scoring Script** to make changes to your
     script and then click **OK**.
 
-> ![](media/image034.png){width="5.143939195100613in"
-> height="2.986340769903762in"}
+> ![](media/image034.png) 
 
 1.  After you have tested the script for each question, on the **Exit**
     menu, click **Cancel Exam**.
 
-> ![](media/image035.png){width="2.613636264216973in"
-> height="0.8191983814523185in"}
+> ![](media/image035.png) 
 
 1.  In the **Cancel Exam** dialog, click **Yes, cancel my exam**.
 
-> ![](media/image036.png){width="4.4929549431321085in"
-> height="1.7467804024496938in"}
+> ![](media/image036.png) 
 
 **Taking an Exam (Student Perspective)**
 
@@ -556,8 +530,7 @@ b.  Questions and answer choices from that page
         to receive the points for the question. No partial points are
         awarded.
 
-> ![](media/image038.png){width="6.173912948381452in"
-> height="3.7966929133858267in"}
+> ![](media/image038.png) 
 
 1.  If the exam has more than one page, click the **&gt;** arrow at the
     bottom to advance to the next page or the **&lt;** arrow to go back
@@ -578,8 +551,7 @@ b.  Questions and answer choices from that page
 > scoring message will appear notifying the student whether they passed
 > or not and their score.
 >
-> ![](media/image041.png){width="3.265404636920385in"
-> height="1.6441590113735782in"}
+> ![](media/image041.png) 
 >
 > If you chose not to **Show Results**, they would receive the following
 > message:
@@ -619,8 +591,7 @@ Content tab. To take the exam, the student will follow these steps:
     complete exam or **No, not yet** to go back and possibly change any
     screenshots.
 
-> ![](media/image047.png){width="3.4262292213473318in"
-> height="1.543999343832021in"}
+> ![](media/image047.png) 
 >
 > Once **Yes** is clicked, the exam is submitted for grading.
 >
@@ -637,14 +608,12 @@ Content tab. To take the exam, the student will follow these steps:
 
 2.  When finished with the exam, click **Submit for Grading**.
 
-> ![](media/image049.png){width="1.4439129483814523in"
-> height="4.095999562554681in"}
+> ![](media/image049.png) 
 
 1.  In the **Submit For Grading** dialog, select **Yes** if ready to
     complete exam or **No, not yet** to go back and change something.
 
-> ![](media/image047.png){width="3.4262292213473318in"
-> height="1.543999343832021in"}
+> ![](media/image047.png) 
 >
 > Once **Yes** is clicked, the exam is saved and submitted for grading.
 >
@@ -660,28 +629,24 @@ Content tab. To take the exam, the student will follow these steps:
 
 2.  When finished with the exam, click **Submit for Grading**.
 
-> ![](media/image050.png){width="1.523982939632546in"
-> height="2.4270833333333335in"}
+> ![](media/image050.png) 
 
 1.  In the **Submit For Grading** dialog, select **Yes** if ready to
     complete exam or **No, not yet** to go back and change something.
 
-> ![](media/image051.png){width="3.90625in"
-> height="1.6351159230096237in"}
+> ![](media/image051.png) 
 >
 > Once **Yes** is clicked, a dialog will appear while the exam is being
 > graded by the scripts.
 >
-> ![](media/image052.png){width="3.84375in"
-> height="1.0106266404199475in"}
+> ![](media/image052.png) 
 >
 > Once the grading is complete, if you had selected the **Show Results**
 > option on the **Exam** tab of the lab profile, a scoring message will
 > appear notifying the student whether they passed or not and their
 > score.
 >
-> ![](media/image041.png){width="3.265404636920385in"
-> height="1.6441590113735782in"}
+> ![](media/image041.png) 
 >
 > If you chose not to **Show Results**, they would receive the following
 > message:
@@ -696,8 +661,7 @@ locations:
 -   Click **Find Submitted Exams** link on the **Exams** tile on the
     **Admin** page.
 
-> ![](media/image053.png){width="1.9120002187226597in"
-> height="1.3419313210848645in"}
+> ![](media/image053.png) 
 >
 > This shows all submitted exams for your organization.
 >
@@ -726,8 +690,7 @@ locations:
 
 > Description
 >
-> ![](media/image058.png){width="2.6041666666666665in"
-> height="1.073941382327209in"}
+> ![](media/image058.png) 
 >
 > Reference Image
 >
@@ -758,8 +721,7 @@ locations:
 
 1.  When finished scoring, click Save Score at the bottom of the page.
 
-> ![](media/image064.png){width="1.4366491688538932in"
-> height="1.1723600174978128in"}
+> ![](media/image064.png) 
 >
 > Once an exam is scored, the score can still be edited. To do this,
 > click **Edit Score** on the **Exam Result** page.
@@ -770,16 +732,14 @@ locations:
 
 1.  On the **Exam Result** page, click the **Grade Environment** button.
 
-> ![](media/image066.png){width="3.5416666666666665in"
-> height="3.345867235345582in"}
+> ![](media/image066.png) 
 >
 > The exam will resume. The Content tab will contain the scoring items.
 
 1.  Review the information under **Application** including any **User
     Notes**.
 
-> ![](media/image067.png){width="1.9777263779527559in"
-> height="3.613313648293963in"}
+> ![](media/image067.png) 
 
 1.  Read the **Scoring Instructions** and then evaluate the saved
     environment.
@@ -793,8 +753,7 @@ locations:
 1.  At the top of the **Content** tab, click **Correct** or
     **Incorrect**.
 
-> ![](media/image069.png){width="2.030133420822397in"
-> height="1.262435476815398in"}
+> ![](media/image069.png) 
 
 1.  Repeat this process for each scoring item.
 
@@ -804,21 +763,18 @@ locations:
 1.  When finished scoring, click **Save Score** at the bottom of the
     page.
 
-> ![](media/image070.png){width="1.8333333333333333in"
-> height="0.9469695975503062in"}
+> ![](media/image070.png) 
 
 1.  In the **Save Score** dialog box, select **Yes** if ready to save
     the score or **No, not yet** to go back and change something. NOTE:
     You cannot edit a score once it is saved. The environment will be
     torn down and no longer available for reference.
 
-> ![](media/image071.png){width="4.59375in"
-> height="1.8522233158355206in"}
+> ![](media/image071.png) 
 >
 > Once **Yes** is clicked, the exam score is submitted.
 >
-> ![](media/image072.png){width="4.260416666666667in"
-> height="1.6544619422572178in"}
+> ![](media/image072.png) 
 
 **Reviewing Exam Results**
 

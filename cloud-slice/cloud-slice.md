@@ -28,11 +28,9 @@ To expose the Cloud Slice capability to your lab(s), you must first grant the On
 
 Select one of the following cloud platforms to learn how you can grant the required access to that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
-1. [Microsoft Azure][azure-setup]
+1. [Microsoft Azure](microsoft-azure/cloud-slice-setup.md)
 1. Amazon Web Services (coming soon)
 1. Google Cloud Platform (coming soon)
-
-[azure-setup]: microsoft-azure/cloud-slice-setup.md "How to enable Cloud Slice support in Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -42,11 +40,9 @@ By default, cloud subscriptions come pre-configured with relatively low resource
 
 Select one of the following cloud platforms to learn how you can request for resource quotas to be increased on that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
-1. [Microsoft Azure][azure-capacity-limitations]
+1. [Microsoft Azure](microsoft-azure/azure-capacity-limitations.md)
 1. Amazon Web Services (coming soon)
 1. Google Cloud Platform (coming soon)
-
-[azure-capacity-limitations]: microsoft-azure/azure-capacity-limitations.md "Configure subscription quotas in Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -58,11 +54,9 @@ If you want your students to be able to interact with the cloud virtual machines
 
 To prepare for the deployment of managed virtual machines in your Cloud Slice lab, you must upload the template virtual hard disk(s) that will be used by your managed virtual machines into your cloud platform. Select the cloud platform you are using with your lab from the list below to learn how to upload template virtual hard disk(s) into that cloud platform. If the platform listed is not a hyperlink, managed virtual machines are not yet supported on that platform.
 
-1. [Microsoft Azure][azure-upload-template-vhds]
+1. [Microsoft Azure](microsoft-azure/cloud-slice-upload-template-vhds.md)
 1. Amazon Web Services (coming soon)
 1. Google Cloud Platform (coming soon)
-
-[azure-upload-template-vhds]: microsoft-azure/cloud-slice-upload-template-vhds.md "How to upload template virtual hard disks into Microsoft Azure"
 
 [Back to top][back-to-top]
 
@@ -166,11 +160,9 @@ A Cloud Resource Template contains a template document that defines the resource
 
 Before you get started creating Cloud Resource Templates, you need at least one cloud platform template that you want to use in a Cloud Slice lab. If you haven't already identified templates that you want to use in your lab, select the cloud platform you are using with your lab from the list below to learn how to find templates for that cloud platform. If the platform listed is not a hyperlink, Cloud Resource Templates are not yet supported on that platform.
 
-1. [Microsoft Azure][azure-find-arm-templates]
+1. [Microsoft Azure](microsoft-azure/cloud-slice-find-resource-templates.md)
 1. Amazon Web Services (coming soon)
 1. Google Cloud Platform (coming soon)
-
-[azure-find-arm-templates]: microsoft-azure/cloud-slice-find-resource-templates.md "How to find Azure Resource Manager templates for use with Microsoft Azure"
 
 Once you have identified one or more cloud platform template documents you want to use, you can create a Cloud Resource Template in LOD by logging on to the Lab on Demand portal and completing the following steps:
 
