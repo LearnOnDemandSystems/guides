@@ -150,8 +150,6 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 
 [Back to top][back-to-top]
 
-[][back-to-top]
-
 ## Create Cloud Resource Templates in OneLearn Lab on Demand
 
 When you create a Cloud Slice lab, you can provide students with an empty cloud subscription from which to work, or a cloud subscription that includes resources that were provisioned when the student launched their lab. In order to set up the latter, you must define Cloud Resource Templates within OneLearn Lab on Demand (LOD) that you will later include in one or more lab profiles.
