@@ -11,12 +11,12 @@ Unmanaged cloud resources are cloud resources that are created during the deploy
 The Cloud Slice feature allows you to create labs in the cloud that are pre-configured with compute, networking, and storage cloud resources, and/or that allow students to create their own compute, networking, and storage cloud resources as part of the steps they must complete within that lab. Before adding Cloud Slice support in your labs, there are several tasks you must perform. These tasks are listed below and any optional ones are appropriately marked with "(Optional)". As you work through these tasks, you can use the list below to navigate to the one you are currently working on and then return to the list to continue with another task.
 
 1. [Enable Cloud Slice support on the cloud platform of your choice](#enable-cloud-slice-support-in-your-cloud-platform).
-2. [Configure resource capacity limitations to allow your labs to scale](#configure-resource-capacity-limitations).
-3. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
-4. [Setup your cloud subscription(s) in OneLearn Lab on Demand](#setup-your-cloud-subscriptions-in-onelearn-lab-on-demand).
-5. [(Optional) Create a Cloud Resource Template for each template that you want to use during the deployment of your lab(s)](#create-cloud-resource-templates-in-onelearn-lab-on-demand).
-6. [Add Cloud Slice support to your lab profile(s\)](#add-cloud-slice-support-to-your-lab-profiles).
-7. [(Optional) Add a Cloud Exam to your lab profile(s) if you want the labs scored](#add-a-cloud-exam-to-your-lab-profiles).
+1. [Configure resource capacity limitations to allow your labs to scale](#configure-resource-capacity-limitations).
+1. [(Optional) Upload any virtual hard disks that you want to use as a template into the appropriate storage container in your cloud platform](#upload-template-vhds-into-your-cloud-platform).
+1. [Setup your cloud subscription(s) in OneLearn Lab on Demand](#setup-your-cloud-subscriptions-in-onelearn-lab-on-demand).
+1. [(Optional) Create a Cloud Resource Template for each template that you want to use during the deployment of your lab(s)](#create-cloud-resource-templates-in-onelearn-lab-on-demand).
+1. [Add Cloud Slice support to your lab profile(s\)](#add-cloud-slice-support-to-your-lab-profiles).
+1. [(Optional) Add a Cloud Exam to your lab profile(s) if you want the labs scored](#add-a-cloud-exam-to-your-lab-profiles).
 
 ## Enable Cloud Slice support in your cloud platform
 
@@ -29,8 +29,8 @@ To expose the Cloud Slice capability to your lab(s), you must first grant the On
 Select one of the following cloud platforms to learn how you can grant the required access to that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
 1. [Microsoft Azure](microsoft-azure/cloud-slice-setup.md)
-2. Amazon Web Services (coming soon)
-3. Google Cloud Platform (coming soon)
+1. Amazon Web Services (coming soon)
+1. Google Cloud Platform (coming soon)
 
 [Back to top][back-to-top]
 
@@ -41,8 +41,8 @@ By default, cloud subscriptions come pre-configured with relatively low resource
 Select one of the following cloud platforms to learn how you can request for resource quotas to be increased on that platform. If the platform listed is not a hyperlink, that platform is not yet supported for Cloud Slice labs.
 
 1. [Microsoft Azure](microsoft-azure/azure-capacity-limitations.md)
-2. Amazon Web Services (coming soon)
-3. Google Cloud Platform (coming soon)
+1. Amazon Web Services (coming soon)
+1. Google Cloud Platform (coming soon)
 
 [Back to top][back-to-top]
 
@@ -55,8 +55,8 @@ If you want your students to be able to interact with the cloud virtual machines
 To prepare for the deployment of managed virtual machines in your Cloud Slice lab, you must upload the template virtual hard disk(s) that will be used by your managed virtual machines into your cloud platform. Select the cloud platform you are using with your lab from the list below to learn how to upload template virtual hard disk(s) into that cloud platform. If the platform listed is not a hyperlink, managed virtual machines are not yet supported on that platform.
 
 1. [Microsoft Azure](microsoft-azure/cloud-slice-upload-template-vhds.md)
-2. Amazon Web Services (coming soon)
-3. Google Cloud Platform (coming soon)
+1. Amazon Web Services (coming soon)
+1. Google Cloud Platform (coming soon)
 
 [Back to top][back-to-top]
 
@@ -74,69 +74,69 @@ To add a Cloud Subscription Pool to OneLearn Lab on Demand (LOD), perform the fo
 
 1. Navigate to the <a href="https://labondemand.com" target="_blank">OneLearn Lab on Demand portal</a> and sign in.
 
-2. Open the **Cloud Subscription Pools** section on the Cloud Services tile.
+1. Open the **Cloud Subscription Pools** section on the Cloud Services tile.
 
    ![Open the Cloud Subscription Pools section in OneLearn Lab on Demand](images/lod-open-cloud-subscription-pools.png)
 
-3. Click **Create Cloud Subscription Pool** to create a new cloud subscription pool in LOD.
+1. Click **Create Cloud Subscription Pool** to create a new cloud subscription pool in LOD.
 
    ![Click on Create Cloud Subscription Pool link](images/lod-create-cloud-subscription-pool.png)
 
-4. Assign values to **Name**, **Organization**, and any optional fields you want to use. 
+1. Assign values to **Name**, **Organization**, and any optional fields you want to use. 
 
-   | Field Name                               | Description                              |
-   | ---------------------------------------- | ---------------------------------------- |
-   | Name&nbsp;(required)                     | The name of the Cloud Subscription Pool being created. |
-   | Description                              | The Description should describe the capabilities or the intent of the Subscription Pool. |
-   | Organization&nbsp;(required)             | The organization in LOD where the managed Cloud Subscription pool will be used. |
-   | Enabled                                  | This checkbox determines if the Cloud Subscription Pool is enabled or disabled. |
-   | Block&nbsp;lab&nbsp;launches...          | This checkbox determines if lab launches should be blocked if no subscriptions are available. |
-   | Custom&nbsp;subscription&nbsp;unavailable&nbsp;message | This message will be presented to users if they try to launch a lab and a subscription is unavailable. If this field is blank, the default message will be used. |
+   |Field Name|Description|
+   |----|----|
+   |Name&nbsp;(required)|The name of the Cloud Subscription Pool being created.|
+   |Description|The Description should describe the capabilities or the intent of the Subscription Pool.|
+   |Organization&nbsp;(required)|The organization in LOD where the managed Cloud Subscription pool will be used.|
+   |Enabled|This checkbox determines if the Cloud Subscription Pool is enabled or disabled.|
+   |Block&nbsp;lab&nbsp;launches...|This checkbox determines if lab launches should be blocked if no subscriptions are available.|
+   |Custom&nbsp;subscription&nbsp;unavailable&nbsp;message|This message will be presented to users if they try to launch a lab and a subscription is unavailable. If this field is blank, the default message will be used.|
 
    ![Assign default values to the Cloud Subscription Pool](images/create-cloud-subscription-pool.png)
 
-5. Click **Save** to create the Cloud Subscription Pool.
+1. Click **Save** to create the Cloud Subscription Pool.
 
-6. On the next page, click **Create Cloud Subscription**.
+1. On the next page, click **Create Cloud Subscription**.
 
    ![Click the Add Subscription link on the Cloud Subscriptions tab](images/create-subscription.png)
 
-7. Populate the following required fields in the **Create Cloud Subscription** form:
+1. Populate the following required fields in the **Create Cloud Subscription** form:
 
-   | Tab                   | Field Name                            | Description                              |
-   | --------------------- | ------------------------------------- | ---------------------------------------- |
-   | **Basic Information** | **Name**                              | The name you want to use to identify your managed cloud subscription. |
-   |                       | **Subscription&nbsp;Id**              | The identifier that uniquely identifies the cloud subscription you are managing on the cloud platform where you have enabled Cloud Slice support. |
-   |                       | **Organization**                      | The organization in LOD where the managed Cloud Subscription will be used. |
-   |                       | **Cloud&nbsp;Subscription&nbsp;Pool** | If the Cloud Subscription Pool is not already set, choose the Cloud Subscription Pool that you created earlier in this section. |
-   | **Authentication**    | **Tenant&nbsp;Name**                  | The name of the tenant used for deployment of Cloud Slices in your cloud service. |
-   |                       | **Application&nbsp;Id**               | The identifier that uniquely identifies the client used to manage your cloud service subscription. |
-   |                       | **Application&nbsp;Secret**           | The secret used to authenticate your client id in your cloud service subscription. |
+   |Tab|Field Name|Description|
+   |----|----|----|
+   |**Basic Information**|**Name**|The name you want to use to identify your managed cloud subscription.|
+   ||**Subscription&nbsp;Id**|The identifier that uniquely identifies the cloud subscription you are managing on the cloud platform where you have enabled Cloud Slice support.|
+   ||**Organization**|The organization in LOD where the managed Cloud Subscription will be used.|
+   ||**Cloud&nbsp;Subscription&nbsp;Pool**|If the Cloud Subscription Pool is not already set, choose the Cloud Subscription Pool that you created earlier in this section.|
+   |**Authentication**|**Tenant&nbsp;Name**|The name of the tenant used for deployment of Cloud Slices in your cloud service.|
+   ||**Application&nbsp;Id**|The identifier that uniquely identifies the client used to manage your cloud service subscription.|
+   ||**Application&nbsp;Secret**|The secret used to authenticate your client id in your cloud service subscription.|
 
    You may also provide values for the following optional fields:
 
-   | Tab                   | Field Name             | Description                              |
-   | --------------------- | ---------------------- | ---------------------------------------- |
-   | **Basic Information** | **Description**        | Text used to describe the managed Cloud Subscription that you are setting up. |
-   |                       | **Owner&nbsp;Name**    | The name of the the Cloud Subscription Owner |
-   |                       | **Owner&nbsp;E-mail**  | The e-mail address of the the Cloud Subscription Owner |
-   |                       | **Expires&nbsp;After** | The date that the Cloud Subscription will expire. |
-   |                       | **Enabled**            | Indicates whether or not the managed Cloud Subscription is enabled. |
+   |Tab|Field Name|Description|
+   |----|----|----|
+   |**Basic Information**|**Description**|Text used to describe the managed Cloud Subscription that you are setting up.|
+   ||**Owner&nbsp;Name**|The name of the the Cloud Subscription Owner|
+   ||**Owner&nbsp;E-mail**|The e-mail address of the the Cloud Subscription Owner|
+   ||**Expires&nbsp;After**|The date that the Cloud Subscription will expire.|
+   ||**Enabled**|Indicates whether or not the managed Cloud Subscription is enabled.|
 
    If you are using managed virtual machines in your cloud platform, you may also provide values for the following fields:
 
-   | Tab         | Field Name                               | Description                              |
-   | ----------- | ---------------------------------------- | ---------------------------------------- |
-   | **Storage** | **Template&nbsp;Storage&nbsp;Account**   | The name of a storage account inside of the Template Storage Resource Group where the template VHDs may be found. This should either be provided to you or, if you set it up yourself, this is the name of the storage account that you created in the previous task. |
-   |             | **Template&nbsp;Storage&nbsp;Resource&nbsp;Group** | The name of a Cloud Resource Group in the managed Cloud Subscription that contains template VHDs that you would like to copy into a lab during its deployment. This should either be provided to you or, if you set it up yourself, this is the name of the resource group that you created in the previous task. |
-   |             | **Template&nbsp;Storage**                | The name of a container in the Template Storage Account where the template VHDs may be found. This should either be provided to you or, if you set it up yourself, this is the name of the template VHD container that you created in the previous task. |
-   |             | **Instance&nbsp;Storage&nbsp;Account**   | The name of a storage account inside of the Instance Storage Resource Group where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the storage account that you created in the previous task. You may use the same storage account as the one used for the Template Storage Account field. |
-   |             | **Instance&nbsp;Storage&nbsp;Resource&nbsp;Group** | The name of a Cloud Resource Group in the Cloud Slice where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the resource group that you created in the previous task. You may use the same resource group as the one used for the Template Storage Resource Group field. |
-   |             | **Instance&nbsp;Storage**                | The name of a container in the Instance Storage Account where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the template VHD container that you created in the previous task. |
+   |Tab|Field Name|Description|
+   |----|----|----|
+   |**Storage**|**Template&nbsp;Storage&nbsp;Account**|The name of a storage account inside of the Template Storage Resource Group where the template VHDs may be found. This should either be provided to you or, if you set it up yourself, this is the name of the storage account that you created in the previous task.|
+   ||**Template&nbsp;Storage&nbsp;Resource&nbsp;Group**|The name of a Cloud Resource Group in the managed Cloud Subscription that contains template VHDs that you would like to copy into a lab during its deployment. This should either be provided to you or, if you set it up yourself, this is the name of the resource group that you created in the previous task.|
+   ||**Template&nbsp;Storage**|The name of a container in the Template Storage Account where the template VHDs may be found. This should either be provided to you or, if you set it up yourself, this is the name of the template VHD container that you created in the previous task.|
+   ||**Instance&nbsp;Storage&nbsp;Account**|The name of a storage account inside of the Instance Storage Resource Group where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the storage account that you created in the previous task. You may use the same storage account as the one used for the Template Storage Account field.|
+   ||**Instance&nbsp;Storage&nbsp;Resource&nbsp;Group**|The name of a Cloud Resource Group in the Cloud Slice where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the resource group that you created in the previous task. You may use the same resource group as the one used for the Template Storage Resource Group field.|
+   ||**Instance&nbsp;Storage**|The name of a container in the Instance Storage Account where template VHDs will be copied when a Cloud Slice lab configured to use those template VHDs is deployed. This should either be provided to you or, if you set it up yourself, this is the name of the template VHD container that you created in the previous task.|
 
-8. Click **OK** to create the Cloud Subscription. The Cloud Subscription will be saved and associated with the Cloud Subscription Pool that was created during previous steps.
+1. Click **OK** to create the Cloud Subscription. The Cloud Subscription will be saved and associated with the Cloud Subscription Pool that was created during previous steps.
 
-9. If desired, repeat the three previous steps for each managed Cloud Subscription that you want to add to the pool.
+1. If desired, repeat the three previous steps for each managed Cloud Subscription that you want to add to the pool.
 
 #### Below are some screenshots showing what the Cloud Subscription might look like when you have finished.
 
@@ -159,8 +159,8 @@ A Cloud Resource Template contains a template document that defines the resource
 Before you get started creating Cloud Resource Templates, you need at least one cloud platform template that you want to use in a Cloud Slice lab. If you haven't already identified templates that you want to use in your lab, select the cloud platform you are using with your lab from the list below to learn how to find templates for that cloud platform. If the platform listed is not a hyperlink, Cloud Resource Templates are not yet supported on that platform.
 
 1. [Microsoft Azure](microsoft-azure/cloud-slice-find-resource-templates.md)
-2. Amazon Web Services (coming soon)
-3. Google Cloud Platform (coming soon)
+1. Amazon Web Services (coming soon)
+1. Google Cloud Platform (coming soon)
 
 Once you have identified one or more cloud platform template documents you want to use, you can create a Cloud Resource Template in LOD by logging on to the Lab on Demand portal and completing the following steps:
 
@@ -168,11 +168,11 @@ Once you have identified one or more cloud platform template documents you want 
 
    ![Click on Cloud Resource Templates](images/lod-open-cloud-resource-templates.png)
 
-2. In the Cloud Resource Templates view, click **Create Resource Template** to create a new Cloud Resource Template.
+1. In the Cloud Resource Templates view, click **Create Resource Template** to create a new Cloud Resource Template.
 
    ![Click Create Resource Template to create a new Cloud Resource Template](images/lod-create-cloud-resource-template.png)
 
-3. In the Create Resource Template view, populate the following required fields in the **Create Resource Template** form:
+1. In the Create Resource Template view, populate the following required fields in the **Create Resource Template** form:
 
    | Tab                   | Field Name                               | Description                              |
    | --------------------- | ---------------------------------------- | ---------------------------------------- |
@@ -193,7 +193,7 @@ Once you have identified one or more cloud platform template documents you want 
 
    ![Create Cloud Resource Template - Basic Information Tab](images/lod-cloud-resource-template-basic-information.png)
 
-4. If your Cloud Resource Template has parameters whose values you want displayed to students, or whose values must be set when the Cloud Resource Template is added to a lab profile, click the **Parameters** tab. From this tab you can either add individual template parameters by clicking the **Add Template Parameter** button, or you can add a set of template parameters by clicking the **Import From Json** button to import a JSON document that defines the parameters. In either case, you will end up with one or more parameters defined for your Cloud Resource Template. Each parameter has the following properties:
+1. If your Cloud Resource Template has parameters whose values you want displayed to students, or whose values must be set when the Cloud Resource Template is added to a lab profile, click the **Parameters** tab. From this tab you can either add individual template parameters by clicking the **Add Template Parameter** button, or you can add a set of template parameters by clicking the **Import From Json** button to import a JSON document that defines the parameters. In either case, you will end up with one or more parameters defined for your Cloud Resource Template. Each parameter has the following properties:
 
    | **Property Name**      | **Description**                          |
    | ---------------------- | ---------------------------------------- |
@@ -209,7 +209,7 @@ Once you have identified one or more cloud platform template documents you want 
 
    If you want to remove a parameter that you mistakenly added, you can click the **Delete** button to the right of the parameter you want to remove.
 
-5. Once you have configured your Cloud Resource Template, click **Save** to save it in LOD.
+1. Once you have configured your Cloud Resource Template, click **Save** to save it in LOD.
 
 [Back to top][back-to-top]
 
@@ -238,9 +238,9 @@ The **Virtualization Platform** setting defines the platform used to launch mana
 If you have virtual machines that you are launching in your cloud platform when this lab is provisioned, open the **Virtual Machines tab** and click **Create Virtual Machine** to create a virtual machine profile for the template virtual hard disk in your cloud platform. This will open the Create Virtual Machine Profile view. When creating a virtual machine profile for a virtual machine provisioned in a cloud platform, there are only a few differences from the standard virtual machine profile creation process:
 
 1. On the **Basic Information** tab, ensure that the **Platform** field is set to the cloud platform where the virtual machine will be provisioned.
-2. In the **Machine Type** field on the same tab, select the size of the VM that you want provisioned when the VM is created. When choosing a VM size, pay close attention to the cost and the number of cores required for that VM. You must ensure that you have enough resources available in your subscription for all students taking your lab to provision VMs of the size you choose.
-3. On the **Hard Disks** tab, click **Add Hard Disk** and type in the name of the template virtual hard disk file that you uploaded into your cloud subscription that you want to use as a template when provisioning this virtual hard disk.
-4. On the **Network Adapters** tab, if you want a network adapter provisioned for the virtual machine, click **Add Network Adapter**, give that network adapter a name in the **Name** field, and configure the other options you want for your network adapter.
+1. In the **Machine Type** field on the same tab, select the size of the VM that you want provisioned when the VM is created. When choosing a VM size, pay close attention to the cost and the number of cores required for that VM. You must ensure that you have enough resources available in your subscription for all students taking your lab to provision VMs of the size you choose.
+1. On the **Hard Disks** tab, click **Add Hard Disk** and type in the name of the template virtual hard disk file that you uploaded into your cloud subscription that you want to use as a template when provisioning this virtual hard disk.
+1. On the **Network Adapters** tab, if you want a network adapter provisioned for the virtual machine, click **Add Network Adapter**, give that network adapter a name in the **Name** field, and configure the other options you want for your network adapter.
 
 Those settings aside, the remaining settings for the virtual machine profile should be familiar to you if you have already created virtual machine profiles in LOD. Once you have finished creating the virtual machine, click **Save** to save it and then return to the **Create Lab Profile** view.
 
@@ -288,9 +288,9 @@ If you want to add an exam to a Cloud Slice lab, the process is the same as addi
 Once you have indicated you want an automated exam in your lab, you can add scoring items that can be used to score a Cloud Slice by doing the following:
 
 1. Click **Add Scoring Item** in the **Scoring Items** section.
-2. Optionally assign a different value to the **Score Value** field if you want that scoring item to be worth more than 1 point.
-3. In the **Type** field, select **Cloud Subscription Scoring** from the list of options.
-4. In the **Scoring Script** field, enter the PowerShell script you want to use to determine whether the student completed the work required to receive the value for that scoring item. This script will be run automatically against each student's Cloud Slice subscription. To include values relative to the specific Cloud Slice lab being scored, create a `param` block at the top of the script and include the parameters you want to reference from within your script. The parameters you can choose from are listed below.
+1. Optionally assign a different value to the **Score Value** field if you want that scoring item to be worth more than 1 point.
+1. In the **Type** field, select **Cloud Subscription Scoring** from the list of options.
+1. In the **Scoring Script** field, enter the PowerShell script you want to use to determine whether the student completed the work required to receive the value for that scoring item. This script will be run automatically against each student's Cloud Slice subscription. To include values relative to the specific Cloud Slice lab being scored, create a `param` block at the top of the script and include the parameters you want to reference from within your script. The parameters you can choose from are listed below.
 
 ### Parameters optionally sent to Cloud Slice PBT scoring scripts
 
