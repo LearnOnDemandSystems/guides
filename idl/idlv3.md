@@ -446,9 +446,11 @@ Figure 24: Edit toolbar for lab content fields
 The additional controls provide drop-down lists to apply font, font size
 and paragraph formats to the selected text.
 
-  ------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
-  ![](media/image34.png)   ![](media/image35.png)   ![](media/image36.png)
-  ------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
+---
+
+![](media/image34.png)   ![](media/image35.png)   ![](media/image36.png)
+
+---
 
 Figure 25: Formatting drop-downs
 
@@ -964,17 +966,17 @@ Figure 41: Developer menu
 The following screenshots show some of the commands that are possible
 using the Command control.
 
--   These commands:
+- These commands:
 
-![](media/image53.png)
+    ![](media/image53.png)
 
-Figure 42: Sample commands
+    Figure 42: Sample commands
 
--   Have these results:
+- Have these results:
 
-![](media/image54.png)
+    ![](media/image54.png)
 
-Figure 43: Sample commands result
+    Figure 43: Sample commands result
 
 Add Review Questions as an Assessment Exam to a Lab
 ---------------------------------------------------
@@ -1232,85 +1234,36 @@ a quick reference as you write or edit. For more comprehensive
 information on, and guidelines for writing about technical information,
 please see the Microsoft Manual of Style (MMS), 4^th^ edition.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Use                                                                                                                             Do Not Use                                                                                                                            Comments
-  ------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  VMs                                                                                                                             VM’s                                                                                                                                  Do not use an apostrophe when you mean plural.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                  This is the possessive form.                                                                                                          
+|Use|Do Not Use|Comments|
+|--|--|--|
+|VMs|VM's|Do not use an apostrophe when you mean plural.<br/><br/>This is the possessive form.|
+|Red, white, and blue|Red, white and blue|Always include the serial comma, which is the comma before a coordinating conjunction such as "and" or "or."|
+|In Server Manager, click **Manage**, and click **Add Roles and Features**.|In Server Manager, click **Manage**, then click **Add Roles and Features**.|*Then* is not a coordinate conjunction and thus cannot correctly join two independent clauses. Use *and* or another coordinate conjunction or *then* with a semicolon or another conjunctive adverb to connect independent clauses in, for example, two-part procedural steps.<br/><br/>This is one of the most common grammatical errors in lab documents.|
+|Some applications are unable to use expanded memory.|Some applications are unable to utilize expanded memory.|Do not use *utilize* as a synonym for *use*. *Utilize* means "to find a practical use for."|
+|On the File menu, click **Open**.|On the File menu, select **Open**.|Use *click* rather than *choose* or *select* to refer to the user action of issuing a command or setting an option.||
+|On the View menu, point to **Toolbars**, and then click **Formatting**.|On the File menu, choose **Open**.<br/><br/>Click on **Save**.|When dealing with menus and submenus, do not use *click on*, only *click*.||
+|Check the **Print all pages** check box.|Check the **Print all pages** checkbox.|If using the term check box, this is two words.|
+|For more information about...|For information on...|In cross-references, use *about*, not *on*.|
+|To ..., click ….|Click … to....|Begin the sentence with "To".|
+|web, website|Web, web site|Change to MMS, 4^th^ edition, is web in lower case, and website all one word.|
+|All caps for A.M., P.M., and key names, such as CTRL, ALT, and DELETE|Small caps, or title case.|Note use of periods in A.M. and P.M., per MMS.|
+|The **Save as** dialog box appears.|The **Save as** dialog box displays.|Do not use *display* as an intransitive verb. Use *appears* or, only if necessary, the passive *is displayed*.|
+|Type the following code, and then press ENTER.|Type the following code, and then press ENTER:|End the introductory sentence with a period, not a colon. This is a recent change to the MMS.<br/><br/>Sentences introducing code samples are now always ended with a period, not a colon.|
+|To install the program, do the following:|To install the program, perform the following steps:|If *following* is the last word before what it introduces, follow it with a colon.<br/><br/>This is a recent change to the MSTP.|
+|Use Intense Emphasis style for user interface elements with which a user interacts.|Do not use bold for emphasis.|See the relevant section in this style guide for complete guidelines regarding bold font.<br/><br/>Do not use bold for UI elements that are used as reference.|Note that the MSTP uses bold for all UI elements. This style guide only uses bold for items you interact with. This guides the user's eye to the critical UI elements.|
+|Spell out acronyms at first mention|None|You can find references to product names and acronyms in the MMS, on [www. Technet.microsoft.com](http://www.microsoft.technet.com), or on <https://worldready.cloudapp.net/StyleGuide/Read?id=1413> (requires Microsoft credentials)|
+|computer|machine|Do not use *machine* when you mean *computer*. While this term is common among software developers and IT Pros, it is not acceptable per MMS.|
+|You will need to supply information about applications that you want to run with Windows.|You will need to supply information about applications which you want to run with Windows.|*That* and *which* are often confused. Be sure to use the appropriate word. *That* introduces a restrictive clause, which is a clause that is essential for the sentence to make sense. A restrictive clause often defines the noun or phrase preceding it and is not separated from it by a comma. In general, do include the word *that* in restrictive clauses, even though in some clauses the sentence may be clear without it. Including *that* prevents ambiguity and helps translators understand the sentence.|
+|Your package contains the subsidiary information card, which you can use to obtain device drivers or local technical support.|You will need to supply information about applications you want to run with Windows.|*Which* introduces a nonrestrictive clause, which is a clause that could be omitted without affecting the meaning of the sentence. It is preceded by a comma. Nonrestrictive clauses often contain auxiliary or parenthetical information.|
+|Type your password, and then press ENTER.|Enter your password, and then click **OK**.|Do not use as a synonym for *type* except to indicate that a user can either type or click a selection from, say, a list in a combo box.|
+|Wait for the computer to restart, and then log on as **Administrator** with the password **Passw0rd**.|Wait for the computer to restart, and then logon as **Administrator** with the password **Passw0rd**.|The verb form is two words, *log on* or *log off*. As a noun or adjective, use one word, no hyphen: *logon* or *logoff*.|
+|Windows Server® 2008 R2 Hyper-V™|Note the use of ® and TM. Once this has been spelled out correctly, you can then reference Hyper-V, or Windows Server Hyper-V.|Refer to the Trademarks section for a link to how to use MS trademarks.|
+|cloud|Cloud|The MMS now has a detailed section on cloud technology. Note that cloud is lower case.|
+|On the Start menu, navigate to **All Programs\\Microsoft Forefront UAG\\Forefront UAG Management**.|On the Start menu, navigate to **All Programs/Microsoft Forefront UAG/Forefront UAG Management**.|Do not use / for Start menu commands.|
+|In the Navigation pane, expand **contoso.com/branch offices/Vancouver/sales**, and then in the Details pane, click **Tom**.|In the Navigation pane, navigate to **contoso.com\\branch offices\\Vancouver\\sales**, and then in the Details pane, click **Tom**.|In a Management Console, use *expand* for navigating tree structures, and use a /.<br/><br/>Make sure you reference the Navigation pane and the Details pane.<br/><br/>Do not use a \\.|
+|On the File menu, click **Open**.|On the File menu, click **Open...**.<br/><br/>On the File menu, click **Open(...)**.|In the user interface, an ellipsis is typically used to show truncation, as in a program name, or to indicate on menus and in dialog boxes that a dialog box will appear to obtain more information from the user. Do not use an ellipsis in this context in documentation.|
+|Right-click **XXX**, and then click **Properties**.|Right-click **XXX**, and then select **Properties**.<br/><br/>Right-click **XXX**, and then choose **Properties**.|When you right-click something, you are presented with a context menu. You *click* items on a context menu, rather than choosing or selecting them.|
 
-  Red, white, and blue                                                                                                            Red, white and blue                                                                                                                   Always include the serial comma, which is the comma before a coordinating conjunction such as “and” or “or.”
-
-  In Server Manager, click **Manage**, and then click **Add Roles and Features**.                                                 Incorrect:                                                                                                                            *Then* is not a coordinate conjunction and thus cannot correctly join two independent clauses. Use *and* or another coordinate conjunction or *then* with a semicolon or another conjunctive adverb to connect independent clauses in, for example, two-part procedural steps.
-                                                                                                                                                                                                                                                                        
-  In Server Manager, click **Manage**, and click **Add Roles and Features**.                                                      In Server Manager, click **Manage**, then click **Add Roles and Features**.                                                           This is one of the most common grammatical errors in lab documents.
-
-  Some applications are unable to use expanded memory.                                                                            Some applications are unable to utilize expanded memory.                                                                              Do not use *utilize* as a synonym for *use*. *Utilize* means "to find a practical use for.”
-
-  On the File menu, click **Open**.                                                                                               On the File menu, select **Open**.                                                                                                    Use *click* rather than *choose* or *select* to refer to the user action of issuing a command or setting an option.
-                                                                                                                                                                                                                                                                        
-  On the View menu, point to **Toolbars**, and then click **Formatting**.                                                         On the File menu, choose **Open**.                                                                                                    When dealing with menus and submenus, do not use *click on*, only *click*.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                  Click on **Save**.                                                                                                                    
-
-  Check the **Print all pages** check box.                                                                                        Check the **Print all pages** checkbox.                                                                                               If using the term check box, this is two words.
-
-  For more information about...                                                                                                   For information on...                                                                                                                 In cross-references, use *about*, not *on*.
-
-  To ..., click ….                                                                                                                Click … to....                                                                                                                        Begin the sentence with “To”.
-
-  web, website                                                                                                                    Web, web site                                                                                                                         Change to MMS, 4^th^ edition, is web in lower case, and website all one word.
-
-  All caps for A.M., P.M., and key names, such as CTRL, ALT, and DELETE                                                           Small caps, or title case.                                                                                                            Note use of periods in A.M. and P.M., per MMS.
-
-  The **Save as** dialog box appears.                                                                                             The **Save as** dialog box displays.                                                                                                  Do not use *display* as an intransitive verb. Use *appears* or, only if necessary, the passive *is displayed*.
-
-  Type the following code, and then press ENTER.                                                                                  Type the following code, and then press ENTER:                                                                                        End the introductory sentence with a period, not a colon. This is a recent change to the MMS.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        Sentences introducing code samples are now always ended with a period, not a colon.
-
-  To install the program, do the following:                                                                                       To install the program, perform the following steps:                                                                                  If *following* is the last word before what it introduces, follow it with a colon.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        This is a recent change to the MSTP.
-
-  Use Intense Emphasis style for user interface elements with which a user interacts.                                             Do not use bold for emphasis.                                                                                                         See the relevant section in this style guide for complete guidelines regarding bold font.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                  Do not use bold for UI elements that are used as reference.                                                                           Note that the MSTP uses bold for all UI elements. This style guide only uses bold for items you interact with. This guides the user’s eye to the critical UI elements.
-
-  Spell out acronyms at first mention                                                                                             None                                                                                                                                  You can find references to product names and acronyms in the MMS, on [www. Technet.microsoft.com](http://www.microsoft.technet.com), or on <https://worldready.cloudapp.net/StyleGuide/Read?id=1413> (requires Microsoft credentials)
-
-  computer                                                                                                                        machine                                                                                                                               Do not use *machine* when you mean *computer*. While this term is common among software developers and IT Pros, it is not acceptable per MMS.
-
-  You will need to supply information about applications that you want to run with Windows.                                       You will need to supply information about applications which you want to run with Windows.                                            *That* and *which* are often confused. Be sure to use the appropriate word. *That* introduces a restrictive clause, which is a clause that is essential for the sentence to make sense. A restrictive clause often defines the noun or phrase preceding it and is not separated from it by a comma. In general, do include the word *that* in restrictive clauses, even though in some clauses the sentence may be clear without it. Including *that* prevents ambiguity and helps translators understand the sentence.
-                                                                                                                                                                                                                                                                        
-  Your package contains the subsidiary information card, which you can use to obtain device drivers or local technical support.   You will need to supply information about applications you want to run with Windows.                                                  *Which* introduces a nonrestrictive clause, which is a clause that could be omitted without affecting the meaning of the sentence. It is preceded by a comma. Nonrestrictive clauses often contain auxiliary or parenthetical information.
-
-  Type your password, and then press ENTER.                                                                                       Enter your password, and then click **OK**.                                                                                           Do not use as a synonym for *type* except to indicate that a user can either type or click a selection from, say, a list in a combo box.
-
-  Wait for the computer to restart, and then log on as **Administrator** with the password **Passw0rd**.                          Wait for the computer to restart, and then logon as **Administrator** with the password **Passw0rd**.                                 The verb form is two words, *log on* or *log off*. As a noun or adjective, use one word, no hyphen: *logon* or *logoff*.
-
-  Windows Server® 2008 R2 Hyper-V™                                                                                                                                                                                                                                      Note the use of ® and TM. Once this has been spelled out correctly, you can then reference Hyper-V, or Windows Server Hyper-V.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        Refer to the Trademarks section for a link to how to use MS trademarks.
-
-  cloud                                                                                                                           Cloud                                                                                                                                 The MMS now has a detailed section on cloud technology. Note that cloud is lower case.
-
-  On the Start menu, navigate to **All Programs\\Microsoft Forefront UAG\\Forefront UAG Management**.                             On the Start menu, navigate to **All Programs/Microsoft Forefront UAG/Forefront UAG Management**.                                     Do not use / for Start menu commands.
-
-  In the Navigation pane, expand **contoso.com/branch offices/Vancouver/sales**, and then in the Details pane, click **Tom**.     In the Navigation pane, navigate to **contoso.com\\branch offices\\Vancouver\\sales**, and then in the Details pane, click **Tom**.   In a Management Console, use *expand* for navigating tree structures, and use a /.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        Make sure you reference the Navigation pane and the Details pane.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        Do not use a \\.
-
-  On the File menu, click **Open**.                                                                                               On the File menu, click **Open...**.                                                                                                  In the user interface, an ellipsis is typically used to show truncation, as in a program name, or to indicate on menus and in dialog boxes that a dialog box will appear to obtain more information from the user. Do not use an ellipsis in this context in documentation.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                  On the File menu, click **Open(...)**.                                                                                                
-
-  Right-click **XXX**, and then click **Properties**.                                                                             Right-click **XXX**, and then select **Properties**.                                                                                  When you right-click something, you are presented with a context menu. You *click* items on a context menu, rather than choosing or selecting them.
-                                                                                                                                                                                                                                                                        
-                                                                                                                                  Right-click **XXX**, and then choose **Properties**.                                                                                  
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Acronyms and Initialisms
 ------------------------
