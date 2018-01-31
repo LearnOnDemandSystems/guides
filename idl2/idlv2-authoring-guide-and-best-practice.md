@@ -5,7 +5,7 @@
 
 This guide provides information on the Integrated Digital Lab Version 2 (IDL v2) Platform, the various elements that comprise a lab that uses this platform, the steps for converting a traditional IDL v1 based lab to an IDL v2 based lab, and some tips and best practices.
 
-###Intended Audience
+### Intended Audience
 
 This guide assumes that the reader:
 
