@@ -1,56 +1,45 @@
-Learn on Demand Systems Integrated Digital Lab v2 Authoring Guide 
-==============================================================
+# Learn on Demand Systems Integrated Digital Lab v2 Authoring Guide 
 
-Introduction
-============
 
-This guide provides information on the Integrated Digital Lab Version 2 (IDL v2)
-platform, the various elements that comprise a lab that uses this
-platform, the steps for converting a traditional IDL v1 based lab to
-an IDL v2 based lab, and some tips and best practices.
+## Introduction
 
-Intended Audience
------------------
+This guide provides information on the Integrated Digital Lab Version 2 (IDL v2) Platform, the various elements that comprise a lab that uses this platform, the steps for converting a traditional IDL v1 based lab to an IDL v2 based lab, and some tips and best practices.
+
+###Intended Audience
 
 This guide assumes that the reader:
 
 -   Has a developer account with sufficient permissions to create a lab
     guide and modify select properties of a lab profile.
-
 -   Has existing knowledge of basic Markdown.
-
+-   Has existing knowledge to navigate Lab on Demand (LOD)
 -   Has a help desk support contract to pay for additional custom
     contract work.
 
-Overview of the Integrated Digital Lab version 2 (IDL v2) Platform
-=====================================================
+# Overview of the Integrated Digital Lab version 2 (IDL v2) Platform
 
-The IDL v2 platform integrates the lab instructions with the virtual machines (VMs) in the lab environment or Cloud Portal of choice, to guide the users in completing the lab. The IDL platform allows users to view the lab instructions in line with the VMs or Cloud portal. The following is an example of typical lab instructions and Cloud portal that a user would see while they were performing lab steps.
 
-![](images/idl2-example-with-instructions.png)
+The IDL v2 platform integrates the lab instructions with the virtual machines (VMs) in the lab environment or Cloud Portal of choice, to guide the users in completing the lab. The IDL v2 platform allows users to view the lab instructions in line with the VMs or Cloud portal. 
 
-An advantage of this presentation format is that the lab steps take up
-only a relatively small amount of screen real estate or can be displayed on a separate monitor. This removes the need to switch back and forth between a lab document and the lab’s Portal window. These activities distract from performing the lab and can take focus away from the lab steps and goals.
+An advantage of this presentation format is that the lab steps take up only a relatively small amount of screen real estate or can be displayed on a separate monitor. This removes the need to switch back and forth between a lab document and the lab’s Portal window. These activities distract from performing the lab and can take focus away from the lab steps and goals.
 
-A successful lab that is well-received by users usually contains more than simply a set of basic lab steps or tasks. It will have significant explanatory content to provide context, background information, tips, cautions, and other useful and relevant information. Additionally, visual elements such as screenshots, videos, Alert dialogs and Knowledge blocks can add clarity and reduce the likelihood of error on the part of the user. The IDL v2 platform has the ability to include formatted text and visual content in a way that ensures the focus remains on the lab tasks and the context in which those tasks occur. The IDL v2 platform is authored using Markdown and enables the lab author to focus on content within the lab, instead of how to create a lab. 
+A successful lab that is well-received by users usually contains more than a simple set of basic lab steps or tasks. It will have significant explanatory content to provide context, background information, tips, cautions, and other useful and relevant information. Additionally, visual elements such as screenshots, videos, Alert dialogs and Knowledge blocks can add clarity and reduce the likelihood of error on the part of the user. The IDL v2 platform has the ability to include formatted text and visual content in a way that ensures the focus remains on the lab tasks and the context in which those tasks occur. The IDL v2 platform is authored using Markdown and enables the lab author to focus on content within the lab, instead of how to create a lab. 
 
-The following provides a summary of the elements that go beyond the lab
-steps and assist in the learning experience.
+## Launching a lab 
 
-Launching a lab 
-----------------------------------------------
-
-A lab launch may take from a few seconds to a couple of minutes to fully launch, depending on the Cloud platform chosen or the size and number of VMs (if using VMs). During this time, a window will appear with a message saying that the lab is ready. Clicking _Get Ready_ will open close that window and open two other windows; the Portal window and the Lab Instructions, as shown above. 
+A lab launch may take anywhere from a few seconds to a couple of minutes to fully launch, depending on the Cloud platform chosen and/or the size and number of VMs (if using VMs). During this time, a window will appear with a message saying that the lab is ready. 
 
 ![](images/idl2-lab-ready.png)
 
+Clicking **_Get Ready_** will open close that window and open two other windows; the Portal window and the Lab Instructions, as shown in the [Overview of the Lab Interface](#Overview-of-the-lab-interface).
+
 ## Introductory content 
 
-There are multiple ways to provide this introductory content. Some ways include: Dialog prompts, embedded images or videos,external links or text. These are configured in the lab instructions, which are contained in the lab profile itself. You will learn about how to set up both these kinds of introductory content later in this document.
+There are multiple ways to provide this introductory content, such as: dialog windows, embedded images or videos, external links or text. These are configured in the lab instructions (using [Markdown Syntax](#Markdown-syntax)) which are contained in the lab profile itself. You will learn about how to set up these kinds of content later in this document.
 
-An introductory video (or other introductory presentation) can serve many different purposes. For example, you could use these features to provide:
+An introductory presentation can serve many different purposes. For example, you could use these features to provide:
 
--   General information on your products, services, and offerings,
+-   General information on your products, services, and offerings
 
 -   A specific introduction to the lab 
 
@@ -58,133 +47,225 @@ An introductory video (or other introductory presentation) can serve many differ
 
 -   Information and cautions about upcoming lab step challenges,
 
--   Other kinds of content, such as Demo Mates, static web pages,
-    PowerPoint presentations and so on.
+-   Other kinds of content, such as static web pages, PowerPoint presentations and so on.
 
-The IDL v2 platform can provide the user with an introduction that appears first, in the lab instructions when the user launches a lab. The introductory page can contains the objectives or goals that the user will achieve and a scenario that provides contextual information to assist the user to gain a deeper understanding of the lab. This is not a requirement of the lab if the lab author does not want to use an introduction in the lab. 
+The IDL v2 platform can provide the user with an introduction that appears first, in the lab instructions when the user launches a lab. The introductory page can contain the objectives or goals that the user will achieve and a scenario that provides contextual information to assist the user to gain a deeper understanding of the lab. Upon lab launch, the introductory content should be displayed in the lab instructions, separated from the next page, using Markdown syntax.This is not a requirement of the lab if the lab author does not want to use an introduction in the lab. 
 
-The objective and scenario, if present, are mandatory from the users’ perspective. Upon lab launch, the introductory content should be displayed in the lab instructions, separated from the next page, using Markdown syntax.
+## Lab Instructions
 
-
-
-Exercises and Tasks
----------
-
-A lab can be organized into one or more exercises that represent a set of logically related tasks that result in the completion of some goal, or a lab can be organized into a combination of exercises and tasks, in no particular order. A lab task is usually a single step or a small set of closely related steps that form a unit. For example, a task might provide all the steps that a user must perform to complete a dialog box, or a task may be something smaller, such as logging into a portal or creating a file. 
+A lab's instructions can be organized into one or more pages that represent a set of logically related tasks that result in the completion of some goal, or a lab can be organized into a combination of exercises and tasks, in no particular order. A lab task is usually a single step or a small set of closely related steps that form a unit. For example, a task might provide all the steps that a user must perform to complete a dialog box, or a task may be something smaller, such as logging into a portal or creating a file. 
 
 ![](images/idl2-exercises-tasks.png)
 
+You can add rich media content delivered from external sources (URLs) that the user can access at any point in the lab instructions, or embed video or images to provide additional context to the lab instructions. 
 
+## Overview of the Lab Interface
 
-You can add rich media content delivered from external sources (URLs) that cause a video to play at any point in the lab instructions, or embed video or images to provide additional context to the lab instructions. 
+This section describes the user lab interface. Within the lab interface on the right side, the lab instructions are displayed in their sequential order. When a task is performed that has a Task checkbox, the user clicks the checkbox. Tasks or any other items that the student is instructed to do can have a Task Checkbox (as shown in the image above) at the beginning of the item. Task Checkboxes are used track and report lab progress to LOD and TMS, as well as a visual marker for students. Lab progress is calculated by the percentage of Task Checkboxes that are checked in the lab instructions.
 
-Tasks or any other items that the student is instructed to do can have a Task Checkbox (as shown in the image above) at the beginning of the item. Task Checkboxes are used track and report lab progress to LOD and TMS, as well as a visual marker for students. Lab progress is calculated by the percentage of Task Checkboxes that are checked in the lab instructions.
+The right navigation pane contains the Lab Instructions, Resources and Help. The right navigation pane also allows users the ability to explore forward or backward from the current task they are performing. 
 
-### Alerts
+![](images/idl2-example-with-instructions.png)
 
-Alerts are useful whenever you want the users to pause and take note of additional and important information. From the user’s perspective, alerts are mandatory because they will appear inline in lab instructions. 
+The left window is known as the **Portal Window**. This window can be configured to display any URL, in the lab profile configuration page. The URL of the Portal Window can changed during the lab, using Markdown syntax (discussed later in this guide).
 
-![](images/idl2-alert.png)
+- **Instructions Tab:** The Instructions tab allows the user to access the lab instructions.
+- **Resources Tab:** The Resources tab allows the user to access resources provided in the lab profile, such as: URLs, virtual machines (if the lab uses virtual machines), and Floppy/DVD media (optional).
 
-### Knowledge
+- **Help Tab:** The Help tab provides users with a unique lab ID, a link to submit a Support Request, as well as select a theme. In addition, users can easily gain access to FAQs for assistance.
 
-The Knowledge block provides additional information and context. Also, it can be used to provide alternative instructions or store commands that you want people to enter. One of the chief benefits of the Knowledge block
-is that it is an optional element from the users’ perspective. The user can stay focused on the lab step, or choose to read the contents of the Knowledge block. Knowledge blocks show 218 characters of text entered. Characters beyond 218 can be shown by clicking _More_.
+## Adding Lab Content 
 
-![](images/idl2-knowledge.png)
+This section describes how to add content to the lab profile in the Learn on Demand Systems (LODS) platform. The later sections will cover how to add your content to a lab profile using Markdown.
 
+### Enable Lab Profile for IDL
 
+For a lab to display IDL v2 content, content must be enabled in the lab profile. To enable content in a lab profile, you need to perform the following steps.
 
-### Screenshots
+1.  Click **Edit** on the lab profile page.
+2.  On the **Basic Information tab** of the lab profile Edit page, check **Has IDL Content**.
 
-Screenshots can be stored with tasks to provide additional clarity and to mitigate the risk of configuration errors. Screenshots are also beneficial for people who are visual learners or who do not speak English as a first language. When the user clicks the screenshot in the lab instructions, it will open a full resolution in a new window. Opening the screenshot in a new window is useful if the screenshot is large. If the screenshot is particularly important or noteworthy, students can save or bookmark the URL of the image.
+![](images/has-idl-content.png)
 
-### Videos 
+3. Click the up arrow to change the selection to **2**, to enable IDL version 2.
 
-Videos are used to provide rich media content, such as short, step-specific videos, that can serve a variety of purposes: to demonstrate a series of steps, to assist visual learners, to provide clarity, to provide additional information and others. 
+## Access IDL v2 Edit Mode
 
-The video can be any URL that points to a video. Note that videos can also be DemoMates and computer screen
-recordings. Videos can displayed in line with the lab tasks. However, you can also configure the video to show in its
-own separate window. 
+You are now ready to add lab instructions directly into the IDL v2 user interface. To add or edit content, lab content must be enabled for the lab profile (the **Has Content** check box must be checked).
 
-### Virtual Machine Select
+### Check Out IDL Manual
 
-During a lab, a lab user may be required to perform configuration steps on two or more VMs. A common source of errors in labs is performing lab tasks on the wrong VM. The IDL v2 platform mitigates this risk by providing the means to change to the correct VM within a task step, by clicking a button in the lab instructions. 
+Once lab content is enabled, you must the check out the IDL v2 lab instructions. Checking out the IDL v2 lab instructions ensures that only one person at a time can make changes to the content.
 
-### Load Media
+To check out the IDL v2 manual, navigate to the lab profile page, and then click **Check Out**.
 
-The IDL v2 platform allows lab user to load either virtual floppy disks or ISO files directly from a task.
+![](images/check-out-lab-profile.png)
 
-### Commands
+Once you have checked out the IDL manual for editing, you can begin adding and editing content.
 
-To further mitigate risk of error and to enhance the overall experience of the lab, the IDL v2 platform supports running commands directly in the area of focus of the Portal window, of the lab. The commands can perform any action that is possible to do from a command or Windows PowerShell prompt. For example, the command could
-open File Explorer at a particular location within a directory structure, open dialog boxes, start scripts, open documents and web pages, and many others. To initiate the action, the lab user clicks on Command (lightning bolt) icon in the lab instructions, as shown below.
+### Edit Instructions
 
-![](images/idl2-command.png)
+When using this option, a new page will open with a text editor and a preview pane. This gives you the ability to create lab instructions, and see a live preview of how they will be displayed to the user during the lab. To edit the lab instructions, click **Edit Instructions**, as shown below.
 
+![](images/edit-instructions.png)
 
-Exams
------
+In this mode, only the manual opens for editing; the Cloud Client has not been launched and no VMs are running. 
 
-Each lab, regardless of whether it has content, can provide an optional exam at the end of lab. This appears on the right side of the lab interface on the Content/Exam tab and can serve a number of purposes: to reinforce learning, to measure retention of concepts, to provide metrics on effectiveness of lab delivery, etc. Exams are categorized by the type of scoring used; there are three to choose from:
+### Advanced Settings
 
-1.  **Assessment** - Traditional multiple choice test that is scored automatically.
+In addition to the Basic Information tab, the Advanced tab has settings that are relevant to lab manual creation and display.
 
-2.  **Manual** - The user submits screenshots.The screenshots are later evaluated and marked by an examiner.[^2]
+To gain access to the Advanced settings, on the lab profile page:
 
-3.  **Automated** - Performance-based test (the user has to make required configuration changes in the lab based on directions in the exam questions) that are evaluated using scripts to verify correct configuration within the lab or in code. 
+1. Click **Edit** on the lab profile page.
 
-Overview of the Lab Interface
-=============================
+2. Click **Advanced**. 
 
-This section describes the right side of the lab interface. 
+   The advanced settings tab allows you to configure the following:
 
-Lab Instruction Navigation
----------------
+- **Custom Cascading Style Sheets (CSS).** You can use CSS to modify the appearance of the lab text in the navigation and task bars. CSS markup that will be included in the lab client, making it possible to control the styles of custom content that is added to the lab. This should just be the style definitions, including a style tag is not necessary. 
 
-Within the lab interface on the right side, the lab instructions are displayed in their sequential order. When a task is performed that has a Task checkbox, the user clicks the checkbox. The lab interface keeps track of Task Checkboxes that have been performed and shows the current progress in LOD and TMS.
+- **Custom CSS URL:** A URL to an externally hosted CSS stylesheet. The stylesheet will be referenced in the lab client. **HTTPS is required**.
 
-The right navigation pane allows users the ability to explore forward or backward from the current task they are performing. If a user navigates away from the current task, the lab interface provides a prompt to return.
+- **End Redirect URL:** If this value is set, users will be redirected to the specified URL when the lab ends. This feature isn't used often, but can help a lab fit into an external workflow. 
 
+  For more information on Custom CSS in Lab on Demand, see our guide here: [Custom CSS Guide](create-lab-profile-custom-css).
 
+- **Max Active Instance:** This sets the amount of concurrent labs that can be launched at a time. Setting to _Unlimited_ allows an unlimited amount of launches of this lab profile at a time. Entering a number limits the amount of concurrent labs to the number specified. Any labs that are attempted to be launched after the limit has been met, will be given an error message and will not be able to launch the lab until the number of labs launched is below the maximum amount.
 
-Machines Tab
-------------
+- **Show Timer:** Checking this box will enable the lab to display a countdown timer, showing the user how much time they have left to complete the lab. 
 
-The Machines tab allows the user to change which VM is active as well as to interact with that VM in several ways. For instance, the user can load a floppy or ISO into the VM in a lab, and, if enabled, switch the VM to another network adapter. 
+- **Enable Navigation Warning:** A warning will be displayed if the user navigates away from the lab client before the lab is complete.
 
-Help Tab
------------
+- **Show Navigation Bar:** 
 
-The Help tab provides users with a unique lab ID, a link to submit a Support Request, as well as select a theme. In addition, users can easily gain access to FAQs for assistance.
+- **Navigation Bar Width:** This sets the width of the navigation bar in the lab UI. Options include:
 
-Adding Lab Content Manually
-===========================
+  - Default (250 pixels)
+  - Large (400 pixels)
+  - XL (600 pixels)
+  - Custom
 
-This section describes the lab profile Basic Information tab and how to manually add content to the lab profile in the Learn on Demand Systems (LODS) platform. The next section will cover how to add your content to
-a lab profile using Markdown.
+- **Show Content Tab:** Checking this box enables the Content tab to be displayed in the lab environment.
 
+- **Show Machines Tab:** Checking this box enables the Machines tab to be displayed in the lab environment.
 
+- **Show Support Tab:** Checking this box enables the Support tab to be displayed in the lab environment.
 
-Using the Lab Editor
------------------------
+- **Custom Content Tab label:** Custom label to be used in lab UI, in place of the Content tab.
 
-When you enter text into the lab profile or IDL v2 content, you may use Markdown to format text. Markdown is an easy to use markup language to format text, that offers multiple ways to achieve the same result. Markdown was designed to be 
-easy to learn as well as be easy to read and write. Markdown allows the author to keep their hands on the keyboard and focus on writing content. Markdown supports HTML, and HTML syntax can be used in combination with Markdown. In the rich text fields in the lab profile, you can use the following Markdown syntax  to perform formatting.
+- **Custom Machines Tab label:** Custom label to be used in lab UI, in place of the Machines tab.
+
+- **Custom Support Tab label:** Custom label to be used in lab UI, in place of the Support tab.
+
+- **Custom Errata Label:** Custom label to be displayed on the [Errata](#Errata).
+
+- **Enable Copy & Paste:** Enables Type Text
+
+- **Show Virtual machine Power Options:** Checking this box enables virtual machine power options to be available to users.
+
+- **Require Hyper-V Enhanced Controller:** Checking this box requires the user to use the Hyper-V Enhanced controller to work in the lab. If this box is checked, users will not be able to use any other machine remote controllers. Note that the Hyper-V enhanced controller only allows one user to access the lab at a time. 
+
+- **Enable Instance Link Sharing:** When enabled, the lab instance URLs can be shared between users. If a user copies the URL from their browser's URL bar, they can send it to another user, or open it in a different browser. Note that most virtual machines only allow one user to access them at a time. This setting does not bypass the connection limitations of virtual machines.
+
+- **Shared Class Environment:** Shared class environments allow multiple lab instances to be bound together with one or more shared networks and resources. A shared class environment consists of at least two different lab profiles, each serving a particular role. 
+
+  - **Shared Environment:** One lab is configured to serve as the shared environment. Exactly one instance of this lab will run per class. 
+  - **Participant:** This is the lab that end-users will launch. There can potentially be more than one lab in this role per class, but they will all connect to the same shared environment instance. 
+
+  Networks within the shared environment lab can be made available to participant labs, making it possible for participants to connect to each other and/or to virtual machines within the shared environment. To enable Shared Class Environment for this lab profile, select one of the options from the drop-down menu; _Shared Environment_ or _Participant_. For more info click here: [Shared Labs Guide](https://github.com/LearnOnDemandSystems/guides/blob/master/sl/sharedlabs.md)
+
+- **Save/Cancel Options:** 
+
+  - **Allow User to Cancel Labs:** allows the user to cancel the lab at any point
+  - **Allow user to Save labs:** allows the user to save the lab in it's current state and return at a later time. Note that saved labs are only saved for 48 hours. Users can extend the saved lab expiration by resuming the lab and saving again. Each save sets the timer back to 48 hours. After 48 hours has passed, the lab progress and components are discarded and cannot be recovered. 
+  - **Allow User to Extend Time Remaining:** Allows the user to extend the time remaining in the lab environment. 
+  - **Auto-Save incomplete Labs:** Enables the lab to automatically save incomplete labs after a specified amount of time has passed. 
+
+- **Save/Cancel Labs When Last Console Sync Exceeds:** 
+
+- **Save/Cancel labs when last Activity Exceeds:** 
+
+- **Activity Required to Enable Auto-Save:** 
+
+- **Minimum Time Given to Saved Labs:** 
+
+- **Maximum Allowed Snapshots:** 
+
+- **Life Cycle Actions:** Actions can be defined to occur at certain points in the lab life cycle. For instance, an external service could be called when the lab builds, or send a notification to the user when the lab is resumed. 
+
+- **Lab Host tags:** Lab host tags are used to specify which Lab Host(s) the lab profile will use when users launch the lab. The Lab Host tag must already be created to add it to the lab profile using this button.
+
+## Create Lab Instructions
+
+Content is created using a combination of Markdown and plain text. HTML can also be used alongside or in place of Markdown elements. The following describe various items used to create lab content with IDL v2.
+
+## Using the Lab Editor
+
+The image below shows what will be seen after clicking **Edit instructions**, as discussed in the previous section. This text editor is where all of the lab content is written and stored. The left side of the editor shows the raw syntax of the lab content, whereas the right side shows how the lab content will be rendered and displayed to users.
+
+![IDL 2 Text Editor](images/idl2-text-editor.png)
+
+- **Disk icon:** click to save current progress
+- **@lab:** Replacement Tokens are used to create a placeholder, to later insert information into.
+- **Word Wrap:** toggle to enable or disable Word Wrap.
+- **Preview:** toggle to enable or disable the Preview of rendered Markdown.
+- **Autosave:** toggle to enable to disable auto-saving of work. 
+- **Theme:** select a theme to style the text editor to your preference.
+
+### Headings
+
+Headings are useful to identify and separate sections of lab instructions. For section titles, you should use title case (see Common Style Guidelines for a definition of title case).
+
+### Introduction Message
+
+The introduction message provides information about the goals of the lab, what the lab user will accomplish in the lab, and puts the lab tasks into a context. Dialog prompts, embedded images or videos, external links or text are commonly used.
+
+#### Objective and Scenario Best Practices and Guidelines
+
+The Objective is used to provide specific information about the lab. It should include a summary of the lab instructions and a list of specific goals that the lab is intended to meet. In contrast, the scenario serves a more general purpose. It can, for example, be used to establish the context in which the lab tasks are performed or to provide more general background information.
+
+- Use bulleted or numbered lists to emphasize lab goals and objectives.
+- Ensure lists are expressed in parallel grammatical format and start with verbs to provide greater emphasis and clarity.
+- Provide a summary of the entire lab.
+- Ensure that goals are focused on what the user gains from doing the lab.
+- Use a scenario to provide more general background information and context.
+
+### Completion message
+
+A completion message provides a brief summary and congratulatory message to the lab user. This is accomplished by creating a dedicated page in the lab instructions, using Markdown. This should be the last or next to last section in the lab. As a best practice, you should indicate that the user should click Continue to proceed to next page.
+
+### Lab Instruction Placement
+
+You have the option of creating the lab instructions after the current instruction, if present, or as the last instruction in the lab.
+
+-   Note that if you have multiple lab instructions, you can change the order from within the user interface. To change the order of a task, copy the syntax of the lab instruction and paste into the correct location, using keyboard shortcuts (CTRL+C, CTRL+V).
+
+![](images/move-lab-instruction.gif)
+
+## Markdown Syntax
+
+Markdown is an easy to use markup language to format text, that offers multiple ways to achieve the same result. Markdown was designed to be easy to learn as well as be easy to read and write. When creating IDL v2 lab content, you may use Markdown to format text. Markdown allows the author to keep their hands on the keyboard and focus on writing content. Markdown supports HTML, and HTML syntax can be used in combination with Markdown. You can use the following Markdown syntax  to perform formatting.
 
 ### Headings
 
 Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols in front of the text that is to be resized, followed by a space. One # renders the largest text size, while six # symbols renders the smallest text size.Typically this is used at the beginning of a paragraph or section in a document, to make the title stand out from the rest of the text. 
-> - # H1 
-> - ## H2    
-> - ### H3    
-> - #### H4
-> - ##### H5
-> - ###### H6
+
+> - # Heading1
+>
+> - ## Heading2
+>
+> - ### Heading3
+>
+> - #### Heading4
+>
+> - ##### Heading5
+>
+> - ###### Heading6
 
 ### Text Formatting
 
-- **Indent size**: pressing the tab key will indent 4 spaces.
+- **Indent size**: pressing the tab key will indent 4 spaces. 
 
 - **Single space**: pressing the tab key at the end of a line will single space the next line. Alternatively, pressing the space bar four times will single space the next line. 
 
@@ -204,7 +285,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Escape character**: used to prevent text from being formatted into Markdown. Type a \ (backslash) at the beginning of the text that is to be escaped. 
 
-    > \escaped text
+  > \escaped text
 
 - **Bullet**: used to separate and order  items in a list without using numbers
 
@@ -214,17 +295,21 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
   > <code>`code block`</code> 
 
+![Code Block](images/code-block.png)
+
 - **Fenced code block**: used to provide a programming language-specific code snippet. Type three ` (backticks) on each side of the text that should be displayed in the fenced code block. This should consume at least 3 lines in the text editor; the first line should display three backticks followed by the programming language name, the second line should display the code snippet, and the last line should only display three backticks. Markdown allows for more than one line to be used to display the code snippet. 
 
-  > ~~~Fenced_code_block
+  > ```fenced_code_block
   > ​```PowerShell
   > get-service | stop-service -whatif
   > ​```
-  > ~~~
+  > ```
 
-## 3. Link formatting
+![Fenced Code Block](images/fenced-code-block.png)
+### Link formatting
 
 - **Internal link**: Used to link to a specific section within a document. 
+
   > \[text to display](#link-location "optional link title")
 
 - **External link**: Used to link to a page outside of the document.  
@@ -238,12 +323,17 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - **Reference link**: used to provide a link that will be referenced multiple times. The link can be referenced by typing the text value between the [ ] (square brackets). It is not necessary to include the full URL, as long as the text value in both sets of brackets is the same.   
 
   - **_Text lookup_**: 
+
     > \[Reference link text value]
     > \[Reference link text value]: URL "Optional link title"
+
   - **_Label lookup_**:
+
     > \[Reference link][Name of URL]
     > \[Name of URL]: URL "Optional link title"
+
   - **_Footnote style_**:
+
     > \[Reference link][1]
     > \[1]: URL "Optional link title"
 
@@ -251,7 +341,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Page break**: Used to separate content into pages. Separating into pages creates a next button that the student must click to navigate to the next page. This is useful for displaying small sections of instruction to the student at a time, rather than all instructions on the same page within the lab. Type three = (equals) symbols on the line where the current page should end. The new page will begin on the line following the three = symbols.
 
-  > \===
+  > ===
 
 - **Horizontal Line**: Used to separate content on the same page. Type three --- (dash or hyphen) on the line where the horizontal line should appear. 
 
@@ -261,7 +351,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
   > \> text here
   >
-  > \> additional text 
+  > \> additional text here
 
 ### Embedded content
 
@@ -269,7 +359,15 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
   > \!IMAGE[text to display]\(url)
 
-- **Video:** Used to embed an image inline with other content. The syntax format should look the same as an image, except the video should begin with a ! (explanation mark), followed by the word VIDEO (all caps).
+- **Video:** Used to embed a video inline with other content. The syntax format should look the same as an image, except the video should begin the word VIDEO (all caps).
+
+  - Videos are used to provide rich media content, such as short, step-specific videos, that can serve a variety of purposes: to demonstrate a series of steps, to assist visual learners, to provide clarity, to provide additional information and others. Videos showing the steps in the task are particularly useful for difficult and complex tasks as well. 
+  - The video can be any URL that points to a video. Videos that are hosted on YouTube will be embedded in the lab instructions, and do not need to open in a separate window, for the video to play. Alternatively, you can link videos hosted by other sources in the lab instructions, using Markdown syntax.
+
+  The following are some guidelines for creating videos that are associated with lab tasks:
+
+  - Keep the video short, between 30 – 60 seconds at most.
+  - Make sure the video covers only the relevant step.
 
   > \!VIDEO[text to display]\(url)
 
@@ -277,27 +375,29 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
   > \[![text to display]url or filepath "Optional image title")]url "Optional link title")
 
-- **Portal Link:** used to launch a hyperlink. In the Cloud Client, this will open the hyperlink in the left window. In the traditional virtualization client (vm-based labs), this will open the hyperlink in a new local browser window.
+- **Portal Link:** used to launch a hyperlink. In the Cloud Client, this will open the hyperlink in the left window (Portal window). In the traditional virtualization client (vm-based labs), this will open the hyperlink in a new local browser window.
 
   > `<[text to display](URL)`
 
-- **Image Link:** used to display a link with a camera icon, to suggest that the hyperlink opens an image
+- **Image Link:** used to display a link with a camera icon, to suggest that the hyperlink opens an image. Opens in a new window.
 
   > `IMAGE[text to display](URL to image)`
 
-- **Video Link:** used to display a link with a videocamera icon, to suggest that the hyperlink opens a video
+![Image Link](images/image-link.png)
+
+- **Video Link:** used to display a link with a videocamera icon, to suggest that the hyperlink opens a video. Opens in a new window.
 
   > `VIDEO[text to display](URL to video)`
+
+![Video Link](images/video-link.png)
 
 ### List formatting
 
 - **Unordered list:** Used to list items in no particular order, separated by bullets rather than numbers. Type a - (dash or hyphen) followed by a space and then the text to be listed. Pressing enter at the end of the text will start the next line with a bullet. 
-
 - **Ordered list:** Used to list items in a particular order, separated by numbers rather than bullets. Type the number 1, followed by a space and then the text to be listed. Pressing enter at the end of the text will start the next line with number 2.
-
 - Both Unordered and Ordered lists can contain Task Checkboxes for the student to check off steps as completed. Both list types can be combined in the same list. Task Checkboxes are used track and report lab progress to LOD and TMS, as well as a visual marker for students. Lab progress is calculated by the percentage of Task Checkboxes that are checked in the lab instructions.
 
-### Unordered list **without** Task Checkboxes: 
+#### Unordered list **without** Task Checkboxes:
 
 ```
 - Item 1
@@ -308,7 +408,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - Item 2
 ```
 
-### Ordered list **without** Task Checkboxes:
+#### Ordered list **without** Task Checkboxes:
 
 ```
 1. Item 1
@@ -319,7 +419,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 1. Item 2
 ```
 
-### Unordered list **with** Task Checkboxes:
+#### Unordered list **with** Task Checkboxes:
 
 ```
 - [] Item 1
@@ -330,7 +430,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - [] Item 2
 ```
 
-### Ordered list **with** Task Checkboxes:
+#### Ordered list **with** Task Checkboxes:
 
 ```
 1. [] Item 1
@@ -342,6 +442,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 ```
 
 ### Table formatting
+
 - Tables can be aligned left, right or center by placing a : (colon) on the head row of the table. Placing a colon on the left side, right side or both sides of the dashes in the header row, will align the text in the table accordingly. 
 
 **Left-aligned text**
@@ -354,6 +455,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 ```
 
 **Right-aligned text**
+
 ```
 | column 1 | column 2 |
 |---------:|---------:|
@@ -362,6 +464,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 ```
 
 **Center-aligned text**
+
 ```
 | column 1 | column 2 |
 |:--------:|:--------:|
@@ -369,56 +472,88 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 | data 3   | data 4   |
 ```
 
-### Special formatting 
+### Special formatting
 
-- **Knowledge Block:** Used to provide additional information, to help students better understand lab steps or lab content. Knowledge blocks are limited to only show 4 lines of the lab content. After 4 lines, a _more_ link will be shown, allowing the student to expand the Knowledge Block and review additional information.
+- **Knowledge Block:** Used to provide additional information, to help students better understand lab steps or lab content. It can also be used to provide alternative instructions or store commands that you want users to enter. Knowledge blocks are limited to only show 4 lines of the lab content. After 4 lines, a _more_ link will be shown, allowing the student to expand the Knowledge Block and review additional information.
+
+  -  If you use the Knowledge box for lab steps or a series of commands, please make sure you include a note directing users to execute the steps or commands there. (For example, “At the PowerShell prompt,type the commands listed in the Knowledge box, pressing ENTER after each one.”)
 
   > \> [!KNOWLEDGE] knowledge text here.
 
-- **Alert:** Used to draw attention to important issues, such as showing additional information or steps that the student may need complete to avoid other issues. 
+![](images/idl2-knowledge.png)
+
+- **Alert:** Used to draw attention to important issues, such as showing additional information or steps that the student may need complete to avoid other issues. Alerts are useful whenever you want the users to pause and take note of additional and important information. From the user’s perspective, alerts are mandatory because they will appear inline in lab instructions. 
 
   > \> [!ALERT] alert text here.
 
-- **Note:** used to provide additional information, similar to a Knowledge Block, with the only difference being that Notes do not collapse and show a _more_ link to expand the section. 
+![](images/idl2-alert.png)
+
+- **Note:** Used to provide additional information, similar to a Knowledge Block, with the only difference being that Notes do not collapse and show a _more_ link to expand the section. 
 
   > [!NOTE]
 
 - **Dialog:** Used to open a dialog popup, to display additonal information. This can be useful to make additional information available to the student.
 
-  >^[Text to display in lab  instructions][Reference Link]
+  > ^[Text to display in lab  instructions][Reference Link]
 
-  >\>[Reference Link]:
+  > \>[Reference Link]:
 
-  >\>This appears in the Dialog
+  > \>This appears in the Dialog
 
-- **Commands:** Used to target the Portal window to input commands. Clicking the text in the lab instructinos will input the command into the item in focus, on the Portal window. Commands can be a single line (shown below) or multi-line. Define the command as a reference link and then use that reference link as the command in the below syntax. 
+- **Commands:** Used to target the Portal window to input commands. To mitigate risk of error and to enhance the overall experience of the lab, the IDL v2 platform supports executing commands directly in the area of focus of the Portal window. Clicking the text in the lab instructions will input the command into the item in focus, on the Portal window. Commands can be a single line (shown below) or multi-line. 
 
-  >~~~
-  >@[Text to display](`command`)
-  >~~~
+  - Commands can perform any action that is possible to do from a command or Windows PowerShell prompt. For example, the command could open File Explorer at a particular location within a directory structure, open dialog boxes, start scripts, open documents and web pages, and many others. 
 
-- **Include:**  used to input text from a GitHub raw link. This is useful to use to pull in content hosted on GitHub. Navigate to the GitHub page containing the content to be used, click the Raw button, then copy the URL of that page and include it in the below syntax. 
+    Although potentially any task could be reduced to an action that can be executed as a command shell or Windows PowerShell command, you should use this feature judiciously. Users should still know how to open File Explorer and perform other basic actions. This feature is most useful for a complex task that involves numerous steps, opening
+    file locations deep down in directory structures, opening specific Web pages, and other similar activities.
+
+    There are 4 different kinds of commands that you can configure:
+
+    - **Type Text**. This is not a command per se. Rather, this command
+      type allows the user to copy a predetermined string to the VM.
+    - **PowerShel**l. This allows the user to execute a PowerShell command
+      in the background. The user does not see the execution of the
+      command.
+    - **PowerShell will UI**. This opens a command prompt window in the VM
+      and shows the command execution.
+    - **Shell**. This causes a command to be executed in the background.
+      The user does not see the execution of the command.
+    - **Shell with UI**. This command opens a command prompt window in the
+      VM and shows the command execution
+
+To initiate the Command , the lab user clicks on lightning bolt) icon in the lab instructions, as shown below.
+
+  > ```
+  > @[Text to display](`command`)
+  > ```
+
+![Command](images/idl2-command.png)
+
+- **Include:**  Used to input text from a GitHub raw link. This is useful to use to pull in content hosted on GitHub. Navigate to the GitHub page containing the content to be used, click the Raw button, then copy the URL of that page and include it in the below syntax. 
 
   **Note**: GitHub hosted content can be changed by the repo maintainer of the content and will change the instructions displayed in the lab using the _Include_ syntax. 
 
-  >  `[!INCLUDE [label](url)]`
+  > `[!INCLUDE [label](url)]`
 
-- **Copyable Text:** used to make text copy to the local clipboard when the student clicks the text. Type two + (plus) symbols on each side of the text that should be made copyable. 
+- **Copyable Text:** Used to make text copy to the local clipboard when the student clicks the text. Type two + (plus) symbols on each side of the text that should be made copyable. 
 
   > \++copyable text++
 
+![Copyable Text](images/copyable-text.png)
 
-- **Type Text:** used to target the Portal window to input text. Clicking the text in the lab instructions will input text into the item in focus, on the Portal Window Type three + (plus) symbols on each side of the text that should be made into Type Text. 
+- **Type Text:** Used to target the Portal window to input text. Clicking the text in the lab instructions will input text into the item in focus, on the Portal Window Type three + (plus) symbols on each side of the text that should be made into Type Text. 
 
   > \+++Type Text+++
 
-- **Embed YouTube video:** used to embed a YouTube video inline with the lab instructions. URLs from YouTube.com automatically embed. Videos from any other URL will not embed.
+![Type Text](images/type-text.png)
+
+- **Embed YouTube video:** Used to embed a YouTube video inline with the lab instructions. URLs from YouTube.com automatically embed. Videos from any other URL will not embed.
 
   > `!VIDEO[text to display](url)` 
 
 
+- **Replacement Token:** Used to replace text in lab instructions with a variable that is unknown at the time of authoring the lab instructions. These variables may not be generated or created until the lab is launched by the student. These can include usernames, user first name, user last name, running lab instance ID number, etc. 
 
-- **Replacement Token:** used to replace text in lab instructions with a variable that is unknown at the time of authoring the lab instructions. These variables may not be generated or created until the lab is launched by the student. These can include usernames, user first name, user last name, running lab instance ID number, etc. 
   > | Replacement token           |                                          |
   > | --------------------------- | ---------------------------------------- |
   > | @lab.LabInstanceId          | The unique ID of the running lab instance. |
@@ -435,737 +570,182 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
   > | @lab.CloudPortalSignInLink  | A cloud portal sign-in link.             |
   > | @lab.CloudPortalSignInUrl   | The cloud portal sign-in URL (rendered as text, not a link). |
   > | @lab.CloudPortalSignOutLink | A cloud portal sign-out link.            |
-  > | @lab.CloudPortalSignOutUrl  | The cloud portal sign-out URL (rendered as text, not a link).
-
-
-## Objective and Scenario Best Practices and Guidelines
-
-The Objective is used to provide specific information about the lab. It should include a summary of the lab tasks and a list of specific goals that the lab is intended to meet. In contrast, the scenario serves a more general purpose. It can, for example, be used to establish the context in which the lab tasks are performed or to provide more general background information.
-
-- Use bulleted or numbered lists to emphasize lab goals and
-  objectives.
-- Ensure lists are expressed in parallel grammatical format and start
-  with verbs to provide greater emphasis and clarity.
-- Provide a summary of the entire lab.
-- Ensure that goals are focused on what the user gains from doing the
-  lab.
-- Use a scenario to provide more general background information
-  and context.
-
-Enable Lab Profile for IDL
---------------------------
-
-For a lab to display IDL content, content must be enabled in the lab
-profile. To enable content in a lab profile, you need to perform the
-following steps.
-
-1.  On the Basic Information tab of the lab profile Edit page, check
-    **Has IDL Content**.
-
-![](media/image39.png)
-
-Figure 28: Enabling IDL Content
-
--   Note that you also have the option to adjust the height of task bar.
-    Although you can make the task bar larger or smaller than the
-    default values, consider the tradeoffs. If you make it larger, you
-    lose valuable screen real estate for the VMs. If you make it
-    smaller, users may have to scroll to see the entire task direction.
-    Users can resize the task bar, according to their own preferences
-    and can pin/unpin it.
-
-1.  Optionally, check **Show Exercise Numbers** to have the exercises
-    numbered automatically.
-
-Advanced Settings
------------------
-
-In addition to the Basic Information tab, the Advanced tab has settings
-that are relevant to lab manual creation and display.
-
-To gain access to the Advanced settings, on the lab profile page, click
-**Advanced**.
-
-![](media/image40.png)
-
-Figure 29: Advanced settings
-
-The advanced settings tab allows you to configure the following:
-
--   **Custom Cascading Style Sheets (CSS).** You can use CSS to modify
-    the appearance of the lab text in the navigation and task bars. You
-    can either enter the CSS directly as shown above or you can point to
-    a CSS file URL.
-
--   **Build and tear down service URLs**. You can use these fields for
-    build and tear down operations that must take place outside of the
-    lab environment itself.
-
--   **End Redirect URL.** You can set a URL to which the user will be
-    redirected when the lab closes. This can be useful if you want to
-    direct users to specific sites for additional information or if the
-    lab is part of an external workflow.
-
--   **Show Timer**. This allows the user to see how much time is
-    remaining in the lab. If you disable this setting, the timer will
-    still run for the lab but the user will not be able to see the time
-    he or she has remaining in the lab. Only rarely would there be a
-    valid use case for removing the timer display. One likely use case
-    is if a 3^rd^ party wanted to “wrap” the lab application with its
-    own UI that also included a timer, such as an exam provider.
-
--   **Enable Navigation Warning**. The navigation warning is on by
-    default and is intended to help prevent users from accidently
-    navigating away from the client or from trying to end the lab by
-    closing the browser. However, for certain workflows, it may not be
-    desirable to display this warning.
-
--   **Show Navigation Bar**. This controls whether the navigation bar is
-    displayed.
-
--   **Navigation Bar Width**. This controls the width of the navigation
-    bar. Although you can make the navigation bar larger or smaller than
-    the default values, consider the tradeoffs. If you make it larger,
-    you lose valuable screen real estate for the VMs. If you make it
-    smaller, the IDL outline may wrap unnecessarily. Users can resize
-    the navigation bar, according to their own preferences and can
-    pin/unpin it.
-
--   **Show Content, Machines and Support Tabs**. This controls whether
-    the Content, Machines, or Support tabs are available to the user.
-
--   **Custom Content, Machines, and Support Tabs labels**. These
-    settings allow you to provide custom labels for the respective tabs.
-
--   **Show Virtual Machine Power Options**. This controls whether the
-    users can shut down or start up virtual machines (VMs) using the lab
-    interface.
-
-Access IDL Edit Modes
----------------------
-
-You are now ready to add lab exercises and lab tasks directly into the
-IDL user interface. As mentioned earlier, to add or edit content, lab
-content must be enabled for the lab profile (the Has Content check box
-must be checked).
-
-### Check Out IDL Manual
-
-Once lab content is enabled, you must the check out the IDL manual.
-Checking out the IDL manual ensures that only one person at a time can
-make changes to the content.
-
-To check out the IDL manual, navigate to the lab profile page, and then
-click **Check Out**.
-
-![](media/image41.png)
-
-Figure 30: Lab profile action menu showing check out option
-
-### Choose Edit Option
-
-Once you have checked out the IDL manual for editing, you can choose
-between two options for adding and editing content:
-
-**IDL Studio**. When using this option, the manual appears with the
-running VMs used in the lab environment. This option gives you the
-ability to create screenshots of the lab environment and to verify lab
-steps. To use IDL Studio mode, click **Launch in IDL Studio**, as shown
-below.
-
-![](media/image42.png)
-
-Figure 31: Edit content with running VMs
-
-1.  **Edit IDL Content**. In this mode, only the manual opens for
-    editing; no VMs are running. This editing mode is good for copy
-    editing or other tasks that do not require running VMs. To use this
-    mode, click **Edit IDL Content**, as shown below.
-
-![](media/image43.png)
-
-Figure 32: Edit content mode
-
-Create Exercises
-----------------
-
-Content is broken into exercises and tasks. Once invoking either of the
-two IDL edit modes, you must create an exercise. To do this, click **New
-Exercise**. This causes the New Exercise dialog to appear, as shown
-below.
-
-![](media/image44.png)
-
-Figure 33: New exercise dialog box
-
-The following topics describe the New Exercise dialog box controls and
-fields in order. Once you have completed them, click **OK** to save the
-exercise.
-
-### Load from Template / Save As Template
-
-Templates give you the ability to reuse content across multiple labs. If
-you create labs on a regular basis, you may find that some exercises are
-repetitive across labs. If this is the case, you can save an exercise as
-a template, and then use the exercise content in other labs.
-
-### New Exercise Placement
-
-You have the option of creating the new exercise after the current
-exercise, if present, or as the last exercise in the lab.
-
--   Note that if you have multiple exercises, you can change the order
-    of the exercises from within the user interface. To change the order
-    of an exercise, hover over the exercise, and click the up or down
-    arrow, as appropriate.
-
-![](media/image45.png)
-Figure 34: Moving exercise position
-
-### Name
-
-This is the title of the exercise. If you have checked the option to
-automatically number exercises, do not include the exercise number in
-the title. For exercise titles, you should use title case (see Common
-Style Guidelines for a definition of title case).
-
-### Introduction Message
-
-The introduction message provides information about the goals of the
-exercise, what the lab user will accomplish in the exercise, and puts
-the exercise tasks into a context. This field has the Edit toolbar
-described earlier. You can use it to add bold or italic formats, change
-font attributes, create lists, and increase or decrease indents as shown
-below.
-
-![](media/image46.png)
-
-Figure 35: Edit toolbar for introduction message field
-
-### Introduction Content URL
-
-The introduction content URL field allows you to link to an external
-rich media source, such as a video, that will be launched as part of the
-exercise introduction.
-
-### Completion message
-
-The completion message provides a brief summary and congratulatory
-message to the lab user. As a best practice, you should indicate that
-the user should click Continue to proceed to next exercise.
-
-### Completion Content URL
-
-The completion content URL field allows you to link to an external rich
-media source, such as a video, that will be launched as part of the
-exercise conclusion.
-
-Create Tasks
-------------
-
-You cannot have an exercise without at least one task and you cannot
-have a task without an exercise. Therefore, when the exercise is saved,
-an empty Edit Task dialog box appears.
-
-![](media/image47.png)
-
-Figure 36: Edit task dialog box
-
-The following topics describe the Edit Task dialog box controls and
-fields in order.
-
-### Load from Template /Save As Template
-
-Templates give you the ability to reuse content across multiple labs. If
-you create labs on a regular basis, you may find that some tasks are
-repetitive across labs or within the same lab. For example, instruction
-to log on using specific credentials. If this is the case, you can save
-a task as a template, and then use the task template content in the same
-or other labs.
-
-### Name
-
-This is the title of the task. For task titles, you should use sentence
-case (see Common Style Guidelines for a definition of sentence case).
-The maximum number of characters for the title field is 50. Your titles
-should be as concise as possible. The following are some best practices
-for task titles:
-
--   Keep title under 50 characters
-
--   Start with a verb
-
--   Use telegraphic style. Remove words, such as “a”, “an”, “the”, “is”
-    or “are”, that are not required to convey accurate meaning. For
-    example, write “Verify account listed”, rather the “Verify account
-    is listed.”
-
-### Text
-
-The Text box is the lab step or short series of steps that are executed
-as a single task. The following are some best practices for creating
-tasks:
-
--   Make sure that only one step or small series of closely related
-    steps is included in the text box. The goal here is to ensure that
-    the entire instruction will fit into the vertical space provided for
-    the task at the bottom of the lab user interface. If the task is too
-    long and users have to scroll in the task box, there is a risk they
-    may miss part of the task.
-
--   Avoid creating a single task for actions such as completing wizards
-    that use multiple screens. Try to limit tasks to actions performed
-    in single screens, pages, or dialog boxes.
-
--   If the task requires users to type in a long command or series of
-    commands, place the commands in the Knowledge task enhancement. In
-    the task, ask users to open the Knowledge task enhancement and
-    follow the instructions for executing the commands.
-
--   Use bolding to:
-
--   Emphasize the user interface elements the user interacts with,
-
--   Highlight what the user types into a field.\
-    For example, “Type **Passw0rd!**” or “Click **Submit**.” Please note
-    that this guideline does not strictly conform to the guidelines for
-    bolding in the Microsoft Manual of Style (MSTP).
-
-### Alert
-
-The Alert box provides information that you consider mandatory for the
-user to know. When the user advances to a task in which an alert is
-present, the Alert box will open.
-
-### Knowledge
-
-When a lab user advances to a lab step that includes content in the
-Knowledge box, the icon lights up and will bounce once to indicate the
-presence of content. The Knowledge box can:
-
--   Include additional explanatory information to provide greater
-    context;
-
--   Provide a series of commands or steps to avoid scrolling in the text
-    box for a task.
-
-<!-- -->
-
--   If you use the Knowledge box for lab steps or a series of commands,
-    please make sure you include a note directing users to execute the
-    steps or commands there. (For example, “At the PowerShell prompt,
-    type the commands listed in the Knowledge box, pressing ENTER after
-    each one.”)
+  > | @lab.CloudPortalSignOutUrl  | The cloud portal sign-out URL (rendered as text, not a link). |
+
+### Tasks
+
+For task titles, you should use sentence case (see Common Style Guidelines for a definition of sentence case).
+Your titles should be as concise as possible. The following are some best practices for task titles:
+
+- Keep title under 50 characters
+- Start with a verb
+- Use telegraphic style. Remove words, such as “a”, “an”, “the”, “is”
+  or “are”, that are not required to convey accurate meaning. For
+  example, write “Verify account listed”, rather the “Verify account
+  is listed.”
+
+The following are some best practices for creating tasks:
+
+-   Avoid creating a single task for actions such as completing wizards that use multiple screens. Try to limit tasks to actions performed in single screens, pages, or dialog boxes.
+-   If the task requires users to type in a long command or series of commands, place the commands in [Command](#Commands) syntax or a Code Block. In the task, ask users to open click the Command button that is generated by the Command syntax or clicking the code block, which will copy to the user's local clipboard, so they can past into the appropriate part of the lab.  
+-   Use bolding to: 
+    -   Emphasize the user interface elements the user interacts with,
+    -   Highlight what the user types into a field.\
+        For example, “Type **Passw0rd!**” or “Click **Submit**.” 
 
 ### Screenshots
 
-Screenshots add clarity by providing a visual representation of what a
-completed task looks like. To create a screenshot, you can take a
-screenshot using the Developer menu on the UI, as shown below.
+Screenshots add clarity by providing a visual representation of what a completed task looks like. Screenshots are also beneficial for people who are visual learners or do not speak the authored language as their first language. This helps to mitigate the risk of configuration errors. When the user clicks the screenshot in the lab instructions, it will open in a new window, at full resolution. Opening the screenshot in a new window is useful if the screenshot is large. If the screenshot is particularly important or noteworthy, students can save or bookmark the URL of the image for later use.
 
-![](media/image48.png)
+To create a screenshot:
 
-Figure 37: Taking screenshot form IDL UI
+1. Make sure the lab profile is **checked out**. 
 
-If you use this method, the screenshot is automatically added to the
-task you are on. Please keep in mind that when you take a screenshot
-using this method, you take a screenshot of the entire desktop of the
-VM, which may not be desirable. Alternatively, you can use a screen
-capture tool of your choice, save the screen capture and upload it using
-the controls on the Screenshot field.
+2. **Launch** the lab.
 
-The following are some best practices for incorporating screenshots into
-your lab:
+3. Click the **menu** button in the upper-right corner of the lab UI.
 
--   Compose the various elements (dialog boxes, etc.) before taking the
-    screenshot so that all the important fields are visible.
+4. Click **Edit instructions**.
 
--   Avoid taking screenshots of the entire desktop. For example, if the
-    focus of interest is a dialog box or a page, maximize the element to
-    avoid including too many other elements in the screen that may
-    distract from the object being configured in the task.
+5. Place the mouse cursor where the screenshot will go in the lab instructions.
 
--   Try to keep the screenshot smaller than 800 x 600. If it is larger
-    than this, consider resizing it to these dimensions so that users do
-    not have to scroll to see all the elements of the screenshot.
+6. Adjust the size of the window the VM is displayed in, as well as the placement any windows in the VM, before taking the screenshot. 
 
--   Do not cover menu labels with context menus that appear when you
-    right-click.
+7. Take a screenshot by **clicking the Screenshot button**, in the UI, as shown below.
 
--   Consider highlighting elements in the screenshot that are of
-    particular importance.
+   ![Screenshot Button](images/screenshot-icon.png)
 
--   Make sure that titles of items, dialog boxes, pages, etc. are
-    clearly visible.
+**Note:** the screenshot is captured at the size that the VM is sized to,  when screenshot button is clicked. 
 
--   For screenshots that are particularly noteworthy or can serve as
-    cautions, consider enabling the option to show the screenshot
-    automatically.
+If you use this method, the screenshot is automatically added in the lab instructions where your mouse cursor is. Please keep in mind that when you take a screenshot using this method, you take a screenshot of the entire desktop of the VM, which may not be desirable. 
 
-### Video
+The following are some best practices for incorporating screenshots into your lab:
 
-Videos showing the steps in the task are particularly useful for
-difficult and complex tasks as well as assisting those users who are
-visual learners. Also, they add a polish to your lab and make it stand
-out from other labs. You may upload an .mp4 file to attach to the lab
-task. Alternatively, you can link to an externally available rich media
-source by selecting the Externally Hosted option and providing a URL.
-Furthermore, for especially noteworthy videos, you can cause them to
-play automatically when the user reaches the task.
+-   Compose the various elements (dialog boxes, etc.) before taking the screenshot so that all the important fields are visible.
 
-Videos must be in mp4 file format to play back. The following are some
-guidelines for creating videos that are attached to lab tasks:
+-   Avoid taking screenshots of the entire desktop. For example, if the focus of interest is a dialog box or a page, maximize the element to avoid including too many other elements in the screen that may distract from the object being configured in the task.
 
--   Keep the video short, between 30 – 60 seconds at most.
+-   Do not cover menu labels with context menus that appear when you right-click.
 
--   Make sure the video covers only the relevant step.
+-   Consider highlighting elements in the screenshot that are of particular importance.
 
-### VM Select
+-   Make sure that titles of items, dialog boxes, pages, etc. are clearly visible.
 
-The VM Select control provides the user an icon to make a different VM
-active. From the drop-down, you set the VM attached to the icon.
-Although this functionality is also available from the Machines tab, the
-advantage of the using the VM Select control is that the lab user can
-switch the active VM from with the task itself.
+### Virtual Machine Select
 
-![](media/image49.png)
-Figure 38: VM select control
+During a lab, a lab user may be required to perform configuration steps on two or more VMs. A common source of errors in labs is performing lab tasks on the wrong VM. The IDL v2 platform mitigates this risk by providing the means to change to the correct VM within a task, by clicking a link in the lab instructions or selecting a VM from the Resources tab.
 
-### Floppy Drive
+The virtual machine Replacement Token allows the user to make a different VM active, by clicking a link in the lab instructions. Although this functionality is also available from the Resources tab, the advantage of the using the virtual machine Replacement Token is that the lab user can switch the active VM from within the task itself.
 
-The Floppy Drive control provides an icon for the lab user to insert a
-virtual floppy disk into (or eject from) the VM. The advantage of using
-the control is the user can insert the virtual floppy disk from within
-the task itself.
+##### VM displayed **in lab instructions** using a Replacement Token. 
 
-### DVD Drive
+![VM Replacement Token](images/vm-instructions-tab.png)
 
-The DVD Drive control provides an icon for the lab user to insert a
-virtual DVD (ISO file) into (or eject from) the VM. The advantage of the
-using the control is the lab user can insert the virtual DVD from within
-the task itself.
+To add a virtual machine to the lab instructions using a Replacement Token:
 
-![](media/image50.png)
+1. Place the cursor where the link to the VM will go in the lab instructions. 
+2. Click **@Lab** at the top of the text editor.
+3. Select the virtual machine to be used. (refer to the description column of the Replacement Token menu for VM details).
+4. Click **Insert**.
 
-Figure 39: DVD drive control
+##### VMs are displayed on the Resources tab, based on the lab profile configuration. 
 
-### Commands
+![](images/vm-select-from-resources-tab.png)
 
-The Commands control provides the option to execute a command shell or
-Windows PowerShell command in the VM from within the task. A key
-advantage of this control is that it can reduce a complex series of
-steps to single actions. For example, you can use the Commands control
-to reduce the multiple steps required to open a Control Panel dialog box
-to a single action.
+### Removable Media
 
-Although potentially any task could be reduced to an action that can be
-executed as a command shell or Windows PowerShell command, you should
-use this feature judiciously. Users should still know how to open File
-Explorer and perform other basic actions in the Windows UI. This feature
-is most useful for a complex task that involves numerous steps, opening
-file locations deep down in directory structures, opening specific Web
-pages, and other similar activities.
+The **Floppy Drive Replacement Token** provides a link for the lab user to insert a virtual floppy disk into (or eject from) the VM. The advantage of using the control is the user can insert the virtual floppy disk from within the task itself.
 
-![](media/image51.png)
+The **DVD Drive Replacement Token** provides a link for the lab user to insert a virtual DVD (ISO file) into (or eject from) the VM. The advantage of the using the control is the lab user can insert the virtual DVD from within the task itself.
 
-Figure 40: Command control
+To add removable media to the lab instructions using a Replacement Token:
 
-There are 4 different kinds of commands that you can configure:
+1. Place the cursor where the link to the removable media will go in the lab instructions. 
+2. Click **@Lab** at the top of the text editor.
+3. Select the removable media to be used. (refer to the description column of the Replacement Token menu for media type details).
+4. Click **Insert**.
 
--   **Type Text**. This is not a command per se. Rather, this command
-    type allows the user to copy a predetermined string to the VM.
+## Add Review Questions as an Assessment Exam to a Lab
 
--   **PowerShel**l. This allows the user to execute a PowerShell command
-    in the background. The user does not see the execution of the
-    command.
+### Exams
 
--   **PowerShell will UI**. This opens a command prompt window in the VM
-    and shows the command execution.
+Each lab, regardless of whether it has content, can provide an optional exam at the end of lab. This can serve a number of purposes: to reinforce learning, to measure retention of concepts, to provide metrics on effectiveness of lab delivery, etc. Exams are categorized by the type of scoring used; there are three to choose from:
 
--   **Shell**. This causes a command to be executed in the background.
-    The user does not see the execution of the command.
+1. **Assessment** - Traditional multiple choice test that is scored automatically.
 
--   **Shell with UI**. This command opens a command prompt window in the
-    VM and shows the command execution
+2. **Manual** - The user submits screenshots.The screenshots are later evaluated and marked by an examiner.
 
-<!-- -->
+3. **Automated** - Performance-based test (the user has to make required configuration changes in the lab based on directions in the exam questions) that are evaluated using scripts to verify correct configuration within the lab or in code. 
 
--   **NOTE:** All of the Command types except Type Text require the Lab
-    on Demand Hyper-V Integration service to be installed on the VM. The
-    integration service is installed in the VM during lab development
-    from the Developer menu, as shown below. Installing the Lab on
-    Demand Integration Service also provides support for automatic
-    screen resizing and automated performance-based scoring.
+Review questions can be added to a lab as an assessment. The assessment will appear when the user has completed all the lab steps. It is created on the Exam tab of the lab profile. To create an assessment, click the
+**Exam** tab, and then check **Has Exam**. 
 
-![](media/image52.png)
+![](images/exam-tab-has-exam.png)
 
-Figure 41: Developer menu
+To create a multiple choice review, in the Scoring Type drop-down, select **Assessment**, set the **Passing Score**, and then click **Add Page**. Pages provide a way to organize the review content into categories that, for example, might follow the lab exercises or topics. Enter a page name and click **Add Question**. Type the question, add the multiple choice selections, select the correct answer(s), and set the **Score Value** so that the exam can be scored.
 
-#### Command examples
+![](images/exam-example-questions.png)
 
-The following screenshots show some of the commands that are possible
-using the Command control.
+## Additional Features
 
--   These commands:
+### Converting a traditional IDL v1 based lab to an IDL v2 based lab
 
-![](media/image53.png)
+Traditional IDL v1 labs can be converted to IDL v2 labs easily in Lab on Demand. The conversion process does not convert some items correctly, and you may still need to look over the content to ensure everything appears as expected. Converting to IDL v2 is not permanent and can be reverted back to IDL v1 at any time, from the lab profile page. 
 
-Figure 42: Sample commands
+To convert an IDL v1 lab to IDL v2:
 
--   Have these results:
+1. Navigate to the **lab profile** page.
 
-![](media/image54.png)
+2. Click **Upgrade** next to **Has IDL Content**. (this will display the current version of the lab profile)
 
-Figure 43: Sample commands result
+![Upgrade Button](images/upgrade-button.png)
 
-Add Review Questions as an Assessment Exam to a Lab
----------------------------------------------------
+3. Select how screenshots and videos should be converted. They can be converted **inline** (recommended) or **as links**.
 
-Review questions can be added to a lab as an assessment. The assessment
-will appear when the user has completed all the lab steps. It is created
-on the Exam tab of the lab profile. To create an assessment, click the
-**Exam** tab, and then check **Is Exam**.[^5]
+   ![screenshots-as-links-or-inline](images/screenshots-as-links-or-inline.png)
 
-![](media/image55.png)
+   4. After making a selection, **Click OK** to convert the lab to IDL v2.
 
-Figure 44: Add assessment
+      The lab is now IDL v2. You can confirm by checking the **Has IDL Content** field on the lab profile **Basic Information** section. 
 
-To create a multiple choice review, in the Scoring Type drop-down,
-select **Assessment**, set the **Passing Score**, and then click **Add
-Page**. Pages provide a way to organize the review content into
-categories that, for example, might follow the lab exercises or topics.
-Enter a page name and click **Add Question**. Type the question, add the
-multiple choice selections, select the correct answer(s), and set the
-**Score Value** so that the exam can be scored.
+### Create and Incorporate Advertising Campaigns
 
-![](media/image56.png)
-
-Figure 45: Creating multiple choice tests
-
-Adding Lab Content Using XML or Word Templates
-==============================================
-
-In some cases, it might be desirable to use existing lab content in new
-labs. In other cases, it may be desirable to create the exercise and
-task steps in an XML or Word document and import the content. The
-controls for importing and exporting lab content are shown below:
-
-![](media/image57.png)
-
-Figure 46: Import and export lab content links
-
-Export Content
---------------
-
-When you export lab content, you are given the choice to export the full
-lab profile, the IDL content only, or the VMs.
-
-![](media/image58.png)
-
-Figure 47: Export dialog box
-
-Exporting the IDL content causes a compressed (.zip) file containing an
-XML file and screen images to be downloaded to your local computer. The
-structure of the zip appears below.[^6]
-
-![](media/image59.png)
-
-Figure 48: Export zip archive internal structure
-
-The following shows a sample of XML-based exported lab content:
-
-![](media/image60.png)
-
-Figure 49: XML format lab content
-
-For advanced users who have an understanding of XML-formatted documents,
-these XML documents can be modified and imported in the lab user
-interface. For example, assume you are releasing a new version of a lab
-that uses different VM names. You could export the current lab as an
-XML-based document, open the document in an XML editor, perform find and
-replace operations to change machine names, save the document, and then
-import it to the new lab profile.
-
- Import Content
----------------
-
-When you click **Import**, you are given the choice to import the **IDL
-content** or the **VMs**.
-
-![](media/image61.png)
-
-Figure 50: Import options
-
-You can then can import a content zip bundle (usually created by
-exporting content from an existing lab, a content XML document, or a
-Microsoft Word Docx file. Once you have selected the file to import, you
-can append lab content to existing content of the lab (this is the
-default) or replace the existing content with new content (explained
-later). To finish the process, click **Import** to add the content. The
-XML and Word templates are described below.
-
-### Use an XML Document Template
-
-If you do not have existing content, you can download the XML template
-from the Import link (see below).
-
-![](media/image62.png)
-
-Figure 51: Open XML template
-
-You can then use the template to add content directly into an XML file
-or use another document format that you can convert to the accepted XML
-format. The following shows the current XML template:
-
-![](media/image63.png)
-Figure 52: XML template
-
-### Use a Word Template
-
-You can download and save the Word template from the Import link and
-create your IDL manual directly in it (see below).
-
-![](media/image64.png)
-
-Figure 53: Open Word template
-
-You can then use this template to create your lab manual in Word.
-However, not all of the manual will be imported. The system uses the
-style formats to determine what is imported and where. The following
-shows the part of the current Word template that is imported into the
-lab:
-
-![](media/image65.png)
-
-Figure 52: Word template
-
-In the following areas, replace the placeholder text (shown in bold
-below) with your text. You must leave the style formatting as is on
-these areas to have them import:
-
--   You can add bold formatting in the task detail area only. In
-    addition, bullets, italics, underlines, and other formatting will
-    not be imported into any areas.
-
-1.  **Exercise Title** – Your exercise title
-
-2.  **Text located here will appear as the exercise scenario** – your
-    scenario
-
-3.  **Task Name** – the title you will give that step
-
-4.  **Task detail** – the instructions for that step
-
-5.  **Alert Text Example** – any information you want displayed in the
-    Alert enhancement for that step
-
-6.  **This is a good idea** – any information you want displayed in the
-    Knowledge enhancement for that step
-
-You can copy the above elements to add to additional exercises and
-tasks. For the Alert and Knowledge enhancements, copy those elements to
-the tasks that will need them. When you have completed all the elements
-for your manual, delete any extra elements you do not want imported such
-as empty steps and the initial Alert and Knowledge elements.
-
-### Clear and Replace Lab Content
-
-Content developers might find it desirable in some circumstances to
-clear lab content quickly. For example, you copy a lab profile and wish
-to use new lab steps in the lab profile copy. There are two ways to
-clear lab content.
-
-1.  Using the quick link, Clear Lab Content, on the lab profile page.
-    When a lab profile is enabled for lab content, the Clear Lab Content
-    link appears in the quick links section.
-
-![](media/image66.png)
-
-Figure 54: Clear lab content
-
-1.  Using the lab import function. When you import lab content, you are
-    given the choice to replace the existing content, overriding the
-    default behavior to append content.
-
-![](media/image67.png)
-
-Figure 55: Clear lab content during import
-
-Additional Features
-===================
-
-Create and Incorporate Advertising Campaigns
---------------------------------------------
-
-An advertising campaign allows you to provide introductory content
-across multiple labs that are grouped by lab series, organization or
-event. This topic describes how to add an advertising campaign to a lab
-profile or a lab series. The advertising campaign must first be
-configured from the Learn on Demand Management page, as show below.
+An advertising campaign allows you to provide introductory content across multiple labs that are grouped by lab series, organization or event. This topic describes how to add an advertising campaign to a lab profile or a lab series. The advertising campaign must first be configured from the Lab on Demand Admin page, as show below.
 
 -   You will require special permissions to see this tile.
 
-![](media/image68.png)
+![](images/advertising-tile.png)
 
-Figure 56: Advertising campaign tile
+To create an advertising campaign, click **Create Advertising Campaign**. On the edit, enter a name for the campaign, as shown below.
 
-To create an advertising campaign, click **Create Advertising
-Campaign**. On the edit, enter a name for the campaign, as shown below.
+![](images/advertising-campaign-basic-info.png)
 
-![](media/image69.png)
+Click the **Intros** tab and enter the URL source for the video, graphics presentation, or other information you wish to display. Multiple URLs can be entered on separate lines and will display randomly. If wanted, check the box and set the minimum amount of time to show the content. With this configured, the users will not be able to close the presentation early.
 
-Figure 57: Advertising campaign information
+![](images/advertising-campaign-intro.png)
 
-Click the **Intros** tab and enter the URL source for the video,
-graphics presentation, or other information you wish to display.
-Multiple URLs can be entered on separate lines and will display
-randomly. If wanted, check the box and set the minimum amount of time to
-show the content. With this configured, the users will not be able to
-close the presentation early.
+To configure a lab profile with an advertising campaign, on the lab profile page, click **Edit**.
 
-![](media/image70.png)
-Figure 58: Configure advertising campaign URLs
+![](images/lab-profile-edit-button.png)
 
-The advertising campaign can be associated with a lab series or a lab
-profile. The following screenshot shows the configuration page for an
-example lab series.
+Beside Advertising Campaign, click **Choose**, then locate and select the advertising campaign.
 
-![](media/image71.png)
+![](images/advertising-campaign-in-lab-profile-edit.png)
 
-Figure 59: Advertising campaign lab series configuration
+The advertising campaign can also be associated with a lab series or a lab profile. The following screenshot shows the configuration page for an example lab series.
 
-To configure a lab profile with an advertising campaign, on the lab
-profile page, click **Edit**.
+![](images/advertising-campaign-in-lab-series.png)
 
-![](media/image72.png)
-Figure 60: Edit lab profile
+### Incorporate Rich Media Content as Part of Lab Introduction
 
-Beside Advertising Campaign, click **Choose**, then locate and select
-the advertising campaign.
+Although you can use Advertising Campaigns at the level of the lab profile, it is more practical and easier to use the Introduction Content URL to provide a lab-specific video or other rich media content.
 
-![](media/image73.png)
+To do this, on the Edit Lab Profile page, scroll down and type the URL for the rich media content in the **Introduction Content URL** field. Like the advertising campaign, you can also force the rich media to be displayed for a minimum amount of time by checking the box to Show for at least **__** seconds.
 
-Figure 61: Add advertising campaign to lab profile
+![](images/introduction-content-url.png)
 
-Incorporate Rich Media Content as Part of Lab Introduction
-----------------------------------------------------------
+## Common Style Guidelines
 
-Although you can use Advertising Campaigns at the level of the lab
-profile, it is more practical and easier to use the Introduction Content
-URL to provide a lab-specific video or other rich media content.
-
-To do this, on the Edit Lab Profile page, scroll down and type the URL
-for the rich media content in the **Introduction Content URL** field.
-Like the advertising campaign, you can also force the rich media to be
-display for a minimum amount of time by checking the box to Show for at
-least ***n*** seconds.
-
-![](media/image74.png)
-
-Figure 62: Add introduction URL to lab profile
-
-Common Style Guidelines
-=======================
 
 This section includes guidelines for preventing common errors in word
 choice and sentence formation. The list contains some of the most common
@@ -1174,120 +754,56 @@ a quick reference as you write or edit. For more comprehensive
 information on, and guidelines for writing about technical information,
 please see the Microsoft Manual of Style (MMS), 4^th^ edition.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Use                                                                                                                             Do Not Use                                                                                                                            Comments
-------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  VMs                                                                                                                             VM’s                                                                                                                                  Do not use an apostrophe when you mean plural.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                  This is the possessive form.                                                                                                          
+| Use                                      | Do Not Use                               | Comments                                 |
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| VMs                                      | VM's                                     | Do not use an apostrophe when you mean plural.<br/><br/>This is the possessive form. |
+| Red, white, and blue                     | Red, white and blue                      | Always include the serial comma, which is the comma before a coordinating conjunction such as "and" or "or." |
+| In Server Manager, click **Manage**, and click **Add Roles and Features**. | In Server Manager, click **Manage**, then click **Add Roles and Features**. | *Then* is not a coordinate conjunction and thus cannot correctly join two independent clauses. Use *and* or another coordinate conjunction or *then* with a semicolon or another conjunctive adverb to connect independent clauses in, for example, two-part procedural steps.<br/><br/>This is one of the most common grammatical errors in lab documents. |
+| Some applications are unable to use expanded memory. | Some applications are unable to utilize expanded memory. | Do not use *utilize* as a synonym for *use*. *Utilize* means "to find a practical use for." |
+| On the File menu, click **Open**.        | On the File menu, select **Open**.       | Use *click* rather than *choose* or *select* to refer to the user action of issuing a command or setting an option. |
+| On the View menu, point to **Toolbars**, and then click **Formatting**. | On the File menu, choose **Open**.<br/><br/>Click on **Save**. | When dealing with menus and submenus, do not use *click on*, only *click*. |
+| Check the **Print all pages** check box. | Check the **Print all pages** checkbox.  | If using the term check box, this is two words. |
+| For more information about...            | For information on...                    | In cross-references, use *about*, not *on*. |
+| To ..., click ….                         | Click … to....                           | Begin the sentence with "To".            |
+| web, website                             | Web, web site                            | Change to MMS, 4^th^ edition, is web in lower case, and website all one word. |
+| All caps for A.M., P.M., and key names, such as CTRL, ALT, and DELETE | Small caps, or title case.               | Note use of periods in A.M. and P.M., per MMS. |
+| The **Save as** dialog box appears.      | The **Save as** dialog box displays.     | Do not use *display* as an intransitive verb. Use *appears* or, only if necessary, the passive *is displayed*. |
+| Type the following code, and then press ENTER. | Type the following code, and then press ENTER: | End the introductory sentence with a period, not a colon. This is a recent change to the MMS.<br/><br/>Sentences introducing code samples are now always ended with a period, not a colon. |
+| To install the program, do the following: | To install the program, perform the following steps: | If *following* is the last word before what it introduces, follow it with a colon.<br/><br/>This is a recent change to the MSTP. |
+| Use Intense Emphasis style for user interface elements with which a user interacts. | Do not use bold for emphasis.            | See the relevant section in this style guide for complete guidelines regarding bold font.<br/><br/>Do not use bold for UI elements that are used as reference. |
+| Spell out acronyms at first mention      | None                                     | You can find references to product names and acronyms in the MMS, on [www. Technet.microsoft.com](http://www.microsoft.technet.com), or on <https://worldready.cloudapp.net/StyleGuide/Read?id=1413> (requires Microsoft credentials) |
+| computer                                 | machine                                  | Do not use *machine* when you mean *computer*. While this term is common among software developers and IT Pros, it is not acceptable per MMS. |
+| You will need to supply information about applications that you want to run with Windows. | You will need to supply information about applications which you want to run with Windows. | *That* and *which* are often confused. Be sure to use the appropriate word. *That* introduces a restrictive clause, which is a clause that is essential for the sentence to make sense. A restrictive clause often defines the noun or phrase preceding it and is not separated from it by a comma. In general, do include the word *that* in restrictive clauses, even though in some clauses the sentence may be clear without it. Including *that* prevents ambiguity and helps translators understand the sentence. |
+| Your package contains the subsidiary information card, which you can use to obtain device drivers or local technical support. | You will need to supply information about applications you want to run with Windows. | *Which* introduces a nonrestrictive clause, which is a clause that could be omitted without affecting the meaning of the sentence. It is preceded by a comma. Nonrestrictive clauses often contain auxiliary or parenthetical information. |
+| Type your password, and then press ENTER. | Enter your password, and then click **OK**. | Do not use as a synonym for *type* except to indicate that a user can either type or click a selection from, say, a list in a combo box. |
+| Wait for the computer to restart, and then log on as **Administrator** with the password **Passw0rd**. | Wait for the computer to restart, and then logon as **Administrator** with the password **Passw0rd**. | The verb form is two words, *log on* or *log off*. As a noun or adjective, use one word, no hyphen: *logon* or *logoff*. |
+| Windows Server® 2008 R2 Hyper-V™         | Note the use of ® and TM. Once this has been spelled out correctly, you can then reference Hyper-V, or Windows Server Hyper-V. | Refer to the Trademarks section for a link to how to use MS trademarks. |
+| cloud                                    | Cloud                                    | The MMS now has a detailed section on cloud technology. Note that cloud is lower case. |
+| On the Start menu, navigate to **All Programs\\Microsoft Forefront UAG\\Forefront UAG Management**. | On the Start menu, navigate to **All Programs/Microsoft Forefront UAG/Forefront UAG Management**. | Do not use / for Start menu commands.    |
+| In the Navigation pane, expand **contoso.com/branch offices/Vancouver/sales**, and then in the Details pane, click **Tom**. | In the Navigation pane, navigate to **contoso.com\\branch offices\\Vancouver\\sales**, and then in the Details pane, click **Tom**. | In a Management Console, use *expand* for navigating tree structures, and use a /.<br/><br/>Make sure you reference the Navigation pane and the Details pane.<br/><br/>Do not use a \\. |
+| On the File menu, click **Open**.        | On the File menu, click **Open...**.<br/><br/>On the File menu, click **Open(...)**. | In the user interface, an ellipsis is typically used to show truncation, as in a program name, or to indicate on menus and in dialog boxes that a dialog box will appear to obtain more information from the user. Do not use an ellipsis in this context in documentation. |
+| Right-click **XXX**, and then click **Properties**. | Right-click **XXX**, and then select **Properties**.<br/><br/>Right-click **XXX**, and then choose **Properties**. | When you right-click something, you are presented with a context menu. You *click* items on a context menu, rather than choosing or selecting them. |
 
-  Red, white, and blue                                                                                                            Red, white and blue                                                                                                                   Always include the serial comma, which is the comma before a coordinating conjunction such as “and” or “or.”
+## Acronyms and Initialisms
 
-  In Server Manager, click **Manage**, and then click **Add Roles and Features**.                                                 Incorrect:                                                                                                                            *Then* is not a coordinate conjunction and thus cannot correctly join two independent clauses. Use *and* or another coordinate conjunction or *then* with a semicolon or another conjunctive adverb to connect independent clauses in, for example, two-part procedural steps.
-​                                                                                                                                                                                                                                                                        
-  In Server Manager, click **Manage**, and click **Add Roles and Features**.                                                      In Server Manager, click **Manage**, then click **Add Roles and Features**.                                                           This is one of the most common grammatical errors in lab documents.
+The term, acronym, is used when the letters can be pronounced as a word. Initialism is the correct term to use when the first letters cannot be pronounced as a word. HOL or ILL can be either.
 
-  Some applications are unable to use expanded memory.                                                                            Some applications are unable to utilize expanded memory.                                                                              Do not use *utilize* as a synonym for *use*. *Utilize* means "to find a practical use for.”
+Spell these out at first mention, for example: System Center Virtual Machine Manager (VMM). Note that, in this example, the Microsoft initialism is VMM, not SCVMM. One often sees both, but by visiting Microsoft TechNet pages, you can see that the correct initialism is VMM. Additional common Microsoft acronyms can be found in the MMS.
 
-  On the File menu, click **Open**.                                                                                               On the File menu, select **Open**.                                                                                                    Use *click* rather than *choose* or *select* to refer to the user action of issuing a command or setting an option.
-​                                                                                                                                                                                                                                                                        
-  On the View menu, point to **Toolbars**, and then click **Formatting**.                                                         On the File menu, choose **Open**.                                                                                                    When dealing with menus and submenus, do not use *click on*, only *click*.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                  Click on **Save**.                                                                                                                    
+### Trademarks
 
-  Check the **Print all pages** check box.                                                                                        Check the **Print all pages** checkbox.                                                                                               If using the term check box, this is two words.
+You can confirm trademarks at [Microsoft Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general.aspx).
 
-  For more information about...                                                                                                   For information on...                                                                                                                 In cross-references, use *about*, not *on*.
+### Bold Formatting
 
-  To ..., click ….                                                                                                                Click … to....                                                                                                                        Begin the sentence with “To”.
+In this document style, only UI elements that a user interacts with should be bold. Ensure that the UI element is bold, but any punctuation following the UI term is not bold.
 
-  web, website                                                                                                                    Web, web site                                                                                                                         Change to MMS, 4^th^ edition, is web in lower case, and website all one word.
+### Initial Caps
 
-  All caps for A.M., P.M., and key names, such as CTRL, ALT, and DELETE                                                           Small caps, or title case.                                                                                                            Note use of periods in A.M. and P.M., per MMS.
-
-  The **Save as** dialog box appears.                                                                                             The **Save as** dialog box displays.                                                                                                  Do not use *display* as an intransitive verb. Use *appears* or, only if necessary, the passive *is displayed*.
-
-  Type the following code, and then press ENTER.                                                                                  Type the following code, and then press ENTER:                                                                                        End the introductory sentence with a period, not a colon. This is a recent change to the MMS.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        Sentences introducing code samples are now always ended with a period, not a colon.
-
-  To install the program, do the following:                                                                                       To install the program, perform the following steps:                                                                                  If *following* is the last word before what it introduces, follow it with a colon.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        This is a recent change to the MSTP.
-
-  Use Intense Emphasis style for user interface elements with which a user interacts.                                             Do not use bold for emphasis.                                                                                                         See the relevant section in this style guide for complete guidelines regarding bold font.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                  Do not use bold for UI elements that are used as reference.                                                                           Note that the MSTP uses bold for all UI elements. This style guide only uses bold for items you interact with. This guides the user’s eye to the critical UI elements.
-
-  Spell out acronyms at first mention                                                                                             None                                                                                                                                  You can find references to product names and acronyms in the MMS, on [www. Technet.microsoft.com](http://www.microsoft.technet.com), or on <https://worldready.cloudapp.net/StyleGuide/Read?id=1413> (requires Microsoft credentials)
-
-  computer                                                                                                                        machine                                                                                                                               Do not use *machine* when you mean *computer*. While this term is common among software developers and IT Pros, it is not acceptable per MMS.
-
-  You will need to supply information about applications that you want to run with Windows.                                       You will need to supply information about applications which you want to run with Windows.                                            *That* and *which* are often confused. Be sure to use the appropriate word. *That* introduces a restrictive clause, which is a clause that is essential for the sentence to make sense. A restrictive clause often defines the noun or phrase preceding it and is not separated from it by a comma. In general, do include the word *that* in restrictive clauses, even though in some clauses the sentence may be clear without it. Including *that* prevents ambiguity and helps translators understand the sentence.
-​                                                                                                                                                                                                                                                                        
-  Your package contains the subsidiary information card, which you can use to obtain device drivers or local technical support.   You will need to supply information about applications you want to run with Windows.                                                  *Which* introduces a nonrestrictive clause, which is a clause that could be omitted without affecting the meaning of the sentence. It is preceded by a comma. Nonrestrictive clauses often contain auxiliary or parenthetical information.
-
-  Type your password, and then press ENTER.                                                                                       Enter your password, and then click **OK**.                                                                                           Do not use as a synonym for *type* except to indicate that a user can either type or click a selection from, say, a list in a combo box.
-
-  Wait for the computer to restart, and then log on as **Administrator** with the password **Passw0rd**.                          Wait for the computer to restart, and then logon as **Administrator** with the password **Passw0rd**.                                 The verb form is two words, *log on* or *log off*. As a noun or adjective, use one word, no hyphen: *logon* or *logoff*.
-
-  Windows Server® 2008 R2 Hyper-V™                                                                                                                                                                                                                                      Note the use of ® and TM. Once this has been spelled out correctly, you can then reference Hyper-V, or Windows Server Hyper-V.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        Refer to the Trademarks section for a link to how to use MS trademarks.
-
-  cloud                                                                                                                           Cloud                                                                                                                                 The MMS now has a detailed section on cloud technology. Note that cloud is lower case.
-
-  On the Start menu, navigate to **All Programs\\Microsoft Forefront UAG\\Forefront UAG Management**.                             On the Start menu, navigate to **All Programs/Microsoft Forefront UAG/Forefront UAG Management**.                                     Do not use / for Start menu commands.
-
-  In the Navigation pane, expand **contoso.com/branch offices/Vancouver/sales**, and then in the Details pane, click **Tom**.     In the Navigation pane, navigate to **contoso.com\\branch offices\\Vancouver\\sales**, and then in the Details pane, click **Tom**.   In a Management Console, use *expand* for navigating tree structures, and use a /.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                        Make sure you reference the Navigation pane and the Details pane.
-
-                                                                                                                                                                                                                                                                        Do not use a \\.
-
-  On the File menu, click **Open**.                                                                                               On the File menu, click **Open...**.                                                                                                  In the user interface, an ellipsis is typically used to show truncation, as in a program name, or to indicate on menus and in dialog boxes that a dialog box will appear to obtain more information from the user. Do not use an ellipsis in this context in documentation.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                  On the File menu, click **Open(...)**.                                                                                                
-
-  Right-click **XXX**, and then click **Properties**.                                                                             Right-click **XXX**, and then select **Properties**.                                                                                  When you right-click something, you are presented with a context menu. You *click* items on a context menu, rather than choosing or selecting them.
-​                                                                                                                                                                                                                                                                        
-                                                                                                                                  Right-click **XXX**, and then choose **Properties**.                                                                                  
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Acronyms and Initialisms
-------------------------
-
-The term, acronym, is used when the letters can be pronounced as a word.
-Initialism is the correct term to use when the first letters cannot be
-pronounced as a word. HOL or ILL can be either.
-
-Spell these out at first mention, for example: System Center Virtual
-Machine Manager (VMM). Note that, in this example, the Microsoft
-initialism is VMM, not SCVMM. One often sees both, but by visiting
-Microsoft TechNet pages, you can see that the correct initialism is VMM.
-Additional common Microsoft acronyms can be found in the MMS.
-
-Trademarks
-----------
-
-You can confirm trademarks at\
-<https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general.aspx>.
-
-Bold Formatting
----------------
-
-In this document style, only UI elements that a user interacts with
-should be bold. Ensure that the UI element is bold, but any punctuation
-following the UI term is not bold.
-
-Initial Caps
-------------
-
-Initial caps mean capitalizing the first letter of a word. Use initial
-caps for:
+Initial caps mean capitalizing the first letter of a word. Use initial caps for:
 
 -   File names. Internal caps are OK for readability, as in MyFile.doc.
-    Use what is in the VM. The file extension should be lowercase.
+    The file extension should be lowercase.
     Examples: MyTaxFile.doc, Oleaut.dll.
 
 -   Agenda items in slide presentations
@@ -1308,14 +824,11 @@ caps for:
 -   “Wizard” when used as part of a proper name of a wizard (for
     example, the Answer Wizard)
 
-Sentence Case
--------------
+### Sentence Case
 
-In sentence case, you capitalize only the first letter in a sentence or
-phrase. Use sentence case for all task titles.
+In sentence case, you capitalize only the first letter in a sentence or phrase. Use sentence case for all task titles.
 
-Title Case
-----------
+### Title Case
 
 Use this for the exercise titles and lab titles.
 
@@ -1346,48 +859,7 @@ Use this for the exercise titles and lab titles.
     capitalized without the hyphen. Always capitalize the second part of
     a hyphenated compound if it is the last word of a heading or title.
 
-Describing the User Interface
------------------------------
+## Describing the User Interface
 
-Refer to the user interface section of the Microsoft Manual of Style for
-examples of how to describe user interface elements.
+Refer to the user interface section of the Microsoft Manual of Style for examples of how to describe user interface elements.
 
-Appendix A: Upcoming Features
-=============================
-
-The Integrated Digital Learning platform is constantly improving as a
-result of customer feedback. Here are some upcoming features that are
-currently in development.
-
-[^1]: In future releases of the IDL platform, it will be possible to
-    substitute a video for the text-based objective and scenario
-    sections.
-
-[^2]: The Manual and Automated types of exams are advanced topics and
-    are outside the scope of this introductory manual. For more
-    information on how to create advanced exam types, please contact
-    Learn on Demand Systems for additional guidance.
-
-[^3]: Please note that this functionality depends on the use of the
-    HTML5 controller specified in the Support tab of the IDL user
-    interface (this is the default configuration).
-
-[^4]: Although links to external web sites are supported, please note
-    that, by default, clicking these links will cause the user to
-    navigate ***away*** from the lab page, disruptively interrupting the
-    lab. As a best practice, if you want to link to external web site in
-    any of the lab text, include the **target=”\_blank”** attribute to
-    cause a new web page to open when the link is clicked. Consider the
-    following HTML code:
-    
-    &lt;a href=”https://www.learnondemandsystems.com” target=”\_blank”
-    Learn on Demand Systems&lt;/a&gt;
-    
-    This code will cause the LODS website to open in a new web page when
-    the link is clicked.
-
-[^5]: The other exam types are advanced topics. For information on them,
-    please contact Learn on Demand Systems for additional guidance.
-
-[^6]: Please note that you can import either an uncompressed or a
-    compressed version of the XML file.
