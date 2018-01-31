@@ -27,7 +27,7 @@ A successful lab that is well-received by users usually contains more than a sim
 
 A lab launch may take anywhere from a few seconds to a couple of minutes to fully launch, depending on the Cloud platform chosen and/or the size and number of VMs (if using VMs). During this time, a window will appear with a message saying that the lab is ready. 
 
-![](images/idl2-lab-ready.png)
+![Your lab is ready!](images/idl2-lab-ready.png)
 
 Clicking **_Get Ready_** will open close that window and open two other windows; the Portal window and the Lab Instructions, as shown in the [Overview of the Lab Interface](#Overview-of-the-lab-interface).
 
@@ -53,7 +53,7 @@ The IDL v2 platform can provide the user with an introduction that appears first
 
 A lab's instructions can be organized into one or more pages that represent a set of logically related tasks that result in the completion of some goal, or a lab can be organized into a combination of exercises and tasks, in no particular order. A lab task is usually a single step or a small set of closely related steps that form a unit. For example, a task might provide all the steps that a user must perform to complete a dialog box, or a task may be something smaller, such as logging into a portal or creating a file. 
 
-![](images/idl2-exercises-tasks.png)
+![Lab instructions](images/idl2-exercises-tasks.png)
 
 You can add rich media content delivered from external sources (URLs) that the user can access at any point in the lab instructions, or embed video or images to provide additional context to the lab instructions. External sources can be provided with [Markdown Syntax](#Markdown-syntax) or by configuring URLs in the lab profile. URLs configured in the lab profile will be available in the lab, from the Resources tab. 
 
@@ -61,7 +61,7 @@ You can add rich media content delivered from external sources (URLs) that the u
 
 This section describes the user lab interface. Within the lab interface on the right side, the lab instructions are displayed. The right navigation pane also contains the Resources tab  and Help tab.Tasks or any other items that the student is instructed to do can have a Task Checkbox (as shown in the image above) at the beginning of the item.When a task is performed that has a Task checkbox, the user clicks the checkbox.  Task Checkboxes are used track and report lab progress to LOD and TMS, as well as a visual marker for students. Lab progress is calculated by the percentage of Task Checkboxes that are checked in the lab instructions.
 
-![](images/idl2-example-with-instructions.png)
+![Lab Interface](images/idl2-example-with-instructions.png)
 
 The left window is known as the **Portal Window**. This window can be configured to display any URL, in the lab profile configuration page. The URL of the Portal Window can changed during the lab, using Markdown syntax (discussed later in this guide).  This window can also be configured to display virtual machines (if the lab profile is configured with VMs).
 
@@ -82,7 +82,7 @@ For a lab to display IDL v2 content, content must be enabled in the lab profile 
 2.  Click **Edit** on the lab profile page.
 3.  On the **Basic Information tab** of the lab profile Edit page, check **Has IDL Content**.
 
-![](images/has-idl-content.png)
+![Has IDL Content and IDL version selection](images/has-idl-content.png)
 
 3. Click the up arrow to **change the selection to 2**, to enable IDL version 2.
 4. Click **Save**.
@@ -178,7 +178,7 @@ Once lab content is enabled, you must the check out the IDL v2 lab instructions.
 
 To check out the IDL v2 manual, navigate to the lab profile page, and then click **Check Out**.
 
-![](images/check-out-lab-profile.png)
+![Check out lab profile](images/check-out-lab-profile.png)
 
 Once you have checked out the IDL manual for editing, you are now ready to add lab instructions directly into the IDL v2 user interface. 
 
@@ -186,7 +186,7 @@ Once you have checked out the IDL manual for editing, you are now ready to add l
 
 When using this option, a new page will open with a text editor and a preview pane. This gives you the ability to create lab instructions, and see a live preview of how they will be displayed to the user during the lab. To edit the lab instructions, click **Edit Instructions**, as shown below.
 
-![](images/edit-instructions.png)
+![Edit Instructions](images//edit-instructions.png)
 
 In this mode, only the manual opens for editing; the Cloud Client has not been launched and no VMs are running. 
 
@@ -198,7 +198,7 @@ Content is created using a combination of Markdown and plain text. HTML can also
 
 The image below shows what will be seen after clicking **Edit instructions**, as discussed in the previous section. This text editor is where all of the lab content is written and stored. The left side of the editor shows the raw syntax of the lab content, whereas the right side shows how the lab content will be rendered and displayed to users.
 
-![IDL 2 Text Editor](images/idl2-text-editor.png)
+![IDL 2 Lab Editor](images/idl2-text-editor.png)
 
 - **Disk icon:** click to save current progress
 - **@lab:** Replacement Tokens are used to create a placeholder, to later insert information into. This is helpful if you do not know the information at the time of authoring the lab, but would like specific information to be inserted later when the user is in the lab. Examples of this are usernames, passwords, unique ID numbers, etc.
@@ -233,7 +233,7 @@ A completion message provides a brief summary and congratulatory message to the 
 
 You have multiple lab instructions, you can change the order from within the user interface. To change the order of a task, copy the syntax of the lab instruction and paste into the correct location, using keyboard shortcuts (CTRL+C, CTRL+V).
 
-![](images/move-lab-instruction.gif)
+![Moving lab instructions](images/move-lab-instruction.gif)
 
 ### Tasks
 
@@ -311,7 +311,7 @@ To add a virtual machine to the lab instructions using a Replacement Token:
 
 - VMs that are configured to the lab profile will automatically be added to the Resources tab. 
 
-![](images/vm-select-from-resources-tab.png)
+![VMs on Resource tab](images/vm-select-from-resources-tab.png)
 
 ### Removable Media
 
@@ -563,13 +563,13 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
   > \> [!KNOWLEDGE] knowledge text here.
 
-![](images/idl2-knowledge.png)
+![Knowledge Block](images/idl2-knowledge.png)
 
 - **Alert:** Used to draw attention to important issues, such as showing additional information or steps that the student may need complete to avoid other issues. Alerts are useful whenever you want the users to pause and take note of additional and important information. From the user’s perspective, alerts are mandatory because they will appear inline in lab instructions. 
 
   > \> [!ALERT] alert text here.
 
-![](images/idl2-alert.png)
+![](Alert/idl2-alert.png)
 
 - **Note:** Used to provide additional information, similar to a Knowledge Block, with the only difference being that Notes do not collapse and show a _more_ link to expand the section. 
 
@@ -661,8 +661,6 @@ To initiate the Command , the lab user clicks on lightning bolt) icon in the lab
 
 ## Add Review Questions as an Assessment Exam to a Lab
 
-### Exams
-
 Each lab, regardless of whether it has content, can provide an optional exam at the end of lab. This can serve a number of purposes: to reinforce learning, to measure retention of concepts, to provide metrics on effectiveness of lab delivery, etc. Exams are categorized by the type of scoring used; there are three to choose from:
 
 1. **Assessment** - Traditional multiple choice test that is scored automatically.
@@ -674,11 +672,11 @@ Each lab, regardless of whether it has content, can provide an optional exam at 
 Review questions can be added to a lab as an assessment. The assessment will appear when the user has completed all the lab steps. It is created on the Exam tab of the lab profile. To create an assessment, click the
 **Exam** tab, and then check **Has Exam**. 
 
-![](images/exam-tab-has-exam.png)
+![Has exam](images/exam-tab-has-exam.png)
 
 To create a multiple choice review, in the Scoring Type drop-down, select **Assessment**, set the **Passing Score**, and then click **Add Page**. Pages provide a way to organize the review content into categories that, for example, might follow the lab exercises or topics. Enter a page name and click **Add Question**. Type the question, add the multiple choice selections, select the correct answer(s), and set the **Score Value** so that the exam can be scored.
 
-![](images/exam-example-questions.png)
+![Example multiple choice assessment](images/exam-example-questions.png)
 
 ## Additional Features
 
@@ -692,11 +690,11 @@ To convert an IDL v1 lab to IDL v2:
 
 2. Click **Upgrade** next to **Has IDL Content**. (this will display the current version of the lab profile)
 
-![Upgrade Button](images/upgrade-button.png)
+![Upgrade lab profile to IDL 2](images/upgrade-button.png)
 
 3. Select how screenshots and videos should be converted. They can be converted **inline** (recommended) or **as links**.
 
-   ![screenshots-as-links-or-inline](images/screenshots-as-links-or-inline.png)
+   ![Select how screenshots and videos will be converted](images/screenshots-as-links-or-inline.png)
 
    4. After making a selection, **Click OK** to convert the lab to IDL v2.
 
@@ -708,27 +706,27 @@ An advertising campaign allows you to provide introductory content across multip
 
 -   You will require special permissions to see this tile.
 
-![](images/advertising-tile.png)
+![Advertising Campaign Tile from Admin screen](images/advertising-tile.png)
 
 To create an advertising campaign, click **Create Advertising Campaign**. On the edit, enter a name for the campaign, as shown below.
 
-![](images/advertising-campaign-basic-info.png)
+![Create Advertising Campaign](images/advertising-campaign-basic-info.png)
 
 Click the **Intros** tab and enter the URL source for the video, graphics presentation, or other information you wish to display. Multiple URLs can be entered on separate lines and will display randomly. If wanted, check the box and set the minimum amount of time to show the content. With this configured, the users will not be able to close the presentation early.
 
-![](images/advertising-campaign-intro.png)
+![Advertising Campaign Intro](images/advertising-campaign-intro.png)
 
 To configure a lab profile with an advertising campaign, on the lab profile page, click **Edit**.
 
-![](images/lab-profile-edit-button.png)
+![Edit lab profile](images/lab-profile-edit-button.png)
 
 Beside Advertising Campaign, click **Choose**, then locate and select the advertising campaign.
 
-![](images/advertising-campaign-in-lab-profile-edit.png)
+![Select Advertising Campaign](images/advertising-campaign-in-lab-profile-edit.png)
 
 The advertising campaign can also be associated with a lab series or a lab profile. The following screenshot shows the configuration page for an example lab series.
 
-![](images/advertising-campaign-in-lab-series.png)
+![Add Advertising Campaign to Lab Series](images/advertising-campaign-in-lab-series.png)
 
 ### Incorporate Rich Media Content as Part of Lab Introduction
 
@@ -736,7 +734,7 @@ Although you can use Advertising Campaigns at the level of the lab profile, it i
 
 To do this, on the Edit Lab Profile page, scroll down and type the URL for the rich media content in the **Introduction Content URL** field. Like the advertising campaign, you can also force the rich media to be displayed for a minimum amount of time by checking the box to Show for at least **__** seconds.
 
-![](images/introduction-content-url.png)
+![Introduction Content URL](images/introduction-content-url.png)
 
 ## Common Style Guidelines
 
