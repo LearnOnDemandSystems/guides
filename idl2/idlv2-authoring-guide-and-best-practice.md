@@ -9,8 +9,7 @@ This guide provides information on the Integrated Digital Lab Version 2 (IDL v2)
 
 This guide assumes that the reader:
 
--   Has a developer account with sufficient permissions to create a lab
-    guide and modify select properties of a lab profile.
+-   Has a developer account with sufficient permissions to create a lab guide and modify select properties of a lab profile.
 -   Has existing knowledge of basic Markdown.
 -   Has existing knowledge to navigate Lab on Demand (LOD)
 -   Has a help desk support contract to pay for additional custom
