@@ -689,7 +689,7 @@ To create a multiple choice review, in the Scoring Type drop-down, select **Asse
 
 ### Converting a traditional IDL v1 based lab to an IDL v2 based lab
 
-Traditional IDL v1 labs can be converted to IDL v2 labs easily in Lab on Demand. The conversion process does not convert some items correctly, and you may still need to look over the content to ensure everything appears as expected. Converting to IDL v2 is not permanent and can be reverted back to IDL v1 at any time, from the lab profile page. 
+Traditional IDL v1 labs can be converted to IDL v2 labs easily in Lab on Demand. The conversion process does not convert some items correctly, and you may still need to look over the content to ensure everything appears as expected. Converting to IDL v2 is not permanent and can be reverted back to IDL v1 at any time, from the lab profile page. To revert the lab back to IDL v1, toggle the version selection on the Basic Information tab, on the edit lab profile page.
 
 To convert an IDL v1 lab to IDL v2:
 
