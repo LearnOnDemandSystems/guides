@@ -10,7 +10,7 @@ This guide provides information on the Integrated Digital Lab Version 2 (IDL v2)
 This guide assumes that the reader:
 
 -   Has a developer account with sufficient permissions to create a lab guide and modify select properties of a lab profile.
--   Has existing basic knowledge of [Markdown](#Markdown-syntax).
+-   Has existing basic knowledge of [Markdown](#markdown-syntax).
 -   Has existing knowledge to navigate Lab on Demand (LOD)
 -   Has a help desk support contract to pay for additional custom
     contract work.
@@ -21,7 +21,7 @@ The IDL v2 platform integrates the lab instructions with the Cloud Portal of cho
 
 An advantage of this presentation format is that the lab steps take up only a relatively small amount of screen real estate or can be displayed on a separate monitor. This removes the need to switch back and forth between a lab document and the lab -- these activities distract from performing the lab and can take focus away from the lab steps and goals.
 
-A successful lab that is well-received by users usually contains more than a simple set of basic lab steps or tasks. It will have significant explanatory content to provide context, background information, tips, cautions, and other useful and relevant information. Additionally, visual elements such as screenshots, videos, Alert dialogs and Knowledge blocks can add clarity and reduce the likelihood of error on the part of the user. The IDL v2 platform has the ability to include formatted text and visual content in a way that ensures the focus remains on the lab tasks and the context in which those tasks occur. The IDL v2 platform is authored using [Markdown Syntax](#Markdown-syntax) and enables the lab author to focus on content within the lab, instead of focusing how to create a lab. 
+A successful lab that is well-received by users usually contains more than a simple set of basic lab steps or tasks. It will have significant explanatory content to provide context, background information, tips, cautions, and other useful and relevant information. Additionally, visual elements such as screenshots, videos, Alert dialogs and Knowledge blocks can add clarity and reduce the likelihood of error on the part of the user. The IDL v2 platform has the ability to include formatted text and visual content in a way that ensures the focus remains on the lab tasks and the context in which those tasks occur. The IDL v2 platform is authored using [Markdown Syntax](#markdown-syntax) and enables the lab author to focus on content within the lab, instead of focusing how to create a lab. 
 
 ## Launching a lab 
 
@@ -29,11 +29,11 @@ A lab launch may take anywhere from a few seconds to a couple of minutes to full
 
 ![](images/idl2-lab-ready.png "Your lab is ready!")
 
-Clicking **_Get Ready_** will open close that window and open two other windows; the Portal window and the Lab Instructions, as shown in the [Overview of the Lab Interface](#Overview-of-the-lab-interface).
+Clicking **_Get Ready_** will open close that window and open two other windows; the Portal window and the Lab Instructions, as shown in the [Overview of the Lab Interface](#overview-of-the-lab-interface).
 
 ## Introductory content 
 
-There are multiple ways to provide introductory content, such as: dialog windows, embedded images or videos, external links or text. These are configured in the lab instructions (using [Markdown Syntax](#Markdown-syntax)) which are contained in the lab profile itself. You will learn about how to set up these kinds of content later in this document.
+There are multiple ways to provide introductory content, such as: dialog windows, embedded images or videos, external links or text. These are configured in the lab instructions (using [Markdown Syntax](#markdown-syntax)) which are contained in the lab profile itself. You will learn about how to set up these kinds of content later in this document.
 
 An introductory presentation can serve many different purposes. For example, you could use these features to provide:
 
@@ -47,7 +47,7 @@ An introductory presentation can serve many different purposes. For example, you
 
 -   Other kinds of content, such as static web pages, PowerPoint presentations and so on.
 
-The IDL v2 platform can provide the user with an introduction that appears first, in the lab instructions when the user launches a lab. The introductory page can contain the objectives or goals that the user will achieve and a scenario that provides contextual information to assist the user to gain a deeper understanding of the lab. Upon lab launch, the introductory content should be displayed in the lab instructions, separated from the next page, using [Markdown Syntax](#Markdown-syntax).This is not a requirement of the lab if the lab author does not want to use an introduction in the lab. 
+The IDL v2 platform can provide the user with an introduction that appears first, in the lab instructions when the user launches a lab. The introductory page can contain the objectives or goals that the user will achieve and a scenario that provides contextual information to assist the user to gain a deeper understanding of the lab. Upon lab launch, the introductory content should be displayed in the lab instructions, separated from the next page, using [Markdown Syntax](#markdown-syntax).This is not a requirement of the lab if the lab author does not want to use an introduction in the lab. 
 
 ## Lab Instructions
 
@@ -55,7 +55,7 @@ A lab's instructions can be organized into one or more pages that represent a se
 
 ![](images/idl2-exercises-tasks.png "Lab instructions")
 
-You can add rich media content delivered from external sources (URLs) that the user can access at any point in the lab instructions, or embed video or images to provide additional context to the lab instructions. External sources can be provided with [Markdown Syntax](#Markdown-syntax) or by configuring URLs in the lab profile. URLs configured in the lab profile will be available in the lab, from the Resources tab. 
+You can add rich media content delivered from external sources (URLs) that the user can access at any point in the lab instructions, or embed video or images to provide additional context to the lab instructions. External sources can be provided with [Markdown Syntax](#markdown-syntax) or by configuring URLs in the lab profile. URLs configured in the lab profile will be available in the lab, from the Resources tab. 
 
 ## Overview of the Lab Interface
 
@@ -72,7 +72,7 @@ The left window is known as the **Portal Window**. This window can be configured
 
 ## Adding Lab Content 
 
-This section describes how to add content to the lab profile in the Learn on Demand Systems (LODS) platform. The later sections will cover how to format your content using [Markdown Syntax](#Markdown-syntax).
+This section describes how to add content to the lab profile in the Learn on Demand Systems (LODS) platform. The later sections will cover how to format your content using [Markdown Syntax](#markdown-syntax).
 
 ### Enable Lab Profile for IDL
 
@@ -134,7 +134,7 @@ To gain access to the Advanced settings, on the lab profile page:
 
 - **Custom Support Tab label:** Custom label to be used in lab UI, in place of the Support tab.
 
-- **Custom Errata Label:** Custom label to be displayed on the [Errata](#Errata).
+- **Custom Errata Label:** Custom label to be displayed on the [Errata](#errata).
 
 - **Enable Copy & Paste:** Enables Type Text
 
@@ -209,7 +209,7 @@ The image below shows what will be seen after clicking **Edit instructions**, as
 
 ### Headings
 
-Headings are useful to identify and separate sections of lab instructions. For section titles, you should use title case (see [Common Style Guidelines](#Common-style-guidelines) for a definition of title case).
+Headings are useful to identify and separate sections of lab instructions. For section titles, you should use title case (see [Common Style Guidelines](#common-style-guidelines) for a definition of title case).
 
 ### Introduction Message
 
@@ -237,7 +237,7 @@ You have multiple lab instructions, you can change the order from within the use
 
 ### Tasks
 
-For task titles, you should use sentence case (see [Common Style Guidelines](#Common-style-guidelines) for a definition of sentence case).
+For task titles, you should use sentence case (see [Common Style Guidelines](#common-style-guidelines) for a definition of sentence case).
 Your titles should be as concise as possible. The following are some best practices for task titles:
 
 - Keep title under 50 characters
