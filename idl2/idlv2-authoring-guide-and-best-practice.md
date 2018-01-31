@@ -1,4 +1,4 @@
-# Learn on Demand Systems Integrated Digital Lab v2 Authoring Guide 
+# Learn on Demand Systems Integrated Digital Lab Version 2 Authoring Guide 
 
 
 ## Introduction
@@ -10,18 +10,18 @@ This guide provides information on the Integrated Digital Lab Version 2 (IDL v2)
 This guide assumes that the reader:
 
 -   Has a developer account with sufficient permissions to create a lab guide and modify select properties of a lab profile.
--   Has existing knowledge of basic Markdown.
+-   Has existing basic knowledge of [Markdown](#Markdown-syntax).
 -   Has existing knowledge to navigate Lab on Demand (LOD)
 -   Has a help desk support contract to pay for additional custom
     contract work.
 
 # Overview of the Integrated Digital Lab version 2 (IDL v2) Platform
 
-The IDL v2 platform integrates the lab instructions with the virtual machines (VMs) in the lab environment or Cloud Portal of choice, to guide the users in completing the lab. The IDL v2 platform allows users to view the lab instructions in line with the VMs or Cloud portal. 
+The IDL v2 platform integrates the lab instructions with the Cloud Portal of choice or virtual machines (VMs) in the lab environment, to guide the users in completing the lab. The IDL v2 platform allows users to view the lab instructions inline with the Cloud portal or VMs. 
 
-An advantage of this presentation format is that the lab steps take up only a relatively small amount of screen real estate or can be displayed on a separate monitor. This removes the need to switch back and forth between a lab document and the lab’s Portal window. These activities distract from performing the lab and can take focus away from the lab steps and goals.
+An advantage of this presentation format is that the lab steps take up only a relatively small amount of screen real estate or can be displayed on a separate monitor. This removes the need to switch back and forth between a lab document and the lab -- these activities distract from performing the lab and can take focus away from the lab steps and goals.
 
-A successful lab that is well-received by users usually contains more than a simple set of basic lab steps or tasks. It will have significant explanatory content to provide context, background information, tips, cautions, and other useful and relevant information. Additionally, visual elements such as screenshots, videos, Alert dialogs and Knowledge blocks can add clarity and reduce the likelihood of error on the part of the user. The IDL v2 platform has the ability to include formatted text and visual content in a way that ensures the focus remains on the lab tasks and the context in which those tasks occur. The IDL v2 platform is authored using Markdown and enables the lab author to focus on content within the lab, instead of how to create a lab. 
+A successful lab that is well-received by users usually contains more than a simple set of basic lab steps or tasks. It will have significant explanatory content to provide context, background information, tips, cautions, and other useful and relevant information. Additionally, visual elements such as screenshots, videos, Alert dialogs and Knowledge blocks can add clarity and reduce the likelihood of error on the part of the user. The IDL v2 platform has the ability to include formatted text and visual content in a way that ensures the focus remains on the lab tasks and the context in which those tasks occur. The IDL v2 platform is authored using [Markdown Syntax](#Markdown-syntax) and enables the lab author to focus on content within the lab, instead of focusing how to create a lab. 
 
 ## Launching a lab 
 
@@ -33,7 +33,7 @@ Clicking **_Get Ready_** will open close that window and open two other windows;
 
 ## Introductory content 
 
-There are multiple ways to provide this introductory content, such as: dialog windows, embedded images or videos, external links or text. These are configured in the lab instructions (using [Markdown Syntax](#Markdown-syntax)) which are contained in the lab profile itself. You will learn about how to set up these kinds of content later in this document.
+There are multiple ways to provide introductory content, such as: dialog windows, embedded images or videos, external links or text. These are configured in the lab instructions (using [Markdown Syntax](#Markdown-syntax)) which are contained in the lab profile itself. You will learn about how to set up these kinds of content later in this document.
 
 An introductory presentation can serve many different purposes. For example, you could use these features to provide:
 
@@ -47,7 +47,7 @@ An introductory presentation can serve many different purposes. For example, you
 
 -   Other kinds of content, such as static web pages, PowerPoint presentations and so on.
 
-The IDL v2 platform can provide the user with an introduction that appears first, in the lab instructions when the user launches a lab. The introductory page can contain the objectives or goals that the user will achieve and a scenario that provides contextual information to assist the user to gain a deeper understanding of the lab. Upon lab launch, the introductory content should be displayed in the lab instructions, separated from the next page, using Markdown syntax.This is not a requirement of the lab if the lab author does not want to use an introduction in the lab. 
+The IDL v2 platform can provide the user with an introduction that appears first, in the lab instructions when the user launches a lab. The introductory page can contain the objectives or goals that the user will achieve and a scenario that provides contextual information to assist the user to gain a deeper understanding of the lab. Upon lab launch, the introductory content should be displayed in the lab instructions, separated from the next page, using [Markdown Syntax](#Markdown-syntax).This is not a requirement of the lab if the lab author does not want to use an introduction in the lab. 
 
 ## Lab Instructions
 
@@ -55,61 +55,39 @@ A lab's instructions can be organized into one or more pages that represent a se
 
 ![](images/idl2-exercises-tasks.png)
 
-You can add rich media content delivered from external sources (URLs) that the user can access at any point in the lab instructions, or embed video or images to provide additional context to the lab instructions. 
+You can add rich media content delivered from external sources (URLs) that the user can access at any point in the lab instructions, or embed video or images to provide additional context to the lab instructions. External sources can be provided with [Markdown Syntax](#Markdown-syntax) or by configuring URLs in the lab profile. URLs configured in the lab profile will be available in the lab, from the Resources tab. 
 
 ## Overview of the Lab Interface
 
-This section describes the user lab interface. Within the lab interface on the right side, the lab instructions are displayed in their sequential order. When a task is performed that has a Task checkbox, the user clicks the checkbox. Tasks or any other items that the student is instructed to do can have a Task Checkbox (as shown in the image above) at the beginning of the item. Task Checkboxes are used track and report lab progress to LOD and TMS, as well as a visual marker for students. Lab progress is calculated by the percentage of Task Checkboxes that are checked in the lab instructions.
-
-The right navigation pane contains the Lab Instructions, Resources and Help. The right navigation pane also allows users the ability to explore forward or backward from the current task they are performing. 
+This section describes the user lab interface. Within the lab interface on the right side, the lab instructions are displayed. The right navigation pane also contains the Resources tab  and Help tab.Tasks or any other items that the student is instructed to do can have a Task Checkbox (as shown in the image above) at the beginning of the item.When a task is performed that has a Task checkbox, the user clicks the checkbox.  Task Checkboxes are used track and report lab progress to LOD and TMS, as well as a visual marker for students. Lab progress is calculated by the percentage of Task Checkboxes that are checked in the lab instructions.
 
 ![](images/idl2-example-with-instructions.png)
 
-The left window is known as the **Portal Window**. This window can be configured to display any URL, in the lab profile configuration page. The URL of the Portal Window can changed during the lab, using Markdown syntax (discussed later in this guide).
+The left window is known as the **Portal Window**. This window can be configured to display any URL, in the lab profile configuration page. The URL of the Portal Window can changed during the lab, using Markdown syntax (discussed later in this guide).  This window can also be configured to display virtual machines (if the lab profile is configured with VMs).
 
-- **Instructions Tab:** The Instructions tab allows the user to access the lab instructions.
+- **Instructions Tab:** The Instructions tab displays the lab instructions.
 - **Resources Tab:** The Resources tab allows the user to access resources provided in the lab profile, such as: URLs, virtual machines (if the lab uses virtual machines), and Floppy/DVD media (optional).
 
-- **Help Tab:** The Help tab provides users with a unique lab ID, a link to submit a Support Request, as well as select a theme. In addition, users can easily gain access to FAQs for assistance.
+- **Help Tab:** The Help tab provides users with a unique lab ID, a link to submit a Support Request, a drop-down menu to change Machine Remote Controller (if lab has VMs), as well as a theme selection. In addition, users can easily gain access to FAQs for assistance.
 
 ## Adding Lab Content 
 
-This section describes how to add content to the lab profile in the Learn on Demand Systems (LODS) platform. The later sections will cover how to add your content to a lab profile using Markdown.
+This section describes how to add content to the lab profile in the Learn on Demand Systems (LODS) platform. The later sections will cover how to format your content using [Markdown Syntax](#Markdown-syntax).
 
 ### Enable Lab Profile for IDL
 
-For a lab to display IDL v2 content, content must be enabled in the lab profile. To enable content in a lab profile, you need to perform the following steps.
+For a lab to display IDL v2 content, content must be enabled in the lab profile and the IDL version must be set to **2**. To enable content in a lab profile, you need to perform the following steps.
 
-1.  Click **Edit** on the lab profile page.
-2.  On the **Basic Information tab** of the lab profile Edit page, check **Has IDL Content**.
+1.  Navigate to the lab profile page.
+2.  Click **Edit** on the lab profile page.
+3.  On the **Basic Information tab** of the lab profile Edit page, check **Has IDL Content**.
 
 ![](images/has-idl-content.png)
 
-3. Click the up arrow to change the selection to **2**, to enable IDL version 2.
+3. Click the up arrow to **change the selection to 2**, to enable IDL version 2.
+4. Click **Save**.
 
-### Access IDL v2 Edit Mode
-
-You are now ready to add lab instructions directly into the IDL v2 user interface. To add or edit content, lab content must be enabled for the lab profile (the **Has Content** check box must be checked).
-
-### Check Out IDL Manual
-
-Once lab content is enabled, you must the check out the IDL v2 lab instructions. Checking out the IDL v2 lab instructions ensures that only one person at a time can make changes to the content.
-
-To check out the IDL v2 manual, navigate to the lab profile page, and then click **Check Out**.
-
-![](images/check-out-lab-profile.png)
-
-Once you have checked out the IDL manual for editing, you can begin adding and editing content.
-
-### Edit Instructions
-
-When using this option, a new page will open with a text editor and a preview pane. This gives you the ability to create lab instructions, and see a live preview of how they will be displayed to the user during the lab. To edit the lab instructions, click **Edit Instructions**, as shown below.
-
-![](images/edit-instructions.png)
-
-In this mode, only the manual opens for editing; the Cloud Client has not been launched and no VMs are running. 
-
-## Advanced Settings
+### Lab Profile Advanced Settings
 
 In addition to the Basic Information tab, the Advanced tab has settings that are relevant to lab manual creation and display.
 
@@ -194,6 +172,24 @@ To gain access to the Advanced settings, on the lab profile page:
 
 - **Lab Host tags:** Lab host tags are used to specify which Lab Host(s) the lab profile will use when users launch the lab. The Lab Host tag must already be created to add it to the lab profile using this button.
 
+### Check Out IDL Manual
+
+Once lab content is enabled, you must the check out the IDL v2 lab instructions. Checking out the IDL v2 lab instructions ensures that only one person at a time can make changes to the content.
+
+To check out the IDL v2 manual, navigate to the lab profile page, and then click **Check Out**.
+
+![](images/check-out-lab-profile.png)
+
+Once you have checked out the IDL manual for editing, you are now ready to add lab instructions directly into the IDL v2 user interface. 
+
+### Edit Instructions
+
+When using this option, a new page will open with a text editor and a preview pane. This gives you the ability to create lab instructions, and see a live preview of how they will be displayed to the user during the lab. To edit the lab instructions, click **Edit Instructions**, as shown below.
+
+![](images/edit-instructions.png)
+
+In this mode, only the manual opens for editing; the Cloud Client has not been launched and no VMs are running. 
+
 ## Create Lab Instructions
 
 Content is created using a combination of Markdown and plain text. HTML can also be used alongside or in place of Markdown elements. The following describe various items used to create lab content with IDL v2.
@@ -205,7 +201,7 @@ The image below shows what will be seen after clicking **Edit instructions**, as
 ![IDL 2 Text Editor](images/idl2-text-editor.png)
 
 - **Disk icon:** click to save current progress
-- **@lab:** Replacement Tokens are used to create a placeholder, to later insert information into.
+- **@lab:** Replacement Tokens are used to create a placeholder, to later insert information into. This is helpful if you do not know the information at the time of authoring the lab, but would like specific information to be inserted later when the user is in the lab. Examples of this are usernames, passwords, unique ID numbers, etc.
 - **Word Wrap:** toggle to enable or disable Word Wrap.
 - **Preview:** toggle to enable or disable the Preview of rendered Markdown.
 - **Autosave:** toggle to enable to disable auto-saving of work. 
@@ -213,7 +209,7 @@ The image below shows what will be seen after clicking **Edit instructions**, as
 
 ### Headings
 
-Headings are useful to identify and separate sections of lab instructions. For section titles, you should use title case (see Common Style Guidelines for a definition of title case).
+Headings are useful to identify and separate sections of lab instructions. For section titles, you should use title case (see [Common Style Guidelines](#Common-style-guidelines) for a definition of title case).
 
 ### Introduction Message
 
@@ -235,15 +231,13 @@ A completion message provides a brief summary and congratulatory message to the 
 
 ### Lab Instruction Placement
 
-You have the option of creating the lab instructions after the current instruction, if present, or as the last instruction in the lab.
-
--   Note that if you have multiple lab instructions, you can change the order from within the user interface. To change the order of a task, copy the syntax of the lab instruction and paste into the correct location, using keyboard shortcuts (CTRL+C, CTRL+V).
+You have multiple lab instructions, you can change the order from within the user interface. To change the order of a task, copy the syntax of the lab instruction and paste into the correct location, using keyboard shortcuts (CTRL+C, CTRL+V).
 
 ![](images/move-lab-instruction.gif)
 
 ### Tasks
 
-For task titles, you should use sentence case (see Common Style Guidelines for a definition of sentence case).
+For task titles, you should use sentence case (see [Common Style Guidelines](#Common-style-guidelines) for a definition of sentence case).
 Your titles should be as concise as possible. The following are some best practices for task titles:
 
 - Keep title under 50 characters
@@ -256,19 +250,19 @@ Your titles should be as concise as possible. The following are some best practi
 The following are some best practices for creating tasks:
 
 - Avoid creating a single task for actions such as completing wizards that use multiple screens. Try to limit tasks to actions performed in single screens, pages, or dialog boxes.
-- If the task requires users to type in a long command or series of commands, place the commands in [Command](#Commands) syntax or a Code Block. In the task, ask users to open click the Command button that is generated by the Command syntax or clicking the code block, which will copy to the user's local clipboard, so they can past into the appropriate part of the lab.  
+- If the task requires users to type in a long command or series of commands, place the commands in Command syntax or a Code Block. In the task, ask users to click the Command button that is generated by the Command syntax or clicking the code block. Clicking these items in the lab instructions will copy to the user's local clipboard, so they can past into the appropriate section of the lab.  
 - Use bolding to: 
   - Emphasize the user interface elements the user interacts with,
-  - Highlight what the user types into a field.\
+  - Highlight what the user types into a field or clicks.
     For example, “Type **Passw0rd!**” or “Click **Submit**.” 
 
 ### Screenshots
 
-Screenshots add clarity by providing a visual representation of what a completed task looks like. Screenshots are also beneficial for people who are visual learners or do not speak the authored language as their first language. This helps to mitigate the risk of configuration errors. When the user clicks the screenshot in the lab instructions, it will open in a new window, at full resolution. Opening the screenshot in a new window is useful if the screenshot is large. If the screenshot is particularly important or noteworthy, students can save or bookmark the URL of the image for later use.
+Screenshots add clarity by providing a visual representation of what a completed task should look like. Screenshots are also beneficial for people who are visual learners or do not speak the authored language as their first language. This helps to mitigate the risk of configuration errors. When the user clicks the screenshot in the lab instructions, it will open in a new window, at full resolution. Opening the screenshot in a new window is useful if the screenshot is large and may obstruct the view of the lab. If the screenshot is particularly important or noteworthy, students can save or bookmark the URL of the image for later use.
 
 To create a screenshot:
 
-1. Make sure the lab profile is **checked out**. 
+1. Make sure the lab profile is **checked out** on the lab profile page.
 
 2. **Launch** the lab.
 
@@ -276,9 +270,9 @@ To create a screenshot:
 
 4. Click **Edit instructions**.
 
-5. Place the mouse cursor where the screenshot will go in the lab instructions.
+5. When the new window opens, place the mouse cursor where the screenshot will go in the lab instructions.
 
-6. Adjust the size of the window the VM is displayed in, as well as the placement any windows in the VM, before taking the screenshot. 
+6. Adjust the size of the Portal window, as well as the placement any windows in the Portal window, before taking the screenshot. 
 
 7. Take a screenshot by **clicking the Screenshot button**, in the UI, as shown below.
 
@@ -286,7 +280,7 @@ To create a screenshot:
 
 **Note:** the screenshot is captured at the size that the VM is sized to,  when screenshot button is clicked. 
 
-If you use this method, the screenshot is automatically added in the lab instructions where your mouse cursor is. Please keep in mind that when you take a screenshot using this method, you take a screenshot of the entire desktop of the VM, which may not be desirable. 
+If you use this method, the screenshot is stored in LOD and automatically added in the lab instructions where your mouse cursor is. Please keep in mind that when you take a screenshot using this method, you take a screenshot of the entire desktop of the VM, which may not be desirable. 
 
 The following are some best practices for incorporating screenshots into your lab:
 
@@ -298,9 +292,9 @@ The following are some best practices for incorporating screenshots into your la
 
 ### Virtual Machine Select
 
-During a lab, a lab user may be required to perform configuration steps on two or more VMs. A common source of errors in labs is performing lab tasks on the wrong VM. The IDL v2 platform mitigates this risk by providing the means to change to the correct VM within a task, by clicking a link in the lab instructions or selecting a VM from the Resources tab.
+During a lab, a lab user may be required to perform configuration steps on two or more VMs. A common source of errors in labs is performing lab tasks on the wrong VM. The IDL v2 platform mitigates this risk by providing the means to change to the correct VM within a task, by clicking a link in the lab instructions or selecting the appropriate VM from the Resources tab.
 
-The virtual machine Replacement Token allows the user to make a different VM active, by clicking a link in the lab instructions. Although this functionality is also available from the Resources tab, the advantage of the using the virtual machine Replacement Token is that the lab user can switch the active VM from within the task itself.
+The virtual machine Replacement Token allows the user to make a different VM active, by clicking a link in the lab instructions. Although this functionality is also available from the Resources tab, the advantage of using the virtual machine Replacement Token is that the lab user can switch the active VM from within the task itself.
 
 ##### VM displayed **in lab instructions** using a Replacement Token.
 
@@ -313,21 +307,23 @@ To add a virtual machine to the lab instructions using a Replacement Token:
 3. Select the virtual machine to be used. (refer to the description column of the Replacement Token menu for VM details).
 4. Click **Insert**.
 
-##### VMs are displayed on the Resources tab, based on the lab profile configuration.
+##### VMs are displayed on the Resources tab.
+
+- VMs that are configured to the lab profile will automatically be added to the Resources tab. 
 
 ![](images/vm-select-from-resources-tab.png)
 
 ### Removable Media
 
-The **Floppy Drive Replacement Token** provides a link for the lab user to insert a virtual floppy disk into (or eject from) the VM. The advantage of using the control is the user can insert the virtual floppy disk from within the task itself.
+The **Floppy Drive Replacement Token** provides a link for the lab user to insert a virtual floppy disk into (or eject from) the VM. The advantage of using the Replacement token, is the user can insert the virtual floppy disk from within the task itself.
 
-The **DVD Drive Replacement Token** provides a link for the lab user to insert a virtual DVD (ISO file) into (or eject from) the VM. The advantage of the using the control is the lab user can insert the virtual DVD from within the task itself.
+The **DVD Drive Replacement Token** provides a link for the lab user to insert a virtual DVD (ISO file) into (or eject from) the VM. The advantage of the using the Replacement token, is the lab user can insert the virtual DVD from within the task itself.
 
 To add removable media to the lab instructions using a Replacement Token:
 
 1. Place the cursor where the link to the removable media will go in the lab instructions. 
 2. Click **@Lab** at the top of the text editor.
-3. Select the removable media to be used. (refer to the description column of the Replacement Token menu for media type details).
+3. Select the removable media to be used. (refer to the description column of the Replacement Token menu for media type and details).
 4. Click **Insert**.
 
 ## Markdown Syntax
@@ -589,36 +585,41 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Commands:** Used to target the Portal window to input commands. To mitigate risk of error and to enhance the overall experience of the lab, the IDL v2 platform supports executing commands directly in the area of focus of the Portal window. Clicking the text in the lab instructions will input the command into the item in focus, on the Portal window. Commands can be a single line (shown below) or multi-line. 
 
-  - Commands can perform any action that is possible to do from a command or Windows PowerShell prompt. For example, the command could open File Explorer at a particular location within a directory structure, open dialog boxes, start scripts, open documents and web pages, and many others. 
-
-    Although potentially any task could be reduced to an action that can be executed as a command shell or Windows PowerShell command, you should use this feature judiciously. Users should still know how to open File Explorer and perform other basic actions. This feature is most useful for a complex task that involves numerous steps, opening
-    file locations deep down in directory structures, opening specific Web pages, and other similar activities.
-
-    There are 4 different kinds of commands that you can configure:
-
-    - **Type Text**. This is not a command per se. Rather, this command
-      type allows the user to copy a predetermined string to the VM.
-    - **PowerShel**l. This allows the user to execute a PowerShell command
-      in the background. The user does not see the execution of the
-      command.
-    - **PowerShell will UI**. This opens a command prompt window in the VM
-      and shows the command execution.
-    - **Shell**. This causes a command to be executed in the background.
-      The user does not see the execution of the command.
-    - **Shell with UI**. This command opens a command prompt window in the
-      VM and shows the command execution
-
-To initiate the Command , the lab user clicks on lightning bolt) icon in the lab instructions, as shown below.
 
   > ```
   > @[Text to display](`command`)
   > ```
 
+- Commands can perform any action that is possible to do from a command or Windows PowerShell prompt. For example, the command could open File Explorer at a particular location within a directory structure, open dialog boxes, start scripts, open documents and web pages, and many others. 
+
+  Although potentially any task could be reduced to an action that can be executed as a command shell or Windows PowerShell command, you should use this feature judiciously. Users should still know how to open File Explorer and perform other basic actions. This feature is most useful for a complex task that involves numerous steps, opening file locations deep down in directory structures, opening specific Web pages, and other similar activities.
+
+  There are 4 different kinds of commands that you can configure:
+
+  - **Type Text**. This is not a command per se. Rather, this command
+    type allows the user to input a predetermined string.
+
+  - **PowerShell**. This allows the user to execute a PowerShell command
+
+    in the background. The user does not see the execution of the
+    command.
+
+  - **PowerShell will UI**. This opens a command prompt window in the VM
+    and shows the command execution.
+
+  - **Shell**. This causes a command to be executed in the background.
+    The user does not see the execution of the command.
+
+  - **Shell with UI**. This command opens a command prompt window in the
+    VM and shows the command execution
+
+To initiate the Command , the lab user clicks on lightning bolt) icon in the lab instructions, as shown below.
+
 ![Command](images/idl2-command.png)
 
 - **Include:**  Used to input text from a GitHub raw link. This is useful to use to pull in content hosted on GitHub. Navigate to the GitHub page containing the content to be used, click the Raw button, then copy the URL of that page and include it in the below syntax. 
 
-  **Note**: GitHub hosted content can be changed by the repo maintainer of the content and will change the instructions displayed in the lab using the _Include_ syntax. 
+  - **Note**: GitHub hosted content can be changed by the repo maintainer of the content and will change the 			instructions displayed in the lab that is using the Include syntax. 
 
   > `[!INCLUDE [label](url)]`
 
