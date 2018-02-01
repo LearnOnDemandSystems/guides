@@ -35,7 +35,7 @@ Clicking **_Get Started_** will open close that window and open the lab client. 
 
 A lab launch may take from a few seconds to a couple of minutes to fully launch, depending on the complexity and number of resources that are being deployed. During this time, a progress indicator shows by default. However, while the lab is launching, it is possible to show useful information, web pages, interactive graphics, or videos to the user launching the lab. In the example below, an introductory video is playing while the lab is launching in the background.
 
-
+![](images/introductory-video.png "Lab playing introductory video while the lab loads in the background.")
 
 There are multiple ways to provide introductory content. One way is to use a feature called an Advertising Campaign. This allows you to provide introductory content across multiple labs that are grouped by lab series, organization or event. Another way is to configure a lab-specific introduction within the lab profile itself, which contains various settings for the lab. Yet another way is to provided links or embedded content at the beginning of the lab instructions, such as: dialog windows, embedded images or videos, external links or text. These are configured in the lab instruction editor using [Markdown Syntax](#markdown-syntax). You will learn about how to set up introductory content later in this document.
 
