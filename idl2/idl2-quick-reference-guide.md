@@ -52,9 +52,9 @@
 Inline code block  <code>`code block`</code>   
 
 ~~~Fenced_code_block
-​```PowerShell
+```PowerShell
 get-service | stop-service -whatif
-​```
+```
 ~~~
 ---
 <font size="3">**Dialog**</font>
@@ -82,7 +82,7 @@ get-service | stop-service -whatif
 @[Text to display][multi-line-command]
 
 [multi-line-command]:
-​```
+```
 Command-goes-here
 ```
 ~~~
