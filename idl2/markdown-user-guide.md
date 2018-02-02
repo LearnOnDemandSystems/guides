@@ -6,7 +6,7 @@ Markdown is an easy to use markup language to format text, that offers multiple 
 
 1. [Headings](#1-headings)
 2. [Text formatting](#2-text-formatting)
-3. [Link formatting](#3-link-Formatting)
+3. [Link formatting](#3-link-formatting)
 4. [Page formatting](#4-page-formatting)
 5. [Embedded content](#5-embedded-content)
 6. [List formatting](#6-list-formatting)
