@@ -78,14 +78,16 @@ get-service | stop-service -whatif
 
 **Multi-Line**
 
-~~~
-@[Text to display][multi-line-command]
+<!-- The following code block _must_ be indented instead of wrapped in ~~~ to prevent
+     our preprocessor from preprocessing the code. Do not change this formatting. -->
 
-[multi-line-command]:
-```
-Command-goes-here
-```
-~~~
+    @[Text to display][multi-line-command-id]
+
+    [multi-line-command-id]:
+    ```
+    Multi-line
+    Command-goes-here
+    ```
 
 ---
 <font size="3">**Reference links**</font>
