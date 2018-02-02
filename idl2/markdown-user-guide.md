@@ -58,9 +58,9 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - **Fenced code block**: used to provide a programming language-specific code snippet. Type three ` (backticks) on each side of the text that should be displayed in the fenced code block. This should consume at least 3 lines in the text editor; the first line should display three backticks followed by the programming language name, the second line should display the code snippet, and the last line should only display three backticks. Markdown allows for more than one line to be used to display the code snippet. 
 
   > ~~~Fenced_code_block
-  > ​```PowerShell
+  > ```PowerShell
   > get-service | stop-service -whatif
-  > ​```
+  > ```
   > ~~~
 
 ## 3. Link formatting
