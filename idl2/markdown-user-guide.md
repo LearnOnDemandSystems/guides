@@ -4,14 +4,14 @@ Markdown is an easy to use markup language to format text, that offers multiple 
 
 ## Table of Contents 
 
-1. [Headings](#1.-Headings)
-2. [Text formatting](#2.-Text-formatting)
-3. [Link formatting](#3.-Link-Formatting)
-4. [Page formatting](#4.-page-formatting)
-5. [Embedded content](#5.-embedded-content)
-6. [List formatting](#6.-List-formatting)
-7. [Table formatting](#7.-Table-formatting)
-8. [Special formatting](#8.-Special-formatting)
+1. [Headings](#1-headings)
+2. [Text formatting](#2-text-formatting)
+3. [Link formatting](#3-link-Formatting)
+4. [Page formatting](#4-page-formatting)
+5. [Embedded content](#5-embedded-content)
+6. [List formatting](#6-list-formatting)
+7. [Table formatting](#7-table-formatting)
+8. [Special formatting](#8-special-formatting)
 
 ## 1. Headings
 
