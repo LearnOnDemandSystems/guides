@@ -40,7 +40,7 @@
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Note              | `> [!NOTE]`                              |
-| Include           | `[!INCLUDE [label](url)]`                |
+| Include           | `!INSTRUCTIONS[](url)`                |
 | Copyable Text     | `++copyable text++`                      |
 | Type Text         | `+++Type text+++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
