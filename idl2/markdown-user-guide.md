@@ -242,7 +242,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
   **Note**: GitHub hosted content can be changed by the repo maintainer of the content and will change the instructions displayed in the lab using the _Include_ syntax. 
 
-  >  `[!INCLUDE [label](url)]`
+  >  `!INSTRUCTIONS[](url)`
 
 - **Copyable Text:** used to make text copy to the local clipboard when the student clicks the text. Type two + (plus) symbols on each side of the text that should be made copyable. 
 
