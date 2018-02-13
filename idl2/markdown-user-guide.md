@@ -232,6 +232,10 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
   
   >\>This appears in the Dialog
 
+- **Instruction Dialog:** Used to open a dialog popup, to display rendered Markdown or IDL 2 content that is located anywhere on the internet and accessible from a URL. This can be useful to provide additional information, from external sources on the internet.
+
+    > ```^INSTRUCTIONS[text](url)```
+
 - **Commands:** Used to target the Portal window to input commands. Clicking the text in the lab instructinos will input the command into the item in focus, on the Portal window. Commands can be a single line (shown below) or multi-line. Define the command as a reference link and then use that reference link as the command in the below syntax. 
 
   >~~~
@@ -239,10 +243,18 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
   >~~~
 
 - **Include:**  used to input text from a GitHub raw link. This is useful to use to pull in content hosted on GitHub. Navigate to the GitHub page containing the content to be used, click the Raw button, then copy the URL of that page and include it in the below syntax. 
-
-  **Note**: GitHub hosted content can be changed by the repo maintainer of the content and will change the instructions displayed in the lab using the _Include_ syntax. 
-
+ 
   >  `!INSTRUCTIONS[](url)`
+
+    **Note**: GitHub hosted content can be changed by the repo maintainer of the content and will change the instructions displayed in the lab using the _Include_ syntax. 
+
+- **Reference Instruction Blocks:** Used to reference content multiple times throughout the lab instructions. First, Define the content, then reference the content using the syntax below. Defined content can be text, links, copyable text, code blocks or rich media content such as images and videos. Defined content will not appear in lab instructions until it is referenced using the Reference Content syntax. 
+
+   - Define content
+        > ```>[reference label]: Content goes here```
+
+   - Reference Content
+        > ```!INSTRUCTIONS[][label]```
 
 - **Copyable Text:** used to make text copy to the local clipboard when the student clicks the text. Type two + (plus) symbols on each side of the text that should be made copyable. 
 
