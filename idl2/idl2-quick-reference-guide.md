@@ -70,7 +70,9 @@ Dialog
 
 Instruction Dialog
 
-> ```^INSTRUCTIONS[text](url)```
+```
+> ^INSTRUCTIONS[text](url)
+```
 
 ---
 <font size="3">**Commands**</font>
