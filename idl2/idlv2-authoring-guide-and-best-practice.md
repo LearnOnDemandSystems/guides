@@ -153,6 +153,21 @@ The image below shows what will be seen after clicking **Edit instructions**, as
 - **Preview:** Toggle to show or hide the preview window in the idl-md editor.
 - **Autosave:** Toggle to enable to disable auto-saving of the instructions.
 - **Theme:** Select a theme to style the text editor to your preference.
+- **Upload:** Click to upload media and documents into IDL instructions. 
+
+### Upload Media and Documents
+
+Media and documents can be uploaded and inserted into lab instructions. 
+
+1. Click the **Upload** icon in the lab editor toolbar
+
+    ![Upload Button](images/upload-button.png)
+
+1. A **Dialog** will appear that allows you to add files by **dragging them into the lab instructions window** or by clicking the **Choose Files** button, as well as some additional options:
+    - **Display Inline** or **As a link**: Inline will **render the image with lab instrucitons**, As a link **provides a link** that the user can click, to view the image in a new window.
+    - **Overwrite existing files**: chosing this option will **overwrite files with the same file name**, that are currently saved in Lab on Demand. This is useful when the wrong file gets uploaded and needs to be replaced with the correct file. 
+
+![](images/drag-and-drop-screenshots.png)
 
 ### Instruction Recommendations
 
@@ -232,6 +247,45 @@ To create a screenshot:
 **Note:** the screenshot is captured at the size that the VM is sized to,  when screenshot button is clicked. 
 
 If you use this method, the screenshot is stored in LOD and automatically added in the lab instructions where your mouse cursor is. Please keep in mind that when you take a screenshot using this method, you take a screenshot of the entire desktop of the VM, which may not be desirable. 
+
+Screenshots can also be added by pasting from your local clipboard, dragging images into the lab editor interface or using the Upload files feature. 
+
+To add a screenshot by pasting from your local clipboard:
+
+1. Open the **Windows Snipping Tool** or **screen capture application** of your choice. 
+
+1. Capture the screenshot
+
+1. Press **CTRL+C** to copy the screenshot to the local clipboard
+
+1. **Place the mouse cursor** in the lab instructions, **where the screenshot should be inserted**.
+
+1. Press **CTRL+V** to paste the screenshot into the lab instructions. 
+
+1. A **Dialog** will appear, asking to **choose options** for the content:
+    - **Display Inline** or **As a link**: Inline will **render the image with lab instrucitons**, As a link **provides a link** that the user can click, to view the image in a new window.
+    - **Format**: JPG or PNG. Choose the format you wish to use for the screenshot.
+    - **File Name**: You can provide a file name for the screenshot. If a file name is not provided, the screenshot will be assigned a randomly generated name and stored in Lab on Demand.
+
+![](images/paste-image-dialog.png)
+
+To Add a screenshot by dragging an image into the lab instructions window:
+
+1. Open the **Windows Snipping Tool** or **screen capture application** of your choice. 
+
+1. Capture the screenshot
+
+1. **Open the directory** where the screenshot is saved, on your local machine. 
+
+1. **Drag the screenshot** into the lab editor interface.
+
+1.  A **Dialog** will appear, asking to **choose options** for the  content:
+    - **Display Inline** or **As a link**: Inline will **render the image with lab instrucitons**, As a link **provides a link** that the user can click, to view the image in a new window.
+    - **Overwrite existing files**: chosing this option will **overwrite files with the same file name**, that are currently saved in Lab on Demand. This is useful when the wrong file gets uploaded and needs to be replaced with the correct file. 
+
+**Note**: Other media types such as videos and documents can be added using this method. 
+
+![](images/drag-and-drop-screenshots.png)
 
 The following are some best practices for incorporating screenshots into your lab:
 
@@ -521,7 +575,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
     > \> [!ALERT] alert text here.
 
-    ![](Alert/idl2-alert.png "Alert Block")
+    ![](images/idl2-alert.png "Alert Block")
 
 - **Note:** Used to provide additional information, similar to a Knowledge Block, with the only difference being that Notes do not collapse and show a _more_ link to expand the section. 
 
@@ -534,6 +588,20 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
     > \>[Reference Link]:
 
     > \>This appears in the Dialog
+
+- **Instruction Dialog:** Used to open a dialog popup, to display rendered Markdown or IDL 2 content that is located anywhere on the internet and accessible from a URL. This can be useful to provide additional information, from external sources on the internet.
+
+    > ```^INSTRUCTIONS[text](url)```
+
+- **Reference Instruction Blocks:** Used to reference content multiple times throughout the lab instructions. First, Define the content, then reference the content using the syntax below. Defined content can be text, links, copyable text, code blocks or rich media content such as images and videos. Defined content will not appear in lab instructions until it is referenced using the Reference Content syntax. 
+
+   - Define content
+        > ```>[reference label]: Content goes here```
+
+   - Reference Content
+        > ```!INSTRUCTIONS[][label]```
+
+        ![Refernce Instruction Block](images/reference-instruction-blocks.png)
 
 - **Commands:** Used to target the current resource in the Resource Portal to input commands. To mitigate risk of error and to enhance the overall experience of the lab, the IDL v2 platform supports executing commands directly in the area of focus of the Resource Portal. Clicking the text in the lab instructions will input the command into the item in focus, on the Resource Portal. Commands can be a single line (shown below) or multi-line. 
 
