@@ -29,66 +29,37 @@
 | Block quote       | `> text to display in block quote`       |
 |<BR> | |
 |<font size="3">**Embedded Content**</font>|                                          |
-| Image             | `!IMAGE[Text to display](URL)`                               |
-| Video             | `!VIDEO[Text to display](URL)` (URLs from YouTube.com auto embed)          |
+| Image             | `![](url)`                               |
+| Video             | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)          |
 | Image with link   | `[![image description](URL of image "image description")](URL to open when image is clicked)`    |
-| Portal Link       |  `<[Text to display](URL)`     | 
-| Image Link        |  `IMAGE[Text to display](URL)`| 
-| Video Link        |  `VIDEO[Text to display](URL)`| 
+| Portal Link       |  `!PORTALLINK[text to display](URL)`     | 
+| Image Link        |  `!IMAGELINK[text to display](URL to image)`| 
+| Video Link        |  `!VIDEOLINK[text to display](URL to video)`| 
 |<BR> | |
  |<font size="3">**Special**</font>|                                          |
 | Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Note              | `> [!NOTE]`                              |
-| Include           | `!INSTRUCTIONS[](url)`                |
+| Include           | `[!INCLUDE [label](url)]`                |
 | Copyable Text     | `++copyable text++`                      |
-| Type Text         | `+++Type text+++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
 | Embed YouTube video | `!VIDEO[text to display](url)` (URLs from YouTube.com auto embed)               |
 |<BR> | |
- 
+|<font size="3">**Virtualizaton**</font> | |
+| Command | `@[Text to display](`command`)` |
+| Removeable Media | `Insert Replacement Token` |
+| VM Selection | `Insert Replacement Token` |
+|<BR>                                      | |
+
 <font size="3">**Code Blocks**</font>
 
 Inline code block  <code>`code block`</code>   
 
 ~~~Fenced_code_block
-```PowerShell
+​```PowerShell
 get-service | stop-service -whatif
-```
+​```
 ~~~
----
-<font size="3">**Dialog**</font>
-
-```
-^[Text to display in lab  instructions][Reference Link]
-
-> [Reference Link]:
-> This text will appear in the Dialog popup
-```
-
-
----
-<font size="3">**Commands**</font>
-
-**Single Line**
-
-~~~
-@[Text to display](`command`)
-~~~
-
-**Multi-Line**
-
-<!-- The following code block _must_ be indented instead of wrapped in ~~~ to prevent
-     our preprocessor from preprocessing the code. Do not change this formatting. -->
-
-    @[Text to display][multi-line-command-id]
-
-    [multi-line-command-id]:
-    ```
-    Multi-line
-    Command-goes-here
-    ```
-
 ---
 <font size="3">**Reference links**</font>
 
@@ -171,4 +142,6 @@ Center aligned text
 | data 1   | data 2   |
 | data 3   | data 4   |
 ```
+
+
 
