@@ -172,5 +172,3 @@ Center aligned text
 | data 3   | data 4   |
 ```
 
-
-
