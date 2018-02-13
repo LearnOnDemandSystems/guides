@@ -41,6 +41,7 @@
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Note              | `> [!NOTE]`                              |
 | Include           | `!INSTRUCTIONS[](url)`                |
+|Reference Instruction Block | `!INSTRUCTIONS[][label]`     |
 | Copyable Text     | `++copyable text++`                      |
 | Type Text         | `+++Type text+++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
@@ -57,8 +58,9 @@ get-service | stop-service -whatif
 ```
 ~~~
 ---
-<font size="3">**Dialog**</font>
+<font size="3">**Dialog Windows**</font>
 
+Dialog
 ```
 ^[Text to display in lab  instructions][Reference Link]
 
@@ -66,6 +68,9 @@ get-service | stop-service -whatif
 > This text will appear in the Dialog popup
 ```
 
+Instruction Dialog
+
+> ```^INSTRUCTIONS[text](url)```
 
 ---
 <font size="3">**Commands**</font>
