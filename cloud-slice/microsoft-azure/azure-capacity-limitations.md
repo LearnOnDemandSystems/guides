@@ -30,7 +30,7 @@ Requests are typically fulfilled by Microsoft within a few hours, depending on t
 
   ![select subscription](images/azure-select-subscription.png) 
 
-6. Select **Quota type**. <a href="https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-quota-types">See Azure Quota Types for more information</a> 
+6. Select **Quota type**. For example, you can choose Cores to increase the number of CPU cores that you want to be able to support in each region. See <a href="https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-quota-types">Azure Quota Types</a> for more information.
 
 ![select quota type](images/azure-select-quota-types.png)
 
@@ -64,7 +64,7 @@ Click **Next** to proceed
 ![select location](images/azure-select-location.png)
 
 11. Select **Sku** 
-> - For more information about Azure Sku families, click here [sku family information](https://azure.microsoft.com/en-ca/pricing/details/virtual-machines/series/).
+> - For more information about Azure SKU families, see [here](https://azure.microsoft.com/en-ca/pricing/details/virtual-machines/series/).
 
 ![select sku family](images/azure-sku-family.png)
 

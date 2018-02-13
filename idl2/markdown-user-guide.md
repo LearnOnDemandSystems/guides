@@ -4,14 +4,14 @@ Markdown is an easy to use markup language to format text, that offers multiple 
 
 ## Table of Contents 
 
-1. [Headings](#1.-Headings)
-2. [Text formatting](#2.-Text-formatting)
-3. [Link formatting](#3.-Link-Formatting)
-4. [Page formatting](#4.-page-formatting)
-5. [Embedded content](#5.-embedded-content)
-6. [List formatting](#6.-List-formatting)
-7. [Table formatting](#7.-Table-formatting)
-8. [Special formatting](#8.-Special-formatting)
+1. [Headings](#1-headings)
+2. [Text formatting](#2-text-formatting)
+3. [Link formatting](#3-link-formatting)
+4. [Page formatting](#4-page-formatting)
+5. [Embedded content](#5-embedded-content)
+6. [List formatting](#6-list-formatting)
+7. [Table formatting](#7-table-formatting)
+8. [Special formatting](#8-special-formatting)
 
 ## 1. Headings
 
@@ -58,9 +58,9 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - **Fenced code block**: used to provide a programming language-specific code snippet. Type three ` (backticks) on each side of the text that should be displayed in the fenced code block. This should consume at least 3 lines in the text editor; the first line should display three backticks followed by the programming language name, the second line should display the code snippet, and the last line should only display three backticks. Markdown allows for more than one line to be used to display the code snippet. 
 
   > ~~~Fenced_code_block
-  > ​```PowerShell
+  > ```PowerShell
   > get-service | stop-service -whatif
-  > ​```
+  > ```
   > ~~~
 
 ## 3. Link formatting
@@ -106,9 +106,9 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
  
 ## 5. Embedded content
 
-- **Image**: Used to embed an image inline with other content. 
+- **Image**: Used to embed an image inline with other content. When images are clicked, they will open in a new window and display at the images full resolution.
 
-  > \![text to display]\(url)
+  > \!IMAGE[text to display]\(url)
 
 - **Video:** Used to embed an image inline with other content. The syntax format should look the same as an image, except the video should begin with a ! (explanation mark), followed by the word VIDEO (all caps).
 
@@ -120,15 +120,15 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Portal Link:** used to launch a hyperlink. In the Cloud Client, this will open the hyperlink in the left window. In the traditional virtualization client (vm-based labs), this will open the hyperlink in a new local browser window.
 
-  > `!PORTALLINK[text to display](URL)`
+  > `<[text to display](URL)`
 
 - **Image Link:** used to display a link with a camera icon, to suggest that the hyperlink opens an image
 
-  > `!IMAGELINK[text to display](URL to image)`
+  > `IMAGE[text to display](URL to image)`
 
 - **Video Link:** used to display a link with a videocamera icon, to suggest that the hyperlink opens a video
 
-  > `!VIDEOLINK[text to display](URL to video)`
+  > `VIDEO[text to display](URL to video)`
 
 ## 6. List formatting
 
@@ -136,9 +136,9 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Ordered list:** Used to list items in a particular order, separated by numbers rather than bullets. Type the number 1, followed by a space and then the text to be listed. Pressing enter at the end of the text will start the next line with number 2.
 
-- Both Unordered and Ordered lists can contain checkboxes for the learner to check off steps as completed. Both list types can be combined in the same list. 
+- Both Unordered and Ordered lists can contain Task Checkboxes for the student to check off steps as completed. Both list types can be combined in the same list. Task Checkboxes are used track and report lab progress to LOD and TMS, as well as a visual marker for students. Lab progress is calculated by the percentage of Task Checkboxes that are checked in the lab instructions.
 
-### Unordered list **without** checkboxes: 
+### Unordered list **without** Task Checkboxes: 
  
 ```
 - Item 1
@@ -149,7 +149,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - Item 2
 ```
 
-### Ordered list **without** checkboxes:
+### Ordered list **without** Task Checkboxes:
 
 ```
 1. Item 1
@@ -160,7 +160,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 1. Item 2
 ```
 
-### Unordered list **with** checkboxes:
+### Unordered list **with** Task Checkboxes:
 
 ```
 - [] Item 1
@@ -171,7 +171,7 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - [] Item 2
 ```
 
-### Ordered list **with** checkboxes:
+### Ordered list **with** Task Checkboxes:
 
 ```
 1. [] Item 1
@@ -223,17 +223,36 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 - **Note:** used to provide additional information, similar to a Knowledge Block, with the only difference being that Notes do not collapse and show a _more_ link to expand the section. 
 
   > [!NOTE]
+  
+- **Dialog:** Used to open a dialog popup, to display additonal information. This can be useful to make additional information available to the student.
+
+  >^[Text to display in lab  instructions][Reference Link]
+  
+  >\>[Reference Link]:
+  
+  >\>This appears in the Dialog
+
+- **Commands:** Used to target the Portal window to input commands. Clicking the text in the lab instructinos will input the command into the item in focus, on the Portal window. Commands can be a single line (shown below) or multi-line. Define the command as a reference link and then use that reference link as the command in the below syntax. 
+
+  >~~~
+  >@[Text to display](`command`)
+  >~~~
 
 - **Include:**  used to input text from a GitHub raw link. This is useful to use to pull in content hosted on GitHub. Navigate to the GitHub page containing the content to be used, click the Raw button, then copy the URL of that page and include it in the below syntax. 
 
   **Note**: GitHub hosted content can be changed by the repo maintainer of the content and will change the instructions displayed in the lab using the _Include_ syntax. 
 
-  >  `[!INCLUDE [label](url)]`
+  >  `!INSTRUCTIONS[](url)`
 
 - **Copyable Text:** used to make text copy to the local clipboard when the student clicks the text. Type two + (plus) symbols on each side of the text that should be made copyable. 
 
   > \++copyable text++
 
+
+- **Type Text:** used to target the Portal window to input text. Clicking the text in the lab instructions will input text into the item in focus, on the Portal Window Type three + (plus) symbols on each side of the text that should be made into Type Text. 
+
+  > \+++Type Text+++
+  
 - **Embed YouTube video:** used to embed a YouTube video inline with the lab instructions. URLs from YouTube.com automatically embed. Videos from any other URL will not embed.
 
   > `!VIDEO[text to display](url)` 
