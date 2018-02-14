@@ -289,5 +289,10 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
   > | @lab.CloudPortalSignInUrl   | The cloud portal sign-in URL (rendered as text, not a link). |
   > | @lab.CloudPortalSignOutLink | A cloud portal sign-out link.            |
   > | @lab.CloudPortalSignOutUrl  | The cloud portal sign-out URL (rendered as text, not a link). |
+  > | @lab.VirtualMachine(VM-ID).SelectLink | A link to select the (VM-ID) virtual machine |
+  > | @lab.VirtualMachine(VM-ID).Username | Username for signing into the (VM-ID) virtual machine. |
+  > | @lab.VirtualMachine(VM-ID).Password | Password for signing into the (VM-ID) virtual machine. |
+
+    *(VM-ID) should replaced with the unique ID of the virtual machine in use.
 
 ---
