@@ -266,6 +266,8 @@ To add a screenshot by pasting from your local clipboard:
     - **Display Inline** or **As a link**: Inline will **render the image with lab instrucitons**, As a link **provides a link** that the user can click, to view the image in a new window.
     - **Format**: JPG or PNG. Choose the format you wish to use for the screenshot.
     - **File Name**: You can provide a file name for the screenshot. If a file name is not provided, the screenshot will be assigned a randomly generated name and stored in Lab on Demand.
+    
+    **Note**: Pasting images into the lab instructions is not supported in Internet Explorer 11.
 
 ![](images/paste-image-dialog.png)
 
