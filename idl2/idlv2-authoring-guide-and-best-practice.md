@@ -661,8 +661,8 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
     > | @lab.GlobalLabInstanceId    | The globally unique ID of the running lab instance. |
     > | @lab.LabProfileId           | The unique ID of the lab profile.        |
     > | @lab.UserId                 | The unique ID of user running the lab.   |
-    > | @lab.UserFirstName          | The first name of the user running the lab. |
-    > | @lab.UserLastName           | The last name of the user running the lab. |
+    > | \@lab.UserFirstName          | The first name of the user running the lab. |
+    > | \@lab.UserLastName           | The last name of the user running the lab. |
     > | @lab.UserEmail              | The e-mail address of the user running the lab. |
     > | @lab.UserExternalId         | The external ID of the user running the lab (if launched via API). |
     > | @lab.Tag                    | The tag associated with the lab instance (if specified when launched via API). |
