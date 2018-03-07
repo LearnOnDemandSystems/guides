@@ -168,7 +168,7 @@ To create an Assessment exam, follow these steps:
 
 **Adding Multiple Choice Answers**
 
-1.  []{#_Hlk487019805 .anchor}In the field that appears, type the first
+1.  In the field that appears, type the first
     multiple choice possible answer and click **Add Answer**.
 
 2.  Repeat for additional answer options. The answers can be rearranged
@@ -179,8 +179,7 @@ To create an Assessment exam, follow these steps:
 1.  Select which answer(s) is/are correct.
 
 > ![](media/image007.png)
-
-[]{#_Hlk487020097 .anchor}**Adding Text Match Answers**
+**Adding Text Match Answers**
 
 1.  In the field that appears, type the:
 
