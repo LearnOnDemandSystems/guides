@@ -698,7 +698,7 @@ To convert an IDL (legacy) lab to IDLx:
 
 1. Navigate to the **lab profile** page.
 
-1. Click **Upgrade** next to **Has IDL Content**. (this will display the current version of the lab profile)
+1. Click **Upgrade** next to **Instructions IDL (legacy)**. (this will display the current version of the lab profile)
 
     ![](images/upgrade-button.png "Upgrade lab profile to IDL 2")
 
