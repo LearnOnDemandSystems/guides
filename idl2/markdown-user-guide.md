@@ -250,6 +250,9 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
 
 - **Reference Instruction Blocks:** Used to reference content multiple times throughout the lab instructions. First, Define the content, then reference the content using the syntax below. Defined content can be text, links, copyable text, code blocks or rich media content such as images and videos. Defined content will not appear in lab instructions until it is referenced using the Reference Content syntax. 
 
+<!-- The following code block _must_ be indented instead of wrapped in ~~~ to prevent
+     our preprocessor from preprocessing the code. Do not change this formatting. -->
+
    - Define content
         > ```>[reference label]: Content goes here```
         >
