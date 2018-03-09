@@ -1,5 +1,3 @@
-<a href="https://learnondemandsystems.github.io/guides/idl2/markdown-user-guide.html" style="float:right;" title="A full user guide to authoring labs in IDL-flavored markdown.">Markdown User Guide</a>
-
 |                   |                                          |
 | ------------------| ---------------------------------------- |
 |<font size="3">**Headings**</font> | |
@@ -15,7 +13,7 @@
 | **bold** | `**bold**` or `__bold__` |
 | *Italic* | `*italic*` or `_italic_` |
 | ~~Strikethrough~~ | `~~strikethrough~~` |
-| Escape character | `\escaped text\` |
+| Escape character | `\escaped character` |
 | Bullet | `-` |
 |<BR>                                      | |
 |<font size="3">**Links**</font>| |
@@ -37,11 +35,10 @@
 | Video Link        |  `VIDEO[Text to display](URL)`| 
 |<BR> | |
  |<font size="3">**Special**</font>|                                          |
-| Knowledge         | `> [!KNOWLEDGE] ## Knowledge blocks help students learn more` |
+| Knowledge         | `> [!KNOWLEDGE] Knowledge blocks help students learn more` |
 | Alert             | `> [!ALERT] Alert blocks draw attention to important issues!` |
 | Note              | `> [!NOTE]`                              |
 | Include           | `!INSTRUCTIONS[](url)`                |
-|Reference Instruction Block | `!INSTRUCTIONS[][label]`     |
 | Copyable Text     | `++copyable text++`                      |
 | Type Text         | `+++Type text+++`                      |
 | Replacement Token | `Click the @lab toolbar button or type "@lab." in your idl-md editor window.` |
@@ -57,6 +54,19 @@ Inline code block  <code>`code block`</code>
 get-service | stop-service -whatif
 ```
 ~~~
+---
+<font size="3">**Reference Instruction Block**</font>
+ 
+<!-- The following code block _must_ be indented instead of wrapped in ~~~ to prevent
+     our preprocessor from preprocessing the code. Do not change this formatting. -->
+     
+<pre><code title="Copy to clipboard" class="prettyprint prettyprinted" style="">&#33;INSTRUCTIONS[][reference label]<span class="pln">
+
+</span><span class="pun">&gt; [reference label]:</span><span class="pln">
+</span><span class="pun">&gt; These instructions are injected in the statement above.</span></code></pre>
+
+
+ 
 ---
 <font size="3">**Dialog Windows**</font>
 
@@ -77,13 +87,13 @@ Instruction Dialog
 ---
 <font size="3">**Commands**</font>
 
-**Single Line**
+Single Line
 
 ~~~
 @[Text to display](`command`)
 ~~~
 
-**Multi-Line**
+Multi-Line
 
 <!-- The following code block _must_ be indented instead of wrapped in ~~~ to prevent
      our preprocessor from preprocessing the code. Do not change this formatting. -->
