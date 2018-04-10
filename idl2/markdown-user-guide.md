@@ -269,6 +269,17 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
   >~~~
   >
   > ![](images/idl2-command.png "Command")
+  
+  <!-- The following code block _must_ be indented instead of wrapped in ~~~ to prevent
+     our preprocessor from preprocessing the code. Do not change this formatting. -->
+
+    @[Text to display][multi-line-command-id]
+
+    [multi-line-command-id]:
+    ```
+    Multi-line
+    Command-goes-here
+    ```
 
 - **Include:**  used to input text from a GitHub raw link. This is useful to use to pull in content hosted on GitHub. Navigate to the GitHub page containing the content to be used, click the Raw button, then copy the URL of that page and include it in the below syntax. 
  
