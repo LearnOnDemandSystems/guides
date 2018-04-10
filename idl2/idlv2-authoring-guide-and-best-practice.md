@@ -602,25 +602,38 @@ Markdown allows for text to be resized by typing 1-6 # (hash or pound) symbols i
     > @[Text to display](`command`)
     > ```
 
-    Commands can perform any action that is possible to do from a command or Windows PowerShell prompt. For example, the command could open File Explorer at a particular location within a directory structure, open dialog boxes, start scripts, open documents and web pages, and many others. 
+ - **Multi Line Command:**
+  
+  <!-- The following code block _must_ be indented instead of wrapped in ~~~ to prevent
+     our preprocessor from preprocessing the code. Do not change this formatting. -->
 
-    Although potentially any task could be reduced to an action that can be executed as a command shell or Windows PowerShell command, you should use this feature judiciously. Users should still know how to open File Explorer and perform other basic actions. This feature is most useful for a complex task that involves numerous steps, opening file locations deep down in directory structures, opening specific Web pages, and other similar activities.
+    @[Text to display][multi-line-command-id]
 
-    There are 4 different kinds of commands that you can configure:
+    [multi-line-command-id]:
+    ```
+    Multi-line
+    Command-goes-here
+    ```
+    
+Commands can perform any action that is possible to do from a command or Windows PowerShell prompt. For example, the command could open File Explorer at a particular location within a directory structure, open dialog boxes, start scripts, open documents and web pages, and many others. 
 
-    - **Type Text**. This is not a command per se. Rather, this command type allows the user to input a predetermined string.
+Although potentially any task could be reduced to an action that can be executed as a command shell or Windows PowerShell command, you should use this feature judiciously. Users should still know how to open File Explorer and perform other basic actions. This feature is most useful for a complex task that involves numerous steps, opening file locations deep down in directory structures, opening specific Web pages, and other similar activities.
 
-    - **PowerShell**. This allows the user to execute a PowerShell command in the background. The user does not see the execution of the command.
+There are 4 different kinds of commands that you can configure:
 
-    - **PowerShell will UI**. This opens a command prompt window in the VM and shows the command execution.
+   - **Type Text**. This is not a command per se. Rather, this command type allows the user to input a predetermined string.
 
-    - **Shell**. This causes a command to be executed in the background. The user does not see the execution of the command.
+   - **PowerShell**. This allows the user to execute a PowerShell command in the background. The user does not see the execution of the command.
 
-    - **Shell with UI**. This command opens a command prompt window in the VM and shows the command execution
+   - **PowerShell will UI**. This opens a command prompt window in the VM and shows the command execution.
+    
+   - **Shell**. This causes a command to be executed in the background. The user does not see the execution of the command.
 
-    To initiate the Command, the lab user clicks on lightning bolt) icon in the lab instructions, as shown below.
+   - **Shell with UI**. This command opens a command prompt window in the VM and shows the command execution
 
-    ![](images/idl2-command.png "Command")
+   To initiate the Command, the lab user clicks on lightning bolt) icon in the lab instructions, as shown below.
+
+   ![](images/idl2-command.png "Command")
 
 - **Include:**  Used to input text from a GitHub raw link. This is useful to use to pull in content hosted on GitHub. Navigate to the GitHub page containing the content to be used, click the Raw button, then copy the URL of that page and include it in the below syntax. 
 
