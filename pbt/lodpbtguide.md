@@ -476,7 +476,9 @@ scripts. To do this,
 
     a.  Click **Test This** to test the scoring script
 
+<!--
 > ![](media/image031.png) 
+-->
 
 a.  The Test Scoring Item dialog will appear and will show a progress
     bar during testing.
@@ -740,9 +742,11 @@ locations:
 -->
 
 > This will only show submitted exams for this exam.
->
+
+<!--
 > ![](media/image056.png)
->
+-->
+
 > Grading is done from the Exam Result page. To open this page, click
 > **Details** for the exam instance you want to grade.
 >
