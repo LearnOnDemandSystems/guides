@@ -163,12 +163,12 @@ To create an Assessment exam, follow these steps:
 
 a.  Regular expression the answer must match
 
-    i.  Start the regular expression with the \^ character
+   i.  Start the regular expression with the \^ character
 
-    ii. Put the possible answers in parenthesis with the | character
+   ii. Put the possible answers in parenthesis with the | character
         separating them
     
-    iii. End the expression with the \$ character
+   iii. End the expression with the \$ character
 
 <!--
 > ![](media/image009.png) 
@@ -750,7 +750,9 @@ locations:
 > Grading is done from the Exam Result page. To open this page, click
 > **Details** for the exam instance you want to grade.
 >
+>!--
 > ![](media/image057.png)
+-->
 
 **Grading a Screenshot Exam**
 
