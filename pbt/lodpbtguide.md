@@ -752,7 +752,7 @@ locations:
 
 
 !--
-> ![](media/image057.png)
+![](media/image057.png)
 -->
 
 **Grading a Screenshot Exam**
