@@ -326,6 +326,8 @@ for grading. One major difference however is that for the scoring
 scripts to work, the VMs in the exam that the scripts will run against
 *must* have the LOD integration service installed on them.
 
+**Please note:** Automated Exams, and Integration Services are only available on Hyper-V. If your lab is using vShere for virtualization, only the Assessment Exam is available. 
+
 **Installation of LOD Integration Service on VMs**
 
 This service should be installed before you build your exam questions.
