@@ -750,11 +750,6 @@ locations:
 > Grading is done from the Exam Result page. To open this page, click
 > **Details** for the exam instance you want to grade.
 
-
-!--
-![](media/image057.png)
--->
-
 **Grading a Screenshot Exam**
 
 1.  On the **Exam Result** page, in the **Scoring** section, review each
