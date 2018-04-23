@@ -1,4 +1,6 @@
-﻿**Learn on Demand Systems Performance Based Testing Guide**
+# Learn on Demand Systems Performance Based Testing Guide**
+
+<!--
 
 **Intended Audience**
 
@@ -14,6 +16,8 @@ This guide assumes that the reader:
 
 The guide further assumes that the reader has knowledge of how to build
 labs in LOD and knowledge of performance-based testing design.
+
+--> 
 
 **Getting Started**
 
