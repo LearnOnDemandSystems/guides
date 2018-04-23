@@ -54,8 +54,6 @@ in this guide.
 
 -->
 
-# GitHub Integration
-
 Lab on Demand now allows you to integrate a GitHub repository into a lab and use
 that repository as the source of Integrated Digital Lab (IDL) content for that
 lab. This integration provides the following benefits to lab content authors:
