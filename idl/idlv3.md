@@ -1,6 +1,6 @@
 # Learn on Demand Systems Integrated Digital Lab (legacy) Authoring Guide 
 
-!<--
+<!--
 ## Introduction
 
 This guide provides information on the Integrated Digital Lab (IDL (legacy)
