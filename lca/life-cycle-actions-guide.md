@@ -1,5 +1,6 @@
 # Life Cycle Actions Guide
 
+<!--
 ## Disclaimer
 
 This document supports a release of a software product that may be changed substantially in the future. It is provided for informational purposes only and Learn on Demand Systems, LLC, makes no warranties, either express or implied, in this document. Information in this document, including URL and other Internet Web site references, is subject to change without notice. The entire risk of the use or the results from the use of this document remains with the user. Unless otherwise noted, the companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted in examples herein are fictitious. No association with any real company, organization, product, domain name, e-mail address, logo, person, place, or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -23,6 +24,8 @@ This guide assumes that the reader:
 - Has a help desk support contract to pay for additional custom contract work.
 
 The guide further assumes that the reader has knowledge of how to build labs in LOD and knowledge of life cycle events of LOD labs..
+
+-->
 
 # Life Cycle Actions
 
