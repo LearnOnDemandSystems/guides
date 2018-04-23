@@ -1,5 +1,6 @@
 # Learn on Demand Systems GitHub Integration Guide 
 
+<!--
 ## Disclaimer
 
 This document is provided for informational purposes only and Learn on Demand
@@ -50,7 +51,9 @@ content and modify specific properties of a lab profile;
 Further, this guide assumes the reader either has access to an existing GitHub
 repository containing lab content or can create one following the steps outlined
 in this guide.
- 
+
+-->
+
 # GitHub Integration
 
 Lab on Demand now allows you to integrate a GitHub repository into a lab and use
