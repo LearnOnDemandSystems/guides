@@ -1,8 +1,5 @@
----
 # Shared Labs
----
 
-## Summary:
 Shared Labs is a tool used in LODS to create environments which share
 their networks with each other to allow machines to communicate between
 a Shared Lab Environment and a Participant (or Participants). This can
