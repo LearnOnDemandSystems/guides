@@ -1,7 +1,11 @@
-# User Guides from Learn on Demand Systems
+>## WARNING
+>
+>This documentation repository has been deprecated. If you would like to access Learn on Demand Systems documentation, open [Lab on Demand](https://www.labondemand.com) and click the Help button at the top of the page.
+
+## User Guides from Learn on Demand Systems
 Contains dynamic documentation for lab developers using the LOD platform.  The following guides are available.
 
-1. [IDLx Authoring Guide](idl2/idlv2-authoring-guide-and-best-practice.md)
+1. [IDLx Authoring Guide](/docs/idl2/idlv2-authoring-guide-and-best-practice.md)
 1. [IDLx Markdown User Guide](idl2/markdown-user-guide.md)
 1. [IDL (legacy) Authoring Guide](idl/idlv3.md)
 1. [GitHub Integration Guide](github-integration/github-integration.md)
