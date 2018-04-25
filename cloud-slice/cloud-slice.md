@@ -1,1 +1,1 @@
-This content has moved [here](https://labondemand.com/Help/?caller=%2FAdmin&src=https%3A%2F%2Fraw.githubusercontent.com%2FLearnOnDemandSystems%2Fdocs%2Fmaster%2Fguides%2Fcloud-slice%2Fcloud-slice.md)
+This content has moved [here](https://labondemand.com/Help/?caller=%2FAdmin&src=https%3A%2F%2Fraw.githubusercontent.com%2FLearnOnDemandSystems%2Fdocs%2Fmaster%2Fguides%2Fcloud-slice%2Fcloud-slice.md).
